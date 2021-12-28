@@ -5,7 +5,7 @@
 ***2021 winter- Ibuki***
 
 <p align="left">
-  <img width="600" height="450" src="https://github.com/wzetto/wz369.github.io/blob/e0352cbc3341930d5b364b16daf3c2eb1cd1951a/images/yama/ibuki/20211228/IMG_1543.jpeg">
+  <img width="400" height="300" src="https://github.com/wzetto/wz369.github.io/blob/e0352cbc3341930d5b364b16daf3c2eb1cd1951a/images/yama/ibuki/20211228/IMG_1543.jpeg">
 </p>
 
 
