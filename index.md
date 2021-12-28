@@ -1,3 +1,7 @@
+##关于本博客
+
+记录 研究进展及想法/一些小说等的灵感/山登り/ etc.
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/wzetto/wz369.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
