@@ -1,3 +1,8 @@
+---
+layout: post
+title: Research on MSAD
+---
+
 ## 那就总结一下
 从流程上看，目前是： 对任意N元固溶相， 最小化1-6NN的cor-function， 以及1NN-2NN的cor-func——从统计力学角度讲， 这是对单一cor-func的’moment‘的统计。 从Ising model的角度讲， 其实就是对triplets做了一点约束。
 从后续验证中， 也确实有奇效。
