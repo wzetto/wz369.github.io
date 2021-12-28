@@ -2,6 +2,10 @@
 
 记录 研究进展及想法/一些小说等的灵感/山登り/ etc.
 
+![ibuki 20211223](https://github.com/wzetto/wz369.github.io/blob/e0352cbc3341930d5b364b16daf3c2eb1cd1951a/images/yama/ibuki/20211228/IMG_1543.jpeg)
+
+<center>2021 winter- Ibuki</center>
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/wzetto/wz369.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
