@@ -2,13 +2,12 @@
 
 记录 研究进展及想法/一些小说等的灵感/山登り/ etc.
 
-![ibuki 20211223](https://github.com/wzetto/wz369.github.io/blob/e0352cbc3341930d5b364b16daf3c2eb1cd1951a/images/yama/ibuki/20211228/IMG_1543.jpeg)
-
-<center>2021 winter- Ibuki</center>
+<center>***2021 winter- Ibuki***</center>
 
 <p align="center">
   <img width="600" height="450" src="https://github.com/wzetto/wz369.github.io/blob/e0352cbc3341930d5b364b16daf3c2eb1cd1951a/images/yama/ibuki/20211228/IMG_1543.jpeg">
 </p>
+
 
 ## Welcome to GitHub Pages
 
