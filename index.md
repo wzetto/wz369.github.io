@@ -10,4 +10,4 @@
 
 #### Research & etc.
 
-[   - Mean Square Atomic Displacement (MSAD)](https://github.com/wzetto/wz369.github.io/blob/4031f1f9f8afe6df1192756c058e606fb59e5bd2/log%20on%20MSAD_before%2021-12-28.md)
+[1. Mean Square Atomic Displacement (MSAD)](https://github.com/wzetto/wz369.github.io/blob/2b23f441921f16cc29b32485033c97c95e1bc333/Research_etc/MSAD/log%20on%20MSAD_before%2021-12-28.md)
