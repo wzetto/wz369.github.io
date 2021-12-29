@@ -9,8 +9,8 @@ permalink: /yamanobo/ibuki/ibuki_before_21-12.html
 ***掏出手机扫荡一圈后手被迅速冻僵。似有妖魔过境，初踏冬山就体验了久负盛名的伊吹豪雪。***
 
 <iframe width="300" height="400" src="https://www.youtube.com/embed/IKnbJy-kMtI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-
+<br />
+<br />
 ***名古屋 - 霊仙ー鈴鹿山脈 - 琵琶湖云隙光全景， 2021.12***
 
 <p align="left">
