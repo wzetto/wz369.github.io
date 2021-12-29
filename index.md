@@ -10,4 +10,6 @@
 
 #### > Yama
 
+[山行记录](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
+
 #### > 想法等
