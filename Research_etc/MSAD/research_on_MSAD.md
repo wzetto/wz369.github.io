@@ -1,5 +1,6 @@
 ---
 title: 'Research on MSAD'
+description: Calc & Exp results, with some thoughts, on this scalar physical property designed to be a measurement on lattice distortions and solid solution effects.
 permalink: /Research_etc/MSAD/research_on_MSAD.html
 ---
 
