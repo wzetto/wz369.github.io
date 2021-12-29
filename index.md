@@ -6,7 +6,7 @@
 
 #### > Research & etc.
 
-[1. Mean Square Atomic Displacement (MSAD)](https://github.com/wzetto/wz369.github.io/Research_etc/MSAD/research_on_MSAD.html)
+[1. Mean Square Atomic Displacement (MSAD)](https://wzetto.github.io/wz369.github.io/Research_etc/MSAD/research_on_MSAD.html)
 
 #### > Yama
 
