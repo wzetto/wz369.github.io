@@ -18,3 +18,5 @@ description: 记录 研究进展及想法 / 一些灵感及其他想法 / 山登
 [山行记录](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
 
 #### > 想法等
+
+[思い](https://wzetto.github.io/wz369.github.io/想法等/omoi.html)
