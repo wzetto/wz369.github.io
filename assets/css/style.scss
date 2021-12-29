@@ -3,14 +3,17 @@
 
 @import "{{ site.theme }}";
 
-.headerPage {
+header {
 	background-image: url('{{ site.baseurl }}/images/yama/ibuki/20211228/IMG_1568.jpeg');
 	background-size: 100% 100%;
 }
 
 /*
-header {
+.headerPage {
 	background-image: url('{{ site.baseurl }}/images/yama/ibuki/20211228/IMG_1568.jpeg');
 	background-size: 100% 100%;
 }
 */
+
+
+
