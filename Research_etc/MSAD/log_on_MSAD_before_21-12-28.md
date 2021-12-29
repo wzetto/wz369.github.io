@@ -44,4 +44,4 @@ for MSAD'。
 所以本文后半段的展望贡献价值达到了惊人的0， 适合毕业论文致辞（就是跑路的时候
 
 
-#### [< back](https://wzetto.github.io/wz369.github.io/Research_etc/MSAD/log_on_MSAD_before_21-12-28.html)
+#### [< back](https://wzetto.github.io/wz369.github.io/Research_etc/MSAD/research_on_MSAD.html)
