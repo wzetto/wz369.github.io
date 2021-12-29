@@ -1,5 +1,4 @@
 ---
-layout: page
 title: '伊吹山'
 permalink: /yamanobo/ibuki/ibuki_before_21-12.html
 ---
