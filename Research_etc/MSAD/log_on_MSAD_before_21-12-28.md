@@ -2,7 +2,6 @@
 title: 'Research on MSAD'
 permalink: /Research_etc/MSAD/log_on_MSAD_before_21-12-28.html
 ---
-### [< HOME](https://wzetto.github.io/wz369.github.io/)
 
 ## 那就总结一下
 从流程上看，目前是： 对任意N元固溶相， 最小化1-6NN的cor-function， 以及1NN-2NN的cor-func——从统计力学角度讲， 这是对单一cor-func的’moment‘的统计。 从Ising model的角度讲， 其实就是对triplets做了一点约束。
@@ -43,3 +42,6 @@ for MSAD'。
 靶心是SQS， 8环是PS， 7环有SRO， 再外面是LP， 要是真那么简单就好了。
 
 所以本文后半段的展望贡献价值达到了惊人的0， 适合毕业论文致辞（就是跑路的时候
+
+
+#### [< back](https://wzetto.github.io/wz369.github.io/Research_etc/MSAD/log_on_MSAD_before_21-12-28.html)
