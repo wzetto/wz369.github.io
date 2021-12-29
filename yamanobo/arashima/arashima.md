@@ -9,7 +9,9 @@ title: '荒島岳'
 <p align="left">
   <img src="https://wzetto.github.io/wz369.github.io/images/yama/arashima/2.jpg">
 </p>
-
+***------***
+<br />
+<br />
 <iframe width="400" height="300" 
         src="https://www.youtube.com/embed/6o0S19lILqc" 
         frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
