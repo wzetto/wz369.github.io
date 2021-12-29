@@ -311,6 +311,15 @@ Full-Width Styles
   padding: 50px 10px 30px 10px;
 }
 
+#header_pages {
+	background-image: url('{{ site.baseurl }}/images/yama/arashima/2.jpg');
+	max-width: 200%;
+	max-height: 200%;
+	background-size: cover;
+	height: 100%;
+	width: auto;
+}
+
 #project_title {
   margin: 0;
   color: #080808;
