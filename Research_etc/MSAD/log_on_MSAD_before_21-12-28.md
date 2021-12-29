@@ -1,6 +1,6 @@
 ---
 title: 'Research on MSAD'
-description: Calc & Exp results, with some thoughts, on this scalar physical property designed to be a measurement on lattice distortions and solid solution effects.
+description: 前情提要：在2021年，进行DFT计算，竟然是用CPU？！ 为避免退学危机，wz站了出来——さあ——用CPU攻下三元系高熵合金吧！好不容易计算出来的我，竟面对新的敌人——四元系？一个结构居然算要5天？！ 次回！怎么办，还是只好退学了吧——
 permalink: /Research_etc/MSAD/log_on_MSAD_before_21-12-28.html
 ---
 
