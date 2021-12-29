@@ -3,6 +3,7 @@
 
 @import "{{ site.theme }}";
 
-#header_wrap {
-	background: url(images/yama/ibuki/20211228/IMG_1568.jpeg) center / cover;
+header {
+	background-image: url('{{ site.baseurl }}/images/yama/ibuki/20211228/IMG_1568.jpeg') center / cover;
 }
+  
