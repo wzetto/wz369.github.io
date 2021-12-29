@@ -1,8 +1,10 @@
 ---
-title: 'Research on MSAD'
+title: 'Log till 2021.12.28'
 description: 前情提要：在2021年，进行DFT计算，竟然是用CPU？！ 为避免退学危机，wz站了出来——さあ——用CPU攻下三元系高熵合金吧！好不容易计算出来的我，竟面对新的敌人——四元系？一个结构居然算要5天？！ 次回！怎么办，还是只好退学了吧——
 permalink: /Research_etc/MSAD/log_on_MSAD_before_21-12-28.html
 ---
+
+2021.12.28
 
 ## 那就总结一下
 从流程上看，目前是： 对任意N元固溶相， 最小化1-6NN的cor-function， 以及1NN-2NN的cor-func——从统计力学角度讲， 这是对单一cor-func的’moment‘的统计。 从Ising model的角度讲， 其实就是对triplets做了一点约束。
