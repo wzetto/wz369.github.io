@@ -5,11 +5,6 @@
 
 header {
 	background-image: url('{{ site.baseurl }}/images/yama/ibuki/20211228/IMG_1568.jpeg');
-	background-size: cover;
+	background-size: contain;
 	background-size: 100% 100%;
-}
-  
-section {
-	background-image: url('{{ site.baseurl }}/images/yama/soil_aus/IMG_4181.jpeg');
-	background-size: cover;
 }
