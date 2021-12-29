@@ -3,10 +3,10 @@ title: 'Wzetto'
 description: 记录 研究进展及想法 / 一些灵感及其他想法 / 山登り / etc.
 ---
 
-***2021 winter- Ibuki***
+***2020 autumn - Reddomain***
 
 <p align="left">
-  <img width="400" height="300" src="images/yama/ibuki/20211228/IMG_1543.jpeg">
+  <img width="400" height="400" src="images/yama/minya_konka/IMG_7513.jpeg">
 </p>
 
 #### > Research & etc.
