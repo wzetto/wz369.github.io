@@ -1,7 +1,7 @@
 ---
 title: '伊吹山'
 permalink: /yamanobo/ibuki/ibuki_before_21-12.html
-youtubeID: IKnbJy-kMtI
+youtubeID: https://youtu.be/IKnbJy-kMtI
 ---
 2021.12.28
 
