@@ -272,8 +272,6 @@ Full-Width Styles
 .outer {
   position: relative;
   width: 100%;
-  padding: 20px 10px;
-  margin: 0 auto;
 }
 
 .inner {
@@ -301,12 +299,12 @@ Full-Width Styles
 */
 
 #header_wrap {
-  background: #808080;
-  background: -moz-linear-gradient(top, #bfbfbf, #808080);
-  background: -webkit-linear-gradient(top, #bfbfbf, #808080);
-  background: -ms-linear-gradient(top, #bfbfbf, #808080);
-  background: -o-linear-gradient(top, #bfbfbf, #808080);
-  background: linear-gradient(to top, #bfbfbf, #808080);
+  background: #d6d6d6;
+  background: -moz-linear-gradient(top, #b3b3b3, #d6d6d6);
+  background: -webkit-linear-gradient(top, #b3b3b3, #d6d6d6);
+  background: -ms-linear-gradient(top, #b3b3b3, #d6d6d6);
+  background: -o-linear-gradient(top, #b3b3b3, #d6d6d6);
+  background: linear-gradient(to top, #b3b3b3, #d6d6d6);
 }
 
 #header_wrap .inner {
