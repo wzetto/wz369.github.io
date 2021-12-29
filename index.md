@@ -19,4 +19,4 @@ description: 记录 研究进展及想法 / 一些灵感及其他想法 / 山登
 
 #### > 想法等
 
-[思い](https://wzetto.github.io/wz369.github.io/想法等/omoi.html)
+[思い](https://wzetto.github.io/wz369.github.io/omoi/omoi.html)
