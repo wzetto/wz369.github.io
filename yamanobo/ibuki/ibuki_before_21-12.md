@@ -10,6 +10,7 @@ permalink: /yamanobo/ibuki/ibuki_before_21-12.html
 
 <iframe width="300" height="400" src="https://www.youtube.com/embed/IKnbJy-kMtI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+
 ***名古屋 - 霊仙ー鈴鹿山脈 - 琵琶湖云隙光全景， 2021.12***
 
 <p align="left">
