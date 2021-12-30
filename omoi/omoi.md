@@ -5,9 +5,9 @@ title: 想法等
 ## 一部抜粋（对己
 
 <details><summary>2021.12</summary>
-<p>
-[> 2021.12.30](https://wzetto.github.io/wz369.github.io/omoi/essays/2021-12-30.html)
-</p>
+
+[2021.12.30](https://wzetto.github.io/wz369.github.io/omoi/essays/2021-12-30.html)
+
 </details>
 
 ## 想法 / 微小的工作
