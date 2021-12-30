@@ -3,12 +3,14 @@
 
 @import "{{ site.theme }}";
 
-header_pages {
-	background-image: url('{{ site.baseurl }}/images/yama/arashima/2.jpg');
-	max-width: 200%;
-	max-height: 200%;
-	background-size: cover;
-	height: 100%;
+header {
+	background-image: url('{{ site.baseurl }}/images/header/2021_jp_extract.png');
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	max-width: 100%;
+	max-height: 100%;
+	background-size: contain;
+	height: auto%;
 	width: auto;
 }
 
