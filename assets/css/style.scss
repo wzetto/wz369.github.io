@@ -6,12 +6,12 @@
 header {
 	background-image: url('{{ site.baseurl }}/images/header/2021_jp_extract.png');
 	background-repeat: no-repeat;
-	background-position: right bottom;
+	background-position: right 10% bottom 0%;
 	/*max-width: 100%;
 	max-height: 100%;*/
 	background-size: contain;
-	height: auto;
-	width: auto;
+	height: 70%;
+	width: 70%;
 }
 
 /*
