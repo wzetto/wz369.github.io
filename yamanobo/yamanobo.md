@@ -13,6 +13,9 @@ permalink: /yamanobo/yamanobo.html
 
 ## 春夏
 
+[> 四川 > 五色海子](https://wzetto.github.io/wz369.github.io/yamanobo/wusehaizi/wusehaizi.html)
+
+
 ## 秋冬
 
 [> 百名山 > 伊吹山](https://wzetto.github.io/wz369.github.io/yamanobo/ibuki/ibuki_before_21-12.html)
