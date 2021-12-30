@@ -11,7 +11,7 @@ title: '荒島岳'
 </p>
 <br />
 <br />
-<hr width='80%' size='10' align='center'>
+<hr width='80%' size='5' align='center'>
 <br />
 <br />
 <iframe width="400" height="300" 
