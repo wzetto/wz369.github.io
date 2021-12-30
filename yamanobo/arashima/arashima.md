@@ -5,13 +5,13 @@ title: '荒島岳'
 2021.12.28
 
 撰文时，离下山正好一年。对这座山的冬季，用两例全景大抵概括吧：
-
+<hr width='100' size='6' align='left'>
 <p align="left">
   <img src="https://wzetto.github.io/wz369.github.io/images/yama/arashima/2.jpg">
 </p>
 <br />
 <br />
-<hr width='80%' size='5' align='center'>
+<hr width='100' size='6' align='left'>
 <br />
 <br />
 <iframe width="400" height="300" 
