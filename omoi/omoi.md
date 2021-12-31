@@ -9,7 +9,7 @@ title: 想法等
 </details>
 
 <details><summary>2022.1</summary>
-  <a href="https://wzetto.github.io/wz369.github.io/omoi/essays/2021-1-1.html">> 2022.1.1</a>
+  <a href="https://wzetto.github.io/wz369.github.io/omoi/essays/2022-1-1.html">> 2022.1.1</a>
 </details>
 
 ## 想法 / 微小的工作
