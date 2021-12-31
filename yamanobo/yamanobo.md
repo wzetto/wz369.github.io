@@ -24,5 +24,6 @@ permalink: /yamanobo/yamanobo.html
 
 [> 百名山 \| 荒島岳](https://wzetto.github.io/wz369.github.io/yamanobo/arashima/arashima.html)
 
+[> 百名山 \| 剣山ー三嶺縦走](https://wzetto.github.io/wz369.github.io/yamanobo/tsurugi-miune/tsurugi-miune.html)
 
 ### [< HOME](https://wzetto.github.io/wz369.github.io/)
