@@ -6,15 +6,7 @@ layout: map_default
 2021.12.28
 <hr style="width:50px;text-align:left;margin-left:0">
 
-var map = L.map('map');
-L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: 'Map data &copy; <a href="http://www.osm.org">OpenStreetMap</a>'
-}).addTo(map);
-
-var gpx = 'https://wzetto.github.io/wz369.github.io/yamanobo/ibuki/210206_ibuki.gpx';
-new L.GPX(gpx, {async: true}).on('loaded', function(e) {
-  map.fitBounds(e.target.getBounds());
-}).addTo(map);
+<script src="_js/map_ibuki_210206.js"></script>
 
 伊吹山，滋賀県最高峰。冬季，大陆高压携带对马海流大量水汽，经由若峡湾-琵琶湖-滨松通道时，进一步获得琵琶湖水汽供给，形成伊吹山地的‘豪雪’现象——这座不足1500m的山，变成了标准的冬攀修炼场。
 
