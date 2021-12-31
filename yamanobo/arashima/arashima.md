@@ -12,9 +12,7 @@ title: '荒島岳'
 
 <hr style="width:100px;text-align:left;margin-left:0">
 
-<iframe width="400" height="300" 
-        max-width="100%" 
-        src="https://www.youtube.com/embed/6o0S19lILqc" 
+<iframe src="https://www.youtube.com/embed/6o0S19lILqc" 
         frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
 </iframe>
 <br />
