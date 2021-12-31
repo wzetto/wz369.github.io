@@ -1,6 +1,7 @@
 ---
 title: '伊吹山'
 permalink: /yamanobo/ibuki/ibuki_before_21-12.html
+layout: map_default
 ---
 2021.12.28
 <hr style="width:50px;text-align:left;margin-left:0">
