@@ -9,7 +9,6 @@ layout: map_default
 
 using openlayer to display slippy map of osm file
 
-<div id='map' height='300px'></div>
 
 ***掏出手机扫荡一圈后手被迅速冻僵。似有妖魔过境，初踏冬山就体验了久负盛名的伊吹豪雪。***
 
