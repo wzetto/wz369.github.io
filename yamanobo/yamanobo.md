@@ -1,6 +1,7 @@
 ---
 title: '山！'
 permalink: /yamanobo/yamanobo.html
+layout: map_homepage
 ---
 
 <iframe id="inlineFrameExample"
