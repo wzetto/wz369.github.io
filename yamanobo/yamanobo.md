@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ---
 title: '山！'
 permalink: /yamanobo/yamanobo.html
@@ -29,6 +30,8 @@ permalink: /yamanobo/yamanobo.html
 
 ### [< HOME](https://wzetto.github.io/wz369.github.io/)
 =======
+=======
+>>>>>>> Stashed changes
 ---
 title: '山！'
 permalink: /yamanobo/yamanobo.html
@@ -57,4 +60,7 @@ permalink: /yamanobo/yamanobo.html
 
 
 ### [< HOME](https://wzetto.github.io/wz369.github.io/)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
