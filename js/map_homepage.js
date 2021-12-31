@@ -9,9 +9,6 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'your.mapbox.access.token'
 }).addTo(map);
 
-var marker = L.marker([35.019621, 135.811883]).addTo(map)
-    .bindPopup('<b>大文字山</b>').openPopup();
-
 var marker = L.marker([35.062114, 135.831544]).addTo(map)
     .bindPopup('<b>比叡山</b>').openPopup();
 
@@ -39,7 +36,8 @@ var marker = L.marker([33.852553, 134.093431]).addTo(map)
 var marker = L.marker([33.839181, 133.986579]).addTo(map)
     .bindPopup('<b>三嶺</b>').openPopup();
 
-
+var marker = L.marker([35.019621, 135.811883]).addTo(map)
+    .bindPopup('<b>大文字山</b>').openPopup();
 
 
 
