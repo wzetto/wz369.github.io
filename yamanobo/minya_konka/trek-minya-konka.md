@@ -46,7 +46,7 @@ js_url: https://wzetto.github.io/wz369.github.io/js/2020_minya_konka.js
 </p>
 <hr style="width:80px;text-align:left;margin-left:0">
 ***Sunset time-lapse***
-<iframe src="https://www.youtube.com/embed/l0Ea1uVmQl8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>
+<iframe src="https://www.youtube.com/embed/K26kEiAhhkE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>
 <hr style="width:80px;text-align:left;margin-left:0">
 ***余韵***
 <p align="left">
@@ -76,9 +76,9 @@ js_url: https://wzetto.github.io/wz369.github.io/js/2020_minya_konka.js
 </p>
 <hr style="width:80px;text-align:left;margin-left:0">
 ***View from Riuchi haniya***
-<iframe src="https://www.youtube.com/embed/K26kEiAhhkE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>
+<iframe src="https://www.youtube.com/embed/l0Ea1uVmQl8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>
 <hr style="width:80px;text-align:left;margin-left:0">
-
+翻过垭口，降至莫西沟，其东是贡嘎山群的核心区域，数座6k围绕贡嘎，徒步线路与沿途山峰高差升至3000m。因翻上垭口过度兴奋，下降时莫名采用登山杖支持的越野跑，对膝盖磨损先不提，降至谷底时突觉头痛鼻涕，但为维持四川本地人的“高海拔适性”这莫名pride
 
 
 
