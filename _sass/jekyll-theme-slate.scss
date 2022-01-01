@@ -270,15 +270,9 @@ Full-Width Styles
 }
 
 .inner {
-  position: sticky;
-  top: 0;
   max-width: 80%;
   padding: 20px 10px;
   margin: 0 auto;
-  /*后加*/
-  background: rgba(33, 33, 33, .7);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
 }
 
 .inner_bottom {
@@ -320,12 +314,17 @@ Full-Width Styles
 }
 
 #header_pages {
-	background-image: url('{{ site.baseurl }}/images/yama/arashima/2.jpg');
+	position: sticky;
+	top: 0;
 	max-width: 200%;
 	max-height: 200%;
-	background-size: cover;
+	/*background-size: cover;*/
 	height: 100%;
 	width: auto;
+	/*后加*/	
+	background: rgba(33, 33, 33, .7);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
 }
 
 #project_title {
