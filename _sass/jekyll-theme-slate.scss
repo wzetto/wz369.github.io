@@ -387,10 +387,12 @@ Full-Width Styles
 
 #map {
   height: 300px;
+  z-index: 4;
 }
 
 #map_home {
   height: 400px;
+  z-index: 4;
 }
 
 #main_content_wrap {
@@ -402,6 +404,7 @@ Full-Width Styles
 
 #main_content {
   padding-top: 40px;
+  z-index: 4;
 }
 
 #footer_wrap {
