@@ -98,9 +98,45 @@ js_url: https://wzetto.github.io/wz369.github.io/js/2020_minya_konka.js
 进入南部天气转阴，且莫西沟尾营地无甚风景，便草草扎营。山泉水甘甜，值得专程一试！
 
 #### Day4
-早起翻个坡
+早起翻个坡，见二雪山，心情甚好。谁知那是当天唯一的见山机会，穿越20km的林带抵达贡嘎寺，天气持续寒冷阴沉。沿途木桥多有冲垮，过河考验技巧。
+<hr style="width:80px;text-align:left;margin-left:0">
+***朗格曼因（Longemain，6294m）及朗格曼因5240卫锋***
+<p align="left">
+  <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/IMG_7540.jpeg">
+</p>
+<hr style="width:80px;text-align:left;margin-left:0">
 
+#### Day5
+贡嘎寺算是离主峰最近的“安全”观景平台，但视野稍显有限。因误判日出贡嘎时间而消耗了无人机两块电池，但总算在9点观赏到了骆驼背（6394m，Hump）-贡嘎主峰（7556m，Minya Konka）-龙山（6684m，Longshan）连线，及贡巴冰川。
+<hr style="width:80px;text-align:left;margin-left:0">
+<p align="left">
+  <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/DJI_0493.JPG">
+</p>
+<hr style="width:80px;text-align:left;margin-left:0">
+***镜头的背面，草坡上一轮圆月***
+<p align="left">
+  <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/DJI_0493.JPG">
+</p>
+<hr style="width:80px;text-align:left;margin-left:0">
+露营用品晒干后，前往子梅村。本来看windy天气数据，子梅垭口所在的4550m高度天气状况不佳，但当地人认为凭经验可以穿云——果然，当地人还是比ECMWF靠谱。从子梅垭口可纵览山群西坡南北，以至九海子，雅拉。与生院伙计和众多驱车上来的游客有一句没一句的赏景聊天，于寒风中等到了日落。
+<hr style="width:80px;text-align:left;margin-left:0">
+***东南处5312（存疑）山群，三处小型冰川与横梁般山体别有一番趣味***
+<p align="left">
+  <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/IMG_7582.jpeg">
+</p>
+<hr style="width:80px;text-align:left;margin-left:0">
 
+#### Day6
+黎明垭口狂风，遂起身等待日出。子梅垭口所在支脉是去年新兴的“贡嘎三脊”线，本次本计划走，照顾队友情况遂还是依照的传统转山路线。
+从垭口顶延山脊走一公里，找到个不错的无名海子-贡嘎机位。
+<hr style="width:80px;text-align:left;margin-left:0">
+<p align="left">
+  <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/IMG_7616.jpeg">
+</p>
+<hr style="width:80px;text-align:left;margin-left:0">
+收拾收拾，下山。穿林带，走巴望海，从草科乘巴士回蓉，结束贡嘎行。
+
+不知何时再相见，山，友们！
 
 
 #### [< back](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
