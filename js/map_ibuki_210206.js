@@ -7,7 +7,7 @@ var kokudo_map = new L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/
 })
 
 var map = L.map('map',{
-  layers: [osm_map]
+  layers: [kokudo_map]
 });
 
 var map_baselayer = {
