@@ -51,7 +51,9 @@ js_url: https://wzetto.github.io/wz369.github.io/js/2020_minya_konka.js
 </p>
 <hr style="width:80px;text-align:left;margin-left:0">
 
+本想裸露扎营了，禁不住营地藏族大妈劝，住进了大棚子-然后还是扎的帐篷。好在总算回绝了第二天骑马翻垭口的推销。
 
+截止此时，我们同行四人中一人失踪（后恢复联系），一人上吐下泻，我和另一位川大生院伙计尚存，准备第二天攻下著名的日乌且垭口（约4950m，Riuchi haniya）
 
 
 
