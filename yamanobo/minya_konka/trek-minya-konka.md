@@ -47,7 +47,7 @@ js_url: https://wzetto.github.io/wz369.github.io/js/2020_minya_konka.js
 <hr style="width:80px;text-align:left;margin-left:0">
 ***余韵***
 <p align="left">
-  <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/0455.jpg">
+  <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/DJI_0455.JPG">
 </p>
 <hr style="width:80px;text-align:left;margin-left:0">
 
