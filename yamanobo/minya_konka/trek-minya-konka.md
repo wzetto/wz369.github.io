@@ -40,8 +40,16 @@ js_url: https://wzetto.github.io/wz369.github.io/js/2020_minya_konka.js
   <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/0426.jpg">
 </p>
 <hr style="width:80px;text-align:left;margin-left:0">
-
-
+***落日金山，其中右起山体为勒多曼因（6112m，Reddomain),水汽从康定城方向升上来，不一会便笼罩了整个营地***
+<p align="left">
+  <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/0452.jpg">
+</p>
+<hr style="width:80px;text-align:left;margin-left:0">
+***余韵***
+<p align="left">
+  <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/0455.jpg">
+</p>
+<hr style="width:80px;text-align:left;margin-left:0">
 
 
 
