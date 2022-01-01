@@ -9,15 +9,15 @@ title: 'Wzetto'
   <img src="images/yama/minya_konka/IMG_7513.jpeg">
 </p>
 
-<hr style="width:80px;text-align:left;margin-left:0">
+<hr style="width:50px;text-align:left;margin-left:0">
 ### Research & etc.
 
 [> Mean Square Atomic Displacement (MSAD)](https://wzetto.github.io/wz369.github.io/Research_etc/MSAD/research_on_MSAD.html)
-<hr style="width:80px;text-align:left;margin-left:0">
+<hr style="width:50px;text-align:left;margin-left:0">
 ### Yama
 
 [> 山行记录](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
-<hr style="width:80px;text-align:left;margin-left:0">
+<hr style="width:50px;text-align:left;margin-left:0">
 ### 想法等
 
 [> 思い](https://wzetto.github.io/wz369.github.io/omoi/omoi.html)
