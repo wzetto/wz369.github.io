@@ -97,6 +97,8 @@ js_url: https://wzetto.github.io/wz369.github.io/js/2020_minya_konka.js
 <hr style="width:80px;text-align:left;margin-left:0">
 进入南部天气转阴，且莫西沟尾营地无甚风景，便草草扎营。山泉水甘甜，值得专程一试！
 
+#### Day4
+早起翻个坡
 
 
 
