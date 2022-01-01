@@ -25,7 +25,7 @@ var marker = L.marker([35.280031, 136.376108]).addTo(map)
     .bindPopup('<b>霊仙山</b>').openPopup();
 
 var marker = L.marker([35.933867, 136.600140]).addTo(map)
-    .bindPopup('<b>荒島岳</b>').openPopup();
+    .bindPopup('<a href="https://wzetto.github.io/wz369.github.io/yamanobo/arashima/arashima.html" target="_blank" style="color:#000000;">荒島岳</a><br>標高：1523m<br>').openPopup();
 
 var marker = L.marker([31.180128, 130.527583]).addTo(map)
     .bindPopup('<b>開聞岳</b>').openPopup();
