@@ -409,7 +409,9 @@ Full-Width Styles
 
 #footer_wrap {
   background: #212121;
-  z-index: 7;
+  z-index: 3;
+  position: sticky;
+  bottom: 0;
 }
 
 
