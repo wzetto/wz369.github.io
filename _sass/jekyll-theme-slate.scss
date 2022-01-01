@@ -325,6 +325,7 @@ Full-Width Styles
 	background: rgba(33, 33, 33, .7);
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
+	z-index: 5;
 }
 
 #project_title {
@@ -396,6 +397,7 @@ Full-Width Styles
   background: #f2f2f2;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
+  z-index: 4;
 }
 
 #main_content {
@@ -404,6 +406,7 @@ Full-Width Styles
 
 #footer_wrap {
   background: #212121;
+  z-index: 7;
 }
 
 
