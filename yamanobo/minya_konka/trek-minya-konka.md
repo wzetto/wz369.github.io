@@ -115,7 +115,7 @@ js_url: https://wzetto.github.io/wz369.github.io/js/2020_minya_konka.js
 <hr style="width:80px;text-align:left;margin-left:0">
 ***镜头的背面，草坡上一轮圆月***
 <p align="left">
-  <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/DJI_0493.JPG">
+  <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/DJI_0496.JPG">
 </p>
 <hr style="width:80px;text-align:left;margin-left:0">
 露营用品晒干后，前往子梅村。本来看windy天气数据，子梅垭口所在的4550m高度天气状况不佳，但当地人认为凭经验可以穿云——果然，当地人还是比ECMWF靠谱。从子梅垭口可纵览山群西坡南北，以至九海子，雅拉。与生院伙计和众多驱车上来的游客有一句没一句的赏景聊天，于寒风中等到了日落。
