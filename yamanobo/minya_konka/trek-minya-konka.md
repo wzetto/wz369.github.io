@@ -75,11 +75,27 @@ js_url: https://wzetto.github.io/wz369.github.io/js/2020_minya_konka.js
   <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/DJI_0461.JPG">
 </p>
 <hr style="width:80px;text-align:left;margin-left:0">
+***勒多曼因冰湖及冰碛垄***
+<p align="left">
+  <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/DJI_0471.JPG">
+</p>
+<hr style="width:80px;text-align:left;margin-left:0">
 ***View from Riuchi haniya***
 <iframe src="https://www.youtube.com/embed/l0Ea1uVmQl8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>
 <hr style="width:80px;text-align:left;margin-left:0">
-翻过垭口，降至莫西沟，其东是贡嘎山群的核心区域，数座6k围绕贡嘎，徒步线路与沿途山峰高差升至3000m。因翻上垭口过度兴奋，下降时莫名采用登山杖支持的越野跑，对膝盖磨损先不提，降至谷底时突觉头痛鼻涕，但为维持四川本地人的“高海拔适性”这莫名pride
-
+翻过垭口，降至莫西沟，其东是贡嘎山群的核心区域，数座6k围绕贡嘎，徒步线路与沿途山峰高差升至3000m。因翻上垭口过度兴奋，下降时莫名采用登山杖支持的越野跑，对膝盖磨损先不提，降至谷底时突觉头痛鼻涕，但为维持四川本地人的“高海拔适性”这莫名pride装作无事强撑5km，后吃了包头痛粉，或许还有身体莫名恢复机制才缓过来——这后果通常不堪设想的高海拔感冒+高反，被一包头痛粉給治好，也许跟五色海奇遇一样，或因才疏学浅，总之难解释吧。这么想下去，贡嘎山区对我是否太宽容了一点？
+<hr style="width:80px;text-align:left;margin-left:0">
+***勒多曼因西坡***
+<p align="left">
+  <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/IMG_7525.jpeg">
+</p>
+<hr style="width:80px;text-align:left;margin-left:0">
+***多戈隆巴(5960m)与达多曼因(6380m,Daddomain)间冰碛垄和冲击河谷***
+<p align="left">
+  <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/DJI_0485.JPG">
+</p>
+<hr style="width:80px;text-align:left;margin-left:0">
+进入南部天气转阴，且莫西沟尾营地无甚风景，便草草扎营。山泉水甘甜，值得专程一试！
 
 
 
