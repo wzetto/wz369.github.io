@@ -45,6 +45,9 @@ js_url: https://wzetto.github.io/wz369.github.io/js/2020_minya_konka.js
   <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/0452.jpg">
 </p>
 <hr style="width:80px;text-align:left;margin-left:0">
+***Sunset time-lapse***
+<iframe src="https://www.youtube.com/embed/l0Ea1uVmQl8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>
+<hr style="width:80px;text-align:left;margin-left:0">
 ***余韵***
 <p align="left">
   <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/DJI_0455.JPG">
@@ -71,6 +74,9 @@ js_url: https://wzetto.github.io/wz369.github.io/js/2020_minya_konka.js
 <p align="left">
   <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/DJI_0461.JPG">
 </p>
+<hr style="width:80px;text-align:left;margin-left:0">
+***View from Riuchi haniya***
+<iframe src="https://www.youtube.com/embed/K26kEiAhhkE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>
 <hr style="width:80px;text-align:left;margin-left:0">
 
 
