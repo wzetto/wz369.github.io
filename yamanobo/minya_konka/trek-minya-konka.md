@@ -66,6 +66,12 @@ js_url: https://wzetto.github.io/wz369.github.io/js/2020_minya_konka.js
 </p>
 <hr style="width:80px;text-align:left;margin-left:0">
 天气极佳，状态因为一些小感冒，速度一般。勒多曼因东北侧的现代冰川清晰可见，随爬升，垭口以北几座6000m山峰构成的落差2000m的大画卷逐渐展开，延伸至更北端的田海子山山块。空气稀薄而疲乏劳累，思考频率逐渐降低的大脑开始机械的接收眼前美景，在对图像的纯粹攫取下，似乎产生了单纯的与自然合一的体验，至今仍深深嵌在记忆里。
+<hr style="width:80px;text-align:left;margin-left:0">
+***尚存二人***
+<p align="left">
+  <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/DJI_0461.JPG">
+</p>
+<hr style="width:80px;text-align:left;margin-left:0">
 
 
 
