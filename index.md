@@ -6,7 +6,7 @@ description: 记录 研究进展及想法 / 一些灵感及其他想法 / 山登
 ***2020 autumn - Reddomain***
 
 <p align="left">
-  <img width="400" height="400" src="images/yama/minya_konka/IMG_7513.jpeg">
+  <img src="images/yama/minya_konka/IMG_7513.jpeg">
 </p>
 
 #### > Research & etc.
