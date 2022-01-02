@@ -3,7 +3,7 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
     document.getElementsByClassName("inner_top background_img")[0].style.height = "40px";
     document.getElementById("project_title").style.top = "-20%";
   } else {
