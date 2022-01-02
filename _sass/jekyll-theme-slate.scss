@@ -456,6 +456,13 @@ Small Device Styles
     max-width: 100%;
   }
 
+  .inner_top {
+	  max-width: 100%;
+	  /*origin: no height definition*/
+	  margin: 0 auto;
+	  transition: 0.5s;
+}
+
   #project_title {
   font-size: 24px;
   }
