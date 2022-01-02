@@ -288,7 +288,7 @@ Full-Width Styles
 
 .inner_bottom {
   position: relative;/*change from absolute*/
-  max-width: 100%;
+  max-width: 100%;/*change from 80%*/
   height: 4000px;
   padding: 20px 10px;
   margin: 0 auto;
@@ -421,6 +421,7 @@ Full-Width Styles
 }
 
 #main_content_wrap::after {
+	content: "";
 	border-bottom: 1px solid #111;
 	width: 60%;
 	margin: 0 auto;
