@@ -423,6 +423,7 @@ Full-Width Styles
 #main_content_wrap::after {
 	content: "";
 	border-bottom: 1px solid #111;
+	position: absolute;
 	width: 60%;
 	margin: 0 auto;
 }
@@ -433,7 +434,7 @@ Full-Width Styles
 }
 
 #footer_wrap {
-  z-index: 4;
+  z-index: 7;
   /*position: relative;*/
 }
 
