@@ -287,12 +287,12 @@ Full-Width Styles
 }
 
 .inner_bottom {
-  position: absolute;
+  position: relative;
   max-width: 100%;
   height: 4000px;
   padding: 20px 10px;
   margin: 0 auto;
-  background: linear-gradient(#f2f2f2, 80%, #212121);
+  background: linear-gradient(#f2f2f2, 80%, #212121);/*change from footer_wrap:*/
 }
 
 /*
