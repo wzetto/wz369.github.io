@@ -458,6 +458,7 @@ Small Device Styles
 
   .inner_top {
 	  max-width: 100%;
+	  min-width: 320px;
 	  /*origin: no height definition*/
 	  margin: 0 auto;
 	  transition: 0.5s;
@@ -513,6 +514,7 @@ Small Device Styles
 
   .inner_top {
 	  max-width: 100%;
+	  min-width: 240px;
 	  /*origin: no height definition*/
 	  margin: 0 auto;
 	  transition: 0.5s;
