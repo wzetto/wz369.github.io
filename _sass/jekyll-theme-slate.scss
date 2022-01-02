@@ -415,7 +415,7 @@ Full-Width Styles
 #main_content_wrap {
   background: #f2f2f2;
   border-top: 1px solid #111;
-  border-bottom: 1px solid #111;
+  border-bottom: 1px solid #111;/*change into center solid*/
   z-index: 4;
 }
 
@@ -425,7 +425,7 @@ Full-Width Styles
 }
 
 #footer_wrap {
-  background: #212121;
+  background: linear-gradient(#f2f2f2, 80%, #212121);
   z-index: 4;
   position: relative;
 }
