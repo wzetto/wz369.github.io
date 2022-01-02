@@ -3,9 +3,9 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
     document.getElementsByClassName("inner_top background_img")[0].style.height = "70px";
-    document.getElementById("project_title").style.fontSize = "26px";
-  } else {/*may stay the origin*/
+  } else {
+    document.getElementsByClassName("inner_top background_img")[0].style.height = "300px";
   }
 }
