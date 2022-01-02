@@ -273,6 +273,8 @@ Full-Width Styles
 
 .inner {
   max-width: 80%;
+  height: 100%;
+  /*origin: no height definition*/
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -318,6 +320,7 @@ Full-Width Styles
 #header_pages {
 	position: sticky;
 	top: 0;
+	/*origin: max height-width*/
 	/*background-size: cover;*/
 	height: 300px;/*origin: 100%*/
 	width: auto;
