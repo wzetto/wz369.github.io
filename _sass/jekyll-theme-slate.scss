@@ -450,7 +450,20 @@ Small Device Styles
   #downloads {
     display: none;
   }
-
+	
+  #project_title {
+	  margin: 0;
+	  color: #fff;
+	  font-size: 24px;
+	  /*追加*/
+	  position: relative;
+	  top: 5%;
+	  left: 0%;
+	  font-weight: 700;
+	  transition: 0.5s;
+	  /*text-shadow: #111 0px 0px 10px;*/
+}
+	
   .inner {
     min-width: 320px;
     max-width: 100%;
@@ -463,10 +476,6 @@ Small Device Styles
 	  margin: 0 auto;
 	  transition: 0.5s;
 }
-
-  #project_title {
-  font-size: 24px;
-  }
 
   h1 {
     font-size: 24px;
@@ -521,8 +530,17 @@ Small Device Styles
 }
 	
   #project_title {
-  font-size: 21px;
-  }
+	  margin: 0;
+	  color: #fff;
+	  font-size: 21px;
+	  /*追加*/
+	  position: relative;
+	  top: 5%;
+	  left: 0%;
+	  font-weight: 700;
+	  transition: 0.5s;
+	  /*text-shadow: #111 0px 0px 10px;*/
+}
 
   h1 {
     font-size: 21px;
