@@ -11,6 +11,9 @@ layout: map_homepage
 
 [> 四川 \| 雅拉东线](https://wzetto.github.io/wz369.github.io/yamanobo/yala/yala.html)
 
+[> 四川 \| 贡嘎番外\*2](https://wzetto.github.io/wz369.github.io/yamanobo/lenggacuo/lenggacuo.html)
+
+[> 四川 \| 白海子](https://wzetto.github.io/wz369.github.io/yamanobo/baihaizi/baihaizi.html)
 
 ## 秋冬
 
