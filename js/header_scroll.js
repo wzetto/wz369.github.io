@@ -6,7 +6,6 @@ function scrollFunction() {
     document.getElementsByClassName("inner_top background_img")[0].style.height = "100px";
     document.getElementsByClassName("inner_top background_img")[0].style.backgroundSize = "cover";
     document.getElementById("project_title").style.fontSize = "26px";
-    document.getElementById("project_title").style.fontSize = "26px";
   } else {/*may stay the origin*/
   }
 }
