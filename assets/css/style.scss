@@ -14,6 +14,17 @@
 	transition: 0.5s;
 }
 
+.background_img2 {
+	background-image: url('{{ site.baseurl }}/images/header/aoko_header.png');
+	background-repeat: no-repeat;
+	background-position: right 0% bottom 0%;
+	/*max-width: 400px;*/
+	height: 360px;
+	width: auto;
+	background-size: contain;
+	transition: 0.5s;
+}
+
 /*
 .headerPage {
 	background-image: url('{{ site.baseurl }}/images/yama/ibuki/20211228/IMG_1568.jpeg');
