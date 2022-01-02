@@ -1,7 +1,7 @@
 ---
 title: 贡嘎徒步
 layout: map_default
-js_url: https://wzetto.github.io/wz369.github.io/js/2020_minya_konka.js
+js_url: https://wzetto.github.io/wz369.github.io/js/map_minya_konka.js
 ---
 
 2021.12.30
