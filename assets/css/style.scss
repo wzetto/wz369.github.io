@@ -3,11 +3,13 @@
 
 @import "{{ site.theme }}";
 
-header {
+.background_img {
 	background-image: url('{{ site.baseurl }}/images/header/2021_jp_extract.png');
 	background-repeat: no-repeat;
 	background-position: right 5% bottom 0%;
 	/*max-width: 400px;*/
+	height: 300px;
+	width: auto;
 	background-size: contain;
 }
 
