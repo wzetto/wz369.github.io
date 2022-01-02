@@ -18,29 +18,30 @@ js_url: https://wzetto.github.io/wz369.github.io/js/2020_minya_konka.js
 
 #### Day2
 格西草原-上日乌切。
-清晨收拾帐篷，田海子山山块随水汽上升逐渐显现，光雾环绕，似给徒步带来魔幻的开场。
+清晨收拾帐篷，田海子山山块随水汽上升逐渐显现，光雾环绕，似一番魔幻的开幕演出。
 <hr style="width:80px;text-align:left;margin-left:0">
-***左至右：白海子山（5924m），田海子山（6070m， Lamo-she）***
+***中央左至右：白海子山（5924m），田海子山（6070m， Lamo-she）***
 <p align="left">
   <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/DJI_0405.JPG">
 </p>
 <hr style="width:80px;text-align:left;margin-left:0">
-快到两岔河时，金字塔状的小贡嘎（5928m, Tshiburongri)枪尖般耸立眼前，美景好天气，自然要欣赏休息一番。花10块灌一壶酥油茶，精神劲瞬间起来——这也是适应
+快到两岔河时，金字塔状的小贡嘎（5928m, Tshiburongri)枪尖般耸立眼前，美景好天气，自然要欣赏休息一番。花10块灌一壶酥油茶，瞬间来劲——这也是适应
 高原的标志么w，以至于到日乌切过程中超飞速前进，因出汗过多成功在下-上日乌且的小垭口处染上小感冒——这便是后话了，当时只觉是高原正常身体反应。
 
 <hr style="width:80px;text-align:left;margin-left:0">
-***左起：田海子山山块(Lamo-she Massif)***
+***左起：田海子山山块(Lamo-she Massif)***<br>
 ***中央山块从左至右：鹊巴（5910m，Ueba），小贡噶（中央金字塔状山峰），嘉子峰（6540m，Jiazi Feng），日乌且（6376m，Grosvenor)***
 <p align="left">
   <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/0415.jpg">
 </p>
 <hr style="width:80px;text-align:left;margin-left:0">
+在完走后，曾梦到在小贡噶下方的平台上有另一条徒步路线/嘉子峰有山路可上，可见中毒之深。一见高山再难舍！
 ***三尊贡嘎的正面照，其中左边山块扇状山体为九海子山（5528m，俗称）***
 <p align="left">
   <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/0426.jpg">
 </p>
 <hr style="width:80px;text-align:left;margin-left:0">
-***落日金山，其中右起山体为勒多曼因（6112m，Reddomain),水汽从康定城方向升上来，不一会便笼罩了整个营地***
+***落日金山，其中右起山体为勒多曼因（6112m，Reddomain),水汽从康定城方向升上来，迅速笼罩整片营地，贡嘎山群特色***
 <p align="left">
   <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/0452.jpg">
 </p>
@@ -54,7 +55,7 @@ js_url: https://wzetto.github.io/wz369.github.io/js/2020_minya_konka.js
 </p>
 <hr style="width:80px;text-align:left;margin-left:0">
 
-本想裸露扎营了，禁不住营地藏族大妈劝，以提供酥油茶为条件pay进了大棚子住-依然扎的帐篷。好在总算回绝了第二天骑马翻垭口的推销。
+本想裸露扎营了，禁不住营地藏族大妈劝，以提供酥油茶为条件pay进大棚子住——依然扎的帐篷。好在总算回绝了第二天骑马翻垭口的推销。
 
 因抵达营地尚早，往嘉子峰方向古冰川退化末端前进，天色渐暗，两端的冰碛垄高耸而十足压迫，遂退回营地，录制夕阳。
 
@@ -83,7 +84,7 @@ js_url: https://wzetto.github.io/wz369.github.io/js/2020_minya_konka.js
 ***View from Riuchi haniya***
 <iframe src="https://www.youtube.com/embed/l0Ea1uVmQl8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>
 <hr style="width:80px;text-align:left;margin-left:0">
-翻过垭口，降至莫西沟，其东是贡嘎山群的核心区域，数座6k围绕贡嘎，徒步线路与沿途山峰高差升至3000m。因翻上垭口过度兴奋，下降时莫名采用登山杖支持的越野跑，对膝盖磨损先不提，降至谷底时突觉头痛鼻涕，但为维持四川本地人的“高海拔适性”这莫名pride装作无事强撑5km，后吃了包头痛粉，或许还有身体莫名恢复机制才缓过来——这后果通常不堪设想的高海拔感冒+高反，被一包头痛粉給治好，也许跟五色海奇遇一样，或因才疏学浅，总之难解释吧。这么想下去，贡嘎山区对我是否太宽容了一点？
+翻过垭口，降至莫西沟，其东是贡嘎山群的核心区域，数座6k围绕贡嘎，徒步线路与沿途山峰高差升至3000m。因翻上垭口过度兴奋，下降时莫名采用登山杖支持的越野跑，对膝盖磨损先不提，降至谷底时突觉头痛鼻涕，但为维持四川本地人的“高海拔适性”这莫名pride装作无事强撑5km，后吃了包头痛粉，或许还有身体在高原上莫名恢复机制才缓过来。
 <hr style="width:80px;text-align:left;margin-left:0">
 ***勒多曼因西坡***
 <p align="left">
@@ -118,25 +119,25 @@ js_url: https://wzetto.github.io/wz369.github.io/js/2020_minya_konka.js
   <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/DJI_0496.JPG">
 </p>
 <hr style="width:80px;text-align:left;margin-left:0">
-露营用品晒干后，前往子梅村。本来看windy天气数据，子梅垭口所在的4550m高度天气状况不佳，但当地人认为凭经验可以穿云——果然，当地人还是比ECMWF靠谱。从子梅垭口可纵览山群西坡南北，以至九海子，雅拉。与生院伙计和众多驱车上来的游客有一句没一句的赏景聊天，于寒风中等到了日落。
+露营用品晒干后，前往子梅村。本来看windy天气数据，子梅垭口所在的4550m高度天气状况不佳，但当地人认为凭经验可以穿云——果然，当地人还是比ECMWF靠谱。从子梅垭口可纵览山群西坡南北，以至九海子，雅拉，视野极为开阔。与生院伙计和众多驱车上来的游客有一句没一句赏景聊天，寒风中等待日落。
 <hr style="width:80px;text-align:left;margin-left:0">
-***东南处5312（存疑）山群，三处小型冰川与横梁般山体别有一番趣味***
+***东南处5312（存疑）山群，三处小型悬垂冰川与横梁般山体别有一番趣味***
 <p align="left">
   <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/IMG_7582.jpeg">
 </p>
 <hr style="width:80px;text-align:left;margin-left:0">
 
 #### Day6
-黎明垭口狂风，遂起身等待日出。子梅垭口所在支脉是去年新兴的“贡嘎三脊”线，本次本计划走，照顾队友情况遂还是依照的传统转山路线。
-从垭口顶延山脊走一公里，找到个不错的无名海子-贡嘎机位。
+黎明垭口狂风，遂起身等待日出。子梅垭口所在支脉是去年新兴的“贡嘎三脊”线，是本次的原计划。照顾到队友情况，实际还是依照的传统转山路线。
+从垭口顶延山脊向北走一公里，找到个不错的无名海子-贡嘎机位。
 <hr style="width:80px;text-align:left;margin-left:0">
 <p align="left">
   <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/IMG_7616.jpeg">
 </p>
 <hr style="width:80px;text-align:left;margin-left:0">
-收拾收拾，下山。穿林带，走巴望海，从草科乘巴士回蓉，结束贡嘎行。
+收拾收拾，下山。穿林带，走巴望海河滩，出口停车场处有正宗烤牦牛，对我们这样刚干完长线重装的野人来讲，大口撸串自不在话下。从草科坐公交回蓉，结束贡嘎行。
 
-不知何时再相见，山，友们！
+不知何时再相见！
 
 
 #### [< back](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
