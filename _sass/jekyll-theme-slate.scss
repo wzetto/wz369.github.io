@@ -420,7 +420,7 @@ Full-Width Styles
   z-index: 4;
 }
 
-#main_content_wrap::after {
+#main_content_wrap:hover::after {
 	content: "";
 	border-bottom: 1px solid #111;
 	position: absolute;
