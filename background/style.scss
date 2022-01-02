@@ -1,0 +1,23 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+header {
+	background-image: url('{{ site.baseurl }}/images/header/2021_jp_extract.png');
+	background-repeat: no-repeat;
+	background-position: right 10% bottom 0%;
+	/*max-width: 400px;
+	max-height: 400px;*/
+	background-size: contain;
+}
+
+/*
+.headerPage {
+	background-image: url('{{ site.baseurl }}/images/yama/ibuki/20211228/IMG_1568.jpeg');
+	background-size: 100% 100%;
+}
+*/
+
+
+
