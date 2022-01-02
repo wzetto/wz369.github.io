@@ -1,5 +1,6 @@
 ---
 title: 'Wzetto'
+layout: default
 ---
 <h1>记录 研究进展及想法 / 一些灵感及其他想法 / 山登り / etc.</h1>
 <hr style="width:50px;text-align:left;margin-left:0">
