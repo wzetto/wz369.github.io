@@ -326,6 +326,8 @@ Full-Width Styles
 #header_pages {
 	position: sticky;
 	top: 0;
+	max-width: 200%;
+	max-height: 200%;
 	/*origin: max height-width*/
 	/*background-size: cover;*/
 	height: 100%
