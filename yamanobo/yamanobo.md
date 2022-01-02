@@ -9,6 +9,8 @@ layout: map_homepage
 
 [> 四川 \| 五色海子](https://wzetto.github.io/wz369.github.io/yamanobo/wusehaizi/wusehaizi.html)
 
+[> 四川 \| 雅拉东线](https://wzetto.github.io/wz369.github.io/yamanobo/yala/yala.html)
+
 
 ## 秋冬
 
