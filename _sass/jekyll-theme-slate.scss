@@ -279,7 +279,7 @@ Full-Width Styles
 }
 
 .inner {
-  max-width: 80%;
+  max-width: 100%;
   /*origin: no height definition*/
   padding: 20px 10px;
   margin: 0 auto;
@@ -342,7 +342,7 @@ Full-Width Styles
   margin: 0;
   color: #fff;
   font-size: 32px;
-  /**/
+  /*追加*/
   position: relative;
   top: 30%;
   left: 20%;
