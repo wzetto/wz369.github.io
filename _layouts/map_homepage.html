@@ -14,7 +14,7 @@
   </head>
 
   <body>
-
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <!-- HEADER -->
     <div id="header_pages" class="outer">
         
@@ -67,26 +67,7 @@
         <!-- <p style="position: absolute; bottom: 0; width:100%; text-align: center">有り得ざる妖精の王よ——</p>
         -->
         <p id='bottom_text'>天国から地獄.</p>
-        <script>
-          $(window).scroll(function() {
-              var top_of_element = $("#bottom_text").offset().top;
-              var bottom_of_element = $("#bottom_text").offset().top + $("#bottom_text").outerHeight();
-              var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-              var top_of_screen = $(window).scrollTop();
-
-              if ((bottom_of_screen < top_of_element) || (top_of_screen > bottom_of_element)) {
-                  if (document.getElementById("bottom_text").innerHTML == '天国から地獄.') {
-                          document.getElementById("bottom_text").innerHTML = '地獄から天国.';
-                  //$("#bottom_text").text('abc');
-              }} else if ((bottom_of_screen < top_of_element) || (top_of_screen > bottom_of_element)) {
-                  if (document.getElementById("bottom_text").innerHTML == '地獄から天国.') {
-                  //document.getElementsByClassName("div.bottom_text")[0].innerHTML = '天国から地獄';
-                  document.getElementById("bottom_text").innerHTML = '天国から地獄.';
-              }} else {
-                  document.getElementById("bottom_text").innerHTML = 'I dont understand';
-              }
-          });
-        </script>
+        <script type='text/javascript' src='https://wzetto.github.io/wz369.github.io/js/map_homepage.js'></script>
       </footer>
     </div>
   </body>
