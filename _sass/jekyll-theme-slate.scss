@@ -295,6 +295,13 @@ Full-Width Styles
   background: linear-gradient(#f2f2f2, 80%, #212121);/*change from footer_wrap:*/
 }
 
+.bottom_text {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
 /*
 #forkme_banner {
   display: block;
