@@ -13,6 +13,6 @@ $(window).scroll(function() {
         //document.getElementsByClassName("div.bottom_text")[0].innerHTML = '天国から地獄';
         $("#bottom_text").text('cba');
     } else {
-        $("#bottom_text").text('I dont understand');
+        document.getElementById("bottom_text").innerHTML = 'I dont understand';
     }
 });
