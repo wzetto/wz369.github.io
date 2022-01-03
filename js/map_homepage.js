@@ -13,7 +13,7 @@ var marker_icon = L.icon({
     iconUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/tri_flag.png',
     iconRetinaUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/tri_flag.png',
     iconSize: [50, 50],
-    iconAnchor: [25, 50],
+    iconAnchor: [10, 50],
     popupAnchor: [0, -50]
 });
 
