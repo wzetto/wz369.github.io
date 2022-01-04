@@ -191,7 +191,7 @@ chartView(chartEle, subtitle);
 function chartView(chartEle, subtitle) {
 chart = new Highcharts.Chart({
 	chart: {
-		renderTo: 'map',
+		renderTo: 'chart',
 		zoomType: 'xy'
 	},
 	title: {
