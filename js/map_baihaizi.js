@@ -68,10 +68,14 @@ var gpxStr = request.responseText;
 var parser = new DOMParser();
 var gpx = parser.parseFromString(gpxStr, 'text/xml');
 var elements = gpx.getElementsByTagName('trkpt');
-var elementsAlt = gpx.getElementsByTagName('ele')[0].textContent;
+var elementsAlt = gpx.getElementsByTagName('ele');
+var arrEle = [];
+for (i=0; elementsAlt.length>i; i++){
+	arrEle.push(elementsAlt[i].textContent);
+}
 var startPoint = elements.item(0);
 var endPoint = elements.item(elements.length-1);
-var maxIndex = indexOfMax(elementsAlt);
+var maxIndex = indexOfMax(arrEle);
 var maxPoint = elements.item(maxIndex);
 // ---------------------------------------------------
 var start = gpxParse(startPoint);
