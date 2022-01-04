@@ -266,7 +266,7 @@ chart = new Highcharts.Chart({
 			threshold: null
 		},
 		spline: {
-			lineWidth: 2,
+			lineWidth: 4,
 			marker: {
 				enabled: false,
 			}
