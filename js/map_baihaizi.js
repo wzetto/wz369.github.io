@@ -243,8 +243,8 @@ chart = new Highcharts.Chart({
 			fillColor: {
 				linearGradient: {x1:0, y1:0, x2:0, y2:1},
 				stops: [
-					[0, '#09074a'],
-					[1, 'rgba(25, 173, 247, 0)']
+					[0, '#c74c5a'],
+					[1, 'rgba(196, 196, 196, 0)']
 				]
 			},
 			lineWidth: 1,
@@ -253,7 +253,7 @@ chart = new Highcharts.Chart({
 				states: {
 					hover: {
 						enabled: true,
-						radius: 5
+						radius: 4
 					}
 				}
 			},
@@ -266,7 +266,7 @@ chart = new Highcharts.Chart({
 			threshold: null
 		},
 		spline: {
-			lineWidth: 1,
+			lineWidth: 2,
 			marker: {
 				enabled: false,
 			}
@@ -274,7 +274,7 @@ chart = new Highcharts.Chart({
 	},
 	series: [{
 		name: 'Alt',
-		color: '#09074a',
+		color: '#9e0517',
 		type: 'area',
 		data: chartEle
 	}]
