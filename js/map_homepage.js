@@ -13,8 +13,7 @@ var marker_icon = L.icon({
     iconUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/map_icon2.png',
     iconRetinaUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/map_icon2.png',
     iconSize: [14, 28],
-    iconAnchor: [7, 28],
-    popupAnchor: [7, -28]
+    iconAnchor: [7, 28]
 });
 
 var marker = L.marker([35.062114, 135.831544], {icon: marker_icon}).addTo(map)
