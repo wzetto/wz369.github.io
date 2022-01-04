@@ -44,13 +44,15 @@ var iconStart = L.icon({
 	iconUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/map_icon2.png',
 	iconRetinaUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/map_icon2.png',
 	iconSize: [14, 28],
-    	iconAnchor: [7, 28]
+    	iconAnchor: [7, 28],
+	poupAnchor: [7, -10],
 });
 var iconEnd = L.icon({
 	iconUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/map_icon2.png',
 	iconRetinaUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/map_icon2.png',
 	iconSize: [14, 28],
-    	iconAnchor: [7, 28]
+    	iconAnchor: [7, 28],
+	poupAnchor: [7, -10],
 });
 var request = new XMLHttpRequest();
 request.open('get', gpxFile, false);
