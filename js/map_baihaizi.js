@@ -23,6 +23,13 @@ L.control.layers(map_baselayer, null, {
 var gpx = 'https://wzetto.github.io/wz369.github.io/yamanobo/baihaizi/baihaizi.gpx';
 new L.GPX(gpx, {
   async: true,
+  marker_options: {
+    startIconUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/map_icon2.png',
+		endIconUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/map_icon3.png',
+		shadowUrl: false,
+		iconSize: [14, 28],
+		iconAnchor: [7, 28]
+	},
   polyline_options: {
     color: '#DC143C',
     smoothFactor: 2.0,
