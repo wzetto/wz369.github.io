@@ -10,11 +10,11 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(map);
 
 var marker_icon = L.icon({
-    iconUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/tri_flag.png',
-    iconRetinaUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/tri_flag.png',
-    iconSize: [23, 32],
-    iconAnchor: [5, 32],
-    popupAnchor: [0, -32]
+    iconUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/map_icon2.png',
+    iconRetinaUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/map_icon2.png',
+    iconSize: [14, 28],
+    iconAnchor: [7, 28],
+    popupAnchor: [7, -28]
 });
 
 var marker = L.marker([35.062114, 135.831544], {icon: marker_icon}).addTo(map)
