@@ -12,7 +12,7 @@ $(window).on("scroll", function (event) {
   } else if (delta < -10) {
     document.getElementsByClassName("inner_top background_img2")[0].style.height = "360px";
     document.getElementById("project_title").style.top = "5%";
-  } else if (window.pageYOffset == 0) {
+  } else if (scrollTop <= 1) {
     document.getElementsByClassName("inner_top background_img2")[0].style.height = "360px";
     document.getElementById("project_title").style.top = "5%";
   }
