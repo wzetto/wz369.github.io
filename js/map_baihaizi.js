@@ -54,6 +54,13 @@ var iconEnd = L.icon({
     	iconAnchor: [7, 28],
 	poupAnchor: [7, -10],
 });
+var iconMax = L.icon({
+	iconUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/7556_thin.png',
+	iconRetinaUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/7556_thin.png',
+	iconSize: [24, 25],
+    	iconAnchor: [12, 25],
+	poupAnchor: [7, -10],
+});
 var request = new XMLHttpRequest();
 request.open('get', gpxFile, false);
 request.send(null);
@@ -61,8 +68,11 @@ var gpxStr = request.responseText;
 var parser = new DOMParser();
 var gpx = parser.parseFromString(gpxStr, 'text/xml');
 var elements = gpx.getElementsByTagName('trkpt');
+var elementsAlt = gpx.gerElementsByTagName('ele').innerText;
 var startPoint = elements.item(0);
 var endPoint = elements.item(elements.length-1);
+var maxIndex = indexOfMax(elementsAlt);
+var maxPoint = elements.item(maxIndex);
 // ---------------------------------------------------
 var start = gpxParse(startPoint);
 posStr1 = '<span class="panel"><strong>StartPoint</strong><br>'
@@ -80,6 +90,14 @@ posStr2 = '<span class="panel"><strong>EndPoint</strong><br>'
 	+ 'Alt：' + end['ele'] + ' m</span>';
 L.marker([end['lat'] , end['lon'] ], {icon: iconEnd}).addTo(map).bindPopup(posStr2);
 // ---------------------------------------------------
+var max = gpxParse(maxPoint);
+posStr3 = '<span class="panel"><strong>HighestPoint</strong><br>'
+	+ max['dateStr'] + ' ' + max['timeStr'] + '<br>'
+	+ 'La:' + max['lat'] + '<br>'
+	+ 'Lo：' + max['lon'] + '<br>'
+	+ 'Alt：' + max['ele'] + ' m</span>';
+L.marker([max['lat'] , max['lon'] ], {icon: iconMax}).addTo(map).bindPopup(posStr3);
+// ---------------------------------------------------
 function gpxParse(trkpt) {
 	var timeTxt = trkpt.getElementsByTagName('time')[0].textContent;
 	var time = new Date(timeTxt);
@@ -93,3 +111,17 @@ function gpxParse(trkpt) {
 	};
 }
 
+function indexOfMax(arr) {
+    if (arr.length === 0) {
+        return -1;
+    }
+    var max = arr[0];
+    var maxIndex = 0;
+    for (var i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            maxIndex = i;
+            max = arr[i];
+        }
+    }
+    return maxIndex;
+}
