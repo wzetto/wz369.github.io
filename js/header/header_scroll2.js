@@ -9,7 +9,7 @@ $(window).on("scroll", function (event) {
   if (delta > 5) {
     document.getElementsByClassName("inner_top background_img2")[0].style.height = "40px";
     document.getElementById("project_title").style.top = "-20%";
-  } else if (delta < -20) {
+  } else if (delta < -10) {
     document.getElementsByClassName("inner_top background_img2")[0].style.height = "360px";
     document.getElementById("project_title").style.top = "5%";
   } else if (window.pageYOffset == 0) {
