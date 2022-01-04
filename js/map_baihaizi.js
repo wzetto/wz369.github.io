@@ -20,16 +20,16 @@ L.control.layers(map_baselayer, null, {
   collapsed: true
 }).addTo(map)
 
-var gpx = 'https://wzetto.github.io/wz369.github.io/yamanobo/baihaizi/baihaizi.gpx';
-new L.GPX(gpx, {
+var gpxFile = 'https://wzetto.github.io/wz369.github.io/yamanobo/baihaizi/baihaizi.gpx';
+new L.GPX(gpxFile, {
   async: true,
   marker_options: {
-    startIconUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/map_icon2.png',
-		endIconUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/map_icon3.png',
-		shadowUrl: false,
-		iconSize: [14, 28],
-		iconAnchor: [7, 28]
-	},
+    startIconUrl: false,
+    endIconUrl: false,
+    shadowUrl: false,
+    //iconSize: [14, 28],
+    //iconAnchor: [7, 28]
+   },
   polyline_options: {
     color: '#DC143C',
     smoothFactor: 2.0,
@@ -38,3 +38,56 @@ new L.GPX(gpx, {
 }).on('loaded', function(e) {
   map.fitBounds(e.target.getBounds());
 }).addTo(map);
+
+// ---------------------------------------------------
+var iconStart = L.icon({
+	iconUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/map_icon2.png',
+	iconRetinaUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/map_icon2.png',
+	iconSize: [14, 28],
+    	iconAnchor: [7, 28]
+});
+var iconEnd = L.icon({
+	iconUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/map_icon2.png',
+	iconRetinaUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/map_icon2.png',
+	iconSize: [14, 28],
+    	iconAnchor: [7, 28]
+});
+var request = new XMLHttpRequest();
+request.open('get', gpxFile, false);
+request.send(null);
+var gpxStr = request.responseText;
+var parser = new DOMParser();
+var gpx = parser.parseFromString(gpxStr, 'text/xml');
+var elements = gpx.getElementsByTagName('trkpt');
+var startPoint = elements.item(0);
+var endPoint = elements.item(elements.length-1);
+// ---------------------------------------------------
+var start = gpxParse(startPoint);
+posStr1 = '<span class="panel"><strong>StartPoint</strong><br>'
+	+ start['dateStr'] + ' ' + start['timeStr'] + '<br>'
+	+ 'La:' + start['lat'] + '<br>'
+	+ 'Lo:' + start['lon'] + '<br>'
+	+ 'Alt:' + start['ele'] + ' m</span>';
+L.marker([start['lat'] , start['lon'] ], {icon: iconStart}).addTo(map).bindPopup(posStr1);
+// ---------------------------------------------------
+var end = gpxParse(endPoint);
+posStr2 = '<span class="panel"><strong>EndPoint</strong><br>'
+	+ end['dateStr'] + ' ' + end['timeStr'] + '<br>'
+	+ 'La:' + end['lat'] + '<br>'
+	+ 'Lo：' + end['lon'] + '<br>'
+	+ 'Alt：' + end['ele'] + ' m</span>';
+L.marker([end['lat'] , end['lon'] ], {icon: iconEnd}).addTo(map).bindPopup(posStr2);
+// ---------------------------------------------------
+function gpxParse(trkpt) {
+	var timeTxt = trkpt.getElementsByTagName('time')[0].textContent;
+	var time = new Date(timeTxt);
+	return {
+		lat: parseFloat(trkpt.getAttribute('lat')),
+		lon: parseFloat(trkpt.getAttribute('lon')),
+		time: time,
+		dateStr: time.toLocaleDateString(),
+		timeStr: time.toLocaleTimeString(),
+		ele: trkpt.getElementsByTagName('ele')[0].textContent
+	};
+}
+
