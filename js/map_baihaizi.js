@@ -170,6 +170,8 @@ var height_max = -10000;
 var height_min = 10000;
 var diffTime = time2str(end['time'].getTime() - start['time'].getTime());
 var chartEle = [];
+var distTotalKm = Math.round(distTotal/1000 * 1000) / 1000;
+
 for (var i=0; i<(elements.length); i++) {
 	let pos = gpxParse(elements.item(i));
 	if (i > 0) {
