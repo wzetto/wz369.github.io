@@ -91,7 +91,7 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_minya_konka.js
   <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/IMG_7525.jpeg">
 </p>
 <hr style="width:80px;text-align:left;margin-left:0">
-***多戈隆巴(5960m)与达多曼因(6380m,Daddomain)间冰碛垄和冲击河谷***
+***多戈隆巴(5960m)与达多曼因(6380m,Daddomain)间冰碛垄和退行河谷***
 <p align="left">
   <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/DJI_0485.JPG">
 </p>
