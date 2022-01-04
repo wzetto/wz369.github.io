@@ -215,7 +215,7 @@ chart = new Highcharts.Chart({
 		},
 		labels: {
 			formatter: function() {
-				return math.round((this.value)/1000) +'km';
+				return Math.round((this.value)/1000) +'km';
 			},
 			style: {
 				color: '#212121'
