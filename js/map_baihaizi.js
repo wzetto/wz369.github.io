@@ -25,7 +25,8 @@ new L.GPX(gpx, {
   async: true,
   polyline_options: {
     color: '#DC143C',
-    smoothFactor: 2.0
+    smoothFactor: 2.0,
+    opacity: 0.8
   }
 }).on('loaded', function(e) {
   map.fitBounds(e.target.getBounds());
