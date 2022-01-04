@@ -244,7 +244,7 @@ chart = new Highcharts.Chart({
 				linearGradient: {x1:0, y1:0, x2:0, y2:1},
 				stops: [
 					[0, '#c74c5a'],
-					[1, 'rgba(196, 196, 196, 0)']
+					[0.5, 'rgba(255, 255, 255, 0)']
 				]
 			},
 			lineWidth: 1,
