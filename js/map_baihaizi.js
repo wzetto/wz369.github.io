@@ -185,15 +185,17 @@ for (var i=0; i<(elements.length); i++) {
 }
 var subtitle = start['timeStr'] + '～' + end['timeStr'] + '　所要時間:' + diffTime
 	+ '　距離:' + distTotalKm + 'km　最高地点:' + Math.round(height_max) + 'm　最低地点:' + Math.round(height_min) + 'm';
+
 chartView(chartEle, subtitle);
+
 function chartView(chartEle, subtitle) {
 chart = new Highcharts.Chart({
 	chart: {
-		renderTo: 'chart',
+		renderTo: 'map',
 		zoomType: 'xy'
 	},
 	title: {
-		text: '標高 グラフ',
+		text: 'Alt - T',
 		style: {
 			fontWeight: 'bold'
 		}
@@ -206,7 +208,7 @@ chart = new Highcharts.Chart({
 	},
 	yAxis: [{ // Primary yAxis
 		title: {
-			text: '標高',
+			text: 'Altitude',
 			style: {
 				color: '#89A54E'
 			}
@@ -224,7 +226,7 @@ chart = new Highcharts.Chart({
 		formatter: function() {
 			var dt = Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x);
 			var unit = {
-				'標高': 'm'
+				'Alt': 'm'
 			}[this.series.name];
 			return '<b>' + dt +'</b><br><b>'+ this.y + '</b> ' + unit;
 		}
@@ -271,7 +273,7 @@ chart = new Highcharts.Chart({
 		}
 	},
 	series: [{
-		name: '標高',
+		name: 'Alt',
 		color: '#89A54E',
 		type: 'area',
 		data: chartEle
