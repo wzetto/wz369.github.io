@@ -412,7 +412,12 @@ Full-Width Styles
 }
 
 #map {
-  height: 400px;
+  height: 350px;
+  z-index: 4;
+}
+
+#chart {
+  height: 200px;
   z-index: 4;
 }
 
