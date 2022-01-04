@@ -1,5 +1,6 @@
 window.onscroll = function() {
-  scrollFunction()
+  scrollFunction();
+  scrollFunctionDown();
 };
 
 function scrollFunction() {
