@@ -100,6 +100,7 @@ posStr3 = '<span class="panel"><strong>HighestPoint</strong><br>'
 	+ 'La:' + max['lat'] + '<br>'
 	+ 'Lo：' + max['lon'] + '<br>'
 	+ 'Alt：' + max['ele'] + ' m</span>';
+var 
 L.marker([max['lat'] , max['lon'] ], {icon: iconMax}).addTo(map).bindPopup(posStr3);
 // ---------------------------------------------------
 function gpxParse(trkpt) {
@@ -131,6 +132,12 @@ function indexOfMax(arr) {
 }
 
 //================================================
+
+var distTotal = 0;
+var before = {};
+var height_max = -10000;
+var height_min = 10000;
+
 var chartEle = [];
 for (var i=0; i<(elements.length); i++) {
 	let pos = gpxParse(elements.item(i));
