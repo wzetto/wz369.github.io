@@ -14,7 +14,7 @@ $(window).on("scroll", function (event) {
   } else if (delta < -50) {
     document.getElementsByClassName("inner_top background_img2")[0].style.height = "360px";
     document.getElementById("project_title").style.top = "5%";
-  } else if (beforeScrollTop === 0) {
+  } else if (scrollTop === 0) {
     document.getElementsByClassName("inner_top background_img2")[0].style.height = "360px";
     document.getElementById("project_title").style.top = "5%";
   }
