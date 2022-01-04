@@ -28,5 +28,5 @@ new L.GPX(gpx, {
     smoothFactor: 2.0
   }
 }).on('loaded', function(e) {
-  map.fitBounds(e.target.getBounds());
+  map.fitBounds(e.target.get_distance());
 }).addTo(map);
