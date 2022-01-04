@@ -170,7 +170,6 @@ var height_max = -10000;
 var height_min = 10000;
 var diffTime = time2str(end['time'].getTime() - start['time'].getTime());
 var chartEle = [];
-var distTotalKm = Math.round(distTotal/1000 * 1000) / 1000;
 
 for (var i=0; i<(elements.length); i++) {
 	let pos = gpxParse(elements.item(i));
@@ -183,6 +182,7 @@ for (var i=0; i<(elements.length); i++) {
 	if (height_min > height) height_min = height;
 	chartEle[i] = [pos['time'].getTime() + 60*60*9*1000, parseInt(height)];	// 日本時間
 }
+var distTotalKm = Math.round(distTotal/1000 * 1000) / 1000;
 var subtitle = start['timeStr'] + '～' + end['timeStr'] + '　t:' + diffTime
 	+ '　d:' + distTotalKm + 'km　Top:' + Math.round(height_max) + 'm　Bot:' + Math.round(height_min) + 'm';
 
