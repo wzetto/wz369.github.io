@@ -100,7 +100,6 @@ posStr3 = '<span class="panel"><strong>HighestPoint</strong><br>'
 	+ 'La:' + max['lat'] + '<br>'
 	+ 'Lo：' + max['lon'] + '<br>'
 	+ 'Alt：' + max['ele'] + ' m</span>';
-var 
 L.marker([max['lat'] , max['lon'] ], {icon: iconMax}).addTo(map).bindPopup(posStr3);
 // ---------------------------------------------------
 function gpxParse(trkpt) {
@@ -132,23 +131,19 @@ function indexOfMax(arr) {
 }
 
 function distance(lat1, lon1, lat2, lon2, mode=true) {
-	// 緯度経度をラジアンに変換
+	// la-lo trans
 	radLat1 = lat1 * (Math.PI / 180);
 	radLon1 = lon1 * (Math.PI / 180);
 	radLat2 = lat2 * (Math.PI / 180);
 	radLon2 = lon2 * (Math.PI / 180);
-	// 緯度差
+	
 	radLatDiff = radLat1 - radLat2;
-	// 経度差算
 	radLonDiff = radLon1 - radLon2;
-	// 平均緯度
 	radLatAve = (radLat1 + radLat2) / 2.0;
 	// 測地系による値の違い
 	a = mode ? 6378137.0 : 6377397.155; // 赤道半径
 	b = mode ? 6356752.314140356 : 6356078.963; // 極半径
-	//e2 = (a*a - b*b) / (a*a);
 	e2 = mode ? 0.00669438002301188 : 0.00667436061028297; // 第一離心率^2
-	//a1e2 = a * (1 - e2);
 	a1e2 = mode ? 6335439.32708317 : 6334832.10663254; // 赤道上の子午線曲率半径
 	sinLat = Math.sin(radLatAve);
 	W2 = 1.0 - e2 * (sinLat*sinLat);
