@@ -155,13 +155,20 @@ function distance(lat1, lon1, lat2, lon2, mode=true) {
 	return dist;
 }
 
+function time2str(time) {
+	var timeHour = time / (1000 * 60 * 60);
+	var timeMinute = (timeHour - Math.floor(timeHour)) * 60;
+	var timeSecond = (timeMinute - Math.floor(timeMinute)) * 60;
+	return ('00' + Math.floor(timeHour)).slice(-2) + ':' + ('00' + Math.floor(timeMinute)).slice(-2) + ':' + ('00' + Math.round(timeSecond)).slice(-2);
+}
+
 //================================================
 
 var distTotal = 0;
 var before = {};
 var height_max = -10000;
 var height_min = 10000;
-
+var diffTime = time2str(end['time'].getTime() - start['time'].getTime());
 var chartEle = [];
 for (var i=0; i<(elements.length); i++) {
 	let pos = gpxParse(elements.item(i));
