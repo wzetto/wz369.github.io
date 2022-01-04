@@ -140,15 +140,15 @@ function distance(lat1, lon1, lat2, lon2, mode=true) {
 	radLatDiff = radLat1 - radLat2;
 	radLonDiff = radLon1 - radLon2;
 	radLatAve = (radLat1 + radLat2) / 2.0;
-	// 測地系による値の違い
-	a = mode ? 6378137.0 : 6377397.155; // 赤道半径
-	b = mode ? 6356752.314140356 : 6356078.963; // 極半径
-	e2 = mode ? 0.00669438002301188 : 0.00667436061028297; // 第一離心率^2
-	a1e2 = mode ? 6335439.32708317 : 6334832.10663254; // 赤道上の子午線曲率半径
+	
+	a = mode ? 6378137.0 : 6377397.155; // Equatorial radius
+	b = mode ? 6356752.314140356 : 6356078.963; // Polar radius
+	e2 = mode ? 0.00669438002301188 : 0.00667436061028297; // First eccentricity^2
+	a1e2 = mode ? 6335439.32708317 : 6334832.10663254; // Radius of curvature of the meridian on the equator
 	sinLat = Math.sin(radLatAve);
 	W2 = 1.0 - e2 * (sinLat*sinLat);
-	M = a1e2 / (Math.sqrt(W2)*W2); // 子午線曲率半径M
-	N = a / Math.sqrt(W2); // 卯酉線曲率半径
+	M = a1e2 / (Math.sqrt(W2)*W2); // Meridian radius of curvature M
+	N = a / Math.sqrt(W2); // Prime vertical radius of curvature
 	t1 = M * radLatDiff;
 	t2 = N * Math.cos(radLatAve) * radLonDiff;
 	dist = Math.sqrt((t1*t1) + (t2*t2));
@@ -183,8 +183,8 @@ for (var i=0; i<(elements.length); i++) {
 	if (height_min > height) height_min = height;
 	chartEle[i] = [pos['time'].getTime() + 60*60*9*1000, parseInt(height)];	// 日本時間
 }
-var subtitle = start['timeStr'] + '～' + end['timeStr'] + '　所要時間:' + diffTime
-	+ '　距離:' + distTotalKm + 'km　最高地点:' + Math.round(height_max) + 'm　最低地点:' + Math.round(height_min) + 'm';
+var subtitle = start['timeStr'] + '～' + end['timeStr'] + '　t:' + diffTime
+	+ '　d:' + distTotalKm + 'km　Top:' + Math.round(height_max) + 'm　Bot:' + Math.round(height_min) + 'm';
 
 chartView(chartEle, subtitle);
 
@@ -195,7 +195,7 @@ chart = new Highcharts.Chart({
 		zoomType: 'xy'
 	},
 	title: {
-		text: 'Alt - T',
+		text: 'Altitude - T Plot',
 		style: {
 			fontWeight: 'bold'
 		}
@@ -210,15 +210,15 @@ chart = new Highcharts.Chart({
 		title: {
 			text: 'Altitude',
 			style: {
-				color: '#89A54E'
+				color: '#212121'
 			}
 		},
 		labels: {
 			formatter: function() {
-				return this.value +' m';
+				Math.round((return this.value)/1000) +'km';
 			},
 			style: {
-				color: '#89A54E'
+				color: '#212121'
 			}
 		}
 	}],
@@ -243,8 +243,8 @@ chart = new Highcharts.Chart({
 			fillColor: {
 				linearGradient: {x1:0, y1:0, x2:0, y2:1},
 				stops: [
-					[0, '#89A54E'],
-					[1, 'rgba(0,30,0,0)']
+					[0, '#09074a'],
+					[1, 'rgba(25, 173, 247, 0)']
 				]
 			},
 			lineWidth: 1,
@@ -274,7 +274,7 @@ chart = new Highcharts.Chart({
 	},
 	series: [{
 		name: 'Alt',
-		color: '#89A54E',
+		color: '#09074a',
 		type: 'area',
 		data: chartEle
 	}]
