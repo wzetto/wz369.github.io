@@ -299,6 +299,11 @@ Full-Width Styles
   background: linear-gradient(#f2f2f2, 80%, #212121);/*change from footer_wrap:*/
 }
 
+.home_bar {
+	color: #dbdbdb;
+	font-size: 32px;
+}
+
 #bottom_text {
 	color: #f2f2f2;
 	position: absolute;
@@ -413,12 +418,6 @@ Full-Width Styles
 
 .tar_download_link:hover {
   background: url(../images/sprite_download.png) no-repeat top right;
-}
-
-.home_bar {
-	color: #dbdbdb;
-	font-size: 32px;
-	margin-left: 20%;
 }
 
 #map {
