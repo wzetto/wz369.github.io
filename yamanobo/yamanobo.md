@@ -15,6 +15,8 @@ layout: map_homepage
 
 [> 四川 \| 白海子](https://wzetto.github.io/wz369.github.io/yamanobo/baihaizi/baihaizi.html)
 
+[> 四川 \| 三峰](https://wzetto.github.io/wz369.github.io/yamanobo/siguniang/sanguniang.html)
+
 ## 秋冬
 
 [> 四川 \| 贡嘎环线](https://wzetto.github.io/wz369.github.io/yamanobo/minya_konka/trek-minya-konka.html)
