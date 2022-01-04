@@ -48,8 +48,8 @@ var iconStart = L.icon({
 	poupAnchor: [7, -10],
 });
 var iconEnd = L.icon({
-	iconUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/map_icon2.png',
-	iconRetinaUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/map_icon2.png',
+	iconUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/map_icon3.png',
+	iconRetinaUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/map_icon3.png',
 	iconSize: [14, 28],
     	iconAnchor: [7, 28],
 	poupAnchor: [7, -10],
