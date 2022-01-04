@@ -235,6 +235,14 @@ hr {
   background: url('../images/bg_hr.png') repeat-x center;
 }
 
+hr_white {
+  /*height: 1px;*/
+  margin-bottom: 5px;
+  border: none;
+  border-top: 1px #ffffff solid;
+  background: url('../images/bg_hr.png') repeat-x center;
+}
+
 th {
   font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 10px;
@@ -453,8 +461,6 @@ Full-Width Styles
   z-index: 7;
   /*position: relative;*/
 }
-
-
 
 /*******************************************************************************
 Small Device Styles
