@@ -11,4 +11,4 @@ Ab initio:<br>
 最后到达Energy barrier for twin-boundary formation.这个择日研究吧，先把SFE数值整完。
 
 
-#### [< back](https://wzetto.github.io/wz369.github.io/Research_etc/MSAD/research_on_MSAD.html)
+#### [< back](https://wzetto.github.io/wz369.github.io/Research_etc/SFE/SFE_home.html)
