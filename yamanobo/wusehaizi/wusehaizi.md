@@ -23,6 +23,7 @@ title: '五色海子'
 一包山之厨麻辣鸡肉饭，回到半血，成功下山。回望进山那座桥，仿佛从鬼门逃脱。
 <img src="https://drive.google.com/thumbnail?id=1-cKMaT6-5pECTNQRsfnvxBvifinR975H&sz=w800">
 <hr style="width:50px;text-align:left;margin-left:0">
+***隐约看到笔架2峰的小型冰川***
 <img src="https://drive.google.com/thumbnail?id=1-XnoP81usQVBMGWWNMMT9na0IJW6yAkc&sz=w800">
 <hr style="width:50px;text-align:left;margin-left:0">
 <img src="https://drive.google.com/thumbnail?id=1-UtwjDz7IS5SpkvS4qjywEYyA1Q0xhkd&sz=w500">
