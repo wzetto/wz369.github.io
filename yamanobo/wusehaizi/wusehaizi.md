@@ -21,12 +21,12 @@ title: '五色海子'
 撑起帐篷，拿出睡袋——才发现睡袋温标20度而实际在零下3度左右[^7]，寒冷及紧张导致一宿未眠。（题外话：半夜睡不着撩开帐篷，发现一光点缓缓滑过繁星，事后像春大确认为国际空间站；同样的经历在4个月后的青海北部重复。）6点起床准备返回，打算补充能量时，发现因气罐未携带于身，食物并不够[^8]。紧急时刻，拿出无人机紧张拍片，迅速收拾准备趁透支前返回。回程准备抄近路，故下到河谷，钻杜鹃林[^9]。沿冰面行走时[^10]冰裂开，右脚浸湿，且发现前方是一个瀑布，遂折返。犯下户外十大忌后，终于回到正路，并于山脊起始前来接应的春大汇合，恩人，恩人！
 
 一包山之厨麻辣鸡肉饭，回到半血，成功下山。回望进山那座桥，仿佛从鬼门逃脱。
-<img src="https://drive.google.com/thumbnail?id=1-cKMaT6-5pECTNQRsfnvxBvifinR975H&sz=w800">
+<img src="https://drive.google.com/thumbnail?id=1-cKMaT6-5pECTNQRsfnvxBvifinR975H&sz=w800"><br>
 <hr style="width:50px;text-align:left;margin-left:0">
-***隐约看到笔架2峰的小型冰川***
-<img src="https://drive.google.com/thumbnail?id=1-XnoP81usQVBMGWWNMMT9na0IJW6yAkc&sz=w800">
+***隐约看到笔架2峰的小型冰川***<br>
+<img src="https://drive.google.com/thumbnail?id=1-XnoP81usQVBMGWWNMMT9na0IJW6yAkc&sz=w800"><br>
 <hr style="width:50px;text-align:left;margin-left:0">
-<img src="https://drive.google.com/thumbnail?id=1-UtwjDz7IS5SpkvS4qjywEYyA1Q0xhkd&sz=w500">
+<img src="https://drive.google.com/thumbnail?id=1-UtwjDz7IS5SpkvS4qjywEYyA1Q0xhkd&sz=w500"><br>
 <hr style="width:50px;text-align:left;margin-left:0">
 谢川西留条活路，自当过好人生。
 
