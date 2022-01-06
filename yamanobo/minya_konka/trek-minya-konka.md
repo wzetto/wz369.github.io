@@ -36,7 +36,7 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_minya_konka.js
 </p>
 <hr style="width:80px;text-align:left;margin-left:0">
 在完走后，曾梦到在小贡噶下方的平台上有另一条徒步路线/嘉子峰有山路可上，可见中毒之深。一见高山再难舍！
-***三尊贡嘎的正面照，其中左边山块扇状山体为九海子山（5528m，俗称）***
+***三尊贡嘎的正面照，其中左边山块扇状山体为隐海子山（5388m，俗称）***
 <p align="left">
   <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/0426.jpg">
 </p>
