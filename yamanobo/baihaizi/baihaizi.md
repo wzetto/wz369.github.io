@@ -13,16 +13,13 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_baihaizi.js
 </iframe>
 <hr style="width:50px;text-align:left;margin-left:0">
 ***北卫峰，白海子山，南卫峰；卫锋暂无官方命名及高度。***
-<img src="https://drive.google.com/uc?export=view&id=1-AAPaoSttszSV1qgYQW2DW3hcyNjX4Pg">
+<img src="https://drive.google.com/thumbnail?id=1-AAPaoSttszSV1qgYQW2DW3hcyNjX4Pg&sz=w400">
 <hr style="width:50px;text-align:left;margin-left:0">
 ***爬升途中的高山杜鹃与漏出一截冰川的隐海子山（5388m，俗称）***
-<img src="https://drive.google.com/uc?export=view&id=1-8dTWpMUOHMxN8NJkieGE9BtDgUR5oZm" 
-     width="300px" height="auto">
+<img src="https://drive.google.com/thumbnail?id=1-8dTWpMUOHMxN8NJkieGE9BtDgUR5oZm&sz=w400">
 <hr style="width:50px;text-align:left;margin-left:0">
 ***岩壁与海子***
-<img src="https://drive.google.com/uc?export=view&id=1-BvppG3MXrTL9QhN4jArsqT4yhNpBik3">
+<img src="https://drive.google.com/thumbnail?id=1-BvppG3MXrTL9QhN4jArsqT4yhNpBik3&sz=w800">
 <hr style="width:50px;text-align:left;margin-left:0">
-
-<img src="https://drive.google.com/thumbnail?id=1-8dTWpMUOHMxN8NJkieGE9BtDgUR5oZm&sz=w1000">
 
 #### [< back](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
