@@ -17,6 +17,7 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_ibuki_210206.js
         frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
 </iframe>
 <br />
+截止2021年底，共攀三次，初冬，严冬，早春，雪量天气各不相似，体验则十分巴适。
 <br />
 ***名古屋 - 霊仙ー鈴鹿山脈 - 琵琶湖云隙光全景， 2021.12***
 
