@@ -5,18 +5,6 @@
 			<name>Zetto</name>
 		</author>
 	</metadata>
-	<wpt lat="31.050161" lon="102.925195">
-		<ele>4319.900000</ele>
-		<time>2020-06-30T07:36:31Z</time>
-		<name><![CDATA[可观龙眼及大海子]]></name>
-		<speed>0.000000</speed>
-	</wpt>
-	<wpt lat="31.068853" lon="102.908242">
-		<ele>5255.800000</ele>
-		<time>2020-06-30T21:43:47Z</time>
-		<name><![CDATA[峰顶]]></name>
-		<speed>0.000000</speed>
-	</wpt>
 	<trk>
 		<trkseg>
 			<trkpt lat="30.999165" lon="102.841031">
