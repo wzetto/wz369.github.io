@@ -487,14 +487,14 @@ a .heimu,
 body:not(.heimu_toggle_on) .heimu:hover,
 body:not(.heimu_toggle_on) .heimu:active,
 body:not(.heimu_toggle_on) .heimu.off {
-    transition: color .13s linear;
+    transition: color .10s linear;
     color: white;
 }
 body:not(.heimu_toggle_on) .heimu:hover a,
 body:not(.heimu_toggle_on) a:hover .heimu,
 body:not(.heimu_toggle_on) .heimu.off a,
 body:not(.heimu_toggle_on) a:hover .heimu.off {
-    transition: color .13s linear;
+    transition: color .10s linear;
     color: lightblue;
 }
 body:not(.heimu_toggle_on) .heimu.off .new,
@@ -503,7 +503,7 @@ body:not(.heimu_toggle_on) .new:hover .heimu.off,
 body:not(.heimu_toggle_on) .heimu.off .new,
 body:not(.heimu_toggle_on) .heimu.off .new:hover,
 body:not(.heimu_toggle_on) .new:hover .heimu.off {
-    transition: color .13s linear;
+    transition: color .10s linear;
     color: #BA0000;
 }
 
