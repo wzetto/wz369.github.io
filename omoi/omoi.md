@@ -12,7 +12,8 @@ title: 想法等
 <details><summary>2022.1</summary>
 <a href="https://wzetto.github.io/wz369.github.io/omoi/essays/2022-1-1kebab.html">> 2022.1.1kebab</a><br>
 <a href="https://wzetto.github.io/wz369.github.io/omoi/essays/2022-1-2計画.html">> 2022.1.2計画</a><br>
-<a href="https://wzetto.github.io/wz369.github.io/omoi/essays/2022-1-4mdr.html">> 2022.1.4mdr</a>
+<a href="https://wzetto.github.io/wz369.github.io/omoi/essays/2022-1-4mdr.html">> 2022.1.4mdr</a><br>
+<a href="https://wzetto.github.io/wz369.github.io/omoi/essays/2022-1-12尖山子.html">> 2022.1.12尖山子</a><br>
 </details>
 
 ## 想法 / 微小的工作
