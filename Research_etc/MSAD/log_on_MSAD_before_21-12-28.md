@@ -26,8 +26,8 @@ for MSAD'。
 
 **Optimized Original Configuration**
 
-传统DFT分析中， 将能量作波函数的泛函近似后迭代， 然后将迭代到对应的configuration作为评价MSAD的标准。
-但其缺陷在于， 求解Kohn-Sham方程过程中并未考虑寻常原子间作用， 那么在进行泛函分析之前就必须有‘考虑了初始作用’的优化结构。
+传统DFT分析中， 将能量作密度/轨道泛函近似后迭代， 然后将得到的基态configuration作为评价MSAD的标准。
+但其缺陷在于， 迭代过程中并未考虑寻常原子间作用， 那么在进行泛函分析之前就必须有‘考虑了初始作用’的优化结构。
 
 理论上， 通过巧妙的Cluster Expansion， 构建团簇级别的optimized-origin config之间的
 <p align="left">
