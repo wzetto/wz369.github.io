@@ -19,6 +19,8 @@ layout: map_homepage
 
 [> 四川 \| 二峰](https://wzetto.github.io/wz369.github.io/yamanobo/siguniang/erguniang.html)
 
+[> 関西百名山 \| 霊仙山](https://wzetto.github.io/wz369.github.io/yamanobo/ryozen/ryozen.html)
+
 ## 秋冬
 
 [> 四川 \| 贡嘎环线](https://wzetto.github.io/wz369.github.io/yamanobo/minya_konka/trek-minya-konka.html)
