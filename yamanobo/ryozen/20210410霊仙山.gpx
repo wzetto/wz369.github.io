@@ -5,66 +5,6 @@
 			<name>Zetto</name>
 		</author>
 	</metadata>
-	<wpt lat="35.310928" lon="136.407137">
-		<ele>519.900000</ele>
-		<time>2021-04-09T23:40:01Z</time>
-		<speed>0.000000</speed>
-	</wpt>
-	<wpt lat="35.302412" lon="136.402953">
-		<ele>697.100000</ele>
-		<time>2021-04-09T23:59:03Z</time>
-		<speed>0.000000</speed>
-	</wpt>
-	<wpt lat="35.300055" lon="136.401537">
-		<ele>768.800000</ele>
-		<time>2021-04-10T00:05:14Z</time>
-		<speed>0.000000</speed>
-	</wpt>
-	<wpt lat="35.293683" lon="136.394653">
-		<ele>886.900000</ele>
-		<time>2021-04-10T00:25:05Z</time>
-		<speed>0.000000</speed>
-	</wpt>
-	<wpt lat="35.284363" lon="136.381622">
-		<ele>1023.200000</ele>
-		<time>2021-04-10T01:03:13Z</time>
-		<speed>0.000000</speed>
-	</wpt>
-	<wpt lat="35.280647" lon="136.376678">
-		<ele>1077.200000</ele>
-		<time>2021-04-10T01:28:19Z</time>
-		<speed>0.000000</speed>
-	</wpt>
-	<wpt lat="35.280647" lon="136.376678">
-		<ele>1076.100000</ele>
-		<time>2021-04-10T01:57:54Z</time>
-		<speed>0.000000</speed>
-	</wpt>
-	<wpt lat="35.280467" lon="136.376708">
-		<ele>1082.500000</ele>
-		<time>2021-04-10T02:04:46Z</time>
-		<speed>0.000000</speed>
-	</wpt>
-	<wpt lat="35.281995" lon="136.380067">
-		<ele>1015.900000</ele>
-		<time>2021-04-10T02:15:07Z</time>
-		<speed>0.000000</speed>
-	</wpt>
-	<wpt lat="35.283945" lon="136.381408">
-		<ele>1032.100000</ele>
-		<time>2021-04-10T02:35:38Z</time>
-		<speed>0.000000</speed>
-	</wpt>
-	<wpt lat="35.286800" lon="136.385222">
-		<ele>972.200000</ele>
-		<time>2021-04-10T02:58:49Z</time>
-		<speed>0.000000</speed>
-	</wpt>
-	<wpt lat="35.286800" lon="136.385222">
-		<ele>972.900000</ele>
-		<time>2021-04-10T02:59:04Z</time>
-		<speed>0.000000</speed>
-	</wpt>
 	<trk>
 		<trkseg>
 			<trkpt lat="35.343891" lon="136.402883">
