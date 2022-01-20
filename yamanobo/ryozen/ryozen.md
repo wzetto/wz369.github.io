@@ -4,7 +4,7 @@ layout: map_default
 js_url: https://wzetto.github.io/wz369.github.io/js/map_ryozen.js
 ---
 2021.1.17<br>
-*前往车站时，一株八重桜。梅雨就快到了。*<br>
+**前往车站时，一株八重桜。梅雨就快到了。**<br>
 <img src="https://drive.google.com/thumbnail?id=1JsTpRCvRlhgwnYb9jDPYC2T6L0KVDTb3&sz=w600" />
 <hr style="width:50px;text-align:left;margin-left:0">
 与伊吹对峙的全景展望良山，铃鹿山脉的北端，准平原。
@@ -13,33 +13,33 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_ryozen.js
 
 若非当地熊害频发，且下山时碰到不止一处新鲜动物粪便，该山可谓绝佳休闲地。
 <hr style="width:50px;text-align:left;margin-left:0">
-*山顶环望*<br>
+**山顶环望**<br>
 <iframe src="https://www.youtube.com/embed/iBxPf2wB258" 
         frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
 </iframe>
 <br>
 <hr style="width:50px;text-align:left;margin-left:0">
-*四合目铁皮避难屋*<br>
+**四合目铁皮避难屋**<br>
 <img src="https://drive.google.com/thumbnail?id=1-dD38_kpZ_ALPya2y25KfvpThfQQPi0G&sz=w600" />
 <br>
 <hr style="width:50px;text-align:left;margin-left:0">
-*伐木用道，贯通整片铃鹿山脉*<br>
+**伐木用道，贯通整片铃鹿山脉**<br>
 <img src="https://drive.google.com/thumbnail?id=1aWCi2sx9AiiuO9fTlj5eXEMoA5MFmeJO&sz=w600" />
 <br>
 <hr style="width:50px;text-align:left;margin-left:0">
-*青苔覆石灰，粗犷自然中，又因符合一定规律而能感到秩序，值得欣赏一番*<br>
+**青苔覆石灰，粗犷自然中，又因符合一定规律而能感到秩序，值得欣赏一番**<br>
 <img src="https://drive.google.com/thumbnail?id=1YmNTYcSjmcQWY6vOO_O8YCJ0Bqbk54sf&sz=w600" />
 <br>
 <hr style="width:50px;text-align:left;margin-left:0">
-*幼年期喀斯特*<br>
+**幼年期喀斯特**<br>
 <img src="https://drive.google.com/thumbnail?id=1OS5bGwiImw0R0LLCpk6u53FHWdq5DsHK&sz=w600" />
 <br>
 <hr style="width:50px;text-align:left;margin-left:0">
-*从北阿-白山到琵琶湖-大文字的450里天地*<br>
+**从北阿-白山到琵琶湖-大文字的450里天地**<br>
 <img src="https://drive.google.com/thumbnail?id=1BrRDHdER8xaozv1ywtfWCPyTuEo5gEun&sz=w2000" />
 <br>
 <hr style="width:50px;text-align:left;margin-left:0">
-*尚处冬期的白山*<br>
+**尚处冬期的白山**<br>
 <img src="https://drive.google.com/thumbnail?id=1Coxg8941myGmgogoId6ZEOWVZRCbjuZY&sz=w600" />
 <br>
 
