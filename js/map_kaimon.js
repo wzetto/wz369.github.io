@@ -70,7 +70,7 @@ var elements = gpx.getElementsByTagName('trkpt');
 var elementsAlt = gpx.getElementsByTagName('ele');
 var arrEle = [];
 for (i=0; elementsAlt.length>i; i++){
-	arrEle.push(elementsAlt[i].innerHTML);
+	arrEle.push(elementsAlt[i].textContent);
 }
 var startPoint = elements.item(0);
 var endPoint = elements.item(elements.length-1);
