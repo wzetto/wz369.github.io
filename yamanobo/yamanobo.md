@@ -21,6 +21,8 @@ layout: map_homepage
 
 [> 関西百名山 \| 霊仙山](https://wzetto.github.io/wz369.github.io/yamanobo/ryozen/ryozen.html)
 
+[> 百名山 \| 開聞岳](https://wzetto.github.io/wz369.github.io/yamanobo/kaimon/kaimon.html)
+
 ## 秋冬
 
 [> 四川 \| 贡嘎环线](https://wzetto.github.io/wz369.github.io/yamanobo/minya_konka/trek-minya-konka.html)
