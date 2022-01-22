@@ -5,36 +5,6 @@
 			<name>Zetto</name>
 		</author>
 	</metadata>
-	<wpt lat="31.195067" lon="130.565033">
-		<ele>54.600000</ele>
-		<time>2021-03-21T22:51:51Z</time>
-		<speed>0.000000</speed>
-	</wpt>
-	<wpt lat="31.192592" lon="130.534287">
-		<ele>150.000000</ele>
-		<time>2021-03-21T23:17:14Z</time>
-		<speed>0.000000</speed>
-	</wpt>
-	<wpt lat="31.181483" lon="130.535963">
-		<ele>490.100000</ele>
-		<time>2021-03-21T23:48:28Z</time>
-		<speed>0.000000</speed>
-	</wpt>
-	<wpt lat="31.176083" lon="130.529495">
-		<ele>699.300000</ele>
-		<time>2021-03-22T00:12:23Z</time>
-		<speed>0.000000</speed>
-	</wpt>
-	<wpt lat="31.180580" lon="130.526962">
-		<ele>856.100000</ele>
-		<time>2021-03-22T00:32:26Z</time>
-		<speed>0.000000</speed>
-	</wpt>
-	<wpt lat="31.180103" lon="130.528350">
-		<ele>922.200000</ele>
-		<time>2021-03-22T00:46:01Z</time>
-		<speed>0.000000</speed>
-	</wpt>
 	<trk>
 		<trkseg>
 			<trkpt lat="31.204475" lon="130.534511">
