@@ -33,6 +33,6 @@ layout: map_homepage
 
 [> 百名山 \| 剣山ー三嶺縦走](https://wzetto.github.io/wz369.github.io/yamanobo/tsurugi-miune/tsurugi-miune.html)
 
-[> 二百名山 \|　　武奈ヶ岳](https://wzetto.github.io/wz369.github.io/yamanobo/bunagatake/bunagatake.html)
+[> 二百名山 \|　武奈ヶ岳](https://wzetto.github.io/wz369.github.io/yamanobo/bunagatake/bunagatake.html)
 
 ### [< HOME](https://wzetto.github.io/wz369.github.io/)
