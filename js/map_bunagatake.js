@@ -19,7 +19,7 @@ L.control.layers(map_baselayer, null, {
   collapsed: true
 }).addTo(map)
 
-var gpxFile = 'https://wzetto.github.io/wz369.github.io/yamanobo/bunagatake/20210228武奈ヶ岳.gpx';
+var gpxFile = 'https://wzetto.github.io/wz369.github.io/yamanobo/bunagatake/20210228bunagatake.gpx';
 new L.GPX(gpxFile, {
   async: true,
   marker_options: {
