@@ -10,5 +10,9 @@ Ab initio:<br>
 原子排列依然是基于随机考量，这点跟MSAD建模类似。不过是基于（111）层堆积。后弛豫。对intrinsic fault：对N层进行沿a/6<112bar>的移动：获得堆垛序列。随后，以SF区域A的面积正规化前后二结构能量差（formation energy)。同理extrinsic fault。<br>
 最后到达Energy barrier for twin-boundary formation.这个择日研究吧，先把SFE数值整完。
 
+2022.01.24
+<hr style="width:50px;text-align:left;margin-left:0">
+计算量比想象中大很多，可能引入权重已经是迫在眉睫的事了。
+
 
 #### [< back](https://wzetto.github.io/wz369.github.io/Research_etc/SFE/SFE_home.html)
