@@ -24,7 +24,7 @@ title: '五色海子'
 <img src="https://drive.google.com/thumbnail?id=1-cKMaT6-5pECTNQRsfnvxBvifinR975H&sz=w800"><br>
 <hr style="width:50px;text-align:left;margin-left:0">
 ***隐约看到笔架2峰的小型冰川***<br>
-***寒天翻看这张照片，方觉刺骨冰冷。对我这样记忆不大好的来说，便是摄像的部分意义吧—缝隙中掠夺的一丝实感。冬夜的宝石。***<br>
+***寒天翻看这张照片，方觉刺骨冰冷。在记性不好的状态下，便是摄像的部分意义吧。缝隙中掠夺的一丝实感。冬夜的宝石。***<br>
 <img src="https://drive.google.com/thumbnail?id=1-XnoP81usQVBMGWWNMMT9na0IJW6yAkc&sz=w800"><br>
 <hr style="width:50px;text-align:left;margin-left:0">
 <img src="https://drive.google.com/thumbnail?id=1Y3hDMmZVFpWLWmp6lfDB43wEQyy2C516&sz=w800"><br>
