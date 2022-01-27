@@ -18,6 +18,7 @@ title: 想法等
 <a href="https://wzetto.github.io/wz369.github.io/omoi/essays/2022-1-19自行车.html">> 2022.1.19自行车</a><br>
 <a href="https://wzetto.github.io/wz369.github.io/omoi/essays/2022-1-20液氮液面.html">> 2022.1.20液氮液面</a><br>
 <a href="https://wzetto.github.io/wz369.github.io/omoi/essays/2022-1-25环形山.html">> 2022.1.25环形山</a><br>
+<a href="https://wzetto.github.io/wz369.github.io/omoi/essays/2022-1-27更正.html">> 2022.1.27更正</a><br>
 </details>
 
 ## 想法 / 微小的工作
