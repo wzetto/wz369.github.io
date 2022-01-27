@@ -30,6 +30,6 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_erguniang.js
 <hr style="width:50px;text-align:left;margin-left:0">
 <img src="https://drive.google.com/thumbnail?id=11yCYcATONPcvUC31TTKdT8fbzp1TNE08&sz=w500" />
 <hr style="width:50px;text-align:left;margin-left:0">
-二峰是雅拉回程的车上仓促决定的，却阴阳差错认识了重庆来毕业山行的二位同龄人，且整次山行也相当愉快。不知以现在状态，望向横断远山时会有和感想？
+二峰是雅拉回程的车上仓促决定的，却阴阳差错认识了重庆来毕业山行的二位同龄人，且整次山行也相当愉快。不知以现在状态，望向横断远山时会有何感想？
 
 #### [< back](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
