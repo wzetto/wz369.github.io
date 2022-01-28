@@ -14,5 +14,9 @@ Ab initio:<br>
 <hr style="width:50px;text-align:left;margin-left:0">
 计算量比想象中大很多，可能引入权重已经是迫在眉睫的事了。
 
+2022.01.28
+<hr style="width:50px;text-align:left;margin-left:0">
+上热力学做sampling吧。
+
 
 #### [< back](https://wzetto.github.io/wz369.github.io/Research_etc/SFE/SFE_home.html)
