@@ -13,5 +13,12 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_lenggacuo.js
 <img src="https://drive.google.com/thumbnail?id=1-qjPClxRd3TscVCki2eT0shEAoI3YJub&sz=w500"><br>
 <hr style="width:50px;text-align:left;margin-left:0" />
 <img src="https://drive.google.com/thumbnail?id=101Mp-xsnVQ38GwRDKBBZvInU4t_d8Qgg&sz=w500"><br>
-翌日清晨，见视距良好便向日乌且前进，不过雾气很快上来，遂撤退。
+翌日清晨，见视距良好便向日乌且前进，不过雾气很快上来，遂撤退。<br>
+<hr style="width:50px;text-align:left;margin-left:0">
+较晚的冷噶措：<br>
+作为贡嘎山区最为大众化的徒步路线之一，其前半段进山公路驾驶体验极好，数千米的林带延伸与有操作感的山路。<br>
+后半段炮弹坑。<br>
+
+
+
 #### [< back](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
