@@ -16,8 +16,8 @@ $(window).scroll(function() {
         document.getElementById("bottom_text").innerHTML = '異国には届かず';
     }　else if (document.getElementById("bottom_text").innerHTML == '異国には届かず') {
         //document.getElementsByClassName("div.bottom_text")[0].innerHTML = '天国から地獄';
-        document.getElementById("bottom_text").innerHTML = '知恵者は手を誇り';
-    }　else if (document.getElementById("bottom_text").innerHTML == '知恵者は手を誇り') {
+        document.getElementById("bottom_text").innerHTML = '知恵者は手を誤り';
+    }　else if (document.getElementById("bottom_text").innerHTML == '知恵者は手を誤り') {
         //document.getElementsByClassName("div.bottom_text")[0].innerHTML = '天国から地獄';
         document.getElementById("bottom_text").innerHTML = 'すべては、永遠に落ち続ける';
     }　else if (document.getElementById("bottom_text").innerHTML == 'すべては、永遠に落ち続ける') {
