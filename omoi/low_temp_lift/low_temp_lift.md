@@ -12,13 +12,13 @@ title: Low_temp_lift
 <h2>Part 1. Intensity recog.</h2>
 <hr style="width:50px;text-align:left;margin-left:0">
 i.e.照射目标区域液面(暂时粗暴涂红）：<br>
-<img src="https://drive.google.com/thumbnail?id=127VWd-vnxhi0wrtk5MzlzTWEZ6Duw1wo&sz=w300" />
+<img src="https://drive.google.com/thumbnail?id=127VWd-vnxhi0wrtk5MzlzTWEZ6Duw1wo&sz=w400" />
 <hr style="width:50px;text-align:left;margin-left:0">
 卷积平滑识别intensity（理论上Savitzky-Golay平滑更准确，将就），将等时间间隔图像采样得到曲线统合，生成下图：<br>
-<img src="https://drive.google.com/thumbnail?id=123ltWfCXoMR4Limj9G2Xa38_qvE0D3Cp&sz=w600" />
+<img src="https://drive.google.com/thumbnail?id=123ltWfCXoMR4Limj9G2Xa38_qvE0D3Cp&sz=w800" />
 <hr style="width:50px;text-align:left;margin-left:0">
 可看出找到~~梭梭板~~就找到了液面。求出系统/测量(system, measurement)方差后试验kalman filter:<br>
-<img src="https://drive.google.com/thumbnail?id=121vf01r0jRDanZBCnN7obI5iYM669HaI&sz=w600" />
+<img src="https://drive.google.com/thumbnail?id=121vf01r0jRDanZBCnN7obI5iYM669HaI&sz=w800" />
 <hr style="width:50px;text-align:left;margin-left:0">
 Bingo.
 
