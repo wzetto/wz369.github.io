@@ -4,7 +4,7 @@ layout: map_default
 js_url: https://wzetto.github.io/wz369.github.io/js/map_ryozen.js
 ---
 2021.1.17<br>
-**前往车站时，一株八重桜。梅雨就快到了。**<br>
+**前往车站时，一株八重桜。下吧！梅雨。**<br>
 <img src="https://drive.google.com/thumbnail?id=1JsTpRCvRlhgwnYb9jDPYC2T6L0KVDTb3&sz=w600" />
 <hr style="width:50px;text-align:left;margin-left:0">
 与伊吹对峙的全景展望良山，铃鹿山脉的北端，准平原。
@@ -43,7 +43,7 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_ryozen.js
 <img src="https://drive.google.com/thumbnail?id=1Coxg8941myGmgogoId6ZEOWVZRCbjuZY&sz=w600" />
 <br>
 
-下山因气候，路况，密林及动物腥味，来往无人等等察觉十分不妙，为避免在铁皮避难小屋靠一根士力架过夜，遂慌张下山，为本次美好山行作一滑稽结尾。
+下山因气候，路况，密林及动物腥味，来往无人等等察觉十分不妙，为避免在铁皮避难小屋靠一根士力架过夜（经典复刻（，遂慌张下山，为本次美好山行作一滑稽结尾。
 
 哪次冬天露个营。
 #### [< back](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
