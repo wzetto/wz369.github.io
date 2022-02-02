@@ -17,7 +17,7 @@ i.e.照射目标区域液面(暂时粗暴涂红）：<br>
 卷积平滑识别纵intensity（理论上Savitzky-Golay平滑更准确，将就），将等时间间隔图像采样得到曲线统合，生成下图：<br>
 <img src="https://drive.google.com/thumbnail?id=123ltWfCXoMR4Limj9G2Xa38_qvE0D3Cp&sz=w800" />
 <hr style="width:50px;text-align:left;margin-left:0">
-可看出找到~~梭梭板~~就找到了液面。求出系统/测量(system/measurement)方差后试验kalman filter:<br>
+可看出找到~~梭梭板~~就找到了液面。求出系统/测量(system/measurement)方差后试验kalman filter (linear):<br>
 <img src="https://drive.google.com/thumbnail?id=121vf01r0jRDanZBCnN7obI5iYM669HaI&sz=w800" />
 <hr style="width:50px;text-align:left;margin-left:0">
 Bingo.
