@@ -1,5 +1,5 @@
 ---
-title: 'Log 2022.01.05'
+title: 'Log 2022.01-02'
 ---
 2022.01.05
 <hr style="width:50px;text-align:left;margin-left:0">
@@ -18,5 +18,8 @@ Ab initio:<br>
 <hr style="width:50px;text-align:left;margin-left:0">
 上热力学做sampling吧。
 
+2022.02.06
+<hr style="width:50px;text-align:left;margin-left:0">
+Insert vacuum bro.
 
 #### [< back](https://wzetto.github.io/wz369.github.io/Research_etc/SFE/SFE_home.html)
