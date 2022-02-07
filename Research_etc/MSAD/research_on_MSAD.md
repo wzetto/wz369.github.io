@@ -9,4 +9,7 @@ permalink: /Research_etc/MSAD/research_on_MSAD.html
 [> Log 2022.01.11](https://wzetto.github.io/wz369.github.io/Research_etc/MSAD/log_220111.html)
 
 [> Log 2022.01.18](https://wzetto.github.io/wz369.github.io/Research_etc/MSAD/log_220118.html)
+
+[> Log 2022.02](https://wzetto.github.io/wz369.github.io/Research_etc/MSAD/log_2202.html)
+
 ### [< HOME](https://wzetto.github.io/wz369.github.io/)
