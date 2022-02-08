@@ -20,6 +20,7 @@ i.e.照射目标区域液面(暂时粗暴涂红）：<br>
 可看出找到~~梭梭板~~就找到了液面。求出系统/测量(system/measurement)方差后试验kalman filter (linear):<br>
 <img src="https://drive.google.com/thumbnail?id=121vf01r0jRDanZBCnN7obI5iYM669HaI&sz=w800" />
 <hr style="width:50px;text-align:left;margin-left:0">
-Bingo.
+Bingo.<br>
+（一个电池盖能拖十天才到。<br>
 
 #### [< back](https://wzetto.github.io/wz369.github.io/omoi/omoi.html)
