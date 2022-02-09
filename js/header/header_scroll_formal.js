@@ -8,7 +8,7 @@ $(window).on("scroll", function (event) {
   var barElem = document.getElementsByClassName("home_bar")
   if ($(window).innerWidth <= 1284) {
 	  var headerHeight = "160px";
-  } else if ($(window).innerWidth <= 1284) {
+  } else if ($(window).innerWidth > 1284) {
 	  var headerHeight = "360px";
   };
 	
