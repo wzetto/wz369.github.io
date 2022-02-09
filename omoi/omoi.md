@@ -21,6 +21,9 @@ title: 想法等
 <a href="https://wzetto.github.io/wz369.github.io/omoi/essays/2022-1-27更正.html">> 2022.1.27更正</a><br>
 </details>
 
+<details><summary>2022.2</summary>
+<a href="https://wzetto.github.io/wz369.github.io/omoi/essays/2022-2-9rough.html">> 2022.2.9rough</a><br>
+
 ## 想法 / 微小的工作
 
 [> Yuyake recognition](https://wzetto.github.io/wz369.github.io/omoi/yuyake_recog/Yuyake_recog.html)<br>
