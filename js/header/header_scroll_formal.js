@@ -6,7 +6,12 @@ $(window).on("scroll", function (event) {
   var afterScrollTop = $(window).scrollTop();
   var delta = afterScrollTop - beforeScrollTop;
   var barElem = document.getElementsByClassName("home_bar")
-  //if ($(window).innerWidth <= 768)
+  if ($(window).innerWidth <= 1284) {
+	  var headerHeight = "160px";
+  } else if ($(window).innerWidth <= 1284) {
+	  var headerHeight = "360px";
+  };
+	
   if (delta > 5) {
     document.getElementsByClassName("inner_top background_img_formal")[0].style.height = "40px";
     document.getElementById("project_title").style.top = "-20%";
@@ -15,16 +20,14 @@ $(window).on("scroll", function (event) {
 	    barElem[i].style.display = "none";
     }
   } else if (delta < -30) {
-    document.getElementsByClassName("inner_top background_img_formal")[0].style.minHeight = "150px";
-    document.getElementsByClassName("inner_top background_img_formal")[0].style.height = "auto";
+    document.getElementsByClassName("inner_top background_img_formal")[0].style.height = headerHeight;
     document.getElementById("project_title").style.top = "5%";
     
     for (var i = 0; i < barElem.length; i++){
 	    barElem[i].style.display = "block";
     }
   } else if (scrollTop <= 1) {
-    document.getElementsByClassName("inner_top background_img_formal")[0].style.minHeight = "150px";
-    document.getElementsByClassName("inner_top background_img_formal")[0].style.height = "auto";
+    document.getElementsByClassName("inner_top background_img_formal")[0].style.height = headerHeight;
     document.getElementById("project_title").style.top = "5%";
     
     for (var i = 0; i < barElem.length; i++){
