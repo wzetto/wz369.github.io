@@ -5,12 +5,13 @@ $(window).on("scroll", function (event) {
   // after scrolling
   var afterScrollTop = $(window).scrollTop();
   var delta = afterScrollTop - beforeScrollTop;
-  var barElem = document.getElementsByClassName("home_bar")
-  if ($(window).innerWidth <= 1284) {
+  var barElem = document.getElementsByClassName("home_bar");
+  var width = $(window).width();
+  if (width <= 1284) {
 	  var headerHeight = "160px";
-  } else if ($(window).innerWidth > 1284) {
+  } else if (width > 1284) {
 	  var headerHeight = "360px";
-  };
+  }
 	
   if (delta > 5) {
     document.getElementsByClassName("inner_top background_img_formal")[0].style.height = "40px";
