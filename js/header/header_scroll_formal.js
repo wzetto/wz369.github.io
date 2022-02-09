@@ -6,7 +6,7 @@ $(window).on("scroll", function (event) {
   var afterScrollTop = $(window).scrollTop();
   var delta = afterScrollTop - beforeScrollTop;
   var barElem = document.getElementsByClassName("home_bar")
-  
+  //if ($(window).innerWidth <= 768)
   if (delta > 5) {
     document.getElementsByClassName("inner_top background_img_formal")[0].style.height = "40px";
     document.getElementById("project_title").style.top = "-20%";
