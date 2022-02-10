@@ -8,9 +8,9 @@ $(window).on("scroll", function (event) {
   var barElem = document.getElementsByClassName("home_bar");
   var width = $(window).width();
   if (width <= 992) {
-	  var headerHeight = 160;
+	  let headerHeight = 160;
   } else if (width > 992) {
-	  var headerHeight = 300;
+	  let headerHeight = 300;
   }
 	
   if (delta > 5) {
