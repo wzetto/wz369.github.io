@@ -10,7 +10,7 @@ $(window).on("scroll", function (event) {
   if (width <= 992) {
 	  var headerHeight = "160px";
   } else if (width > 992) {
-	  let headerHeight = "300px";
+	  var headerHeight = "300px";
   }
   
   if (delta > 5) {
