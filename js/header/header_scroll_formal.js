@@ -12,7 +12,7 @@ $(window).on("scroll", function (event) {
   } else if (width > 992) {
 	  let headerHeight = 300;
   }
-  var heightSettle = "${headerHeight}px";
+  var heightSettle = `${headerHeight}px`;
   
   if (delta > 5) {
     document.getElementsByClassName("inner_top background_img_formal")[0].style.height = "40px";
