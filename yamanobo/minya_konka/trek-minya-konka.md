@@ -127,7 +127,8 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_minya_konka.js
   <img src="https://wzetto.github.io/wz369.github.io/images/yama/minya_konka/IMG_7582.jpeg">
 </p>
 <hr style="width:80px;text-align:left;margin-left:0">
-
+<img src="https://drive.google.com/thumbnail?id=12Wh2xh_CNWGSDqzHuDTPxYSg97vm90KA&sz=w600" />
+<hr style="width:80px;text-align:left;margin-left:0">
 #### Day6
 黎明垭口狂风，遂起身等待日出。子梅垭口所在支脉是去年新兴的“贡嘎三脊”线，是本次的原计划。照顾到队友情况，实际还是依照的传统转山路线。
 从垭口顶延山脊向北走一公里，找到个不错的无名海子-贡嘎机位。
