@@ -24,7 +24,7 @@ Insert vacuum bro.
 
 2022.02.14
 <hr style="width:50px;text-align:left;margin-left:0">
-1.如果是SQS-based的话，对于interface这个环节，要单独考量随机程度。
+1.如果是SQS-based的话，对于interface这个环节，要单独考量随机程度。<br>
 2.同样，对于interface，应该需要单独弛豫，在体系构成原子non-sufficient的情况下。
 
 #### [< back](https://wzetto.github.io/wz369.github.io/Research_etc/SFE/SFE_home.html)
