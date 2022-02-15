@@ -23,5 +23,5 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_tiewadian.js
 ***\...***<br>
 <img src="https://drive.google.com/thumbnail?id=1rTnf-0n2NvUxufAQNeicUGXBmMazIgbf&sz=w800" />
 <hr style="width:50px;text-align:left;margin-left:0">
-
+另，顶上垃圾成群，蚊虫乱飞。良好的户外环境需要多方构建，现在看来，哪一方都做的不好。
 #### [< back](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
