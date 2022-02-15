@@ -1,6 +1,7 @@
 ---
 title: 铁瓦殿
 layout: map_default
+permalink: /yamanobo/tiewadian/tiewadian.html
 js_url: https://wzetto.github.io/wz369.github.io/js/map_tiewadian.js
 ---
 2022.2.15
