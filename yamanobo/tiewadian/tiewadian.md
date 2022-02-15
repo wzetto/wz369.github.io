@@ -15,7 +15,7 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_tiewadian.js
 <img src="https://drive.google.com/thumbnail?id=1StNS9NKT2lZoyb7BgJlQjJ7O4LuEjfeH&sz=w600" />
 <hr style="width:50px;text-align:left;margin-left:0">
 ***...***<br>
-<img src="https://drive.google.com/thumbnail?id=11OSgea_xe-8_a10bZituHnHfyFrGajf4&sz=w800" />
+<img src="https://drive.google.com/thumbnail?id=11OSgea_xe-8_a10bZituHnHfyFrGajf4&sz=w600" />
 <hr style="width:50px;text-align:left;margin-left:0">
 ***...***<br>
 <img src="https://drive.google.com/thumbnail?id=1KlUFrTHEywZFhbh8liJn6k8bfjTIvjAB&sz=w600" />
