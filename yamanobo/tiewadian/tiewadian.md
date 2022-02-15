@@ -6,7 +6,7 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_tiewadian.js
 2022.2.15
 <hr style="width:50px;text-align:left;margin-left:0">
 
-龙门山这片，宛若东西水汽交锋前线。山抖路滑，实在不是赏景去处。拉练也许合适。
+龙门山这片，宛若东西水汽交锋前线。山抖路滑，实在不是赏景去处。拉练也许合适，2400的爬升，成功让手表的能量条转了4圈。
 <hr style="width:50px;text-align:left;margin-left:0">
 作为成都户外圈‘毕业’路线，选择湿润阴天单日往返也许是正确的答辩方式。总之事后回想起来就是疲惫，恶心，这是否算达到了这条线的目的？——离开乏味的出生地，前往川西吧！<br>
 
