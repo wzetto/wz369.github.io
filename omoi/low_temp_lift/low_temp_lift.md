@@ -21,6 +21,8 @@ i.e.照射目标区域液面(暂时粗暴涂红）：<br>
 <img src="https://drive.google.com/thumbnail?id=121vf01r0jRDanZBCnN7obI5iYM669HaI&sz=w800" />
 <hr style="width:50px;text-align:left;margin-left:0">
 Bingo.<br>
+（这noise，能用就行.jpg<br>
 （一个电池盖能拖十天才到。<br>
+(一块板子又拖了十天？！
 
 #### [< back](https://wzetto.github.io/wz369.github.io/omoi/omoi.html)
