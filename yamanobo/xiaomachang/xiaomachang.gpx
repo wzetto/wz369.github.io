@@ -5,24 +5,6 @@
 			<name>Zetto</name>
 		</author>
 	</metadata>
-	<wpt lat="31.430937" lon="103.099817">
-		<ele>3507.000000</ele>
-		<time>2020-10-24T07:54:04Z</time>
-		<name><![CDATA[全景]]></name>
-		<speed>0.000000</speed>
-	</wpt>
-	<wpt lat="31.431022" lon="103.111350">
-		<ele>3281.600000</ele>
-		<time>2020-10-24T08:32:33Z</time>
-		<name><![CDATA[大黄峰]]></name>
-		<speed>0.000000</speed>
-	</wpt>
-	<wpt lat="31.430480" lon="103.126603">
-		<ele>2910.300000</ele>
-		<time>2020-10-24T09:05:03Z</time>
-		<name><![CDATA[海子塘]]></name>
-		<speed>0.000000</speed>
-	</wpt>
 	<trk>
 		<trkseg>
 			<trkpt lat="31.441274" lon="103.125940">
