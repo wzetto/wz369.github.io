@@ -27,6 +27,8 @@ layout: map_homepage
 
 ## 秋冬
 
+[> 四川 \| 小马场](https://wzetto.github.io/wz369.github.io/yamanobo/xiaomachang/xiaomachang.html)
+
 [> 四川 \| 贡嘎环线](https://wzetto.github.io/wz369.github.io/yamanobo/minya_konka/trek-minya-konka.html)
 
 [> 百名山 \| 伊吹山](https://wzetto.github.io/wz369.github.io/yamanobo/ibuki/ibuki_before_21-12.html)
