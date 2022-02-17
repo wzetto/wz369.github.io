@@ -1,7 +1,7 @@
 ---
 title: 小马场
 layout: map_default
-js_url: https://wzetto.github.io/wz369.github.io/js/map_baihaizi.js
+js_url: https://wzetto.github.io/wz369.github.io/js/map_xiaomachang.js
 ---
 2022.2.17
 <hr style="width:50px;text-align:left;margin-left:0">
