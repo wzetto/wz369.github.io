@@ -4,11 +4,9 @@ layout: default
 ---
 <h1>记录 研究进展及想法 / 一些灵感及其他想法 / 山登り / etc.</h1>
 <hr style="width:50px;text-align:left;margin-left:0">
-***2020 autumn - Reddomain***
+***2020 summer - Minya Konka from Owen's rooftop***
 
-<p align="left">
-  <img src="images/yama/minya_konka/IMG_7513.jpeg">
-</p>
+<img src="https://drive.google.com/thumbnail?id=13Qn7ImuLtR1NbOieibDd-WXoxnRMXb32&sz=w800" />
 
 <hr style="width:50px;text-align:left;margin-left:0">
 ### Research & etc.
