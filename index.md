@@ -6,7 +6,7 @@ layout: default
 <hr style="width:50px;text-align:left;margin-left:0">
 ***2020 summer - Minya Konka from Owen's rooftop***
 
-<img src="https://drive.google.com/thumbnail?id=13Qn7ImuLtR1NbOieibDd-WXoxnRMXb32&sz=w800" />
+<img src="https://drive.google.com/thumbnail?id=13Qn7ImuLtR1NbOieibDd-WXoxnRMXb32&sz=w600" />
 
 <hr style="width:50px;text-align:left;margin-left:0">
 ### Research & etc.
