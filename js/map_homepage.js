@@ -46,5 +46,11 @@ var marker = L.marker([33.839181, 133.986579], {icon: marker_icon}).addTo(map)
 var marker = L.marker([35.019621, 135.811883], {icon: marker_icon}).addTo(map)
     .bindPopup('<b>大文字山</b>').openPopup();
 
+var marker = L.marker([31.079485, 102.906316], {icon: marker_icon}).addTo(map)
+    .bindPopup('<b>三峰</b>').openPopup();
 
+var marker = L.marker([31.069963, 102.908340], {icon: marker_icon}).addTo(map)
+    .bindPopup('<b>二峰</b>').openPopup();
 
+var marker = L.marker([30.005885, 102.009729], {icon: marker_icon}).addTo(map)
+    .bindPopup('<b>五色海子</b>').openPopup();
