@@ -7,7 +7,7 @@ title: Low_temp_lift
 <hr style="width:50px;text-align:left;margin-left:0">
 液氮实验中稳定液面保持304钢温度恒定的小升降装置。
 
-液面识别-步进电机升降（raspi）
+液面识别-步进电机升降（raspi, L298N）
 
 <h2>Part 1. Intensity recog.</h2>
 <hr style="width:50px;text-align:left;margin-left:0">
