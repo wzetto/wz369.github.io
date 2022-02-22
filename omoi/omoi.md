@@ -24,7 +24,8 @@ title: 想法等
 <details><summary>2022.2</summary>
 <a href="https://wzetto.github.io/wz369.github.io/omoi/essays/2022-2-9rough.html">> 2022.2.9rough</a><br>
 <a href="https://wzetto.github.io/wz369.github.io/omoi/essays/2022-2-12虚構時代の果て_re_1.html">> 2022.2.12虚構の時代の果て_re_1</a><br>
-<a href="https://wzetto.github.io/wz369.github.io/omoi/essays/2022-2-18魔法使いの夜～メインテーマ.html">> 2022.2.12魔法使いの夜〜メインテーマ</a><br>  
+<a href="https://wzetto.github.io/wz369.github.io/omoi/essays/2022-2-18魔法使いの夜～メインテーマ.html">> 2022.2.12魔法使いの夜〜メインテーマ</a><br>
+<a href="https://wzetto.github.io/wz369.github.io/omoi/essays/2022-2-22虚構時代の果て_re_2.html">> 2022.2.22虚構の時代の果て_re_2</a><br>
 </details>
 
 ## 想法 / 微小的工作
