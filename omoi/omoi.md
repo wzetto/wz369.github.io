@@ -31,6 +31,7 @@ title: 想法等
 ## 想法 / 微小的工作
 
 [> Yuyake recognition](https://wzetto.github.io/wz369.github.io/omoi/yuyake_recog/Yuyake_recog.html)<br>
-[> Low_temp_lift](https://wzetto.github.io/wz369.github.io/omoi/low_temp_lift/low_temp_lift.html)
+[> Low_temp_lift](https://wzetto.github.io/wz369.github.io/omoi/low_temp_lift/low_temp_lift.html)<br>
+[> Fujifitting](https://wzetto.github.io/wz369.github.io/omoi/Fujifitting/fujifitting.html)
 
 ### [< HOME](https://wzetto.github.io/wz369.github.io/)
