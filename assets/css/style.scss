@@ -26,6 +26,17 @@
 	transition: 0.5s;
 }
 
+.background_img_fuji {
+	background-image: url('{{ site.baseurl }}/images/header/Red_Fuji.png');
+	background-repeat: no-repeat;
+	background-position: right 0% bottom 0%;
+	/*max-width: 400px;*/
+	height: 300px;
+	width: auto;
+	background-size: contain;
+	transition: 0.5s;
+}
+
 .background_img_formal {
 	background-image: url('{{ site.baseurl }}/images/header/sea_of_ice_part.png');
 	background-repeat: no-repeat;
@@ -47,6 +58,17 @@
 		width: auto;
 		background-size: contain;
 		transition: 0.5s;
+	}
+	
+	.background_img_fuji {
+	background-image: url('{{ site.baseurl }}/images/header/Red_Fuji.png');
+	background-repeat: no-repeat;
+	background-position: right 0% bottom 0%;
+	/*max-width: 400px;*/
+	height: 160px;
+	width: auto;
+	background-size: contain;
+	transition: 0.5s;
 	}
 }
 /*
