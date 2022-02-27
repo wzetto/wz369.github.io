@@ -39,6 +39,6 @@ layout: map_homepage
 
 [> 二百名山 \|　武奈ヶ岳](https://wzetto.github.io/wz369.github.io/yamanobo/bunagatake/bunagatake.html)
 
-[> 関西百名山 \| 霊仙山\<冬\>](https://wzetto.github.io/wz369.github.io/yamanobo/ryozen/ryozen.html)
+[> 関西百名山 \| 霊仙山\<冬\>](https://wzetto.github.io/wz369.github.io/yamanobo/ryozen/ryozen_winter.html)
 
 ### [< HOME](https://wzetto.github.io/wz369.github.io/)
