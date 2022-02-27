@@ -30,6 +30,6 @@ Insert vacuum bro.
 2022.02.27
 <hr style="width:50px;text-align:left;margin-left:0">
 1.基本上与池田等人的结果相似；但与nat commu上差距甚远。<br>
-2. 尝试对C层，面心原子进行修正。
+2.尝试对C层，面心原子进行修正。
 
 #### [< back](https://wzetto.github.io/wz369.github.io/Research_etc/SFE/SFE_home.html)
