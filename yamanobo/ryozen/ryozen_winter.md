@@ -1,9 +1,9 @@
 ---
 title: '霊仙山'
 layout: map_default
-js_url: https://wzetto.github.io/wz369.github.io/js/map_ryozen.js
+js_url: https://wzetto.github.io/wz369.github.io/js/map_ryozen_winter.js
 ---
-2021.1.17<br>
+2022.2<br>
 **前往车站时，一株八重桜。下吧！梅雨。**<br>
 <img src="https://drive.google.com/thumbnail?id=1JsTpRCvRlhgwnYb9jDPYC2T6L0KVDTb3&sz=w600" />
 <hr style="width:50px;text-align:left;margin-left:0">
