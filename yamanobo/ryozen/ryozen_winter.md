@@ -1,5 +1,5 @@
 ---
-title: '霊仙山'
+title: '霊仙山<冬>'
 layout: map_default
 js_url: https://wzetto.github.io/wz369.github.io/js/map_ryozen_winter.js
 ---
