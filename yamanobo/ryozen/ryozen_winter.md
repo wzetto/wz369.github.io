@@ -4,10 +4,10 @@ layout: map_default
 js_url: https://wzetto.github.io/wz369.github.io/js/map_ryozen_winter.js
 ---
 2022.2<br>
-**前往车站时，一株八重桜。下吧！梅雨。**<br>
-<img src="https://drive.google.com/thumbnail?id=1JsTpRCvRlhgwnYb9jDPYC2T6L0KVDTb3&sz=w600" />
+**雪原**<br>
+<img src="https://drive.google.com/thumbnail?id=1sXab3w7TltCnzvXZLZTYw2zAVKHKrntm&sz=w2500" />
 <hr style="width:50px;text-align:left;margin-left:0">
-与伊吹对峙的全景展望良山，铃鹿山脉的北端，准平原。
+
 
 从柏原駅跋涉10km后到达平缓山顶，由石灰岩和盐基火山岩形成的喀斯特地貌构成数个小丘，宜人春日，环望四周，南及伊势湾，名古屋市区；东至御嶽山，北阿尔卑斯（飛騨山脈）；北到伊吹，白山；西达琵琶湖，比良山地，以至京都，大阪。
 
