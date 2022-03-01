@@ -8,5 +8,5 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_ryozen_winter.js
 <img src="https://drive.google.com/thumbnail?id=1sXab3w7TltCnzvXZLZTYw2zAVKHKrntm&sz=w2500" />
 <hr style="width:50px;text-align:left;margin-left:0">
 
-本计划
+冬期豪雪
 #### [< back](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
