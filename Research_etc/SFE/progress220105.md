@@ -1,5 +1,5 @@
 ---
-title: 'Log 2022.01-02'
+title: 'Log 2022.01-03'
 ---
 2022.01.05
 <hr style="width:50px;text-align:left;margin-left:0">
@@ -31,5 +31,9 @@ Insert vacuum bro.
 <hr style="width:50px;text-align:left;margin-left:0">
 1.基本上与池田等人的结果相似；但与nat commu上差距甚远。<br>
 2.尝试对C层，面心原子进行修正。
+
+2022.03.02
+<hr style="width:50px;text-align:left;margin-left:0">
+做出学会数据后做一下结构周期性条件修正。
 
 #### [< back](https://wzetto.github.io/wz369.github.io/Research_etc/SFE/SFE_home.html)
