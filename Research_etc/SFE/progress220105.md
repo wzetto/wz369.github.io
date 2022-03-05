@@ -36,4 +36,8 @@ Insert vacuum bro.
 <hr style="width:50px;text-align:left;margin-left:0">
 做出学会数据后做一下结构周期性条件修正。
 
+2022.03.05
+<hr style="width:50px;text-align:left;margin-left:0">
+采样时循环调整不同层的权重似乎能有效收敛。
+
 #### [< back](https://wzetto.github.io/wz369.github.io/Research_etc/SFE/SFE_home.html)
