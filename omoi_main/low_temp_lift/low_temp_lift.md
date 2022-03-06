@@ -25,4 +25,4 @@ Bingo.<br>
 （一个电池盖能拖十天才到。<br>
 (一块板子又拖了十天？！
 
-#### [< back](https://wzetto.github.io/wz369.github.io/omoi/omoi_main.html)
+#### [< back](https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html)
