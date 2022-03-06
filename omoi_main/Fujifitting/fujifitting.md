@@ -9,4 +9,4 @@ layout: fuji_default
 山脊相似度: [DTW](https://ieeexplore.ieee.org/abstract/document/1163055)<br>
 有空做个图，还算符合直观，甚至有过之。
 
-### [< back](https://wzetto.github.io/wz369.github.io/omoi/omoi_main.html)
+### [< back](https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html)
