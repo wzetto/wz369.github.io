@@ -8,6 +8,7 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_ryozen_winter.js
 <img src="https://drive.google.com/thumbnail?id=1sXab3w7TltCnzvXZLZTYw2zAVKHKrntm&sz=w2500" />
 <hr style="width:50px;text-align:left;margin-left:0">
 
+为了贯彻去年立下的“冬天在雪原上露个营”之flag，天气，装备，体力，以及摸鱼跑路计划准备万全后，在临走前一天想起当日下午有个火锅。雄心勃勃的远征计划变成了单日往返特色食物游。<br>
 冬期豪雪，选择相对容易的醒ヶ井駅登山道，沿公路步行5公里左右到达雪道。
 
 <img src="https://drive.google.com/thumbnail?id=1zHf-PrPKV3-pRok46t-cdg_X7I-QIF0B&sz=w800" />
