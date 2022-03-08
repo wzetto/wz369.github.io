@@ -28,6 +28,10 @@ title: 想法等
 <a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-2-22虚構時代の果て_re_2.html">> 2022.2.22虚構の時代の果て_re_2</a><br>
 </details>
 
+<details><summary>2022.2</summary>
+<a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-3-8东方市.html">> 2022.3.8东方市</a><br>
+</details>
+
 ## 想法 / 微小的工作
 
 [> Yuyake recognition](https://wzetto.github.io/wz369.github.io/omoi_main/yuyake_recog/Yuyake_recog.html)<br>
