@@ -21,7 +21,7 @@ title: 想法等
 <a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-1-27更正.html">> 2022.1.27更正</a><br>
 </details>
 
-<details><summary>2022.2</summary>
+<details><summary>2022.3</summary>
 <a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-2-9rough.html">> 2022.2.9rough</a><br>
 <a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-2-12虚構時代の果て_re_1.html">> 2022.2.12虚構の時代の果て_re_1</a><br>
 <a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-2-18魔法使いの夜～メインテーマ.html">> 2022.2.12魔法使いの夜〜メインテーマ</a><br>
