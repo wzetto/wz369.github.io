@@ -31,6 +31,7 @@ title: 想法等
 <details><summary>2022.3</summary>
 <a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-3-8东方市.html">> 2022.3.8东方市</a><br>
 <a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-3-11大文字.html">> 2022.3.11大文字</a><br>
+<a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-3-12虚構時代の果て～re:3.html">> 2022.3.12虚構時代の果て～re:3</a><br>
 </details>
 
 ## 想法 / 微小的工作
