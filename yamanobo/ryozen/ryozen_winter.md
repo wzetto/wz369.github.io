@@ -21,5 +21,12 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_ryozen_winter.js
 <hr style="width:50px;text-align:left;margin-left:0">
 <img src="https://drive.google.com/thumbnail?id=1l-JEECloDJnj8CAYLaro386DuO-kNW9O&sz=w800" />
 <hr style="width:50px;text-align:left;margin-left:0">
+<img src="https://drive.google.com/thumbnail?id=1XH7R1y99pp_VtsuRZkbVKMW-GnQKboiA&sz=w800" />
+<hr style="width:50px;text-align:left;margin-left:0">
+<img src="https://drive.google.com/thumbnail?id=1Eo42jd4DKQ6XIL87pvvOd92jtrNdUVmI&sz=w800" />
+<hr style="width:50px;text-align:left;margin-left:0">
+<img src="https://drive.google.com/thumbnail?id=1QnPb4leeF5cyVM34dziUyw77ZjKPCEAO&sz=w800" />
+<hr style="width:50px;text-align:left;margin-left:0">
+特有的空气折射，或者是无人机传感器本身原因，航拍照片整体偏迷之暖色。
 
 #### [< back](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
