@@ -17,6 +17,7 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_ryozen_winter.js
 <img src="https://drive.google.com/thumbnail?id=1UMYtC9HK8V6RvxgOAB9irDmV58ARum6c&sz=w600" />
 <hr style="width:50px;text-align:left;margin-left:0">
 翻越几个小垭口后到达雪坡，暴露阳光下，纵览琵琶湖。到达雪原时比想象中累不少，也许是软雪及冰爪带来更大负担原因，总之想一动不动，雪地躺平。雪原的确适合露营，植被稀疏，雪崩危险小。除了冬期气流经过时风较大，以及在无边准平原上，夜晚也许会有奇妙的超验体验。<br>
+整片关西地区笼罩霾中，远眺只依稀见得能乡白山，遑论白山北阿。冬季雪原，春季远眺他山，也算是trade-off了吧。<br>
 <img src="https://drive.google.com/thumbnail?id=1CxWey7pMyPsnF47L4BCz8LPNSi5C7V78&sz=w600" />
 <hr style="width:50px;text-align:left;margin-left:0">
 <img src="https://drive.google.com/thumbnail?id=1l-JEECloDJnj8CAYLaro386DuO-kNW9O&sz=w800" />
