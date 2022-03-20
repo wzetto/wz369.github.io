@@ -20,5 +20,5 @@ layout: default
 <hr style="width:50px;text-align:left;margin-left:0">
 ### 想法等
 
-[> 思い](https://wzetto.github.io/omoi_main/omoi.html)
+[> 思い](https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html)
 <!--(https://wzetto.github.io/wz369.github.io/omoi/omoi.html)-->
