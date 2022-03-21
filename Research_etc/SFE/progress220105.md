@@ -45,4 +45,8 @@ Insert vacuum bro.
 应用权重进行类似的层层采样，有一定效果。但没有常规超胞有效。<br>
 将晶胞扩充至正常尺寸后进行采样，然后缩放提交计算。
 
+2022.03.21
+<hr style="width:50px;text-align:left;margin-left:0">
+
+
 #### [< back](https://wzetto.github.io/wz369.github.io/Research_etc/SFE/SFE_home.html)
