@@ -47,6 +47,6 @@ Insert vacuum bro.
 
 2022.03.21
 <hr style="width:50px;text-align:left;margin-left:0">
-
+这样一来，遗传算法得到的结构就很有可能变成高维空间的簇。这样可能失去一定的完备性？
 
 #### [< back](https://wzetto.github.io/wz369.github.io/Research_etc/SFE/SFE_home.html)
