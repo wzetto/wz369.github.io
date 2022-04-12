@@ -4,9 +4,9 @@ layout: default
 ---
 <h1>记录 研究进展及想法 / 一些灵感及其他想法 / 山登り / etc.</h1>
 <hr style="width:50px;text-align:left;margin-left:0">
-***2020 summer - Minya Konka from Owen's rooftop***
+***2019summer flight from Alice Springs to Adelaide***
 
-<img src="https://drive.google.com/thumbnail?id=13Qn7ImuLtR1NbOieibDd-WXoxnRMXb32&sz=w600" />
+<img src="https://drive.google.com/thumbnail?id=13m-UirsroewljES4JuH55Eclf68cP7XX&sz=w600" />
 
 <hr style="width:50px;text-align:left;margin-left:0">
 ### Research & etc.
