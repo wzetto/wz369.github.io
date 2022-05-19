@@ -40,6 +40,10 @@ title: 想法等
 <a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-4-12.html">> 2022.4.12进度</a><br>
 </details>
 
+<details><summary>2022.5</summary>
+<a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-5-19虚構時代の果て_re_4.html">> 2022.5.19虚構時代の果て～re:4</a><br>
+</details>
+
 ## 想法 / 微小的工作
 
 [> Yuyake recognition](https://wzetto.github.io/wz369.github.io/omoi_main/yuyake_recog/Yuyake_recog.html)<br>
