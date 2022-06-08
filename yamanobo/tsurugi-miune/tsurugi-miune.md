@@ -10,4 +10,6 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_tsurugi_miune.js
 <iframe src="https://www.youtube.com/embed/YRZh_A8jqnI" 
         frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>
 
+21年秋，随大阪一队伍进行了在日第一次纵走（轻装中线），天气欠佳，体验良好。
+
 #### [< back](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
