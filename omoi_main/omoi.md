@@ -48,6 +48,10 @@ title: 想法等
 <a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-6-25eldenring.html">> 2022.6.30通关</a><br>
 </details>
 
+<details><summary>2022.7</summary>
+<a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-7-15山顶.html">> 2022.7.15无法到达的</a><br>
+</details>
+
 ## 想法 / 微小的工作
 
 [> Yuyake recognition](https://wzetto.github.io/wz369.github.io/omoi_main/yuyake_recog/Yuyake_recog.html)<br>
