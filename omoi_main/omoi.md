@@ -50,6 +50,7 @@ title: 想法等
 
 <details><summary>2022.7</summary>
 <a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-7-15山顶.html">> 2022.7.15无法到达的</a><br>
+<a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-7-28中土.html">> 2022.7.28 Riders of Rohan</a><br>
 </details>
 
 ## 想法 / 微小的工作
