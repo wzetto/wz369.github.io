@@ -7,9 +7,11 @@ layout: formal_default
 <hr style="width:80px;text-align:left;margin-left:0">
 
 <img src="https://drive.google.com/thumbnail?id=17WE6QPALXZ7QSEReC3yRWJ_W2tqNdS_5&sz=w800" /><br>
+<hr style="width:80px;text-align:left;margin-left:0">
 通关了两遍，第一遍稀里糊涂让所有理智NPC死了，第二遍尝试在不违背NPC意愿的情况下拯救。不过按照游戏支线思路，所有人的意愿都会导向悲剧。必是游戏内的恶意。
-
+<hr style="width:80px;text-align:left;margin-left:0">
 <img src="https://drive.google.com/thumbnail?id=17Z3kUZLxOyhA6tGWMoAz2mtuWeSROb49&sz=w800" /><br>
+<hr style="width:80px;text-align:left;margin-left:0">
 恶意包括最终BOSS 'God Slain'以后发现这不过是神的一只宠物。
 
 玩到第二次轮回时感觉这部作品符号堆砌挺严重，所以游玩过后的感想一定是过度解读的。那么就在这轻飘飘的符号之网上自娱自乐一下吧。
