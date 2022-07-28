@@ -3,7 +3,7 @@ title: 2022.6.25通关
 layout: formal_default
 ---
 
-<iframe src="https://www.youtube.com/embed/s1LwS0UHJnA?autoplay=1" frameborder="0" 
+<iframe width="1px" height="1px" src="https://www.youtube.com/embed/s1LwS0UHJnA?autoplay=1" frameborder="0" 
         allow="autoplay; encrypted-media" allowfullscreen> </iframe>
 <hr style="width:80px;text-align:left;margin-left:0">
 <img src="https://drive.google.com/thumbnail?id=17WE6QPALXZ7QSEReC3yRWJ_W2tqNdS_5&sz=w800" /><br>
