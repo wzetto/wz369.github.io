@@ -3,10 +3,9 @@ title: 2022.6.25通关
 layout: formal_default
 ---
 
-<iframe width="1" height="1" src="https://www.youtube.com/embed/s1LwS0UHJnA?autoplay=1" frameborder="0" 
+<iframe src="https://www.youtube.com/embed/s1LwS0UHJnA?autoplay=1" frameborder="0" 
         allow="autoplay; encrypted-media" allowfullscreen> </iframe>
 <hr style="width:80px;text-align:left;margin-left:0">
-
 <img src="https://drive.google.com/thumbnail?id=17WE6QPALXZ7QSEReC3yRWJ_W2tqNdS_5&sz=w800" /><br>
 <hr style="width:80px;text-align:left;margin-left:0">
 通关了两遍，第一遍稀里糊涂让所有理智NPC死了，第二遍尝试在不违背NPC意愿的情况下拯救。不过按照游戏支线思路，所有人的意愿都会导向悲剧。必是游戏内的恶意。
