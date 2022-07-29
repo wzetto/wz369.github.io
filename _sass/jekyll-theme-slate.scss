@@ -295,14 +295,23 @@ Full-Width Styles
   max-width: 80%;
   /*origin: no height definition*/
   padding: 20px 10px;
+//   margin-right: 400px;
+  margin: 0 auto;
+}
+
+.inner_left {
+  max-width: 80%;
+  /*origin: no height definition*/
+  padding: 20px 10px;
+  float: left;
   margin-right: 400px;
-//   margin: 0 auto;
 }
 
 .inner_right {
   /*origin: no height definition*/
   padding: 20px 10px;
   margin-left: -150px;
+  float: left;
 }
 
 .inner_bottom {
