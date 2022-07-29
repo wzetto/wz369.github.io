@@ -12,7 +12,7 @@ GSFE 有三种算法：
 <h5>HOW TO?</h5>
 
 \> Merging POSCARs of the initial and final configurations, after geometrical relaxation. Localizing the new interpolated POSCAR
-file into the main directory, along with excutable files, INCAR POTCAR KPOINTS, note that some extra parameters should be covered in INCAR file for NEB.
+file into the main directory, along with excutable files (INCAR POTCAR KPOINTS), note that some extra parameters should be covered in INCAR file for NEB.
 
 \> Transition states, e.g. usf, isf, utf configurations, could be settled as 'anchor points' during NEB calculation. Those additional
 configurations should be stored into sub directory, indexed between the ini- and fin-structures. Calculation will be undergone
