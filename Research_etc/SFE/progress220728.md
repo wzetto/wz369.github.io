@@ -18,7 +18,7 @@ file into the main directory, along with excutable files (INCAR POTCAR KPOINTS),
 configurations should be stored in the sub directories, indexed between the ini- and fin-structures. Calculation will be undergone
 within main directory.
 
-\> Potential energy surfaces will then be approximated during the calculation & interpolation process. Thus those saddle points and energy barriers, 'optimized' trajectory, could be
+\> Potential energy surfaces will then be approximated during the calculation & interpolation process. Thus those saddle points and energy barriers, 'optimized' trajectories, could be
 obtained from results.
 
 3. EMTO-CPA，不太了解。计算量相对较小，因为不采用大体系晶胞，而是选择构建描述格子, e.g.八面体。
