@@ -462,6 +462,8 @@ Full-Width Styles
   z-index: 4;
 }
 
+/*right content must be settled in same index as the main (left) in order to be conved by the bottom block.*/
+
 #footer_wrap {
   z-index: 7;
   /*position: relative;*/
