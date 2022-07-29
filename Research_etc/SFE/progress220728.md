@@ -6,9 +6,9 @@ title: 'Log 2022.07-'
 <hr style="width:50px;text-align:left;margin-left:0">
 GSFE 有三种算法：
 
-1. ab initio，就是最简单粗暴的构建SQS。
+1. ab initio，即粗暴构建SQS。
 
-2. NEB，就是在几个中间态间插值，而中间态的计算为ab initio.
+2. NEB，即在几个中间态间插值，而中间态的计算为ab initio.
 <h5>HOW TO?</h5>
 
 \> Interpolating POSCARs of the initial and final configurations, after geometrical relaxation. Localize the new interpolated POSCAR
