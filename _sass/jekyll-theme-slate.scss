@@ -104,7 +104,7 @@ footer p {
 
 a {
   text-decoration: none;
-  color: #DC143C;
+  color: #36648B;
   text-shadow: none;
 
   transition: color 0.5s ease;
@@ -291,6 +291,10 @@ Full-Width Styles
   transition: 0.5s;
 }
 
+.row {
+  display: flex;
+}
+
 .inner {
   max-width: 80%;
   /*origin: no height definition*/
@@ -305,8 +309,7 @@ Full-Width Styles
   max-width: 80%;
   /*origin: no height definition*/
   padding: 20px 10px;
-  float: left;
-  margin-right: 400px;
+  flex: 80%;
 }
 
 .inner_right {
@@ -314,8 +317,8 @@ Full-Width Styles
   z-index: 100;
   /*origin: no height definition*/
   padding: 20px 10px;
-  margin-left: -150px;
-  float: left;
+  flex: 20%;
+  max-width: 300px;
 }
 
 .inner_bottom {
