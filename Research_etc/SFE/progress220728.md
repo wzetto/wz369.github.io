@@ -15,7 +15,7 @@ GSFE 有三种算法：
 file into the main directory, along with excutable files (INCAR POTCAR KPOINTS), note that some extra parameters should be covered in INCAR file for NEB.
 
 \> Transition states, e.g. usf, isf, utf configurations, could be settled as 'anchor points' during NEB calculation. Those additional
-configurations should be stored into sub directory, indexed between the ini- and fin-structures. Calculation will be undergone
+configurations should be stored in the sub directories, indexed between the ini- and fin-structures. Calculation will be undergone
 within main directory.
 
 \> Potential energy surfaces will then be approximated during the calculation & interpolation process. Thus those saddle points and energy barriers, 'optimized' trajectory, could be
