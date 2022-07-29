@@ -295,7 +295,13 @@ Full-Width Styles
   max-width: 80%;
   /*origin: no height definition*/
   padding: 20px 10px;
-  margin: 0 auto;
+  margin-right: 400px;
+}
+
+.inner_right {
+  /*origin: no height definition*/
+  padding: 20px 10px;
+  margin-left: -150px;
 }
 
 .inner_bottom {
