@@ -11,7 +11,7 @@ GSFE 有三种算法：
 2. NEB，即在几个中间态间插值，而中间态的计算为ab initio.
 <h5>HOW TO?</h5>
 
-\> Interpolating POSCARs of the initial and final configurations, after geometrical relaxation. Localize the new interpolated POSCAR
+\> Merging POSCARs of the initial and final configurations, after geometrical relaxation. Localizing the new interpolated POSCAR
 file into the main directory, along with excutable files, INCAR POTCAR KPOINTS, note that some extra parameters should be covered in INCAR file for NEB.
 
 \> Transition states, e.g. usf, isf, utf configurations, could be settled as 'anchor points' during NEB calculation. Those additional
