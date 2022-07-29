@@ -300,6 +300,8 @@ Full-Width Styles
 }
 
 .inner_left {
+  padding-top: 40px;
+  z-index: 4;
   max-width: 80%;
   /*origin: no height definition*/
   padding: 20px 10px;
@@ -308,6 +310,8 @@ Full-Width Styles
 }
 
 .inner_right {
+  padding-top: 40px;
+  z-index: 100;
   /*origin: no height definition*/
   padding: 20px 10px;
   margin-left: -150px;
