@@ -304,8 +304,13 @@ Full-Width Styles
 }
 
 .inner_left {
-  padding-top: 40px;
+  position: relative;
+  width: 100%;
+  background: #f2f2f2;
+  border-top: 1px solid #111;
+  /*change into center solid*/
   z-index: 4;
+  padding-top: 40px;
   max-width: 80%;
   /*origin: no height definition*/
   padding: 20px 10px;
@@ -313,8 +318,13 @@ Full-Width Styles
 }
 
 .inner_right {
+  position: relative;
+  width: 100%;
+  background: #f2f2f2;
+  border-top: 1px solid #111;
+  /*change into center solid*/
+  z-index: 6;
   padding-top: 40px;
-  z-index: 1000;
   /*origin: no height definition*/
   padding: 20px 10px;
   flex: 20%;
