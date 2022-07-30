@@ -314,6 +314,8 @@ Full-Width Styles
   /*origin: no height definition*/
   padding: 20px 10px;
   flex: 80%;
+  margin-left: 10%;
+  margin-right: 5%;
 }
 
 .inner_right {
@@ -325,6 +327,8 @@ Full-Width Styles
   padding: 20px 10px;
   flex: 20%;
   max-width: 20%;
+  margin-left: 5%;
+  margin-right: 10%;
 }
 
 .inner_bottom {
