@@ -306,8 +306,8 @@ Full-Width Styles
 }
 
 .inner_left {
-  border-top: 1px solid #111;
   /*change into center solid*/
+  margin-top: 10%;
   z-index: 4;
   padding-top: 40px;
   max-width: 80%;
@@ -316,12 +316,12 @@ Full-Width Styles
   flex: 80%;
   margin-left: 10%;
   margin-right: 5%;
-  border-right: 1px solid #000000
+  border-right: 1px solid #6b6969
 }
 
 .inner_right {
-  border-top: 1px solid #111;
   /*change into center solid*/
+  margin-top: 10%;
   z-index: 5;
   padding-top: 40px;
   /*origin: no height definition*/
