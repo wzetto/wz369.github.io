@@ -399,7 +399,7 @@ Full-Width Styles
 	/*background-size: cover;*/
 	height: 100%;
 	width: auto;
-	/*后加*/	
+	/*Additional*/	
 	background: rgba(33, 33, 33, .85);
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
@@ -411,7 +411,7 @@ Full-Width Styles
   margin: 0;
   color: #fff;
   font-size: 34px;
-  /*追加*/
+  /*Additional*/
   position: relative;
   top: 5%;
   left: 10%;
@@ -579,6 +579,14 @@ Small Device Styles
     min-width: 320px;
     max-width: 100%;
   }
+	
+  .inner_left {
+    min-width: 320px;
+    max-width: 100%;
+  }
+	
+  .inner_right {
+  
 
   .inner_top {
 	  max-width: 100%;
