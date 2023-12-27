@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="shortcut icon" type="image/png" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="shortcut icon" sizes="192x192" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="apple-touch-icon" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=cfe0696a4f604aaa79f27fc4ea1cda9f54a98c00">
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>WBdisloc | wz369.github.io.git</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="WBdisloc" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/omoi_main/wbrecog/try1.html" />
+<meta property="og:url" content="http://localhost:4000/omoi_main/wbrecog/try1.html" />
+<meta property="og:site_name" content="wz369.github.io.git" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="WBdisloc" />
+<script type="application/ld+json">
+{"headline":"WBdisloc","@type":"WebPage","url":"http://localhost:4000/omoi_main/wbrecog/try1.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
+<script>
+const config = {
+    startOnLoad:true,
+    theme: 'forest',
+    flowchart: {
+        useMaxWidth:false,
+        htmlLabels:true
+        }
+};
+mermaid.initialize(config);
+window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+</script>
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+    <script type="text/x-mathjax-config">
+       MathJax.Hub.Config({
+         tex2jax: {
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           processEscapes: true
+         }
+       });
+    </script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- HEADER -->
+    <div id="header_pages" class="outer">
+        <header class="inner_top background_img_formal">
+          
+          <!-- 
+            <a id="forkme_banner" href="https://github.com/wzetto/wz369.github.io.git">View on GitHub</a>
+           -->
+          <a href="https://wzetto.github.io/wz369.github.io/"></a>
+          
+          <h1 id="project_title">WBdisloc</h1>
+          
+          
+         
+          
+        </header>
+    </div>
+    
+    <script src="https://wzetto.github.io/wz369.github.io/js/header/header_scroll_formal.js"></script>
+    
+    <!-- MAIN CONTENT -->
+    <button onclick="topFunction()" id="back_top" title="Back to top">TOP</button>
+    <script src="https://wzetto.github.io/wz369.github.io/js/BackTop/bt_1.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <div class="row">
+      <div class="inner_left">
+
+        
+
+        <p><a href="https://github.com/wzetto/MATools/tree/main/WBdisloc">&lt;code&gt;</a></p>
+
+<p>年末抽两天搞了去年末遗留（？的位错识别问题。简要梳理下思路：</p>
+
+<ul>
+  <li>
+    <p>首先从SAED图像识别衍射斑点 -&gt; Burgers vector.可以直接通过opencv <code>HoughCircles</code>解决。</p>
+  </li>
+  <li>
+    <p>导入灰度图像。</p>
+  </li>
+</ul>
+
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p><img src="https://drive.google.com/thumbnail?id=1fuLDIfPPViOMH23Q2ZMwORFHWeTvS-pT&amp;sz=w800" width="400px" /></p>
+
+<ul>
+  <li>
+    <p>手描线，例如定义：添加原始锚点/删除原始锚点/拖动锚点/插值生成曲线($l$) 四种操作。返回锚点坐标数组。</p>
+  </li>
+  <li>
+    <p>对插值曲线$l$上等距$N$个拟合点做处理。为：</p>
+  </li>
+</ul>
+
+<ol>
+  <li>定义$P_N$上的切线及垂线$l_{P_N}^{\perp}$，自定义长度，下文称呼pins。$N$个pins在原图像上的intensity-x图（下文称I-x图）长这样：</li>
+</ol>
+
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p><img src="https://drive.google.com/thumbnail?id=1AZ1jilxTIEIPzZnLai8Kg5-onL7sry8I&amp;sz=w1200" width="900px" /></p>
+
+<p>需要筛选有效信号。识别标准为：将单个pin的I-x pattern拟合高斯分布后，定义其AIC/BIC/Variance的值超出某阈值。</p>
+
+<p>例如有效信号其一。其中，x为单个pin在图像经过的像素，y为归一化后的对应intensity；蓝橙绿分别对应原始平滑拟合。</p>
+
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p><img src="https://drive.google.com/thumbnail?id=1AdxM1p00UVBEzAA5nQxdLGRhWeHW57Yi&amp;sz=w800" width="400px" /></p>
+
+<ol>
+  <li>返回有效pins的I-x图拟合后的高斯分布参数。定义$\mu\pm0.3\sigma$处的像素为待测像素。生成范例如下。其中黑线为pins，黑点为待测像素。</li>
+</ol>
+
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p><img src="https://drive.google.com/thumbnail?id=1ADl85Mv1vp_BDOIdhKD787ZfWr1Z4pQB&amp;sz=w800" width="600px" /></p>
+
+<ul>
+  <li>返回待测像素坐标，因非时间序列，故采用非参数化的Lowess平滑。取68%置信区间后返回最终坐标序列。如下图：</li>
+</ul>
+
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p><img src="https://drive.google.com/thumbnail?id=1AlWYfaxgdvjXfS7cvplxrsXHBFxQvD1J&amp;sz=w800" width="600px" /></p>
+
+<ul>
+  <li>接下来识别有效的锚点对，定义为$p=p_2\in l_2-p1\in l_1$垂直于两条平行位错。进行后续科学计算时仅信任锚点对数据。取点数较少的一条位错为基，大概思路是：</li>
+</ul>
+
+<p><img src="https://drive.google.com/thumbnail?id=1Ao5Mb2CZKKFBavqEebkbThJfcIt9vw5T&amp;sz=w800" width="800px" /></p>
+
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p>总之成品为：</p>
+
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p><img src="https://drive.google.com/thumbnail?id=1AQ4hbPp-JVCuG8IeEtplK9-aRo4Jvu63&amp;sz=w800" width="400px" /></p>
+
+<ul>
+  <li>红线是平滑曲线（不带/带插值）；</li>
+  <li>红环是置信区间；</li>
+  <li>平黑线是切线；竖黑线是$1.5^{\circ}$ tolerance下的有效锚点对；</li>
+  <li>蓝点是有效点；红叉是无效点；</li>
+</ul>
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p>拉二真美妙～</p>
+
+<iframe width="100%" height="400px" src="https://www.youtube.com/embed/SvuitFzDxDg?start=55&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""> </iframe>
+
+<h3 id="-back"><a href="https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html">&lt; back</a></h3>
+
+<script>
+  window.onload = function(){
+    let txt = document.getElementById("side_text");
+    txt.innerHTML = "Rachmaninoff<br>Symphony No.2 in E Minor";
+  }
+</script>
+
+<br>
+        <div id="gitalk-container"></div>
+        <script>
+          var gitalk = new Gitalk({
+              clientID: '7b560b97e4bda87153dd',
+              clientSecret: '71c1745a9c776d439e0de7e8712c4c90a7441709',
+              repo: 'gitalk-cobuffer',
+              owner: 'wzetto',
+              admin: ['wzetto'],
+              id: 'WBdisloc',
+              distractionFreeMode: false,
+              title: 'Omoi'
+          })
+          gitalk.render('gitalk-container')
+        </script>
+        <p style="text-align: center;">
+          <img src="https://drive.google.com/thumbnail?id=1hcY5U4qLbe6QHDNCK6wzERxcDnTxm0Dp&sz=w800" width="200px"/>
+        </p>
+        <h6 align='center'>Zhi Wang © 2021-2023</h6>
+      </div>
+      <div class="inner_right">
+        <h5 id="side_text">> Main content</h5>
+      </div>
+     </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner_bottom">
+        
+        <p class="copyright">wz369.github.io.git maintained by <a href="https://github.com/wzetto">wzetto</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <!-- <p style="position: absolute; bottom: 0; width:100%; text-align: center">有り得ざる妖精の王よ——</p>
+        -->
+        <p id='bottom_text'>冬の玉座は誰の手に</p>
+        <!-- <script src="https://wzetto.github.io/wz369.github.io/js/bottom/bottom_text_home.js"></script>-->
+      </footer>
+    </div>
+  </body>
+</html>

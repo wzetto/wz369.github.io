@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="shortcut icon" type="image/png" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="shortcut icon" sizes="192x192" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="apple-touch-icon" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=cfe0696a4f604aaa79f27fc4ea1cda9f54a98c00">
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>SQSdrl Introduction | wz369.github.io.git</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="SQSdrl Introduction" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/Research_etc/SQS_drl/main_formal.html" />
+<meta property="og:url" content="http://localhost:4000/Research_etc/SQS_drl/main_formal.html" />
+<meta property="og:site_name" content="wz369.github.io.git" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SQSdrl Introduction" />
+<script type="application/ld+json">
+{"headline":"SQSdrl Introduction","@type":"WebPage","url":"http://localhost:4000/Research_etc/SQS_drl/main_formal.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+    <script type="text/x-mathjax-config">
+       MathJax.Hub.Config({
+         tex2jax: {
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           processEscapes: true
+         }
+       });
+    </script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- HEADER -->
+    <div id="header_pages" class="outer">
+        <header class="inner_top background_img_formal">
+          
+          <!-- 
+            <a id="forkme_banner" href="https://github.com/wzetto/wz369.github.io.git">View on GitHub</a>
+           -->
+          <a href="https://wzetto.github.io/wz369.github.io/"></a>
+          
+          <h1 id="project_title">SQSdrl Introduction</h1>
+          
+          
+         
+          
+        </header>
+    </div>
+    
+    <script src="https://wzetto.github.io/wz369.github.io/js/header/header_scroll_formal.js"></script>
+    
+    <!-- MAIN CONTENT -->
+    <button onclick="topFunction()" id="back_top" title="Back to top">TOP</button>
+    <script src="https://wzetto.github.io/wz369.github.io/js/BackTop/bt_1.js"></script>
+<!--     Loading the navigation bar -->
+    <script src="https://wzetto.github.io/wz369.github.io/js/side/sqsdrl_intro.js"></script>
+    
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <div class="row">
+      <div class="inner_left">
+        <p><a href="https://github.com/wzetto/SQSdrl">&lt;Code&gt;</a></p>
+
+<p><strong>Background</strong></p>
+
+<p>The scalar property of a system $U(\vec\sigma)$ is expected to be a one-to-one function of the atomic arrangement $\vec \sigma$. Based on a Fourier transform-like idea, the $U(\vec\sigma)$ could be decomposed as the combination of basis functions represented by atomic species. e.g. $U(\vec\sigma) = \sum_k a_k\cdot \phi_k(\vec\sigma)$, here the $\vec\sigma$ represents the cluster composed of atomic species, e.g. pair cluster which contains a couple of atoms and $\sigma = \lbrace 1, -1 \rbrace$ in binary alloy system; $a_k$ is the inner product $&lt;U(\vec\sigma)\mid \phi_k&gt;$ when the $\phi_k$ are properly chosen as orthogonal basis functions, given as: $&lt;\phi_i\mid \phi_j&gt; = \delta_{ij}$, in this work, $\sigma = \lbrace 1, 0, -1 \rbrace$, $\phi = \lbrace 1, \sqrt{3/2}\sigma, \sqrt{2}(3/2\sigma^2-1) \rbrace$.</p>
+
+<p>Following the principle introduced before, <strong><em>the randomness of an atomic arrangement</em></strong> can also be treated as a <strong><em>scalar property</em></strong> since the mathematical relationship between basis function $\phi_k(\vec\sigma)$ and cluster probability $P(\vec\sigma)$ is capable of deducing in perfectly random conditions. Such random configuration evaluated from limited clusters in the atomic cell is called <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.65.353">special quasirandom structures (SQSs)</a>. The combination of basis functions in each cluster $\alpha$ is named correlation function $\Phi_{\alpha}(\vec\sigma) = &lt;\prod_{i \in \alpha}\phi(\widehat{T_i} \circ \sigma_i)&gt;_{\alpha}$, $\widehat{T_i}$ is the possible symmetry operation in cluster $\alpha$, and the result is by taking the average of all the cluster correlation functions in atomic configuration.</p>
+
+<p>However, the attempt to analytically reach the ideal SQS is non-trivial, several stochastic approaches with moderate precision have been developed, by minimizing the loss between the ideal correlation function (randomized state) and the present state’s correlation function, $\mathcal{L} = \Vert \Phi_{state}-\Phi_{ideal} \Vert$, where $\Phi = \lbrace\Phi_{\alpha_1}, …, \Phi_{\alpha_i}\rbrace$. In this work, <strong>a deep reinforcement learning-derived policy-guided Monte Carlo method is developed for generating SQSs of 32-atom cells.</strong></p>
+
+<hr style="width:40px;text-align:left;margin-left:0" />
+
+<p><strong>Method</strong></p>
+<hr style="width:40px;text-align:left;margin-left:0" />
+
+<ul>
+  <li>State &amp; Observation &amp; Action</li>
+</ul>
+
+<p><strong>State</strong>: 32-atom face-centered cubic (FCC) cell in ternary system, $\sigma = \lbrace -1, 0, 1 \rbrace$. Coordinates are fixed and embed them into a 1-dimensional sequence e.g. Coordinates: $\lbrack\lbrack 1,1,1 \rbrack, \lbrack 0,0,0 \rbrack \rbrack \to$ sequences: $\lbrack \sigma_0, \sigma_1 \rbrack$, $\sigma_i$ represents the atomic species.</p>
+
+<p><strong>Observation</strong>: Observation of the state is the <strong><em>residual</em></strong> between the accumulated correlation function of each cluster, and the ideal accumulated correlation function $N\Vert \Phi_{state}-\Phi_{ideal} \Vert$ under that atomic composition (e.g. $c_A=0.2, c_B=0.3, c_C=0.5$ under non-equiatomic condition; N represents the number of one cluster). In this work, the cluster is defined as first nearest-neighbor (1NN) pair. Besides, the initial state is restricted to $N\Vert \Phi_{res} \Vert \geq 30$ to ensure the ergodicity of the policy.</p>
+
+<p><strong>Action</strong>: With the idea of <strong><a href="https://aip.scitation.org/doi/abs/10.1063/1.1699114">Metropolis algorithm</a></strong>, the action is defined by flipping between two atoms in the 1NN distance or randomly choosing two atoms for flipping. The action space is 108 and 496-dimension, respectively. To avoid the formation of recurrent states between two correlated states (e.g. The agent repeats 1 action infinitely), the <strong><a href="https://arxiv.org/abs/2006.14171">action mask</a></strong> is applied to the Actor network before outputting the probability by taking softmax operation.</p>
+<hr style="width:40px;text-align:left;margin-left:0" />
+
+<ul>
+  <li>Goal &amp; Reward</li>
+</ul>
+
+<p><strong>Goal</strong>: At this stage, the $\mathcal{L} = N\Vert \Phi_{state}-\Phi_{ideal} \Vert$ is settled as 8, for both equiatomic and non-equiatomic species. The main intention is to <strong><em>Reduce the number of steps needed to reach a quasi-random atomic configuration</em></strong> $\mathcal{L(\vec\sigma)}$.</p>
+
+<p><strong>Reward</strong>: two ways for implementing the reward function.</p>
+
+<p>a). <strong>Artificial reward function</strong>, several effective reward functions are designed. One validated form is:</p>
+
+<p><img src="https://latex.codecogs.com/svg.image?\small&space;R(s,&space;a)&space;=&space;\begin{cases}1,&amp;\textbf{done}\\0,&amp;\mathcal{L}_t/\mathcal{L}_{t&plus;1}&gt;1\\-0.05,&amp;\mathcal{L}_t/\mathcal{L}_{t&plus;1}&lt;1\end{cases}" title="https://latex.codecogs.com/svg.image?\small R(s, a) = \begin{cases}1,&amp;\textbf{done}\\0,&amp;\mathcal{L}_t/\mathcal{L}_{t+1}&gt;1\\-0.05,&amp;\mathcal{L}_t/\mathcal{L}_{t+1}&lt;1\end{cases}" /></p>
+
+<p>b). Reward function trained based on the <strong>inverse reinforcement learning</strong>, from the idea of <a href="https://arxiv.org/abs/1611.03852">Finn et al.</a>, using input trajectory $\tau_j$ generated from policy and expert trajectory $\tau_i$ generated from simulated annealing (SA). The gradient of the loss function of the Reward network is:</p>
+
+<p>$\nabla_{\theta}\mathcal{L}$ $\approx 1/N\sum^{N}\nabla_{\theta}R(\tau_i)$ $-\frac{1}{\sum^j w_j}\sum^M w_j\nabla_{\theta}R(\tau_j)$, $w_j = \frac{e^{R(\tau_j)}}{\pi(\tau_j)}$.</p>
+<hr style="width:40px;text-align:left;margin-left:0" />
+
+<ul>
+  <li>Algorithm</li>
+</ul>
+
+<p>This work uses <strong>proximal policy optimization (PPO)</strong> algorithm based on actor-critic structure. The sampling of the $(s_t, a_t)$ pairs is fulfilled by agent $\pi_{\theta’}$, the choices of action are based on soft-policy. The update of the network parameter is by taking gradient of agent $\pi_{\theta}$, as:</p>
+
+<p>$\nabla_{\theta}\mathcal{L} = \mathbb E_{s_t, a_t\sim\pi_{\theta’}}\lbrack \frac{p^{\theta}(s_t, a_t)}{p^{\theta’}(s_t, a_t)}A^{\theta’}(s_t, a_t)\nabla \mathrm{log}p^{\theta}(a_t|s_t)\rbrack$, where $A^{\theta’}(s_t, a_t, \theta_v)=r_t(s,a)+\gamma V^{\theta_v}(s_{t+1})-V^{\theta_v}(s_t)$ is the advantage function, Value network is updated by minimizing the TD-error. According to the assumption of SQS, $T=0 K \to \forall i,j \in R, p(s_i)=p(s_j)$, so $\frac{p^{\theta}(s_t, a_t)}{p^{\theta’}(s_t, a_t)}=\frac{p^{\theta}(a_t|s_t)}{p^{\theta’}(a_t|s_t)}$.</p>
+
+<hr style="width:40px;text-align:left;margin-left:0" />
+
+<ul>
+  <li>Neural Networks:</li>
+</ul>
+
+<p>Since the crystal lattice could be treated as a non-directed graph, the randomly distributed atomic species could be represented by a Laplacian matrix. Thus it’s reasonable for using <strong><a href="https://computationalsocialnetworks.springeropen.com/articles/10.1186/s40649-019-0069-y?ref=https://githubhelp.com">graph convolutional neural networks (GCNs)</a></strong> for enhancing and extracting the features of multibody correlations within the lattice. In such case, $H^{l+1} = \sigma((I+D^{-1/2}AD^{-1/2})H^lW^l)$, $H^l$ represents the output of l-th layer in GCNs. $D, A \in \mathbb{R}^{32\times 32}$.</p>
+
+<p>Four layers of GCNs are realized in all the Actor, Value, and Reward networks. Followed by full-connected (FC) layers. Orthogonal layers are applied to this work.</p>
+<hr style="width:40px;text-align:left;margin-left:0" />
+
+<ul>
+  <li>Results</li>
+</ul>
+
+<p><strong>Equiatomic composition ($c_A=c_B=c_C=1/3$), using artificial reward function, 108 actions</strong></p>
+<hr style="width:40px;text-align:left;margin-left:0" />
+
+<p><img src="https://drive.google.com/thumbnail?id=1PHFKYW0OTeZS23h2jHvykVaXhHNheNPV&amp;sz=w1000" /></p>
+<hr style="width:40px;text-align:left;margin-left:0" />
+
+<p><strong>Non-equiatomic composition ($c_A,c_B,c_C\in (0,1)$), using inverse rl method, 108 actions</strong></p>
+<hr style="width:40px;text-align:left;margin-left:0" />
+
+<p><img src="https://drive.google.com/thumbnail?id=1PEgRDZ5_w0uG0tN1V5ul0RHaSTLpraOa&amp;sz=w1000" /></p>
+<hr style="width:40px;text-align:left;margin-left:0" />
+
+<ul>
+  <li>Brief discussion</li>
+</ul>
+
+<p>The efficiency for generating SQS is <strong>not as good as simulated annealing method</strong>, as presented in expert trajectory. Nevertheless, still some conclusions could be drawn.</p>
+
+<p>a). This work proves that by introducing the deep reinforcement learning method, the policy-based MC may achieve ~20% improvement in efficiency compared to ‘classical’ MC.</p>
+
+<p>b). Tricks including choices of <strong>Activation functions</strong>, <strong>Action mask</strong>, <strong>Orthogonal layer</strong>, etc, could improve the performance in some certain degree.</p>
+
+<p>c). <strong>GCN</strong> actually plays a crucial role in <strong>enhancing</strong> the input signal.</p>
+
+<p>d). Based on c), one of the reasons the agent tends to repeat one certain action is the lack of divisibility in the input signal, the atomic sequence.</p>
+
+<p>e). Another reason is that, since this work tries to imitate the Markov chain policies, the convergence exhibited in the <strong>above fig</strong> indicates <strong>freezing</strong> in Markov chain, presented in the <strong>fig below</strong>, as the acceptance $\alpha(s\to s’)=min\lbrack 1, \frac{w(s’)p(s|s’)}{w(s)p(s’|s)}\rbrack$, the acceptance $\alpha$ gradually decreases into a fixed value of around 0.965 during 5e6 steps of train, revealing the existence of a latent limitation in convergence. And if turning the policy into ‘argmax $p(a|s)$’ form, the agent is likely to backtrack itself, which is common in worm algorithm, this is solved by adding an action mask.</p>
+<hr style="width:40px;text-align:left;margin-left:0" />
+
+<p><img src="https://drive.google.com/thumbnail?id=1PJpYUBZwfWDcRcQQdJp8BHLaziXIjleL&amp;sz=w1000" /></p>
+
+<br>
+        <div id="gitalk-container"></div>
+        <script>
+          var gitalk = new Gitalk({
+              clientID: '7b560b97e4bda87153dd',
+              clientSecret: '71c1745a9c776d439e0de7e8712c4c90a7441709',
+              repo: 'gitalk-cobuffer',
+              owner: 'wzetto',
+              admin: ['wzetto'],
+              id: 'SQSdrl Introduction',
+              distractionFreeMode: True,
+              title: 'Omoi'
+          })
+          gitalk.render('gitalk-container')
+        </script>
+        <hr style="width:200px;text-align:center">
+        <h6 align='center'>A personal project / Zhi Wang © 2022</h6>
+      </div>
+      <div class="inner_right">
+        <h4 id="background" color="#000000">Background</h4>
+        <hr style="width:40px;text-align:left;margin-left:0">
+        <h4 id="methods" color="#909090">Methods</h4>
+        <hr style="width:30px;text-align:left;margin-left:0">
+        <h6 id="saa" color="#bdbbbb">State/Obesrvation/Action</h6>
+        <hr style="width:20px;text-align:left;margin-left:0">
+        <h6 id="gr" color="#bdbbbb">Goal/Reward</h6>
+        <hr style="width:20px;text-align:left;margin-left:0">
+        <h6 id="algo" color="#bdbbbb">Algorithm</h6>
+        <hr style="width:20px;text-align:left;margin-left:0">
+        <h6 id="nn" color="#bdbbbb">Neural Networks</h6>
+        <hr style="width:30px;text-align:left;margin-left:0">
+        <h4 id="result" color="#bdbbbb">Results</h4>
+        <hr style="width:40px;text-align:left;margin-left:0">
+        <h4 id="discuz" color="#bdbbbb">Discussion</h4>
+      </div>
+     </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner_bottom">
+        
+        <p class="copyright">wz369.github.io.git maintained by <a href="https://github.com/wzetto">wzetto</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <!-- <p style="position: absolute; bottom: 0; width:100%; text-align: center">有り得ざる妖精の王よ——</p>
+        -->
+        <p id='bottom_text'>火よ！</p>
+        <!-- <script src="https://wzetto.github.io/wz369.github.io/js/bottom/bottom_text_home.js"></script>-->
+      </footer>
+    </div>
+  </body>
+</html>

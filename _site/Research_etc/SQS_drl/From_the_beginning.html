@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="shortcut icon" type="image/png" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="shortcut icon" sizes="192x192" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="apple-touch-icon" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=cfe0696a4f604aaa79f27fc4ea1cda9f54a98c00">
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Summary of a failure lasting for half-year. | wz369.github.io.git</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Summary of a failure lasting for half-year." />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/Research_etc/SQS_drl/From_the_beginning.html" />
+<meta property="og:url" content="http://localhost:4000/Research_etc/SQS_drl/From_the_beginning.html" />
+<meta property="og:site_name" content="wz369.github.io.git" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Summary of a failure lasting for half-year." />
+<script type="application/ld+json">
+{"headline":"Summary of a failure lasting for half-year.","@type":"WebPage","url":"http://localhost:4000/Research_etc/SQS_drl/From_the_beginning.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- HEADER -->
+    <div id="header_pages" class="outer">
+<!--       and this part -->
+        <header class="inner_top background_img_bonfire">
+          
+          <!-- 
+            <a id="forkme_banner" href="https://github.com/wzetto/wz369.github.io.git">View on GitHub</a>
+           -->
+          <a href="https://wzetto.github.io/wz369.github.io/"></a>
+          
+          <h1 id="project_title">Summary of a failure lasting for half-year.</h1>
+          
+          
+         
+          
+        </header>
+    </div>
+    
+<!-- this part -->
+    <script src="https://wzetto.github.io/wz369.github.io/js/header/header_scroll_bonfire.js"></script>
+    <!-- MAIN CONTENT -->
+    <button onclick="topFunction()" id="back_top" title="Back to top">TOP</button>
+    <script src="https://wzetto.github.io/wz369.github.io/js/BackTop/bt_1.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <div class="row">
+      <div class="inner_left">
+        <p>说来，话就长了。</p>
+
+<p>对SQS的生成，成熟包体一般采用模拟退火，本人课题写了个遗传算法来满足较严苛的constraints。原理基本基于Metropolis,很自然的，这种严格Markov Chain勾引出了用RL实现的兴趣。</p>
+
+<p>4月份诸事开始时，首先实验了</p>
+
+<p>\1. 如何表示超晶胞。使用了对原子种类的Embedding，即固定座标而将超胞转化为一维序列，然后用全连接层。</p>
+
+<p>\2. 奖励方面，是将新-旧超胞的correlation func与理想状态之差相减，即得到一个简易reward function.</p>
+
+<p>\3. 动作方面,由于考虑两个原子A, B，所以初始想法是简化为state = s + A, a = find B。</p>
+
+<p>分两步进行：选择A原子，这一步原本设想也是通过神经网络找出，后来发现用cuda更快，同时拟合结果比较惨淡。A原子选择依据是最大化reward的期望。不过缺点是python的cuda模块无法处理大体系的多体相关函数，只能分割成不同函数计算。</p>
+
+<p>第二步选出<img src="https://latex.codecogs.com/svg.image?argmax_BP(A\to&space;B)" title="https://latex.codecogs.com/svg.image?argmax_BP(A\to B)" />，这一部分依靠神经网络进行。</p>
+
+<p>发现效果一般后回到了输出动作序列上。同样有两个思路: P(a1, a2)与P(a2|a1)P(a1),损失函数，reward等也因此不同。</p>
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<h5>Algorithm Trials</h5>
+
+<p>很快第一个A2C算法写好了，基本思路参考上文。使用的108原子超胞。第一个挑战是5e3的巨大动作空间，没事，先莽一个全连接再说。炼了一个周末loss倒是收敛了，而且很完美，测试的时候发现AI永远重复一个动作。这个问题困扰至今。</p>
+
+<p>之后尝试用SAC，以输出分布和值来表示离散动作，但因为常收敛在margin上(<strong><em>这个问题值得好好研究一番</em></strong>)，导致LOSS越来越大，用了一些拯救梯度的方法，结果回归到重复动作上。</p>
+
+<p>那么回归到DQN吧，一步到位，上rainbow。由于超宽全连接层导致Noisy net占显存巨大，逼迫我转而使用1.卷积层， 2.降低动作空间。</p>
+
+<h5>Tricks</h5>
+
+<h5>Finally</h5>
+
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<h4 id="-back"><a href="https://wzetto.github.io/wz369.github.io/Research_etc/SQS_drl/Introduction.html">&lt; back</a></h4>
+<br>
+        <br>
+        <div id="gitalk-container"></div>
+        <script>
+          var gitalk = new Gitalk({
+              clientID: '7b560b97e4bda87153dd',
+              clientSecret: '71c1745a9c776d439e0de7e8712c4c90a7441709',
+              repo: 'gitalk-cobuffer',
+              owner: 'wzetto',
+              admin: ['wzetto'],
+              id: 'Summary of a failure lasting for half-year.',
+              distractionFreeMode: false,
+              title: 'Omoi'
+          })
+          gitalk.render('gitalk-container')
+        </script>
+        <p style="text-align: center;">
+          <img src="https://drive.google.com/thumbnail?id=1hcY5U4qLbe6QHDNCK6wzERxcDnTxm0Dp&sz=w800" width="200px"/>
+        </p>
+        <h6 align='center'>Zhi Wang © 2021-2023</h6>
+      </div>
+      <div class="inner_right">
+        <h5 id="side_text">> Main content</h5>
+      </div>
+     </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner_bottom">
+        
+        <p class="copyright">wz369.github.io.git maintained by <a href="https://github.com/wzetto">wzetto</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <!-- <p style="position: absolute; bottom: 0; width:100%; text-align: center">有り得ざる妖精の王よ——</p>
+        -->
+        <p id='bottom_text'>冬の玉座は誰の手に</p>
+        <!-- <script src="https://wzetto.github.io/wz369.github.io/js/bottom/bottom_text_home.js"></script>-->
+      </footer>
+    </div>
+  </body>
+</html>

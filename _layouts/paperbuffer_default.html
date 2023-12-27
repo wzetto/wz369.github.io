@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="google-site-verification" content="4Bccs0rGRzc5pD1mnzUxJduhjNoI5HuaeQ9I8ga4MbY" />
+    <link rel="shortcut icon" type="image/png" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="shortcut icon" sizes="192x192" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="apple-touch-icon" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+{% seo %}
+    {% include head-custom.html %}
+  </head>
+
+  <body>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+    <script type="text/x-mathjax-config">
+       MathJax.Hub.Config({
+         tex2jax: {
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           processEscapes: true
+         }
+       });
+    </script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- HEADER -->
+    <div id="header_pages" class="outer">
+        <header class="inner_top background_img_formal">
+          
+          <h1 id="project_title">{{ page.title | default: site.title }}</h1>
+          
+          {% if page.description %}
+            <h2 id="project_tagline">{{ page.description | default: site.description }}</h2>
+          {% endif %}
+         
+          {% if site.show_downloads %}
+            <section id="downloads">
+              <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
+            </section>
+          {% endif %}
+        </header>
+    </div>
+    
+    <script src="https://wzetto.github.io/wz369.github.io/js/header/header_scroll_formal.js"></script>
+    
+    <!--* define some css style -->
+    <style>
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      #tagMenu {
+        padding: 5px;
+      }
+      
+      .tagraw {
+        display: inline-block;
+        padding: 3px 3px;
+        margin: 5px;
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      .tagraw.active {
+        background-color: black;
+        color: white;
+      }
+      
+      .tagraw.deactive {
+        background-color: white;
+        color: black;
+      }
+
+      .tagraw:hover::after {
+        color: #000000;
+        transition: color 0.3s ease;
+      }
+
+      .tagraw:hover, a:focus {
+        text-decoration: none;
+        color: #da3450;
+        transition: color 0.3s ease;
+      }
+
+      .tagraw::selection {
+        background: #da3450;
+        color: #fff;
+      }
+    </style>
+
+    <!-- MAIN CONTENT -->
+    <button onclick="topFunction()" id="back_top" title="Back to top">TOP</button>
+    <script src="https://wzetto.github.io/wz369.github.io/js/BackTop/bt_1.js"></script>
+    <script src="https://wzetto.github.io/wz369.github.io/js/gif/gifffer.min.js"></script>
+    <script>
+      window.onload = function() {
+        Gifffer();
+      }
+    </script>
+<!--     Loading the navigation bar -->
+    <script src="https://wzetto.github.io/wz369.github.io/js/side/omoi_main.js"></script>
+
+    <div class="row">
+      <div class="inner_left">
+        {% assign paper_pages = site.pages | where: "papercomment", true %}
+        
+        <!-- *Extract tags/titles array -->
+        {% assign tags_array = "" | split: "," %}
+        {% assign mainpoint_array = "" | split: "," %} 
+        {% assign titles_array = "" | split: "," %}
+        {% assign highlights_array = "" | split: "," %} 
+        {% assign authors_array = "" | split: "," %}    
+        {% assign filenames_array = "" | split: "," %} 
+        {% assign doi_array = "" | split: "," %}
+
+        {% for page in paper_pages %}
+          {% assign page_tags = page.tags | join: "," | split: "," %}
+          {% assign page_doi = page.doi %}
+
+          {% assign tags_array = tags_array | push: page.tags %}
+          {% assign mainpoint_array = mainpoint_array | push: page.mainpoint %}
+          {% assign filenames_array = filenames_array | push: page.filename %}
+          {% assign titles_array = titles_array | push: page.title %}
+          {% assign highlights_array = highlights_array | push: page.highlight %}
+          {% assign authors_array = authors_array | push: page.author %}
+          {% assign doi_array = doi_array | push: page.doi %}
+
+        {% endfor %}
+
+        <!-- e.g. tags_array = [['a','b'],['b']] -->
+        <!-- e.g. titles_array = ['title1','title2'] -->
+        <!-- e.g. tags_array_flatten = ['a','b','b'] -->
+        <!--! create containers -->
+        <span style="line-height: 1.25;">
+        <h4 style="color:#6b6b6b">Authors</h4>
+        <div id="tagMenuAuthor"></div>
+        <hr style="width:40px;text-align:left;margin-left:0">
+        <h4 style="color:#6b6b6b">Journal</h4>
+        <div id="tagMenuJournal"></div>
+        <hr style="width:40px;text-align:left;margin-left:0">
+        <h4 style="color:#6b6b6b">Mat</h4>
+        <div id="tagMenuMat"></div>
+        <hr style="width:40px;text-align:left;margin-left:0">
+        <h4 style="color:#6b6b6b">General ML</h4>
+        <div id="tagMenuMl"></div>
+        <hr style="width:40px;text-align:left;margin-left:0">
+        <h4 style="color:#6b6b6b">RL</h4>
+        <div id="tagMenuRl"></div>
+        <hr style="width:40px;text-align:left;margin-left:0">
+        <h4 style="color:#6b6b6b">Database & Others</h4>
+        <div id="tagMenuDatabase"></div>
+        </span>
+        <br>
+        <div id="feelLucky"></div>
+        <br>
+        <div id="filterBlock"></div>
+<!--         <hr style="width:80px;text-align:center;margin-left:0"> -->
+        <div id="tagBlock"></div>
+
+        <script>
+          
+          window.addEventListener('load', function() {
+            var element = document.getElementById('tagMenuJournal');
+            var position = element.offsetTop;
+            window.scrollTo(0, position);
+          });
+          
+          <!-- *convert liquid array to javascript array -->
+          var allTags = {{ tags_array | jsonify }};
+          var allTitles = {{ titles_array | jsonify }};
+          var allFilenames = {{ filenames_array | jsonify }};
+          var allMainpoints = {{ mainpoint_array | jsonify }};
+          var allHighlights = {{ highlights_array | jsonify }};
+          var allAuthors = {{ authors_array | jsonify }};
+          var allDois = {{ doi_array | jsonify }};
+          // var allTagsFlatten = {{ tags_array_flatten | jsonify }};
+          // Count the number of occurrences of each unique tag
+          
+          var tagCounts = {};
+          var tagIndexes = {};
+          
+          // fetch data from doi
+          function fetchMetadata(doi) {
+            var url = `https://api.crossref.org/works/${doi}`;
+            return fetch(url)
+              .then(response => response.json())
+              .then(data => {
+                var authors = data.message.author.map(author => author.given + " " + author.family).join(", ");
+                var prefixedAuthors = authors.split(", ").map(author => "author/" + author);
+                return prefixedAuthors;
+              })
+              .catch(error => {
+                console.log(`Error fetching metadata for DOI ${doi}: ${error}`);
+                return [];
+              });
+          }
+
+          Promise.all(allDois.map(doi => fetchMetadata(doi)))
+            .then(prefixedAuthorsArray => {
+            
+              for (var i = 0; i < allTags.length; i++) {
+                // concat doi->authors to tags
+                var prefixedAuthors = prefixedAuthorsArray[i];
+                var tags = allTags[i];
+                var tagNew = tags.concat(prefixedAuthors);
+
+                for (var j = 0; j < tagNew.length; j++) {
+                  var tag = tagNew[j];
+                  if (tagCounts[tag] === undefined) {
+                    tagCounts[tag] = 0;
+                    tagIndexes[tag] = [];
+                  }
+                  tagCounts[tag]++;
+                  tagIndexes[tag].push(i);
+                }
+              }
+              
+                        // Generate sequences
+              var tagSequences = [];
+              var indexSequences = [];
+              for (var tag in tagCounts) {
+                var count = tagCounts[tag];
+                var indexes = tagIndexes[tag];
+                tagSequences.push(tag + ' (' + count + ')');
+                indexSequences.push(indexes);
+              }
+
+              // Menu bar of tags
+              let activatedTagIndices = [];
+              const tagMenuDiv = {
+                'author': document.getElementById('tagMenuAuthor'),
+                'journal': document.getElementById('tagMenuJournal'),
+                'mat': document.getElementById('tagMenuMat'),
+                'ml': document.getElementById('tagMenuMl'),
+                'rl': document.getElementById('tagMenuRl'),
+                'database': document.getElementById('tagMenuDatabase'),
+              };
+
+              for (var z = 0; z < tagSequences.length; z++) {
+                var menuDiv = document.createElement('div');
+                var tagDividRaw = 'tagraw'+z;
+                var tagJumpto = 'tag'+z;
+                const splitTag = tagSequences[z].split('/')[0]
+                const splitContent = tagSequences[z].split('/')[1];
+                menuDiv.id = tagDividRaw;
+                menuDiv.classList.add('tagraw')
+
+                if (tagMenuDiv[splitTag]) {
+                  if (splitTag === "author") {
+                    menuDiv.innerHTML = ''+splitContent+'';
+                  } else {
+                    menuDiv.innerHTML = ''+tagSequences[z]+'';
+                  }
+                  // menuDiv.innerHTML = `<h5 style="color: rgb(99, 98, 98)">${splitTag}/</h5>\
+                  //   <h5 style="color: black">${splitContent}</h5>`;
+                  tagMenuDiv[splitTag].appendChild(menuDiv);
+                }
+
+                // menuDiv.innerHTML = ''+tagSequences[i]+'';
+                // tagMenuDiv.appendChild(menuDiv);
+              }
+
+              // Do statistics on tag.
+              // Create an array to track tag status
+              const numTags = tagSequences.length; // Replace with actual number of tags
+              let tagStatus = Array(numTags).fill(-1); // Initialize all values to -1
+
+              // Feel lucky button
+              const feelLuckyDiv = document.getElementById('feelLucky');
+
+              function getRndInteger(min, max) {
+                return Math.floor(Math.random()*(max - min)) + min;
+              }
+
+              var randomIndex = getRndInteger(0, allTitles.length);
+              var randomPage = allFilenames[randomIndex];
+              var permalink = "https://wzetto.github.io/wz369.github.io/Research_etc/PaperCollect/archives/"+randomPage+".html";
+
+              feelLuckyDiv.innerHTML = '<div class="container">\
+                <button id="tagAny" style="color:#999999;background-color:#fff;\
+                border: 2.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                font-size:16px;padding:0.5rem;display:inline-block;\
+                text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Any</button>&nbsp;\
+                <button id="tagFilter" style="color:#999999;background-color:#fff;\
+                border: 2.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                font-size:16px;padding:0.5rem;display:inline-block;\
+                text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Common</button>&nbsp;\
+                <button style="color:#000;background-color:#fff;\
+                border: 2.5px solid #303030;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                font-size:16px;padding:0.5rem;display:inline-block;\
+                text-align:center;border-radius: 8px;height: 40px;">\
+                <a href="'+permalink+'">手气不错</a></button></div>';
+
+              //Count activated tags
+              activatedTagIndices.length = 0;
+
+    //           function activateTagFilter() {
+              // Add click event to each tag element
+              const menuTagsRaw = document.querySelectorAll('.tagraw');
+              const menuTags = Array.from(menuTagsRaw).sort((a, b) => {
+                const idA = parseInt(a.id.replace('tagraw', ''));
+                const idB = parseInt(b.id.replace('tagraw', ''));
+                return idA - idB;
+              });
+              menuTags.forEach((menuTag, l) => {
+                menuTag.addEventListener('click', function() {
+                  // Flip tag status
+                  tagStatus[l] = -tagStatus[l];
+                  // Toggle active class
+                  menuTag.classList.toggle('active', tagStatus[l] === 1);
+    //               menuTag.classList.toggle('deactive', tagStatus[i] === 0);
+    //               activatedTagIndices = tagStatus.map((status, i) => status === 1 ? i : 0).filter(index => index !== 0);
+                  activatedTagIndices = [];
+                  menuTags.forEach((menuTag, m) => {
+                    if (tagStatus[m] === 1) {
+                      activatedTagIndices.push(m);
+                    }
+                  });
+
+                  // console.log(tagStatus);
+
+                  if (activatedTagIndices.length >= 1) {
+                    feelLuckyDiv.innerHTML = '<div class="container">\
+                      <button id="tagAny" style="color:#fff;background-color:#000;\
+                      border: 2.5px solid #000;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                      font-size:16px;padding:0.5rem;display:inline-block;\
+                      text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Any</button>&nbsp;\
+                      <button id="tagFilter" style="color:#fff;background-color:#000;\
+                      border: 2.5px solid #000;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                      font-size:16px;padding:0.5rem;display:inline-block;\
+                      text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Common</button>&nbsp;\
+                      <button style="color:#000;background-color:#fff;\
+                      border: 2.5px solid #303030;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                      font-size:16px;padding:0.5rem;display:inline-block;\
+                      text-align:center;border-radius: 8px;height: 40px;">\
+                      <a href="'+permalink+'">手气不错</a></button></div>';
+                  } else {
+                    feelLuckyDiv.innerHTML = '<div class="container">\
+                      <button id="tagAny" style="color:#999999;background-color:#fff;\
+                      border: 2.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                      font-size:16px;padding:0.5rem;display:inline-block;\
+                      text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Any</button>&nbsp;\
+                      <button id="tagFilter" style="color:#999999;background-color:#fff;\
+                      border: 2.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                      font-size:16px;padding:0.5rem;display:inline-block;\
+                      text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Common</button>&nbsp;\
+                      <button style="color:#000;background-color:#fff;\
+                      border: 2.5px solid #303030;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                      font-size:16px;padding:0.5rem;display:inline-block;\
+                      text-align:center;border-radius: 8px;height: 40px;">\
+                      <a href="'+permalink+'">手气不错</a></button></div>';
+                  }
+
+                  const countAny = document.getElementById('tagAny');
+                  countAny.addEventListener('click', function() {
+
+                    const filterElementsDivAny = document.getElementById('filterBlock');
+                    filterElementsDivAny.innerHTML = "";
+
+                    const compileIndexAny = activatedTagIndices.map((index) => {
+                      return indexSequences[index];
+                    }).flat().filter((value, index, self) => {
+                      return self.indexOf(value) === index;
+                    });
+
+                    if (compileIndexAny.length >= 1) {
+                      for (var n = 0; n < compileIndexAny.length; n++) {
+                        var index = compileIndexAny[n];
+                        var titleDivFilter = document.createElement('div');
+                        var authorDivFilter = document.createElement('div');
+                        var tagDivFilter = document.createElement('span');
+                        tagDivFilter.style.lineHeight = '1.25';
+                        var mainpointDivFilter = document.createElement('div');
+
+                        var highlight = allHighlights[index];
+                        var filename = allFilenames[index];
+                        var title = allTitles[index];
+                        var author = allAuthors[index];
+                        var tag = allTags[index];
+                        var permalinkFilter = "https://wzetto.github.io/wz369.github.io/Research_etc/PaperCollect/archives/"+filename+".html";
+
+                        if (highlight) {
+                          titleDivFilter.innerHTML = '<h5><a href="'+permalinkFilter+'">'+title+'</a></h5>';
+                        } else if (!highlight) {
+                          titleDivFilter.innerHTML = '<h5><a href="'+permalinkFilter+'">'+title+'</a></h5>';
+                        }
+
+                        authorDivFilter.innerHTML = '<h6 class="italic">' + author + '</h6>';
+
+                        // tag array
+                        for (var o = 0; o < tag.length; o++) {
+                          var codeElement = document.createElement('code');
+                          codeElement.style.backgroundColor = '#fff';
+                          codeElement.style.border = '1.5px solid #303030';
+                          codeElement.style.boxShadow = '0 0 1px rgba(0,0,0,.1)';
+                          codeElement.style.borderRadius = '8px';
+                          codeElement.style.display = 'inline-block';
+                          codeElement.innerHTML = '<a href="https://fgo.wiki/w/%E7%89%B9%E6%8B%89%E6%B4%9B%E5%85%8B">'+tag[o]+'</a>';
+                          tagDivFilter.appendChild(codeElement);
+                        }
+
+                        if (highlight) {
+                          mainpointDivFilter.innerHTML = '<h4 style="color:#da3450">*</h4><h4 style="color:#424242">' + allMainpoints[index] + '</h4>';
+                        } else if (!highlight) {
+                          mainpointDivFilter.innerHTML = '<h4 style="color:#424242">' + allMainpoints[index] + '</h4>';
+                        }
+
+                        filterElementsDivAny.appendChild(titleDivFilter);
+                        filterElementsDivAny.appendChild(authorDivFilter);
+                        filterElementsDivAny.appendChild(tagDivFilter);
+                        filterElementsDivAny.appendChild(mainpointDivFilter);
+                      }
+                    } else {
+                        var titleDivFilter = document.createElement('div');
+                        titleDivFilter.innerHTML = '<h4>OoOps!</h4>';
+                        filterElementsDivAny.appendChild(titleDivFilter);
+                    }
+
+                    var seperateDiv = document.createElement('div');
+                    seperateDiv.innerHTML = '<hr style="width:200px;text-align:center">';
+                    filterElementsDivAny.appendChild(seperateDiv);
+                  });
+
+                  const countBtn = document.getElementById('tagFilter');
+                  countBtn.addEventListener('click', function() {
+      //                 Return chosen indices for titles/authors/etc.
+                    const filterElementsDiv = document.getElementById('filterBlock');
+                    filterElementsDiv.innerHTML = "";
+
+                    // Intersect
+                    const chosenIndex = activatedTagIndices.map((index) => {return indexSequences[index];});
+                    let compileIndex = chosenIndex[0];
+                    let compileNew = [];
+
+                    console.log('chosenIndex:',chosenIndex);
+
+                    for (i = 0; i < chosenIndex.length; i++) {
+                      const sub1 = [chosenIndex[i]].flat();
+                      compileNew = [];
+
+                      for (j = 0; j < sub1.length; j++) {
+                        const sub2 = sub1[j];
+                        // console.log('raw2',compileIndex);
+                        const boardIndex = compileIndex.findIndex((value) => value - sub2 === 0);
+
+                        if (boardIndex !== -1) {
+                          compileNew.push(sub2);
+                        }
+                      }
+
+                      compileIndex = [...compileNew];
+                    }
+
+                    console.log('compileIndex:',compileIndex);
+                    console.log(tagStatus);
+
+                    // title, author, mainpoint
+
+                    if (compileIndex.length >= 1) {
+                      for (var n = 0; n < compileIndex.length; n++) {
+                        var index = compileIndex[n];
+                        var titleDivFilter = document.createElement('div');
+                        var authorDivFilter = document.createElement('div');
+                        var tagDivFilter = document.createElement('span');
+                        tagDivFilter.style.lineHeight = '1.25';
+                        var mainpointDivFilter = document.createElement('div');
+
+                        var highlight = allHighlights[index];
+                        var filename = allFilenames[index];
+                        var title = allTitles[index];
+                        var author = allAuthors[index];
+                        var tag = allTags[index];
+                        var permalinkFilter = "https://wzetto.github.io/wz369.github.io/Research_etc/PaperCollect/archives/"+filename+".html";
+
+                        if (highlight) {
+                          titleDivFilter.innerHTML = '<h5><a href="'+permalinkFilter+'">'+title+'</a></h5>';
+                        } else if (!highlight) {
+                          titleDivFilter.innerHTML = '<h5><a href="'+permalinkFilter+'">'+title+'</a></h5>';
+                        }
+
+                        authorDivFilter.innerHTML = '<h6 class="italic">' + author + '</h6>';
+
+                        // tag array
+                        for (var o = 0; o < tag.length; o++) {
+                          var codeElement = document.createElement('code');
+                          codeElement.style.backgroundColor = '#fff';
+                          codeElement.style.border = '1.5px solid #303030';
+                          codeElement.style.boxShadow = '0 0 1px rgba(0,0,0,.1)';
+                          codeElement.style.borderRadius = '8px';
+                          codeElement.style.display = 'inline-block';
+                          codeElement.innerHTML = '<a href="https://fgo.wiki/w/%E7%89%B9%E6%8B%89%E6%B4%9B%E5%85%8B">'+tag[o]+'</a>';
+                          tagDivFilter.appendChild(codeElement);
+                        }
+
+                        if (highlight) {
+                          mainpointDivFilter.innerHTML = '<h4 style="color:#da3450">*</h4><h4 style="color:#424242">' + allMainpoints[index] + '</h4>';
+                        } else if (!highlight) {
+                          mainpointDivFilter.innerHTML = '<h4 style="color:#424242">' + allMainpoints[index] + '</h4>';
+                        }
+
+                        filterElementsDiv.appendChild(titleDivFilter);
+                        filterElementsDiv.appendChild(authorDivFilter);
+                        filterElementsDiv.appendChild(tagDivFilter);
+                        filterElementsDiv.appendChild(mainpointDivFilter);
+                      }
+                    } else {
+                        var titleDivFilter = document.createElement('div');
+                        titleDivFilter.innerHTML = '<h4>OoOps!</h4>';
+                        filterElementsDiv.appendChild(titleDivFilter);
+                    }
+
+                    var seperateDiv = document.createElement('div');
+                    seperateDiv.innerHTML = '<hr style="width:200px;text-align:center">';
+                    filterElementsDiv.appendChild(seperateDiv);
+                  });
+                });
+              });
+
+              // iterate over the tag tagSequences
+              const arrayElementsDiv = document.getElementById('tagBlock');
+              for (var i = 0; i < tagSequences.length; i++) {
+
+                var tag = tagSequences[i];
+                var indexes = indexSequences[i];
+                var tagDiv = document.createElement('div');
+                var tagDivid = 'tag'+i;
+                var tagDividRaw = 'tagraw'+i;
+                tagDiv.id = tagDivid;
+
+                tagDiv.innerHTML = '<br><code style="color:#000;background-color:#fff;\
+                  border: 2.5px solid #303030;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                  font-size:16px;border-radius: 8px;"><a href="#'+tagDividRaw+'">' + tag + '</a></code>';
+                arrayElementsDiv.appendChild(tagDiv);
+
+                // title, author, mainpoint
+                for (var j = 0; j < indexes.length; j++) {
+                  var index = indexes[j];
+                  var titleDiv = document.createElement('div');
+                  var authorDiv = document.createElement('div');
+                  var mainpointDiv = document.createElement('div');
+
+                  var highlight = allHighlights[index];
+                  var filename = allFilenames[index];
+                  var title = allTitles[index];
+                  var author = allAuthors[index];
+                  var permalink = "https://wzetto.github.io/wz369.github.io/Research_etc/PaperCollect/archives/"+filename+".html";
+
+                  if (highlight) {
+                    titleDiv.innerHTML = '<h5><a href="'+permalink+'">'+title+'</a></h5>';
+                  } else if (!highlight) {
+                    titleDiv.innerHTML = '<h5><a href='+permalink+'>'+title+'</a></h5>';
+                  }
+
+                  authorDiv.innerHTML = '<h6 class="italic">' + author + '</h6>';
+                  if (highlight) {
+                    mainpointDiv.innerHTML = '<h4 style="color: #da3450">***</h4><h4 style="color:#424242">' + allMainpoints[index] + '</h4>';
+                  } else if (!highlight) {
+                    mainpointDiv.innerHTML = '<h4 style="color:#424242">' + allMainpoints[index] + '</h4>';
+                  }
+                  arrayElementsDiv.appendChild(titleDiv);
+                  arrayElementsDiv.appendChild(authorDiv);
+                  arrayElementsDiv.appendChild(mainpointDiv);
+                }
+
+                var seperateDiv = document.createElement('div');
+                seperateDiv.innerHTML = '<hr style="width:50px;text-align:left;margin-left:0">';
+                arrayElementsDiv.appendChild(seperateDiv);
+              }
+          });
+
+
+        </script>
+
+        {{ content }}<br>
+        <br>
+        <p style="text-align: center;">
+          <img src="https://drive.google.com/thumbnail?id=1hcY5U4qLbe6QHDNCK6wzERxcDnTxm0Dp&sz=w800" width="200px"/>
+        </p>
+        <h6 align='center'>Zhi Wang © 2021-2023</h6>
+
+      </div>
+        <div class="inner_right">
+          <!-- <h5 a onclick="navibar()" id="o202112t" color="#000000">123</h5> -->
+          <hr style="width:20px;text-align:left;margin-left:0">
+      </div>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner_bottom">
+        {% if site.github.is_project_page %}
+        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <!-- <p style="position: absolute; bottom: 0; width:100%; text-align: center">有り得ざる妖精の王よ——</p>
+        -->
+        <p id='bottom_text'>取るに足りない、ちさな虫の一噛みで崩れる</p>
+        <script src="https://wzetto.github.io/wz369.github.io/js/bottom/bottom_text_home.js"></script>
+      </footer>
+    </div>
+  </body>
+</html>

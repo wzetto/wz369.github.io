@@ -1,0 +1,104 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.background_img {
+	background-image: url('{{ site.baseurl }}/images/header/harunokinsen_out_png.png');
+	background-repeat: no-repeat;
+	background-position: right 0% bottom 0%;
+	/*max-width: 400px;*/
+	height: 300px;
+	width: auto;
+	background-size: contain;
+	transition: 0.5s;
+}
+
+
+.background_img2 {
+	background-image: url('{{ site.baseurl }}/images/header/aoko_header.png');
+	background-repeat: no-repeat;
+	background-position: right 0% bottom 0%;
+	/*max-width: 400px;*/
+	height: 360px;
+	width: auto;
+	background-size: contain;
+	transition: 0.5s;
+}
+
+.background_img_fuji {
+	background-image: url('{{ site.baseurl }}/images/header/Red_Fuji.png');
+	background-repeat: no-repeat;
+	background-position: right 0% bottom 0%;
+	/*max-width: 400px;*/
+	height: 320px;
+	width: auto;
+	background-size: contain;
+	transition: 0.5s;
+}
+
+.background_img_bonfire {
+	background-image: url('{{ site.baseurl }}/images/header/Bonfire.png');
+	background-repeat: no-repeat;
+	background-position: right 0% bottom 0%;
+	/*max-width: 400px;*/
+	height: 320px;
+	width: auto;
+	background-size: contain;
+	transition: 0.5s;
+}
+
+.background_img_formal {
+	background-image: url('{{ site.baseurl }}/images/header/sea_of_ice_part.png');
+	background-repeat: no-repeat;
+	background-position: right 0% bottom 0%;
+	/*max-width: 400px;*/
+	height: 300px;
+	width: auto;
+	background-size: contain;
+	transition: 0.5s;
+}
+
+@media screen and (max-width: 992px) {
+	.background_img_formal {
+		background-image: url('{{ site.baseurl }}/images/header/sea_of_ice_part.png');
+		background-repeat: no-repeat;
+		background-position: right 0% bottom 0%;
+		/*max-width: 400px;*/
+		height: 160px;
+		width: auto;
+		background-size: contain;
+		transition: 0.5s;
+	}
+	
+	.background_img_fuji {
+		background-image: url('{{ site.baseurl }}/images/header/Red_Fuji.png');
+		background-repeat: no-repeat;
+		background-position: right 0% bottom 0%;
+		/*max-width: 400px;*/
+		height: 200px;
+		width: auto;
+		background-size: contain;
+		transition: 0.5s;
+	}
+	
+	.background_img_bonfire {
+		background-image: url('{{ site.baseurl }}/images/header/Bonfire.png');
+		background-repeat: no-repeat;
+		background-position: right 0% bottom 0%;
+		/*max-width: 400px;*/
+		height: 200px;
+		width: auto;
+		background-size: contain;
+		transition: 0.5s;
+	}
+}
+/*
+.headerPage {
+	background-image: url('{{ site.baseurl }}/images/yama/ibuki/20211228/IMG_1568.jpeg');
+	background-size: 100% 100%;
+}
+*/
+
+
+

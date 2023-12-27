@@ -1,0 +1,33 @@
+const arrayElementsDiv = document.getElementById('tagBlock');
+for (var i = 0; i < tagSequences.length; i++) {
+
+  var tag = tagSequences[i];
+  var indexes = indexSequences[i];
+  var tagDiv = document.createElement('div');
+  var tagDivid = 'tag'+i;
+  var tagDividRaw = 'tagraw'+i;
+  tagDiv.id = tagDivid;
+
+  tagDiv.innerHTML = '<br><code style="color:#000;background-color:#fff;\
+    border: 2.5px solid #303030;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+    font-size:16px;border-radius: 8px;"><a href="#'+tagDividRaw+'">' + tag + '</a></code>';
+  arrayElementsDiv.appendChild(tagDiv);
+
+  // title, author, mainpoint
+  for (var j = 0; j < indexes.length; j++) {
+    var index = indexes[j];
+    var titleDiv = document.createElement('div');
+
+    var filename = allFilenames[index];
+    var title = allTitles[index];
+    var permalink = "https://wzetto.github.io/wz369.github.io/omoi_main/essays/"+filename+".html";
+
+    titleDiv.innerHTML = '<h5><a href='+permalink+'>'+title+'</a></h5>';
+
+    arrayElementsDiv.appendChild(titleDiv);
+  }
+
+  var seperateDiv = document.createElement('div');
+  seperateDiv.innerHTML = '<hr style="width:50px;text-align:left;margin-left:0">';
+  arrayElementsDiv.appendChild(seperateDiv);
+}

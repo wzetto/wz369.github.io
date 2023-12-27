@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="shortcut icon" type="image/png" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="shortcut icon" sizes="192x192" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="apple-touch-icon" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+{% seo %}
+    {% include head-custom.html %}
+  </head>
+
+  <body>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+    <script type="text/x-mathjax-config">
+       MathJax.Hub.Config({
+         tex2jax: {
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           processEscapes: true
+         }
+       });
+    </script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- HEADER -->
+    <div id="header_pages" class="outer">
+        <header class="inner_top background_img_fuji">
+          
+          <!-- {% if site.github.is_project_page %}
+            <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
+          {% endif %} -->
+          <a href="https://wzetto.github.io/wz369.github.io/"></a>
+          
+          <h1 id="project_title">{{ page.title | default: site.title }}</h1>
+          
+          {% if page.description %}
+            <h2 id="project_tagline">{{ page.description | default: site.description }}</h2>
+          {% endif %}
+         
+          {% if site.show_downloads %}
+            <section id="downloads">
+              <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
+            </section>
+          {% endif %}
+        </header>
+    </div>
+    
+    <script src="https://wzetto.github.io/wz369.github.io/js/header/header_scroll_fuji.js"></script>
+    
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        {{ content }}<br>
+        <br>
+        <p style="text-align: center;">
+          <img src="https://drive.google.com/thumbnail?id=1hcY5U4qLbe6QHDNCK6wzERxcDnTxm0Dp&sz=w800" width="200px"/>
+        </p>
+        <h6 align='center'>Zhi Wang © 2021-2023 Design & Maintain</h6>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner_bottom">
+        {% if site.github.is_project_page %}
+        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <!-- <p style="position: absolute; bottom: 0; width:100%; text-align: center">有り得ざる妖精の王よ——</p>
+        -->
+        <p id='bottom_text'>冬の玉座は誰の手に</p>
+        <!-- <script src="https://wzetto.github.io/wz369.github.io/js/bottom/bottom_text_home.js"></script>-->
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="google-site-verification" content="4Bccs0rGRzc5pD1mnzUxJduhjNoI5HuaeQ9I8ga4MbY" />
+    <link rel="shortcut icon" type="image/png" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="shortcut icon" sizes="192x192" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="apple-touch-icon" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+{% seo %}
+    {% include head-custom.html %}
+  </head>
+
+  <body>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+    <script type="text/x-mathjax-config">
+       MathJax.Hub.Config({
+         tex2jax: {
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           processEscapes: true
+         }
+       });
+    </script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- HEADER -->
+    <div id="header_pages" class="outer">
+      <header class="inner_top background_img_formal">
+          
+          <!-- {% if site.github.is_project_page %}
+            <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
+          {% endif %} -->
+          <a href="https://wzetto.github.io/wz369.github.io/"></a>
+          
+          <h1 id="project_title">{{ page.title | default: site.title }}</h1>
+          
+          {% if page.description %}
+            <h2 id="project_tagline">{{ page.description | default: site.description }}</h2>
+          {% endif %}
+         
+          {% if site.show_downloads %}
+            <section id="downloads">
+              <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
+            </section>
+          {% endif %}
+        </header>
+    </div>
+    
+    <script src="https://wzetto.github.io/wz369.github.io/js/header/header_scroll_formal.js"></script>
+
+    <!--* define some css style -->
+    <style>
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      #tagMenu {
+        padding: 5px;
+      }
+      
+      .tagraw {
+        display: inline-block;
+        padding: 3px 3px;
+        margin: 5px;
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      .tagraw.active {
+        background-color: black;
+        color: white;
+      }
+      
+      .tagraw.deactive {
+        background-color: white;
+        color: black;
+      }
+
+      .tagraw:hover::after {
+        color: #000000;
+        transition: color 0.3s ease;
+      }
+
+      .tagraw:hover, a:focus {
+        text-decoration: none;
+        color: #da3450;
+        transition: color 0.3s ease;
+      }
+
+      .tagraw::selection {
+        background: #da3450;
+        color: #fff;
+      }
+      
+/*       side bar click event define */
+      .clickable-text {
+        color: #000000;
+        cursor: pointer;
+      }
+
+      .clickable-text:hover {
+        text-decoration: underline;
+      }
+    </style>
+    
+    <!-- MAIN CONTENT -->
+    <!-- scss format defined in #id term -->
+    <button onclick="topFunction()" id="back_top" title="Back to top">TOP</button>
+    <script src="https://wzetto.github.io/wz369.github.io/js/BackTop/bt_1.js"></script>
+
+    <button id="to_new" title="Scroll to updates">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16"> 
+        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/> 
+      </svg>
+    </button>
+    <script src="https://wzetto.github.io/wz369.github.io/js/bottom/to_new.js"></script>
+
+    <script src="https://wzetto.github.io/wz369.github.io/js/gif/gifffer.min.js"></script>
+    <script>
+      window.onload = function() {
+        Gifffer();
+      }
+    </script>
+<!--     Loading the navigation bar -->
+    <script src="https://wzetto.github.io/wz369.github.io/js/side/omoi_main.js"></script>
+
+    <div class="row">
+      <div class="inner_left">
+        
+        <h6 style="position: absolute; top: 0; right: 0; padding: 5px;"> Friedrich "The Sea of Ice" </h6>
+        
+        {% assign paper_pages = site.pages | where: "omoicomment", true %}
+        <!-- *Extract tags array -->
+        {% assign tags_array = "" | split: "," %}
+        {% assign titles_array = "" | split: "," %}
+        {% assign filenames_array = "" | split: "," %}
+
+        {% for page in paper_pages %}
+
+          {% assign page_tags = page.tags | join: "," | split: "," %}
+          {% assign tags_array = tags_array | push: page.tags %}
+          {% assign titles_array = titles_array | push: page.title %}
+          {% assign filenames_array = filenames_array | push: page.filename %}
+
+        {% endfor %}        
+        
+        <span style="line-height: 1.25;">
+          <h4 style="color:#6b6b6b">本</h4>
+          <div id="tagMenuBook"></div>
+          <hr style="width:40px;text-align:left;margin-left:0">
+          <h4 style="color:#6b6b6b">其他</h4>
+          <div id="tagMenuOthers"></div>
+        </span>
+        <br>
+        <div id="feelLucky"></div>
+        <br>
+        <div id="filterBlock"></div>
+        <!-- <div id="tagBlock"></div> -->
+
+        <script>
+
+          <!-- *convert liquid array to javascript array -->
+          var allTags = {{ tags_array | jsonify }};
+          var allTitles = {{ titles_array | jsonify }};
+          var allFilenames = {{ filenames_array | jsonify }};
+
+          var tagCounts = {};
+          var tagIndexes = {};
+
+          for (var i = 0; i < allTags.length; i++) {
+            var tagNew = allTags[i];
+
+            for (var j = 0; j < tagNew.length; j++) {
+              var tag = tagNew[j];
+              if (tagCounts[tag] === undefined) {
+                tagCounts[tag] = 0;
+                tagIndexes[tag] = [];
+              }
+              tagCounts[tag]++;
+              tagIndexes[tag].push(i);
+            }
+          }
+
+          var tagSequences = [];
+          var indexSequences = [];
+          for (var tag in tagCounts) {
+            var count = tagCounts[tag];
+            var indexes = tagIndexes[tag];
+            tagSequences.push(tag + ' (' + count + ')');
+            indexSequences.push(indexes);
+          }
+
+          // Menu bar of tags
+          let activatedTagIndices = [];
+          const tagMenuDiv = {
+            '本': document.getElementById('tagMenuBook'),
+            '其他': document.getElementById('tagMenuOthers'),
+          };
+
+          for (var z = 0; z < tagSequences.length; z++) {
+            var menuDiv = document.createElement('div');
+            var tagDividRaw = 'tagraw'+z;
+            var tagJumpto = 'tag'+z;
+            const splitTag = tagSequences[z].split('/')[0]
+            const splitContent = tagSequences[z].split('/')[1];
+            menuDiv.id = tagDividRaw;
+            menuDiv.classList.add('tagraw')
+
+            if (tagMenuDiv[splitTag]) {
+              if (splitTag === "author") {
+                menuDiv.innerHTML = ''+splitContent+'';
+              } else {
+                menuDiv.innerHTML = ''+tagSequences[z]+'';
+              }
+              tagMenuDiv[splitTag].appendChild(menuDiv);
+            }
+          }
+          // Do statistics on tag.
+          // Create an array to track tag status
+          const numTags = tagSequences.length; // Replace with actual number of tags
+          let tagStatus = Array(numTags).fill(-1); // Initialize all values to -1
+
+          // Feel lucky button
+          const feelLuckyDiv = document.getElementById('feelLucky');
+
+          function getRndInteger(min, max) {
+            return Math.floor(Math.random()*(max - min)) + min;
+          }
+
+          var randomIndex = getRndInteger(0, allTitles.length);
+          var randomPage = allFilenames[randomIndex];
+          var permalink = "https://wzetto.github.io/wz369.github.io/omoi_main/essays/"+randomPage+".html";
+
+          feelLuckyDiv.innerHTML = '<div class="container">\
+            <button id="tagAny" style="color:#999999;background-color:#fff;\
+            border: 2.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+            font-size:16px;padding:0.5rem;display:inline-block;\
+            text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Any</button>&nbsp;\
+            <button id="tagFilter" style="color:#999999;background-color:#fff;\
+            border: 2.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+            font-size:16px;padding:0.5rem;display:inline-block;\
+            text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Common</button>&nbsp;\
+            <button style="color:#000;background-color:#fff;\
+            border: 2.5px solid #303030;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+            font-size:16px;padding:0.5rem;display:inline-block;\
+            text-align:center;border-radius: 8px;height: 40px;">\
+            <a href="'+permalink+'">手气不错</a></button></div>';
+
+          //Count activated tags
+          activatedTagIndices.length = 0;
+
+//           function activateTagFilter() {
+          // Add click event to each tag element
+          const menuTagsRaw = document.querySelectorAll('.tagraw');
+          const menuTags = Array.from(menuTagsRaw).sort((a, b) => {
+            const idA = parseInt(a.id.replace('tagraw', ''));
+            const idB = parseInt(b.id.replace('tagraw', ''));
+            return idA - idB;
+          });
+          menuTags.forEach((menuTag, l) => {
+            menuTag.addEventListener('click', function() {
+              // Flip tag status
+              tagStatus[l] = -tagStatus[l];
+              // Toggle active class
+              menuTag.classList.toggle('active', tagStatus[l] === 1);
+//               menuTag.classList.toggle('deactive', tagStatus[i] === 0);
+//               activatedTagIndices = tagStatus.map((status, i) => status === 1 ? i : 0).filter(index => index !== 0);
+              activatedTagIndices = [];
+              menuTags.forEach((menuTag, m) => {
+                if (tagStatus[m] === 1) {
+                  activatedTagIndices.push(m);
+                }
+              });
+
+              // console.log(tagStatus);
+
+              if (activatedTagIndices.length >= 1) {
+                feelLuckyDiv.innerHTML = '<div class="container">\
+                  <button id="tagAny" style="color:#fff;background-color:#000;\
+                  border: 2.5px solid #000;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                  font-size:16px;padding:0.5rem;display:inline-block;\
+                  text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Any</button>&nbsp;\
+                  <button id="tagFilter" style="color:#fff;background-color:#000;\
+                  border: 2.5px solid #000;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                  font-size:16px;padding:0.5rem;display:inline-block;\
+                  text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Common</button>&nbsp;\
+                  <button style="color:#000;background-color:#fff;\
+                  border: 2.5px solid #303030;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                  font-size:16px;padding:0.5rem;display:inline-block;\
+                  text-align:center;border-radius: 8px;height: 40px;">\
+                  <a href="'+permalink+'">手气不错</a></button></div>';
+              } else {
+                feelLuckyDiv.innerHTML = '<div class="container">\
+                  <button id="tagAny" style="color:#999999;background-color:#fff;\
+                  border: 2.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                  font-size:16px;padding:0.5rem;display:inline-block;\
+                  text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Any</button>&nbsp;\
+                  <button id="tagFilter" style="color:#999999;background-color:#fff;\
+                  border: 2.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                  font-size:16px;padding:0.5rem;display:inline-block;\
+                  text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Common</button>&nbsp;\
+                  <button style="color:#000;background-color:#fff;\
+                  border: 2.5px solid #303030;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                  font-size:16px;padding:0.5rem;display:inline-block;\
+                  text-align:center;border-radius: 8px;height: 40px;">\
+                  <a href="'+permalink+'">手气不错</a></button></div>';
+              }
+
+              const countAny = document.getElementById('tagAny');
+              countAny.addEventListener('click', function() {
+
+                const filterElementsDivAny = document.getElementById('filterBlock');
+                filterElementsDivAny.innerHTML = "";
+
+                const compileIndexAny = activatedTagIndices.map((index) => {
+                  return indexSequences[index];
+                }).flat().filter((value, index, self) => {
+                  return self.indexOf(value) === index;
+                });
+
+                if (compileIndexAny.length >= 1) {
+                  for (var n = 0; n < compileIndexAny.length; n++) {
+                    var index = compileIndexAny[n];
+                    var titleDivFilter = document.createElement('div');
+                    var tagDivFilter = document.createElement('span');
+                    tagDivFilter.style.lineHeight = '1.25';
+
+                    var filename = allFilenames[index];
+                    var title = allTitles[index];
+                    var tag = allTags[index];
+                    var permalinkFilter = "https://wzetto.github.io/wz369.github.io/omoi_main/essays/"+filename+".html";
+
+                    titleDivFilter.innerHTML = '<h5><a href="'+permalinkFilter+'">'+filename+'</a></h5>';
+
+                    // tag array
+                    for (var o = 0; o < tag.length; o++) {
+                      var codeElement = document.createElement('code');
+                      codeElement.style.backgroundColor = '#fff';
+                      codeElement.style.border = '1.5px solid #303030';
+                      codeElement.style.boxShadow = '0 0 1px rgba(0,0,0,.1)';
+                      codeElement.style.borderRadius = '8px';
+                      codeElement.style.display = 'inline-block';
+                      codeElement.innerHTML = '<a href="https://fgo.wiki/w/%E7%89%B9%E6%8B%89%E6%B4%9B%E5%85%8B">'+tag[o]+'</a>';
+                      tagDivFilter.appendChild(codeElement);
+                    }
+
+                    filterElementsDivAny.appendChild(titleDivFilter);
+                    filterElementsDivAny.appendChild(tagDivFilter);
+                  }
+                } else {
+                    var titleDivFilter = document.createElement('div');
+                    titleDivFilter.innerHTML = '<h4>OoOps!</h4>';
+                    filterElementsDivAny.appendChild(titleDivFilter);
+                }
+
+                var seperateDiv = document.createElement('div');
+                seperateDiv.innerHTML = '<hr style="width:200px;text-align:center">';
+                filterElementsDivAny.appendChild(seperateDiv);
+              });
+
+              const countBtn = document.getElementById('tagFilter');
+              countBtn.addEventListener('click', function() {
+  //                 Return chosen indices for titles/authors/etc.
+                const filterElementsDiv = document.getElementById('filterBlock');
+                filterElementsDiv.innerHTML = "";
+
+                // Intersect
+                const chosenIndex = activatedTagIndices.map((index) => {return indexSequences[index];});
+                let compileIndex = chosenIndex[0];
+                let compileNew = [];
+
+                console.log('chosenIndex:',chosenIndex);
+
+                for (i = 0; i < chosenIndex.length; i++) {
+                  const sub1 = [chosenIndex[i]].flat();
+                  compileNew = [];
+
+                  for (j = 0; j < sub1.length; j++) {
+                    const sub2 = sub1[j];
+                    // console.log('raw2',compileIndex);
+                    const boardIndex = compileIndex.findIndex((value) => value - sub2 === 0);
+
+                    if (boardIndex !== -1) {
+                      compileNew.push(sub2);
+                    }
+                  }
+
+                  compileIndex = [...compileNew];
+                }
+
+                console.log('compileIndex:',compileIndex);
+                console.log(tagStatus);
+
+                // title, author, mainpoint
+
+                if (compileIndex.length >= 1) {
+                  for (var n = 0; n < compileIndex.length; n++) {
+                    var index = compileIndex[n];
+                    var titleDivFilter = document.createElement('div');
+                    var tagDivFilter = document.createElement('span');
+                    tagDivFilter.style.lineHeight = '1.25';
+
+                    var filename = allFilenames[index];
+                    var title = allTitles[index];
+                    var tag = allTags[index];
+                    var permalinkFilter = "https://wzetto.github.io/wz369.github.io/omoi_main/essays/"+filename+".html";
+                    titleDivFilter.innerHTML = '<h5><a href="'+permalinkFilter+'">'+filename+'</a></h5>';
+
+                    // tag array
+                    for (var o = 0; o < tag.length; o++) {
+                      var codeElement = document.createElement('code');
+                      codeElement.style.backgroundColor = '#fff';
+                      codeElement.style.border = '1.5px solid #303030';
+                      codeElement.style.boxShadow = '0 0 1px rgba(0,0,0,.1)';
+                      codeElement.style.borderRadius = '8px';
+                      codeElement.style.display = 'inline-block';
+                      codeElement.innerHTML = '<a href="https://fgo.wiki/w/%E7%89%B9%E6%8B%89%E6%B4%9B%E5%85%8B">'+tag[o]+'</a>';
+                      tagDivFilter.appendChild(codeElement);
+                    }
+
+                    filterElementsDiv.appendChild(titleDivFilter);
+                    filterElementsDiv.appendChild(tagDivFilter);
+                  }
+                } else {
+                    var titleDivFilter = document.createElement('div');
+                    titleDivFilter.innerHTML = '<h4>OoOps!</h4>';
+                    filterElementsDiv.appendChild(titleDivFilter);
+                }
+
+                var seperateDiv = document.createElement('div');
+                seperateDiv.innerHTML = '<hr style="width:200px;text-align:center"><br>';
+                filterElementsDiv.appendChild(seperateDiv);
+              });
+            });
+          });
+        </script>
+
+
+
+        {{ content }}<br>
+        <br>
+        <p style="text-align: center;">
+          <img src="https://drive.google.com/thumbnail?id=1hcY5U4qLbe6QHDNCK6wzERxcDnTxm0Dp&sz=w800" width="200px"/>
+        </p>
+        <h6 align='center'>Zhi Wang © 2021-2023 Design & Maintain</h6>
+      </div>
+        <div class="inner_right">
+          <!-- <h5 a onclick="navibar()" id="o202112t" color="#bdbbbb" class="clickable-text">2021.12</h5>
+          <hr style="width:20px;text-align:left;margin-left:0">
+          <h5 a onclick="navibar()" id="o202201t" color="#bdbbbb" class="clickable-text">2022.1</h5>
+          <hr style="width:20px;text-align:left;margin-left:0">
+          <h5 a onclick="navibar()" id="o202202t" color="#bdbbbb" class="clickable-text">2022.2</h5>
+          <hr style="width:20px;text-align:left;margin-left:0">
+          <h5 a onclick="navibar()" id="o202203t" color="#bdbbbb" class="clickable-text">2022.3</h5>
+          <hr style="width:20px;text-align:left;margin-left:0">
+          <h5 a onclick="navibar()" id="o202204t" color="#bdbbbb" class="clickable-text">2022.4</h5>
+          <hr style="width:20px;text-align:left;margin-left:0">
+          <h5 a onclick="navibar()" id="o202205t" color="#bdbbbb" class="clickable-text">2022.5</h5>
+          <hr style="width:20px;text-align:left;margin-left:0">
+          <h5 a onclick="navibar()" id="o202206t" color="#bdbbbb" class="clickable-text">2022.6</h5>
+          <hr style="width:20px;text-align:left;margin-left:0">
+          <h5 a onclick="navibar()" id="o202207t" color="#bdbbbb" class="clickable-text">2022.7</h5>
+          <hr style="width:20px;text-align:left;margin-left:0">
+          <h5 a onclick="navibar()" id="o202208t" color="#bdbbbb" class="clickable-text">2022.8</h5>
+          <hr style="width:20px;text-align:left;margin-left:0">
+          <h5 a onclick="navibar()" id="o202209t" color="#bdbbbb" class="clickable-text">2022.9</h5>
+          <hr style="width:20px;text-align:left;margin-left:0">
+          <h5 a onclick="navibar()" id="o202210t" color="#bdbbbb" class="clickable-text">2022.10</h5>
+          <hr style="width:20px;text-align:left;margin-left:0">
+          <h5 a onclick="navibar()" id="o202211t" color="#bdbbbb" class="clickable-text">2022.11</h5>
+          <hr style="width:20px;text-align:left;margin-left:0">
+          <h5 a onclick="navibar()" id="o202212t" color="#bdbbbb" class="clickable-text">2022.12</h5>
+          <hr style="width:20px;text-align:left;margin-left:0">
+          <h5 a onclick="navibar()" id="o202301t" color="#bdbbbb" class="clickable-text">2023.1</h5>
+          <hr style="width:20px;text-align:left;margin-left:0">
+          <h5 a onclick="navibar()" id="o202302t" color="#bdbbbb" class="clickable-text">2023.2</h5>
+          <hr style="width:20px;text-align:left;margin-left:0">
+          <h5 a onclick="navibar()" id="o202303t" color="#bdbbbb" class="clickable-text">2023.3</h5>
+          <hr style="width:20px;text-align:left;margin-left:0">
+          <h5 a onclick="navibar()" id="o202304t" color="#bdbbbb" class="clickable-text">2023.4</h5>
+          <hr style="width:20px;text-align:left;margin-left:0">
+          <h5 a onclick="navibar()" id="o202305t" color="#bdbbbb" class="clickable-text">2023.5</h5>
+          <hr style="width:20px;text-align:left;margin-left:0">
+          <h5 a onclick="navibar()" id="o202306t" color="#bdbbbb" class="clickable-text">2023.6</h5>
+          <hr style="width:20px;text-align:left;margin-left:0">
+          <h5 a onclick="navibar()" id="o202307t" color="#bdbbbb" class="clickable-text">2023.7</h5>
+          <hr style="width:20px;text-align:left;margin-left:0">
+          <h5 a onclick="navibar()" id="o202308t" color="#bdbbbb" class="clickable-text">2023.8</h5>
+          <hr style="width:20px;text-align:left;margin-left:0">
+          <h5 a onclick="navibar()" id="o202309t" color="#bdbbbb" class="clickable-text">2023.9</h5>
+          <hr style="width:20px;text-align:left;margin-left:0">
+          <h5 a onclick="navibar()" id="o202310t" color="#bdbbbb" class="clickable-text">2023.10</h5>
+          <hr style="width:20px;text-align:left;margin-left:0">
+          <h5 a onclick="navibar()" id="o202311t" color="#bdbbbb" class="clickable-text">2023.11</h5>
+          <hr style="width:20px;text-align:left;margin-left:0"> -->
+          <div id="date-container"></div>
+
+          <script>
+              var container = document.getElementById('date-container');
+
+              var h6 = document.createElement('h6');
+              h6.onclick = navibar();
+              h6.id = 'o202112t';
+              h6.className = 'omoi_navi_text';
+              h6.innerText = '2021.12';
+              container.appendChild(h6);
+
+              for (var year = 2022; year <= 2024; year++) {
+                  for (var month = 1; month <= 12; month++) {
+                    
+                      /* if (year === 2023 && month > 11) {
+                          break;
+                      } */
+                      var h6 = document.createElement('h6');
+                      h6.onclick = navibar();
+                      h6.id = 'o' + year + (month < 10 ? '0' : '') + month + 't';
+                      h6.className = 'omoi_navi_text';
+                      h6.innerText = year + '.' + month;
+                      container.appendChild(h6);
+          
+                      /* var hr = document.createElement('hr');
+                      hr.style.width = '20px';
+                      hr.style.textAlign = 'left';
+                      hr.style.marginLeft = '0';
+                      container.appendChild(hr);*/
+                  }
+              }
+          </script>
+          <h5 a onclick="navibar()" id="olitcontribt" color="#bdbbbb">微小的工作</h5>
+      </div>
+    </div>
+
+
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner_bottom">
+        {% if site.github.is_project_page %}
+        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained & theme created by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <!-- <p style="position: absolute; bottom: 0; width:100%; text-align: center">有り得ざる妖精の王よ——</p>
+        -->
+        <p id='bottom_text'>取るに足りない、ちさな虫の一噛みで崩れる</p>
+        <script src="https://wzetto.github.io/wz369.github.io/js/bottom/bottom_text_home.js"></script>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="google-site-verification" content="4Bccs0rGRzc5pD1mnzUxJduhjNoI5HuaeQ9I8ga4MbY" />
+    <link rel="shortcut icon" type="image/png" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="shortcut icon" sizes="192x192" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="apple-touch-icon" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=cfe0696a4f604aaa79f27fc4ea1cda9f54a98c00">
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Low_temp_lift | wz369.github.io.git</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Low_temp_lift" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/backup/omoi/low_temp_lift/low_temp_lift.html" />
+<meta property="og:url" content="http://localhost:4000/backup/omoi/low_temp_lift/low_temp_lift.html" />
+<meta property="og:site_name" content="wz369.github.io.git" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Low_temp_lift" />
+<script type="application/ld+json">
+{"headline":"Low_temp_lift","@type":"WebPage","url":"http://localhost:4000/backup/omoi/low_temp_lift/low_temp_lift.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+    <script type="text/x-mathjax-config">
+       MathJax.Hub.Config({
+         tex2jax: {
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           processEscapes: true
+         }
+       });
+    </script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- HEADER -->
+    <div id="header_pages" class="outer">
+        <header class="inner_top background_img">
+          
+          <!-- 
+            <a id="forkme_banner" href="https://github.com/wzetto/wz369.github.io.git">View on GitHub</a>
+           -->
+          <a href="https://wzetto.github.io/wz369.github.io/"></a>
+          
+          <h1 id="project_title">Low_temp_lift</h1>
+          
+          
+         
+          
+        </header>
+    </div>
+    
+    <script src="https://wzetto.github.io/wz369.github.io/js/header/header_scroll.js"></script>
+    
+    <!-- MAIN CONTENT -->
+    <script src="https://wzetto.github.io/wz369.github.io/js/gif/gifffer.min.js"></script>
+    <script>
+      window.onload = function() {
+        Gifffer();
+      }
+    </script>
+    <div class="row">
+      <div class="inner_left">
+        <script async src="https://js.sitesearch360.com/plugin/bundle/7057.js"></script>
+        <p>2022.02
+&lt;中|Eng&gt;<sub>α</sub><br /></p>
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p>液氮实验中稳定液面保持304钢温度恒定的小升降装置。</p>
+
+<p>液面识别-步进电机升降（raspi, L298N）</p>
+
+<h2>Part 1. Intensity recog.</h2>
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p>i.e.照射目标区域液面(暂时粗暴涂红）：<br />
+<img src="https://drive.google.com/thumbnail?id=127VWd-vnxhi0wrtk5MzlzTWEZ6Duw1wo&amp;sz=w400" /></p>
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p>卷积平滑识别纵intensity（理论上Savitzky-Golay平滑更准确，将就），将等时间间隔图像采样得到曲线统合，生成下图：<br />
+<img src="https://drive.google.com/thumbnail?id=123ltWfCXoMR4Limj9G2Xa38_qvE0D3Cp&amp;sz=w800" /></p>
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p>可看出找到<del>梭梭板</del>就找到了液面。求出系统/测量(system/measurement)方差后试验kalman filter (linear):<br />
+<img src="https://drive.google.com/thumbnail?id=121vf01r0jRDanZBCnN7obI5iYM669HaI&amp;sz=w800" /></p>
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p>Bingo.<br />
+（这noise，能用就行.jpg<br />
+（一个电池盖能拖十天才到。<br />
+(一块板子又拖了十天？！</p>
+
+<h4 id="-back"><a href="https://wzetto.github.io/wz369.github.io/omoi/omoi_main.html">&lt; back</a></h4>
+<br>
+<!--         <script async src="https://js.sitesearch360.com/plugin/bundle/7057.js"></script> -->
+        <br>
+        <p style="text-align: center;">
+          <img src="https://drive.google.com/thumbnail?id=1hcY5U4qLbe6QHDNCK6wzERxcDnTxm0Dp&sz=w800" width="200px"/>
+        </p>
+        <h6 align='center'>Zhi Wang © 2021-2023</h6>
+      </div>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner_bottom">
+        
+        <p class="copyright">wz369.github.io.git maintained by <a href="https://github.com/wzetto">wzetto</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <!-- <p style="position: absolute; bottom: 0; width:100%; text-align: center">有り得ざる妖精の王よ——</p>
+        -->
+        <p id='bottom_text'>取るに足りない、ちさな虫の一噛みで崩れる</p>
+        <a href="http://www.clustrmaps.com/map/Wzetto.github.io/wz369.github" title="Visit tracker for Wzetto.github.io/wz369.github"><img src="//www.clustrmaps.com/map_v2.png?d=I_8zqWjxSNUSgP53E7RnBdHG203TZ7JkpCo6Z58MZEc" /></a>
+        <script src="https://wzetto.github.io/wz369.github.io/js/bottom/bottom_text_home.js"></script>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="shortcut icon" type="image/png" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="shortcut icon" sizes="192x192" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="apple-touch-icon" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=cfe0696a4f604aaa79f27fc4ea1cda9f54a98c00">
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Julia | wz369.github.io.git</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Julia" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/Research_etc/MSAD/log_2212_julia.html" />
+<meta property="og:url" content="http://localhost:4000/Research_etc/MSAD/log_2212_julia.html" />
+<meta property="og:site_name" content="wz369.github.io.git" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Julia" />
+<script type="application/ld+json">
+{"headline":"Julia","@type":"WebPage","url":"http://localhost:4000/Research_etc/MSAD/log_2212_julia.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- HEADER -->
+    <div id="header_pages" class="outer">
+<!--       and this part -->
+        <header class="inner_top background_img_bonfire">
+          
+          <!-- 
+            <a id="forkme_banner" href="https://github.com/wzetto/wz369.github.io.git">View on GitHub</a>
+           -->
+          <a href="https://wzetto.github.io/wz369.github.io/"></a>
+          
+          <h1 id="project_title">Julia</h1>
+          
+          
+         
+          
+        </header>
+    </div>
+    
+<!-- this part -->
+    <script src="https://wzetto.github.io/wz369.github.io/js/header/header_scroll_bonfire.js"></script>
+    <!-- MAIN CONTENT -->
+    <button onclick="topFunction()" id="back_top" title="Back to top">TOP</button>
+    <script src="https://wzetto.github.io/wz369.github.io/js/BackTop/bt_1.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <div class="row">
+      <div class="inner_left">
+        <p><code>2023.01.01 4:00 am</code></p>
+
+<p>将一个SQS的生成文件迁移到了Julia，结果如下，单个config的计算速度平均快35倍。这可如何是好喵，明明上半年已经加过一次速了汪，为什么会变成这样呢</p>
+
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p><img src="https://drive.google.com/thumbnail?id=1Aqoptc9KA6RhAeL35ORScz4g6nIqUu9V&amp;sz=w1200" width="800px" /></p>
+
+<p>相关参数为（退火，故得稀疏分布。）：</p>
+
+<p>#<code>192-atom</code>; #<code>FCC</code>; #<code>Quaternary</code>; #Randomness ~ <code>100</code> in #<code>l2 norm</code> compared with random configuratio; #<code>Single supercell</code>; 4-core #<code>Multiprocessing</code> generates <code>500</code> configs in total; etc.</p>
+
+<p>随后新年第一天的下午拿来debug。开启#<code>PBC</code>后对5184原子进行操作。Julia的程序加入了两个bookkeeping方法提速，于是速度加快了400倍啾</p>
+
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p><img src="https://drive.google.com/thumbnail?id=1As4I9ducql-8C3QgsZnbLYPgkLrdr8cn&amp;sz=w1200" width="800px" /></p>
+
+<h3 id="-back"><a href="https://wzetto.github.io/wz369.github.io/Research_etc/MSAD/research_on_MSAD.html">&lt; back</a></h3>
+
+<script>
+  window.onload = function(){
+    let txt = document.getElementById("side_text");
+    txt.innerHTML = "Python sucks";
+  }
+</script>
+
+<br>
+        <br>
+        <div id="gitalk-container"></div>
+        <script>
+          var gitalk = new Gitalk({
+              clientID: '7b560b97e4bda87153dd',
+              clientSecret: '71c1745a9c776d439e0de7e8712c4c90a7441709',
+              repo: 'gitalk-cobuffer',
+              owner: 'wzetto',
+              admin: ['wzetto'],
+              id: 'Julia',
+              distractionFreeMode: false,
+              title: 'Omoi'
+          })
+          gitalk.render('gitalk-container')
+        </script>
+        <p style="text-align: center;">
+          <img src="https://drive.google.com/thumbnail?id=1hcY5U4qLbe6QHDNCK6wzERxcDnTxm0Dp&sz=w800" width="200px"/>
+        </p>
+        <h6 align='center'>Zhi Wang © 2021-2023</h6>
+      </div>
+      <div class="inner_right">
+        <h5 id="side_text">> Main content</h5>
+      </div>
+     </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner_bottom">
+        
+        <p class="copyright">wz369.github.io.git maintained by <a href="https://github.com/wzetto">wzetto</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <!-- <p style="position: absolute; bottom: 0; width:100%; text-align: center">有り得ざる妖精の王よ——</p>
+        -->
+        <p id='bottom_text'>冬の玉座は誰の手に</p>
+        <!-- <script src="https://wzetto.github.io/wz369.github.io/js/bottom/bottom_text_home.js"></script>-->
+      </footer>
+    </div>
+  </body>
+</html>

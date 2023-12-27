@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="google-site-verification" content="4Bccs0rGRzc5pD1mnzUxJduhjNoI5HuaeQ9I8ga4MbY" />
+    <link rel="shortcut icon" type="image/png" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="shortcut icon" sizes="192x192" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="apple-touch-icon" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=cfe0696a4f604aaa79f27fc4ea1cda9f54a98c00">
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>log 2022.02-03 | wz369.github.io.git</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="log 2022.02-03" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/Research_etc/MSAD/log_2202.html" />
+<meta property="og:url" content="http://localhost:4000/Research_etc/MSAD/log_2202.html" />
+<meta property="og:site_name" content="wz369.github.io.git" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="log 2022.02-03" />
+<script type="application/ld+json">
+{"headline":"log 2022.02-03","@type":"WebPage","url":"http://localhost:4000/Research_etc/MSAD/log_2202.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+    <script type="text/x-mathjax-config">
+       MathJax.Hub.Config({
+         tex2jax: {
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           processEscapes: true
+         }
+       });
+    </script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- HEADER -->
+    <div id="header_pages" class="outer">
+        <header class="inner_top background_img">
+          
+          <!-- 
+            <a id="forkme_banner" href="https://github.com/wzetto/wz369.github.io.git">View on GitHub</a>
+           -->
+          <a href="https://wzetto.github.io/wz369.github.io/"></a>
+          
+          <h1 id="project_title">log 2022.02-03</h1>
+          
+          
+         
+          
+        </header>
+    </div>
+    
+    <script src="https://wzetto.github.io/wz369.github.io/js/header/header_scroll.js"></script>
+    
+    <!-- MAIN CONTENT -->
+    <script src="https://wzetto.github.io/wz369.github.io/js/gif/gifffer.min.js"></script>
+    <script>
+      window.onload = function() {
+        Gifffer();
+      }
+    </script>
+    <div class="row">
+      <div class="inner_left">
+        <script async src="https://js.sitesearch360.com/plugin/bundle/7057.js"></script>
+        <p>2022.02.07</p>
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p>Genetic algo yes！<br />
+另：算是彻底理解了<img src="https://latex.codecogs.com/svg.image?&lt;U(\vec{\sigma})\mid\Phi_\alpha^{(M)}(\vec{\sigma})&gt;" title="&lt;U(\vec{\sigma})\mid\Phi_\alpha^{(M)}(\vec{\sigma})&gt;" />
+对于‘原子配置完全不影响内积‘的含义。めでたしめでたし（进度推进：0.01%</p>
+
+<p>2022.03.04</p>
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p>接下来设计下rl来速生成SQS，有点意思。<br />
+试一下局所随机迭代整体。</p>
+
+<p>2022.03.05</p>
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p>将超胞分解为小超胞（？进行大-小嵌套循环采样，相当高效。</p>
+
+<p>2022.03.13</p>
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p>如何衡量生成SQS的完备性?<br />
+目前想法：对生成序列的目标CDOS进行拟合，比较与理想CDOS的KL散度。不过意味着大量数据集的要求。四元系挑战一下吧。<br />
+<img src="https://latex.codecogs.com/svg.image?D_{KL}(C_{gen}||C_{real})&space;\leq&space;\epsilon" title="https://latex.codecogs.com/svg.image?D_{KL}(C_{gen}||C_{real}) \leq \epsilon" /><br />
+<img src="https://latex.codecogs.com/svg.image?C_{gen}\geqslant&space;0\&space;only\&space;if\&space;\left\|\Phi_{gen,i}-\Phi_{r,i}&space;\right\|_2&space;\leq&space;\theta_i" title="https://latex.codecogs.com/svg.image?C_{gen}\geqslant 0\ only\ if\ \left\|\Phi_{gen,i}-\Phi_{r,i} \right\|_2 \leq \theta_i" /></p>
+
+<p>2022.3.16</p>
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p>1.CDOS推导<br />
+2.多类构型态密度高维度，或者说构型态密度及其多次moment构成的高维度分布，保证生成的SQS的目标构型（基因？）的矢量和指向易于获得的中心。Projection state.</p>
+
+<h4 id="-back"><a href="https://wzetto.github.io/wz369.github.io/Research_etc/MSAD/research_on_MSAD.html">&lt; back</a></h4>
+<br>
+<!--         <script async src="https://js.sitesearch360.com/plugin/bundle/7057.js"></script> -->
+        <br>
+        <p style="text-align: center;">
+          <img src="https://drive.google.com/thumbnail?id=1hcY5U4qLbe6QHDNCK6wzERxcDnTxm0Dp&sz=w800" width="200px"/>
+        </p>
+        <h6 align='center'>Zhi Wang © 2021-2023</h6>
+      </div>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner_bottom">
+        
+        <p class="copyright">wz369.github.io.git maintained by <a href="https://github.com/wzetto">wzetto</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <!-- <p style="position: absolute; bottom: 0; width:100%; text-align: center">有り得ざる妖精の王よ——</p>
+        -->
+        <p id='bottom_text'>取るに足りない、ちさな虫の一噛みで崩れる</p>
+        <a href="http://www.clustrmaps.com/map/Wzetto.github.io/wz369.github" title="Visit tracker for Wzetto.github.io/wz369.github"><img src="//www.clustrmaps.com/map_v2.png?d=I_8zqWjxSNUSgP53E7RnBdHG203TZ7JkpCo6Z58MZEc" /></a>
+        <script src="https://wzetto.github.io/wz369.github.io/js/bottom/bottom_text_home.js"></script>
+      </footer>
+    </div>
+  </body>
+</html>

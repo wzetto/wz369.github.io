@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="google-site-verification" content="4Bccs0rGRzc5pD1mnzUxJduhjNoI5HuaeQ9I8ga4MbY" />
+    <link rel="shortcut icon" type="image/png" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="shortcut icon" sizes="192x192" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="apple-touch-icon" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=cfe0696a4f604aaa79f27fc4ea1cda9f54a98c00">
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Log till 2021.12.28 | wz369.github.io.git</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Log till 2021.12.28" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/Research_etc/MSAD/log_on_MSAD_before_21-12-28.html" />
+<meta property="og:url" content="http://localhost:4000/Research_etc/MSAD/log_on_MSAD_before_21-12-28.html" />
+<meta property="og:site_name" content="wz369.github.io.git" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Log till 2021.12.28" />
+<script type="application/ld+json">
+{"headline":"Log till 2021.12.28","@type":"WebPage","url":"http://localhost:4000/Research_etc/MSAD/log_on_MSAD_before_21-12-28.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+    <script type="text/x-mathjax-config">
+       MathJax.Hub.Config({
+         tex2jax: {
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           processEscapes: true
+         }
+       });
+    </script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- HEADER -->
+    <div id="header_pages" class="outer">
+        <header class="inner_top background_img">
+          
+          <!-- 
+            <a id="forkme_banner" href="https://github.com/wzetto/wz369.github.io.git">View on GitHub</a>
+           -->
+          <a href="https://wzetto.github.io/wz369.github.io/"></a>
+          
+          <h1 id="project_title">Log till 2021.12.28</h1>
+          
+          
+         
+          
+        </header>
+    </div>
+    
+    <script src="https://wzetto.github.io/wz369.github.io/js/header/header_scroll.js"></script>
+    
+    <!-- MAIN CONTENT -->
+    <script src="https://wzetto.github.io/wz369.github.io/js/gif/gifffer.min.js"></script>
+    <script>
+      window.onload = function() {
+        Gifffer();
+      }
+    </script>
+    <div class="row">
+      <div class="inner_left">
+        <script async src="https://js.sitesearch360.com/plugin/bundle/7057.js"></script>
+        <h3>前情提要：在2021年，进行DFT计算，竟然是用CPU？！ 为避免退学危机，wz站了出来——さあ——用CPU攻下三元系高熵合金吧！好不容易计算出来的我，竟面对新的敌人——四元系？一个结构居然要算5天？！ **次回！**怎么办，还是只好退学了吧——</h3>
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p>2021.12.28</p>
+
+<h2 id="那就总结一下">那就总结一下</h2>
+<p>从流程上看，目前是： 对任意N元固溶相， 最小化1-6NN的cor-function， 以及1NN-2NN的cor-func——从统计力学角度讲， 这是对单一cor-func的’moment‘的统计。 从Ising model的角度讲， 其实就是对triplets做了一点约束。
+从后续验证中， 也确实有奇效。</p>
+
+<p>第三， 则是minimize deviation of number of <strong>triplets cluster</strong>, 对各个cluster作简单的回归以及dominance analysis,
+可以发现符合‘直觉’的， Cr-Cr-Cr 与 Co-Co-Ni 具有决定性的功能。</p>
+
+<p>获得’SQS‘后， 这个结构就能广泛运用了。后续采用简单的MC sampling， 获得一些其他伪随机结构， 可以基本认为是’effective configuration
+for MSAD’。</p>
+
+<p><strong>但细思极恐</strong>的是， SQS真的能代表MSAD么？</p>
+
+<p>所以对于后续的工作， 有两座难以翻越的高山。</p>
+
+<h2 id="那就展望一下">那就展望一下</h2>
+
+<ol>
+  <li>一座是大雪塘， 需要精巧设计， 并且存在暴毙可能——毕竟是Yuge先生推脱给我的差事，必不可能好搞。</li>
+</ol>
+
+<p><strong>Optimized Original Configuration</strong></p>
+
+<p>传统DFT分析中， 将能量作密度/轨道泛函近似后迭代， 然后将得到的基态configuration作为评价MSAD的标准。
+但其缺陷在于， 迭代过程中并未考虑寻常原子间作用， 那么在进行泛函分析之前就必须有‘考虑了初始作用’的优化结构。</p>
+
+<p>理论上， 通过巧妙的Cluster Expansion， 构建团簇级别的optimized-origin config之间的</p>
+<p align="left">
+  <img src="https://latex.codecogs.com/svg.image?V_{\alpha,&space;MSAD}&space;\mapsto&space;V_{\alpha^{'},&space;MSAD}" title="V_{\alpha, MSAD} \mapsto V_{\alpha^{'}, MSAD}" />
+</p>
+<p>, 能够用一些迭代手段， 例如传统的退火算法等等实现‘优化结构’的构建。但在离散系统中一旦上升到3个维度，就很难考量。</p>
+
+<p>那就瞎算？比如说，随便平移下单单单元晶胞随便做下映射，那确实可以， 并且还做了点验证。但这工作就成功从费力不讨好再次降级到瞎jr搞。下一步就是跑路了。研究每天搞，时刻准备跑（不</p>
+
+<ol>
+  <li>另一座山是那个枪岳，在小领域内闻名遐迩，并且攀登相对前者容易。但对于如今的我确实十分虚无缥缈的东西。</li>
+</ol>
+
+<p><strong>Configurations</strong></p>
+
+<p>例如，Yuge搞了个Projection Site来代替SQS， 但毕竟也是一系列configuration， 是否要有权重？</p>
+
+<p>这么一想就永无止境了。可以计算三元系的CDOS——指例如15个主团簇，然后整出个概率。然后呢， N元系呢？ 甚至于各种config在非线性空间中的考量呢？
+靶心是SQS， 8环是PS， 7环有SRO， 再外面是LP， 要是真那么简单就好了。</p>
+
+<p>所以本文后半段的展望贡献价值达到了惊人的0， 适合毕业论文致辞（就是跑路的时候</p>
+
+<h4 id="-back"><a href="https://wzetto.github.io/wz369.github.io/Research_etc/MSAD/research_on_MSAD.html">&lt; back</a></h4>
+<br>
+<!--         <script async src="https://js.sitesearch360.com/plugin/bundle/7057.js"></script> -->
+        <br>
+        <p style="text-align: center;">
+          <img src="https://drive.google.com/thumbnail?id=1hcY5U4qLbe6QHDNCK6wzERxcDnTxm0Dp&sz=w800" width="200px"/>
+        </p>
+        <h6 align='center'>Zhi Wang © 2021-2023</h6>
+      </div>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner_bottom">
+        
+        <p class="copyright">wz369.github.io.git maintained by <a href="https://github.com/wzetto">wzetto</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <!-- <p style="position: absolute; bottom: 0; width:100%; text-align: center">有り得ざる妖精の王よ——</p>
+        -->
+        <p id='bottom_text'>取るに足りない、ちさな虫の一噛みで崩れる</p>
+        <a href="http://www.clustrmaps.com/map/Wzetto.github.io/wz369.github" title="Visit tracker for Wzetto.github.io/wz369.github"><img src="//www.clustrmaps.com/map_v2.png?d=I_8zqWjxSNUSgP53E7RnBdHG203TZ7JkpCo6Z58MZEc" /></a>
+        <script src="https://wzetto.github.io/wz369.github.io/js/bottom/bottom_text_home.js"></script>
+      </footer>
+    </div>
+  </body>
+</html>

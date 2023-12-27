@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="shortcut icon" type="image/png" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="shortcut icon" sizes="192x192" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="apple-touch-icon" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=cfe0696a4f604aaa79f27fc4ea1cda9f54a98c00">
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>MAIN_informal | wz369.github.io.git</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="MAIN_informal" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/Research_etc/SQS_drl/main.html" />
+<meta property="og:url" content="http://localhost:4000/Research_etc/SQS_drl/main.html" />
+<meta property="og:site_name" content="wz369.github.io.git" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="MAIN_informal" />
+<script type="application/ld+json">
+{"headline":"MAIN_informal","@type":"WebPage","url":"http://localhost:4000/Research_etc/SQS_drl/main.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
+<script>
+const config = {
+    startOnLoad:true,
+    theme: 'forest',
+    flowchart: {
+        useMaxWidth:false,
+        htmlLabels:true
+        }
+};
+mermaid.initialize(config);
+window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+</script>
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+    <script type="text/x-mathjax-config">
+       MathJax.Hub.Config({
+         tex2jax: {
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           processEscapes: true
+         }
+       });
+    </script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- HEADER -->
+    <div id="header_pages" class="outer">
+        <header class="inner_top background_img_formal">
+          
+          <!-- 
+            <a id="forkme_banner" href="https://github.com/wzetto/wz369.github.io.git">View on GitHub</a>
+           -->
+          <a href="https://wzetto.github.io/wz369.github.io/"></a>
+          
+          <h1 id="project_title">MAIN_informal</h1>
+          
+          
+         
+          
+        </header>
+    </div>
+    
+    <script src="https://wzetto.github.io/wz369.github.io/js/header/header_scroll_formal.js"></script>
+    
+    <!-- MAIN CONTENT -->
+    <button onclick="topFunction()" id="back_top" title="Back to top">TOP</button>
+    <script src="https://wzetto.github.io/wz369.github.io/js/BackTop/bt_1.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <div class="row">
+      <div class="inner_left">
+
+        
+
+        <p><strong><em>待更新</em></strong></p>
+
+<p>实验1. 32-原子体系的fcc晶胞-三元系:</p>
+
+<p><strong>High-level idea:</strong></p>
+
+<ul>
+  <li>流程应尽可能模仿马尔科夫过程(MDP)。</li>
+  <li>本质上是policy-guided的蒙特卡洛(MC)。</li>
+  <li>奖励函数(Reward)应尽可能评价trajectory。</li>
+</ul>
+
+<p><strong>目标</strong></p>
+
+<p>用最短步数从秩序晶胞生成与理想随机态相关函数之差在一定范围内的伪随机晶胞(SQS)。</p>
+
+<p><strong>真目标</strong></p>
+
+<p>计算出trajectory space $\mathcal{C}$的真实分布。</p>
+
+<p><strong>衡量手段</strong></p>
+
+<p>达到伪随机态所花费的平均步数，衡量标准为MC。</p>
+
+<p><strong>结果:</strong></p>
+
+<p><em>1. 1NN pairs ~ 108 actions ~ Equiatomic ~ Target: $\Vert N\Phi - N\Phi^{ideal} \Vert \leqslant 8$</em></p>
+
+<p><img src="https://drive.google.com/thumbnail?id=1VERYiwZElQiEEUEB6rCqOUCasmIRgkYc&amp;sz=w600" /></p>
+<hr style="width:30px;text-align:left;margin-left:0" />
+
+<p>Implementing two tricks: <strong>\1.Action Mask</strong> &amp; <strong>\2.Orthogonal network layers</strong></p>
+<hr style="width:30px;text-align:left;margin-left:0" />
+
+<p><img src="https://drive.google.com/thumbnail?id=1mbpdNVCbp_suozG0HqJsbpPTqj3Mim7r&amp;sz=w600" /></p>
+<hr style="width:30px;text-align:left;margin-left:0" />
+
+<p><em>2. Random pairs ~ 496 actions ~ Equiatomic ~ Target: $\Vert N\Phi - N\Phi^{ideal} \Vert \leqslant 8$</em></p>
+<hr style="width:30px;text-align:left;margin-left:0" />
+
+<p><img src="https://drive.google.com/thumbnail?id=16T897CF2JGZ3O7b4ecnOGWHvpWyJ0lr3&amp;sz=w600" /></p>
+<hr style="width:30px;text-align:left;margin-left:0" />
+
+<p>在训练过程不考虑acceptance的话，性能较MC提高15%~25%左右。</p>
+
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p><em>3. Random pairs ~ 496 actions ~ Random atomic concentration ~ Target: $\Vert N\Phi - N\Phi^{ideal} \Vert \leqslant 8$</em></p>
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p><img src="https://drive.google.com/thumbnail?id=1mzpaHwnqZGxmCGbY1uSFDrqSeR4ST6iR&amp;sz=w600" /></p>
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p><em>4. Random pairs ~ 108 actions ~ Random atomic concentration ~ Target: $\Vert N\Phi - N\Phi^{ideal} \Vert \leqslant 8$</em></p>
+
+<p>Implementing two tricks: <strong>\1.Action Mask</strong> &amp; <strong>\2.Orthogonal network layers</strong></p>
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p><img src="https://drive.google.com/thumbnail?id=16NI_piDNIhxaQCAa_WNxhaRXM6McIdpe&amp;sz=w600" /></p>
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p>在训练过程不考虑acceptance的话，性能较MC提高10%左右，状态空间由等元系上升到任意原子ratio后急剧增加，仍有改进空间。</p>
+
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<p>不考虑acceptance的弊病在于:$w(s)\pi(s’|s)\alpha(s’|s) = w(s’)\pi(s|s’)\alpha(s|s’)$, $T=0 K, w=w’$; $Train: \alpha=\alpha’$; $\to \pi=\pi’$，这应该是造成deterministic模式下重复一个动作的直接原因——任意两个correlated states之间都构成了recurrent states。所以 \1.该情况下适合soft policy. \2. 训练过程就是斗争过程，所以达不到理想的‘实现模拟退火的效果’。</p>
+
+<p>题外话：热力学条件下的$p(s)$是相等的。当加入统计力学后，$p(s) = p(s|o)p(o)$中，$p(o)$是先验能够计算得到的configuration density of states (CDOS)，但由于周期性晶胞原子的non-sufficient性质，实际分布会有偏差；而在没有spatial constraints的情况下，$p(s’|o’)/p(s|o)$可以转化为$p(o)/p(o’)$，是可求的，这样一来，严格意义上的$p(s)/p(s’) = 1$。绕回去了。</p>
+
+<p><strong>条件/公式等：</strong></p>
+
+<p><strong>Constraints:</strong></p>
+
+<p>Correlation function of first nearest-neighbor (1NN) pair cluster;</p>
+
+<p><strong>Action Space:</strong></p>
+
+<p>Flipping between two 1NN atoms ~ 108 actions.</p>
+
+<p>Random flipping ~ 496 actions.</p>
+
+<p><strong>Algorithm:</strong></p>
+
+<p>PPO based on GAE - on policy.</p>
+
+<p><strong>Reward:</strong></p>
+
+<p>Inverse rl - on policy.</p>
+
+<p>Expert trajectory: \1. Possible shortcuts from $s_1$ to $s_t$. \2. Randomly generated using simulated annealing (SA).</p>
+
+<p>Policy trajectory: $s_1 \to s_t$.</p>
+
+<p><strong>Neural networks</strong></p>
+
+<p>Base: GCN*\4</p>
+
+<p>Actor network: GCN-32-128-Action space, FC</p>
+
+<p>Value network: GCN-32-64-1, FC</p>
+
+<p>Reward network: GCN-34-64-1, FC</p>
+
+<hr style="width:50px;text-align:left;margin-left:0" />
+
+<h4 id="-back"><a href="https://wzetto.github.io/wz369.github.io/Research_etc/SQS_drl/Introduction.html">&lt; back</a></h4>
+<br>
+        <div id="gitalk-container"></div>
+        <script>
+          var gitalk = new Gitalk({
+              clientID: '7b560b97e4bda87153dd',
+              clientSecret: '71c1745a9c776d439e0de7e8712c4c90a7441709',
+              repo: 'gitalk-cobuffer',
+              owner: 'wzetto',
+              admin: ['wzetto'],
+              id: 'MAIN_informal',
+              distractionFreeMode: false,
+              title: 'Omoi'
+          })
+          gitalk.render('gitalk-container')
+        </script>
+        <p style="text-align: center;">
+          <img src="https://drive.google.com/thumbnail?id=1hcY5U4qLbe6QHDNCK6wzERxcDnTxm0Dp&sz=w800" width="200px"/>
+        </p>
+        <h6 align='center'>Zhi Wang © 2021-2023</h6>
+      </div>
+      <div class="inner_right">
+        <h5 id="side_text">> Main content</h5>
+      </div>
+     </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner_bottom">
+        
+        <p class="copyright">wz369.github.io.git maintained by <a href="https://github.com/wzetto">wzetto</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <!-- <p style="position: absolute; bottom: 0; width:100%; text-align: center">有り得ざる妖精の王よ——</p>
+        -->
+        <p id='bottom_text'>冬の玉座は誰の手に</p>
+        <!-- <script src="https://wzetto.github.io/wz369.github.io/js/bottom/bottom_text_home.js"></script>-->
+      </footer>
+    </div>
+  </body>
+</html>
