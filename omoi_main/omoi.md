@@ -23,7 +23,7 @@ my Ph.D. graduation. One new reason get for finishing my Ph.D.(
 #9a2788 -> 2023.6, used
 #a32485 -> 2023.8, 2023.9 used
 #aa2182 -> 2023.10, 2023.11 used
-#b21e7f -> 2023.12
+#b21e7f -> 2023.12, 2024.1 used
 #b91c7c
 #c01a78
 #c61874
@@ -172,6 +172,7 @@ my Ph.D. graduation. One new reason get for finishing my Ph.D.(
 <code style="background-color:#b21e7f">12/26</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-12-26大文字.html"> \>\> 大文字</a><br>
 
 <h5 id="o202401">2024.1</h5>
+<code style="background-color:#b21e7f">01/01</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-1-1贡嘎.html"> \>\> 贡嘎</a><br>
 
 <h5 id="o202402">2024.2</h5>
 
