@@ -10,9 +10,8 @@ layout: default
 <hr style="width:80px;text-align:left;margin-left:0">
 <h4>Research & etc.</h4>
 
-- [Mean Square Atomic Displacement (MSAD)](https://wzetto.github.io/wz369.github.io/Research_etc/MSAD/research_on_MSAD.html)<br>
-- [Stacking Fault Energy (SFE)](https://wzetto.github.io/wz369.github.io/Research_etc/SFE/SFE_home.html)<br>
-- [(personal) SQS-drl](https://shinkansen2.jr-central.co.jp/)
+- [Cluster Expansion (CE)-related models](https://wzetto.github.io/wz369.github.io/Research_etc/MSAD/research_on_MSAD.html)<br>
+- [(personal) SQS-drl](https://shinkansen2.jr-central.co.jp/)<br>
 <!-- https://wzetto.github.io/wz369.github.io/Research_etc/SQS_drl/Introduction.html -->
 - [Paper Collection](https://wzetto.github.io/wz369.github.io/Research_etc/PaperCollect/main.html)
 <hr style="width:60px;text-align:left;margin-left:0">
