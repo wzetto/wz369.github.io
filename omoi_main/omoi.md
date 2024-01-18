@@ -173,6 +173,7 @@ my Ph.D. graduation. One new reason get for finishing my Ph.D.(
 
 <h5 id="o202401">2024.1</h5>
 <code style="background-color:#b21e7f">01/01</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-1-1贡嘎.html"> \>\> 贡嘎</a><br>
+<code style="background-color:#b21e7f">01/18</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-1-18meme.html"> \>\> meme</a><br>
 
 <h5 id="o202402">2024.2</h5>
 
