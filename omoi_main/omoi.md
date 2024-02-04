@@ -4,9 +4,9 @@ title: 想法等
 ---
 
 <!-- 
-Caesar's career gradient, one new color of date block will be used
-every two months, hopefully, the color buffer will be emptied by
-my Ph.D. graduation. One new reason get for finishing my Ph.D.(
+Caesar's career gradient, color for the date block will be ascended
+every two months, hopefully, the color buffer will be emptied by 
+Ph.D. graduation. One new reason get for finishing my Ph.D.(
 
 * Every time when upgrade the date, modify 
 * <omoi.md> <omoi_main.js> <omoi_default.html>
@@ -24,7 +24,7 @@ my Ph.D. graduation. One new reason get for finishing my Ph.D.(
 #a32485 -> 2023.8, 2023.9 used
 #aa2182 -> 2023.10, 2023.11 used
 #b21e7f -> 2023.12, 2024.1 used
-#b91c7c
+#b91c7c -> 2024.2,
 #c01a78
 #c61874
 #cc1870
@@ -176,6 +176,7 @@ my Ph.D. graduation. One new reason get for finishing my Ph.D.(
 <code style="background-color:#b21e7f">01/18</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-1-18meme.html"> \>\> meme</a><br>
 
 <h5 id="o202402">2024.2</h5>
+<code style="background-color:#b91c7c">02/04</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-2-4大文字.html"> \>\> 大文字</a><br>
 
 <h5 id="o202403">2024.3</h5>
 
