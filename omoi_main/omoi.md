@@ -178,6 +178,7 @@ Ph.D. graduation. One new reason get for finishing my Ph.D.(
 <h5 id="o202402">2024.2</h5>
 <code style="background-color:#b91c7c">02/04</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-2-4大文字.html"> \>\> 大文字</a><br>
 <code style="background-color:#b91c7c">02/11</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-2-12大文字（雾）.html"> \>\> 大文字（雾）</a><br>
+<code style="background-color:#b91c7c">02/18</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-2-18脚力.html"> \>\> 脚力</a><br>
 
 <h5 id="o202403">2024.3</h5>
 
