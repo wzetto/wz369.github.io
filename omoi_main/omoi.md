@@ -181,12 +181,11 @@ Ph.D. graduation. One new reason get for finishing my Ph.D.(
 <code style="background-color:#b91c7c">02/18</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-2-18脚力.html"> \>\> 脚力</a><br>
 
 <h5 id="o202403">2024.3</h5>
-
-<h5 id="o202404">2024.4</h5>
-
-<h5 id="o202405">2024.5</h5>
+<code style="background-color:#b91c7c">03/21</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-3-21脚力2.html"> \>\> 脚力2</a><br>
 
 <h5 id="o202406">2024.6</h5>
+<code style="background-color:#b91c7c">06/08</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-6-8パルクと死の天使.html"> \>\> The Parca and the Angel of Death</a><br>
+<code style="background-color:#b91c7c">06/08</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-6-8川西.html"> \>\> 川西</a><br>
 
 <h5 id="o202407">2024.7</h5>
 
