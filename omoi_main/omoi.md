@@ -24,9 +24,9 @@ Ph.D. graduation. One new reason get for finishing my Ph.D.(
 #a32485 -> 2023.8, 2023.9 used
 #aa2182 -> 2023.10, 2023.11 used
 #b21e7f -> 2023.12, 2024.1 used
-#b91c7c -> 2024.2,
+#b91c7c -> 2024.2, used
 #c01a78
-#c61874
+#c61874 -> 2024.6 used
 #cc1870
 #d2196b
 #d71b66
@@ -184,8 +184,9 @@ Ph.D. graduation. One new reason get for finishing my Ph.D.(
 <code style="background-color:#b91c7c">03/21</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-3-21脚力2.html"> \>\> 脚力2</a><br>
 
 <h5 id="o202406">2024.6</h5>
-<code style="background-color:#b91c7c">06/08</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-6-8パルクと死の天使.html"> \>\> The Parca and the Angel of Death</a><br>
-<code style="background-color:#b91c7c">06/08</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-6-8川西.html"> \>\> 川西</a><br>
+<code style="background-color:#c61874">06/08</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-6-8パルクと死の天使.html"> \>\> The Parca and the Angel of Death</a><br>
+<code style="background-color:#c61874">06/08</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-6-8川西.html"> \>\> 川西</a><br>
+<code style="background-color:#c61874">06/10</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-6-10脚力3.html"> \>\> 脚力3</a><br>
 
 <h5 id="o202407">2024.7</h5>
 
