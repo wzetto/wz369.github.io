@@ -6,7 +6,7 @@ layout: default
 <hr style="width:50px;text-align:left;margin-left:0">
 **大雪山脉**
 
-<img src="https://drive.google.com/thumbnail?id=1UNCU_4WdStbgZFPIPEVCZwZF8pKztZww&sz=w1600" width="1200px"/>
+<img src="https://drive.google.com/thumbnail?id=12-iR0veHRy9B4DUs5Xw5k5AzEfg0GxLk&sz=w1600" width="1200px"/>
 <hr style="width:80px;text-align:left;margin-left:0">
 <h4>Research & etc.</h4>
 

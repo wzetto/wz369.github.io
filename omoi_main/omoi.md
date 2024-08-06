@@ -3,10 +3,7 @@ layout: omoi_default
 title: 想法等
 ---
 
-<!-- 
-Caesar's career gradient, color for the date block will be ascended
-every two months, hopefully, the color buffer will be emptied by 
-Ph.D. graduation. One new reason get for finishing my Ph.D.(
+<!-- one color per two months
 
 * Every time when upgrade the date, modify 
 * <omoi.md> <omoi_main.js> <omoi_default.html>
