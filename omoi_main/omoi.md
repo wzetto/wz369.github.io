@@ -5,7 +5,7 @@ title: 想法等
 
 <!-- one color per two months
 
-* Every time when upgrade the date, modify 
+* Every time when update the date, modify 
 * <omoi.md> <omoi_main.js> <omoi_default.html>
 
 #41378e -> 2021.12, 2022.1 used
@@ -24,7 +24,7 @@ title: 想法等
 #b91c7c -> 2024.2, used
 #c01a78
 #c61874 -> 2024.6 used
-#cc1870
+#cc1870 -> 2024.8 used
 #d2196b
 #d71b66
 #dc1e62
@@ -188,6 +188,9 @@ title: 想法等
 <h5 id="o202407">2024.7</h5>
 
 <h5 id="o202408">2024.8</h5>
+
+<code style="background-color:#cc1870">08/20</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-8-20大文字.html"> \>\> 大文字</a><br>
+<code style="background-color:#cc1870">08/20</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-8-20脚力4.html"> \>\> 脚力4</a><br>
 
 <h5 id="o202409">2024.9</h5>
 
