@@ -4,9 +4,8 @@ layout: default
 ---
 <h1>记录 研究进展及想法 / 一些灵感及其他想法 / 山登り / etc.</h1>
 <hr style="width:50px;text-align:left;margin-left:0">
-**邛崃山脉一处平台**
 
-<img src="https://drive.google.com/thumbnail?id=12-iR0veHRy9B4DUs5Xw5k5AzEfg0GxLk&sz=w1600" width="1200px"/>
+<img src="https://drive.google.com/thumbnail?id=1eNW-8aKNSI5Qk6-37yjbJ3BbMWyYodFY&sz=w2400"  width="1200px"><br>
 <hr style="width:80px;text-align:left;margin-left:0">
 <h4>Research & etc.</h4>
 

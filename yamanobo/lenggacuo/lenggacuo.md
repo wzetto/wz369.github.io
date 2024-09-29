@@ -20,6 +20,21 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_lenggacuo.js
 后半段炮弹坑。<br>
 颠至起点处，上山。翻过一哑口后可见贡嘎山区南部群峰，阴天下，冰川似乎作为唯一的光源，尤为抓人眼球。到达扎营点时正好下暴雨，一通雨中狼狈操作后进入闷热潮湿的solo帐，还好有同行崽种能友好对骂。
 
+2024.9 四年前追忆？
 
+早上天气转晴，独自进发去湖旁山头。湖海拔4500左右，山头4800，中间鞍部，通向另一个山谷，有牧道。
+
+宝石一般的鞍部景观
+
+<img src="https://drive.google.com/thumbnail?id=1eNW-8aKNSI5Qk6-37yjbJ3BbMWyYodFY&sz=w2400"  width="1200px"><br>
+<hr style="width:50px;text-align:left;margin-left:0" />
+山顶惊喜看到了云瀑，以及朝向我传递的波状山块随海拔/水汽变化呈现不同的植被色彩。
+
+<img src="https://drive.google.com/thumbnail?id=1zZ8Xd8_YtZ7WTaL8_M7rtALf2Gi4cyhn&sz=w1600" width="800px"><br>
+<hr style="width:50px;text-align:left;margin-left:0" />
+帐篷与贡嘎山的合影
+
+<img src="https://drive.google.com/thumbnail?id=13kD5qXaGxqpEh3oAo-9tpIv3WqqO-Dby&sz=w1600" width="800px"><br>
+<hr style="width:50px;text-align:left;margin-left:0" />
 
 #### [< back](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
