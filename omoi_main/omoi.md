@@ -196,6 +196,8 @@ title: 想法等
 
 <h5 id="o202410">2024.10</h5>
 
+<code style="background-color:#cc1870">10/06</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-10-06大文字(秋.html"> \>\> 大文字（秋</a><br>
+
 <h5 id="o202411">2024.11</h5>
 
 <h5 id="o202412">2024.12</h5>
