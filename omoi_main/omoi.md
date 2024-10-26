@@ -199,6 +199,7 @@ title: 想法等
 
 <code style="background-color:#d2196b">10/06</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-10-06大文字(秋.html"> \>\> 大文字（秋</a><br>
 <code style="background-color:#d2196b">10/19</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-10-19大文字.html"> \>\> 大文字（夜</a><br>
+<code style="background-color:#d2196b">10/26</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-10-26大文字.html"> \>\> 大文字（山</a><br>
 
 <h5 id="o202411">2024.11</h5>
 
