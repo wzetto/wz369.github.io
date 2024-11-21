@@ -204,6 +204,7 @@ title: 想法等
 <h5 id="o202411">2024.11</h5>
 
 <code style="background-color:#d2196b">11/04</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-11-4大文字.html"> \>\> 大文字</a><br>
+<code style="background-color:#d2196b">11/21</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-11-21大文字.html"> \>\> 大文字</a><br>
 
 <h5 id="o202412">2024.12</h5>
 
