@@ -1,6 +1,6 @@
 ---
 title: 随机康定
-layout: formal_default
+layout: map_default
 js_url: https://wzetto.github.io/wz369.github.io/js/map_231231_randkonka.js
 ---
 
