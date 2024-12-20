@@ -36,6 +36,8 @@ layout: map_homepage
 
 <code style="background-color:#F96666;">四川</code> [\>\> 贡嘎环线](https://wzetto.github.io/wz369.github.io/yamanobo/minya_konka/trek-minya-konka.html)
 
+<code style="background-color:#674747;">四川</code> [\>\> 贡嘎腐败](https://wzetto.github.io/wz369.github.io/yamanobo/minya_konka/random_2023newyear.html)
+
 <code style="background-color:#829460;">百名山</code> [\>\> 伊吹山](https://wzetto.github.io/wz369.github.io/yamanobo/ibuki/ibuki_before_21-12.html)
 
 <code style="background-color:#829460;">百名山</code> [\>\> 荒島岳](https://wzetto.github.io/wz369.github.io/yamanobo/arashima/arashima.html)
@@ -43,6 +45,8 @@ layout: map_homepage
 <code style="background-color:#829460;">百名山</code> [\>\> 剣山ー三嶺縦走](https://wzetto.github.io/wz369.github.io/yamanobo/tsurugi-miune/tsurugi-miune.html)
 
 <code style="background-color:#829460;">二百名山</code> [\>\> 武奈ヶ岳](https://wzetto.github.io/wz369.github.io/yamanobo/bunagatake/bunagatake.html)
+
+<code style="background-color:#829460;">二百名山</code> [\>\> 武奈ヶ岳 ver.2](https://wzetto.github.io/wz369.github.io/yamanobo/bunagatake/bunagatake_try2.html)
 
 <code style="background-color:#829460;">関西百名山</code> [\>\> 霊仙山\<冬\>](https://wzetto.github.io/wz369.github.io/yamanobo/ryozen/ryozen_winter.html)
 
