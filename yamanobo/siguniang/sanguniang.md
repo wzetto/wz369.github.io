@@ -50,7 +50,7 @@ D2冲顶途中的岩壁与朝阳
 <img src="https://drive.google.com/thumbnail?id=19BrkI_qD9G9vzfbcnFGUhCQfHbUIn3MO&sz=w2800" width="400px" />
 <hr style="width:50px;text-align:left;margin-left:0">
 
-登顶！离幺妹峰最近的一次。主峰顶上风速大概使无人机吊人登顶有点难办？有猛男曾经‘骑’着图左山脊登上了幺妹（<div class="container">https://publications.americanalpineclub.org/articles/12200903800#image-gallery</div>），这才是星之开拓者
+登顶！离幺妹峰最近的一次。主峰顶上风速大概使无人机吊人登顶有点难办？有猛男曾经‘骑’着图左山脊登上了幺妹（ [link](https://publications.americanalpineclub.org/articles/12200903800#image-gallery) ），这才是星之开拓者
 
 <img src="https://drive.google.com/thumbnail?id=1nBIpqetjB0Ntk1soXi6ol3Ova1j7bgpl&sz=w2800" width="1600px" />
 <hr style="width:50px;text-align:left;margin-left:0">
