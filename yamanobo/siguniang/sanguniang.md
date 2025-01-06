@@ -4,6 +4,16 @@ layout: map_default
 js_url: https://wzetto.github.io/wz369.github.io/js/map_sanguniang.js
 ---
 
+<style>
+    .container {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        overflow-x: auto;
+        max-width: 100%;
+    }
+</style>
+
 20年的大成功！时值雨季，去阿坝的国道落石颇发。但天气预报又有个一天的窗口，况且再过几个月就要赴日，莽意已决，去爬三峰。
 
 与二峰不同，三峰爬山途中只有我和向导二人，timing的重要性，嗯。D1从长坪沟上到大本营，大本营有凯乐石帐篷和4G信号，不过风景受限。
@@ -40,7 +50,7 @@ D2冲顶途中的岩壁与朝阳
 <img src="https://drive.google.com/thumbnail?id=19BrkI_qD9G9vzfbcnFGUhCQfHbUIn3MO&sz=w2800" width="400px" />
 <hr style="width:50px;text-align:left;margin-left:0">
 
-登顶！离幺妹峰最近的一次。主峰顶上风速大概使无人机吊人登顶有点难办？有猛男曾经‘骑’着图左山脊登上了幺妹（<h5>https://publications.americanalpineclub.org/articles/12200903800#image-gallery</h5>），这才是星之开拓者
+登顶！离幺妹峰最近的一次。主峰顶上风速大概使无人机吊人登顶有点难办？有猛男曾经‘骑’着图左山脊登上了幺妹（<div class="container">https://publications.americanalpineclub.org/articles/12200903800#image-gallery</div>），这才是星之开拓者
 
 <img src="https://drive.google.com/thumbnail?id=1nBIpqetjB0Ntk1soXi6ol3Ova1j7bgpl&sz=w2800" width="1600px" />
 <hr style="width:50px;text-align:left;margin-left:0">
