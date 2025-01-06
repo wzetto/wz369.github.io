@@ -12,7 +12,7 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_bunagatake_try2.js
 <img src="https://drive.google.com/thumbnail?id=1lTboelOLL2Pnx5PkCawrdGf7zkGYVIt8&sz=w800" />
 <hr style="width:50px;text-align:left;margin-left:0">
 
-有水有电帐篷，样子一点没变。至于这是什么，在（https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12184512707）看到了一些解答。
+有水有电帐篷，样子一点没变。至于这是什么，在（`https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12184512707`）看到了一些解答。
 <img src="https://drive.google.com/thumbnail?id=1CqDLZ1Cdqakv8GEBwe2JlStgqnIkgItq&sz=w800" />
 <hr style="width:50px;text-align:left;margin-left:0">
 
