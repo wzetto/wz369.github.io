@@ -40,6 +40,8 @@ layout: map_homepage
 
 <code style="background-color:#829460;">百名山</code> [\>\> 伊吹山](https://wzetto.github.io/wz369.github.io/yamanobo/ibuki/ibuki_before_21-12.html)
 
+<code style="background-color:#829460;">百名山</code> [\>\> 伊吹山 ver. 2501](https://wzetto.github.io/wz369.github.io/yamanobo/ibuki/ibuki_2501.html)
+
 <code style="background-color:#829460;">百名山</code> [\>\> 荒島岳](https://wzetto.github.io/wz369.github.io/yamanobo/arashima/arashima.html)
 
 <code style="background-color:#829460;">百名山</code> [\>\> 剣山ー三嶺縦走](https://wzetto.github.io/wz369.github.io/yamanobo/tsurugi-miune/tsurugi-miune.html)
