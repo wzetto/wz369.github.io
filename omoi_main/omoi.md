@@ -27,7 +27,7 @@ title: 想法等
 #cc1870 -> 2024.8 used
 #d2196b -> 2024.10 2024.11 used
 #d71b66 -> 2024.12 2025.1 used
-#dc1e62
+#dc1e62 -> 2025.2
 #e0225d
 #e42757
 #e72c52
@@ -215,6 +215,8 @@ title: 想法等
 <code style="background-color:#d71b66">01/13</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2025-1-14大文字3!!.html"> \>\> 大文字 3!!</a><br>
 
 <h5 id="o202502">2025.2</h5>
+
+<code style="background-color:#dc1e62">02/15</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2025-2-15大文字.html"> \>\> 大文字</a><br>
 
 <h5 id="o202503">2025.3</h5>
 
