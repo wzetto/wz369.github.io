@@ -30,7 +30,7 @@ title: 想法等
 #dc1e62 -> 2025.2
 #e0225d
 #e42757
-#e72c52
+#e72c52 -> 2025.8
 #ea324d
 #ed3847 
 -->
@@ -229,6 +229,8 @@ title: 想法等
 <h5 id="o202507">2025.7</h5>
 
 <h5 id="o202508">2025.8</h5>
+
+<code style="background-color:#e72c52">08/22</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2025-8-22大文字.html"> \>\> 大文字</a><br>
 
 <h5 id="o202509">2025.9</h5>
 
