@@ -3,38 +3,6 @@ layout: omoi_default
 title: 想法等
 ---
 
-<!-- one color per two months
-
-* Every time when update the date, modify 
-* <omoi.md> <omoi_main.js> <omoi_default.html>
-
-#41378e -> 2021.12, 2022.1 used
-#4d368f -> 2022.2, 2022.3 used
-#58358f -> 2022.4, 2022.5 used
-#63348f -> 2022.6, 2022.7 used
-#6d328f -> 2022.8, 2022.9 used
-#77308e -> 2022.10, 2022.11 used
-#802e8d -> 2022.12, 2023.1 used
-#892c8c -> 2023.2, 2023.3 used
-#92298a -> 2023.4, used
-#9a2788 -> 2023.6, used
-#a32485 -> 2023.8, 2023.9 used
-#aa2182 -> 2023.10, 2023.11 used
-#b21e7f -> 2023.12, 2024.1 used
-#b91c7c -> 2024.2, used
-#c01a78
-#c61874 -> 2024.6 used
-#cc1870 -> 2024.8 used
-#d2196b -> 2024.10 2024.11 used
-#d71b66 -> 2024.12 2025.1 used
-#dc1e62 -> 2025.2
-#e0225d
-#e42757
-#e72c52 -> 2025.8 2025.9 used
-#ea324d
-#ed3847 
--->
-
 <h3>一部抜粋（对己</h3>
 
 <h5 id="o202112">2021.12</h5>
@@ -139,7 +107,6 @@ title: 想法等
 <code style="background-color:#92298a">04/17</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-4-17土味homekit.html"> \>\> 土味homekit(</a><br>
 <code style="background-color:#92298a">04/21</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-4-21大文字.html"> \>\> 日落？</a><br>
 
-<h5 id="o202305">2023.5</h5>
 
 <h5 id="o202306">2023.6</h5>
 <code style="background-color:#9a2788">06/25</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-6-25奏章1.html"> \>\> FGO奏章1~re</a><br>
@@ -186,14 +153,12 @@ title: 想法等
 <code style="background-color:#c61874">06/08</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-6-8川西.html"> \>\> 川西</a><br>
 <code style="background-color:#c61874">06/10</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-6-10脚力3.html"> \>\> 脚力3</a><br>
 
-<h5 id="o202407">2024.7</h5>
 
 <h5 id="o202408">2024.8</h5>
 
 <code style="background-color:#cc1870">08/20</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-8-20大文字.html"> \>\> 大文字</a><br>
 <code style="background-color:#cc1870">08/20</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-8-20脚力4.html"> \>\> 脚力4</a><br>
 
-<h5 id="o202409">2024.9</h5>
 
 <h5 id="o202410">2024.10</h5>
 
@@ -218,16 +183,6 @@ title: 想法等
 
 <code style="background-color:#dc1e62">02/15</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2025-2-15大文字.html"> \>\> 大文字</a><br>
 
-<h5 id="o202503">2025.3</h5>
-
-<h5 id="o202504">2025.4</h5>
-
-<h5 id="o202505">2025.5</h5>
-
-<h5 id="o202506">2025.6</h5>
-
-<h5 id="o202507">2025.7</h5>
-
 <h5 id="o202508">2025.8</h5>
 
 <code style="background-color:#e72c52">08/22</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2025-8-22大文字.html"> \>\> 大文字</a><br>
@@ -236,22 +191,20 @@ title: 想法等
 
 <code style="background-color:#e72c52">09/30</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2025-9-30大文字.html"> \>\> 大文字</a><br>
 
-<h5 id="o202510">2025.10</h5>
-
-<h5 id="o202511">2025.11</h5>
-
 <h5 id="o202512">2025.12</h5>
+
+<code style="background-color:#ed3847">12/29</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2025-12-1大文字.html"> \>\> 大文字</a><br>
 
 <hr style="width:50px;text-align:left;margin-left:0">
 
 <h3 id="olitcontrib">微小的工作</h3>
 
-- [Yuyake recognition](https://wzetto.github.io/wz369.github.io/omoi_main/yuyake_recog/Yuyake_recog.html)<br>
+<!-- - [Yuyake recognition](https://wzetto.github.io/wz369.github.io/omoi_main/yuyake_recog/Yuyake_recog.html)<br>
 - [Low_temp_lift](https://wzetto.github.io/wz369.github.io/omoi_main/low_temp_lift/low_temp_lift.html)<br>
 - [Fujifitting](https://wzetto.github.io/wz369.github.io/omoi_main/Fujifitting/fujifitting.html)<br>
 - [PyMD](https://wzetto.github.io/wz369.github.io/omoi_main/pyMD/classical_try.html)
 - [WBdisloc](https://wzetto.github.io/wz369.github.io/omoi_main/wbrecog/try1.html)
 - [CrystalProj](https://wzetto.github.io/wz369.github.io/omoi_main/crystalProj/try1.html)
-- [CrystalOverlap](https://wzetto.github.io/wz369.github.io/omoi_main/crystalOverlap/try1.html)
+- [CrystalOverlap](https://wzetto.github.io/wz369.github.io/omoi_main/crystalOverlap/try1.html) -->
 
 ### [< HOME](https://wzetto.github.io/wz369.github.io/)

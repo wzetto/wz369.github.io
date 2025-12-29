@@ -455,91 +455,37 @@
         <p style="text-align: center;">
           <img src="https://drive.google.com/thumbnail?id=1hcY5U4qLbe6QHDNCK6wzERxcDnTxm0Dp&sz=w800" width="200px"/>
         </p>
-        <h6 align='center'>Zhi Wang © 2021-2025 Design & Maintain</h6>
+        <h6 align='center'>Zhi Wang © 2021-2026 Design & Maintain</h6>
       </div>
         <div class="inner_right">
-          <!-- <h5 a onclick="navibar()" id="o202112t" color="#bdbbbb" class="clickable-text">2021.12</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202201t" color="#bdbbbb" class="clickable-text">2022.1</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202202t" color="#bdbbbb" class="clickable-text">2022.2</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202203t" color="#bdbbbb" class="clickable-text">2022.3</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202204t" color="#bdbbbb" class="clickable-text">2022.4</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202205t" color="#bdbbbb" class="clickable-text">2022.5</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202206t" color="#bdbbbb" class="clickable-text">2022.6</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202207t" color="#bdbbbb" class="clickable-text">2022.7</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202208t" color="#bdbbbb" class="clickable-text">2022.8</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202209t" color="#bdbbbb" class="clickable-text">2022.9</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202210t" color="#bdbbbb" class="clickable-text">2022.10</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202211t" color="#bdbbbb" class="clickable-text">2022.11</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202212t" color="#bdbbbb" class="clickable-text">2022.12</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202301t" color="#bdbbbb" class="clickable-text">2023.1</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202302t" color="#bdbbbb" class="clickable-text">2023.2</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202303t" color="#bdbbbb" class="clickable-text">2023.3</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202304t" color="#bdbbbb" class="clickable-text">2023.4</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202305t" color="#bdbbbb" class="clickable-text">2023.5</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202306t" color="#bdbbbb" class="clickable-text">2023.6</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202307t" color="#bdbbbb" class="clickable-text">2023.7</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202308t" color="#bdbbbb" class="clickable-text">2023.8</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202309t" color="#bdbbbb" class="clickable-text">2023.9</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202310t" color="#bdbbbb" class="clickable-text">2023.10</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202311t" color="#bdbbbb" class="clickable-text">2023.11</h5>
-          <hr style="width:20px;text-align:left;margin-left:0"> -->
           <div id="date-container"></div>
+            <script>
+              const container = document.getElementById('date-container');
 
-          <script>
-              var container = document.getElementById('date-container');
+              const startYear = 2021, startMonth = 12;
 
-              var h6 = document.createElement('h6');
-              h6.onclick = navibar();
-              h6.id = 'o202112t';
-              h6.className = 'omoi_navi_text';
-              h6.innerText = '2021.12';
-              container.appendChild(h6);
+              const now = new Date();
+              const endYear = now.getFullYear();
+              const endMonth = now.getMonth() + 1; 
 
-              for (var year = 2022; year <= 2025; year++) {
-                  for (var month = 1; month <= 12; month++) {
-                    
-                      /* if (year === 2023 && month > 11) {
-                          break;
-                      } */
-                      var h6 = document.createElement('h6');
-                      h6.onclick = navibar();
-                      h6.id = 'o' + year + (month < 10 ? '0' : '') + month + 't';
-                      h6.className = 'omoi_navi_text';
-                      h6.innerText = year + '.' + month;
-                      container.appendChild(h6);
-          
-                      /* var hr = document.createElement('hr');
-                      hr.style.width = '20px';
-                      hr.style.textAlign = 'left';
-                      hr.style.marginLeft = '0';
-                      container.appendChild(hr);*/
-                  }
+              for (let year = startYear; year <= endYear; year++) {
+                const mStart = (year === startYear) ? startMonth : 1;
+                const mEnd = (year === endYear) ? endMonth : 12;
+
+                for (let month = mStart; month <= mEnd; month++) {
+                  const h6 = document.createElement('h6');
+
+                  h6.onclick = navibar;
+
+                  h6.id = `o${year}${String(month).padStart(2, '0')}t`;
+                  h6.className = 'omoi_navi_text';
+                  h6.innerText = `${year}.${month}`;
+
+                  container.appendChild(h6);
+                }
               }
-          </script>
-          <h5 a onclick="navibar()" id="olitcontribt" color="#bdbbbb">微小的工作</h5>
+            </script>
+          <h5 onclick="navibar()" id="olitcontribt" style="color:#bdbbbb;">微小的工作</h5>
       </div>
     </div>
 

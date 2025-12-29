@@ -53,7 +53,13 @@ body {
   background: #212121;
   font-size: 16px;
   /*font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;*/
-  font-family: "Source Han Serif", "Lucida Console", Courier, monospace;
+  // font-family: "Source Han Serif", "Lucida Console", Courier, monospace;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", "Liberation Sans",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", Meiryo,
+    "PingFang SC", "Microsoft YaHei",
+    "Noto Sans CJK JP", "Source Han Sans JP",
+    sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -63,7 +69,13 @@ h1, h2, h3, h4, h5, h6, h7 {
   font-weight: 700;
   color:#222222;
   /*font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;*/
-  font-family: "Source Han Serif", "Lucida Console", Courier, monospace;
+  // font-family: "Source Han Serif", "Lucida Console", Courier, monospace;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", "Liberation Sans",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", Meiryo,
+    "PingFang SC", "Microsoft YaHei",
+    "Noto Sans CJK JP", "Source Han Sans JP",
+    sans-serif;
   letter-spacing: -1px;
 }
 
@@ -194,13 +206,20 @@ pre, code {
   color: #fff;
   background-color: #a6a4a4;
 
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  // font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", "Liberation Sans",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", Meiryo,
+    "PingFang SC", "Microsoft YaHei",
+    "Noto Sans CJK JP", "Source Han Sans JP",
+    sans-serif;
   font-size: 14px;
 
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
 }
+
 
 pre {
   padding: 10px;
@@ -433,6 +452,7 @@ Full-Width Styles
 	text-align: center;
 }
 
+
 #back_top {
   /*change into center solid*/
   display: none;
@@ -441,12 +461,16 @@ Full-Width Styles
   right: 5%;
   bottom: 5%;
   background-color: #f2f2f2;
-  font-family: "Lucida Console", Courier, monospace;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", "Liberation Sans",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", Meiryo,
+    "PingFang SC", "Microsoft YaHei",
+    "Noto Sans CJK JP", "Source Han Sans JP";
   font-size: 16px;
   color: #303030;
   cursor: pointer;
   border: 1.5px solid #303030;
-  border-radius: 7px;
+  border-radius: 4.5px;
   padding: 5px;
   transition: 0.4s;
 }
@@ -465,7 +489,11 @@ Full-Width Styles
   right: 5%;
   top: 22%;
   background-color: #f2f2f2;
-  font-family: "Lucida Console", Courier, monospace;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", "Liberation Sans",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", Meiryo,
+    "PingFang SC", "Microsoft YaHei",
+    "Noto Sans CJK JP", "Source Han Sans JP";
   font-size: 16px;
   color: #636363;
   cursor: pointer;
