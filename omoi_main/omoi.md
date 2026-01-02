@@ -195,6 +195,11 @@ title: 想法等
 
 <code style="background-color:#ed3847">12/29</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2025-12-1大文字.html"> \>\> 大文字</a><br>
 
+<h5 id="o202512">2026.1</h5>
+
+<code style="background-color:#ed3847">01/01</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-9-22fgo奏章3.html"> \>\> fgo奏章3</a><br>
+<code style="background-color:#ed3847">01/02</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2025-1-27疯狂山脉.html"> \>\> 疯狂山脉</a><br>
+
 <hr style="width:50px;text-align:left;margin-left:0">
 
 <h3 id="olitcontrib">微小的工作</h3>
