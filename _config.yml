@@ -2,3 +2,4 @@ theme: jekyll-theme-slate
 plugins:
   - jemoji
   - jekyll-archives
+  - jekyll-sitemap
