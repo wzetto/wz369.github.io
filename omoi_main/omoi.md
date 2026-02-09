@@ -203,6 +203,7 @@ title: 想法等
 <h5 id="o202602">2026.2</h5>
 
 <code style="background-color:#E23D4E">02/03</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2026-2-3大文字.html"> \>\> 大文字</a><br>
+<code style="background-color:#E23D4E">02/09</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2026-2-9大文字.html"> \>\> 大文字</a><br>
 
 <hr style="width:50px;text-align:left;margin-left:0">
 
