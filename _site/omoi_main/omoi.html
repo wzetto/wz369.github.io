@@ -9,19 +9,20 @@
     <link rel="shortcut icon" type="image/png" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
     <link rel="shortcut icon" sizes="192x192" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
     <link rel="apple-touch-icon" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=cfe0696a4f604aaa79f27fc4ea1cda9f54a98c00">
-<!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>想法等 | wz369.github.io.git</title>
-<meta name="generator" content="Jekyll v3.9.0" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=93cb5679dd47498a00d0ef82a4830d1c0ae46174">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>想法等 | wz369.github.io</title>
+<meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="想法等" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="http://localhost:4000/omoi_main/omoi.html" />
-<meta property="og:url" content="http://localhost:4000/omoi_main/omoi.html" />
-<meta property="og:site_name" content="wz369.github.io.git" />
+<link rel="canonical" href="http://0.0.0.0:4000/omoi_main/omoi.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/omoi_main/omoi.html" />
+<meta property="og:site_name" content="wz369.github.io" />
+<meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="想法等" />
 <script type="application/ld+json">
-{"headline":"想法等","@type":"WebPage","url":"http://localhost:4000/omoi_main/omoi.html","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"WebPage","headline":"想法等","url":"http://0.0.0.0:4000/omoi_main/omoi.html"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
@@ -54,10 +55,10 @@
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
     <!-- HEADER -->
     <div id="header_pages" class="outer">
-        <header id="header_img" class="inner_top background_img">
+      <header class="inner_top background_img_formal">
           
           <!-- 
-            <a id="forkme_banner" href="https://github.com/wzetto/wz369.github.io.git">View on GitHub</a>
+            <a id="forkme_banner" href="https://github.com/wzetto/wz369.github.io">View on GitHub</a>
            -->
           <a href="https://wzetto.github.io/wz369.github.io/"></a>
           
@@ -69,9 +70,81 @@
         </header>
     </div>
     
-    <script src="https://wzetto.github.io/wz369.github.io/js/header/header_scroll.js"></script>
+    <script src="https://wzetto.github.io/wz369.github.io/js/header/header_scroll_formal.js"></script>
+
+    <!--* define some css style -->
+    <style>
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      #tagMenu {
+        padding: 5px;
+      }
+      
+      .tagraw {
+        display: inline-block;
+        padding: 3px 3px;
+        margin: 5px;
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      .tagraw.active {
+        background-color: black;
+        color: white;
+      }
+      
+      .tagraw.deactive {
+        background-color: white;
+        color: black;
+      }
+
+      .tagraw:hover::after {
+        color: #000000;
+        transition: color 0.3s ease;
+      }
+
+      .tagraw:hover, a:focus {
+        text-decoration: none;
+        color: #da3450;
+        transition: color 0.3s ease;
+      }
+
+      .tagraw::selection {
+        background: #da3450;
+        color: #fff;
+      }
+      
+/*       side bar click event define */
+      .clickable-text {
+        color: #000000;
+        cursor: pointer;
+      }
+
+      .clickable-text:hover {
+        text-decoration: underline;
+      }
+    </style>
     
     <!-- MAIN CONTENT -->
+    <!-- scss format defined in #id term -->
+    <button onclick="topFunction()" id="back_top" title="Back to top">TOP</button>
+    <script src="https://wzetto.github.io/wz369.github.io/js/BackTop/bt_1.js"></script>
+
+    <button id="to_new" title="Scroll to updates">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16"> 
+        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/> 
+      </svg>
+    </button>
+    <script src="https://wzetto.github.io/wz369.github.io/js/bottom/to_new.js"></script>
+
     <script src="https://wzetto.github.io/wz369.github.io/js/gif/gifffer.min.js"></script>
     <script>
       window.onload = function() {
@@ -83,47 +156,311 @@
 
     <div class="row">
       <div class="inner_left">
-        <!-- 
-
         
-          Signal
-         -->
+        <h6 style="position: absolute; top: 0; right: 0; padding: 5px;"> Friedrich "The Sea of Ice" </h6>
+        
+        
+        <!-- *Extract tags array -->
+        
+        
+        
 
-        <!-- 
-Caesar's career gradient, one new color of date block will be used
-every two months, hopefully, the color buffer will be emptied by
-my Ph.D. graduation. One new reason get for finishing my Ph.D.(
+                
+        
+        <span style="line-height: 1.25;">
+          <h4 style="color:#6b6b6b">本</h4>
+          <div id="tagMenuBook"></div>
+          <hr style="width:40px;text-align:left;margin-left:0">
+          <h4 style="color:#6b6b6b">其他</h4>
+          <div id="tagMenuOthers"></div>
+        </span>
+        <br>
+        <div id="feelLucky"></div>
+        <br>
+        <div id="filterBlock"></div>
+        <!-- <div id="tagBlock"></div> -->
 
-* Every time when upgrade the date, modify 
-* <omoi.md> <omoi_main.js> <omoi_default.html>
+        <script>
 
-#41378e -> 2021.12, 2022.1 used
-#4d368f -> 2022.2, 2022.3 used
-#58358f -> 2022.4, 2022.5 used
-#63348f -> 2022.6, 2022.7 used
-#6d328f -> 2022.8, 2022.9 used
-#77308e -> 2022.10, 2022.11 used
-#802e8d -> 2022.12, 2023.1 used
-#892c8c
-#92298a
-#9a2788
-#a32485
-#aa2182
-#b21e7f
-#b91c7c
-#c01a78
-#c61874
-#cc1870
-#d2196b
-#d71b66
-#dc1e62
-#e0225d
-#e42757
-#e72c52
-#ea324d
-#ed3847 -->
+          <!-- *convert liquid array to javascript array -->
+          var allTags = [["其他/随笔"],["其他/随笔"],["其他/随笔"],["其他/随笔"],["其他/随笔"],["本/社科"],["本/方法论","本/哲学"],["本/哲学","本/方法论"],["其他/日落和大文字"],["其他/欣赏"],["本/哲学","本/艺术"],["其他/随笔"],["其他/日落和大文字"],["其他/随笔","其他/欣赏"],["其他/meme"],["其他/欣赏"],["本/🎮"],["本/社科"],["其他/日落和大文字"],["本/社科"],["本/社科"],["其他/随笔"],["其他/日落和大文字"],["本/社科"],["本/社科"],["其他/随笔"],["其他/随笔"],["其他/随笔"],["本/社科"],["本/🎮"],["其他/随笔"],["本/社科"],["其他/随笔"],["其他/随笔"],["其他/随笔"],["其他/日落和大文字"],["其他/随笔","其他/欣赏"],["本/社科"],["其他/随笔"],["其他/随笔"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/随笔"],["其他/日落和大文字"],["其他/欣赏"],["其他/meme"],["其他/随笔"],["其他/日落和大文字"],["其他/随笔"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/随笔","其他/欣赏"],["本/科幻"],["本/社科"],["其他/随笔"],["其他/日落和大文字"],["本/🎮"],["其他/meme"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/欣赏"],["本/社科"],["其他/meme"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["本/哲学"],["其他/日落和大文字"],["本/其他"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字","其他/随笔"],["其他/日落和大文字"],["其他/随笔"],["其他/随笔","其他/日落和大文字"],["其他/欣赏"],["其他/随笔"],["其他/日落和大文字"],["其他/随笔","其他/日落和大文字"],["本/🎮"],["本/🎮"],["本/科幻"],["本/科幻"],["其他/日落和大文字"],["本/其他"],["其他/日落和大文字"],["本/🎮"],["本/其他"],["其他/日落和大文字"],["本/🎮"],["本/🎮"],["本/🎮"],["本/🎮"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/随笔"],null,null];
+          var allTitles = ["2022.1.12","2022.1.15","2022.1.19","2022.1.20","2022.1.25","2022.10.10 小词典","2022.10.19 读书笔记","2022.10.23 读书笔记~序","2022.10.28 日落","Flowers","2022.10.30 读书笔记","2022.10.5 构图实验","2022.10.6 日落","2022.10.10 Eine Alpensinfonie","2022.11.14 meme","2022.10.19 Pini di roma","通关纪念！","2022.12.20 读书笔记","2022.12.6 From room 732","2022.2.12读书笔记","2022.2.22读书笔记","2022.2.9","2022.3.11大文字","2022.3.12读书笔记","2022.3.23读书笔记","2022.3.8东方市","2022.4.12进度","2022.4.1田","2022.5.19读书笔记","2022.6.25通关","2022.7.15无法到达","2022.8.17读书笔记","2022.8.27Danse Macabre","2022.8.28 Godskin Apostles","2022.8.30 叉烧爽度","2022.8.1日落","2022.8.6","2022.9.12 读书笔记","2022.9.17 生死于时光机","2022.9.1 坐过站！","2022.9.25 ここすき","2022.9.30 日落","2022.9.4 毁灭","2022.9.7 日落","2022.9.8 Rocky Reef On The Seashore","meme","Signal","2023.1.27 From room 732","2023.1.8","2023.10.30","2023.11.3","2023.11.19","2023.11.30","2023.12.03","2023.12.10","2023.12.26","2023.2.26充数","2023.3.21 读书笔记","2023.3.7 读书笔记",":)","2023.4.21 日落?","2023.6.25 读书笔记?","晴天娃娃","2023.8.16 五山送り火","2023.8.4","The Titan's Goblet","2023.9.23 读书笔记","meme","2024.1.1","2024.10.06","2024.10.19","2024.10.26","2024.10.7 读书笔记","2024.11.21","2024.11.24 读书笔记","2024.11.4","2024.12.27","2024.2.11","2024.2.18","2024.2.4","2024.3.21","2024.6.10","La Parque et l'ange de la mort (The Parca and the Angel of Death)","2024.6.8川西","2024.8.20","2024.8.20","2024.9.22 读书笔记?","2024.9.22 读书笔记?","2024.9.22 读书笔记","读书笔记","2025.1.13","2024.11.24 读书笔记","2025.12.1","2025.12.28 读书笔记?","2025.12.30读书笔记","2025.2.15","2025.2.18　推し！","2025.4.7 读书笔记?","2025.5.6 读书笔记?","2025.7.28 读书笔记?","2025.8.22","2025.9.30","2026.3.24","2026.2.3","2026.2.9","2026.5.10","Paraponera Clavata","3d printing summary - Materials and Settings"];
+          var allFilenames = ["2022-1-12尖山子","2022-1-15风景","2022-1-19自行车","2022-1-20液氮液面","2022-1-25环形山","2022-10-10小词典","2022-10-19谈谈方法","2022-10-23纯粹理性批判re1","2022-10-28日落","2022-10-29flowers","2022-10-30andy_warhol_re","2022-10-5构图实验","2022-10-6日落","2022-11-10eine_alpensinfonie","2022-11-14meme","2022-11-19pini_di_roma","2022-11-3bloodborne","2022-12-20消费社会","2022-12-6room732","2022-2-12虚構時代の果て_re_1","2022-2-22虚構時代の果て_re_2","2022-2-9rough","2022-3-11大文字","2022-3-12虚構時代の果て_re_3","2022-3-23哈贝马斯导读","2022-3-8东方市","2022-4-12","2022-4-1田","2022-5-19虚構時代の果て_re_4","2022-6-25eldenring","2022-7-15山顶","2022-8-17历史的终结与最后的人~re","2022-8-27Danse_macabre","2022-8-28godskin_apostles","2022-8-30chashugamma","2022-8-3日落","2022-8-6双王子","2022-9-12虚構の時代の果てre5","2022-9-17生死于时光机","2022-9-1坐过站","2022-9-25ここすき","2022-9-30日落","2022-9-4毁灭","2022-9-7日落","2022-9-8RockyReefOnTheSeashore","2023-1-11meme","2023-1-15红绿灯","2023-1-27from732","2023-1-8Castoria","2023-10-30大文字","2023-11-03大文字","2023-11-19大文字","2023-11-30大文字","2023-12-03茅场","2023-12-10大文字","2023-12-26大文字","2023-2-26充数","2023-3-26献给阿尔吉侬的花束","2023-3-7新教伦理","2023-4-17土味homekit","2023-4-21大文字","2023-6-25奏章1","2023-8-14meme","2023-8-16大文字","2023-8-5赞美太阳","2023-9-11titan_goblet","2023-9-23跨越边界的社区","2024-1-18meme","2024-1-1贡嘎","2024-10-06大文字(秋","2024-10-19大文字","2024-10-26大文字","2024-10-7德勒兹_尼采与哲学","2024-11-21大文字","2024-11-24失去的二十年","2024-11-4大文字","2024-12-27大文字","2024-2-12大文字（雾）","2024-2-18脚力","2024-2-4大文字","2024-3-21脚力","2024-6-10脚力3","2024-6-8パルクと死の天使","2024-6-8川西","2024-8-20大文字","2024-8-20脚力4","2024-9-22fgo奏章3","2024-9-22fgo奏章3","2024-9-22メソポタミアの神話","2024-9-22银河系漫游指南","2025-1-14大文字3!!","2025-1-27疯狂山脉","2025-12-1大文字","2025-12-28fgo终章","2025-12-30奥德赛.md","2025-2-15大文字","2025-2-18推し","2025-4-7无限机兵","2025-5-6奏章4","2025-7-28鳴潮2_6","2025-8-22大文字","2025-9-30大文字","2026-3-24phdsummary","2026-2-3大文字","2026-2-9大文字","2026-5-10GW","2026-5-10paraponera_clavata","3dprinting_mat"];
 
-<h3>一部抜粋（对己</h3>
+          var tagCounts = {};
+          var tagIndexes = {};
+
+          for (var i = 0; i < allTags.length; i++) {
+            var tagNew = allTags[i];
+
+            for (var j = 0; j < tagNew.length; j++) {
+              var tag = tagNew[j];
+              if (tagCounts[tag] === undefined) {
+                tagCounts[tag] = 0;
+                tagIndexes[tag] = [];
+              }
+              tagCounts[tag]++;
+              tagIndexes[tag].push(i);
+            }
+          }
+
+          var tagSequences = [];
+          var indexSequences = [];
+          for (var tag in tagCounts) {
+            var count = tagCounts[tag];
+            var indexes = tagIndexes[tag];
+            tagSequences.push(tag + ' (' + count + ')');
+            indexSequences.push(indexes);
+          }
+
+          // Menu bar of tags
+          let activatedTagIndices = [];
+          const tagMenuDiv = {
+            '本': document.getElementById('tagMenuBook'),
+            '其他': document.getElementById('tagMenuOthers'),
+          };
+
+          for (var z = 0; z < tagSequences.length; z++) {
+            var menuDiv = document.createElement('div');
+            var tagDividRaw = 'tagraw'+z;
+            var tagJumpto = 'tag'+z;
+            const splitTag = tagSequences[z].split('/')[0]
+            const splitContent = tagSequences[z].split('/')[1];
+            menuDiv.id = tagDividRaw;
+            menuDiv.classList.add('tagraw')
+
+            if (tagMenuDiv[splitTag]) {
+              if (splitTag === "author") {
+                menuDiv.innerHTML = ''+splitContent+'';
+              } else {
+                menuDiv.innerHTML = ''+tagSequences[z]+'';
+              }
+              tagMenuDiv[splitTag].appendChild(menuDiv);
+            }
+          }
+          // Do statistics on tag.
+          // Create an array to track tag status
+          const numTags = tagSequences.length; // Replace with actual number of tags
+          let tagStatus = Array(numTags).fill(-1); // Initialize all values to -1
+
+          // Feel lucky button
+          const feelLuckyDiv = document.getElementById('feelLucky');
+
+          function getRndInteger(min, max) {
+            return Math.floor(Math.random()*(max - min)) + min;
+          }
+
+          var randomIndex = getRndInteger(0, allTitles.length);
+          var randomPage = allFilenames[randomIndex];
+          var permalink = "https://wzetto.github.io/wz369.github.io/omoi_main/essays/"+randomPage+".html";
+
+          feelLuckyDiv.innerHTML = '<div class="container">\
+            <button id="tagAny" style="color:#999999;background-color:#fff;\
+            border: 2.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+            font-size:16px;padding:0.5rem;display:inline-block;\
+            text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Any</button>&nbsp;\
+            <button id="tagFilter" style="color:#999999;background-color:#fff;\
+            border: 2.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+            font-size:16px;padding:0.5rem;display:inline-block;\
+            text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Common</button>&nbsp;\
+            <button style="color:#000;background-color:#fff;\
+            border: 2.5px solid #303030;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+            font-size:16px;padding:0.5rem;display:inline-block;\
+            text-align:center;border-radius: 8px;height: 40px;">\
+            <a href="'+permalink+'">手气不错</a></button></div>';
+
+          //Count activated tags
+          activatedTagIndices.length = 0;
+
+//           function activateTagFilter() {
+          // Add click event to each tag element
+          const menuTagsRaw = document.querySelectorAll('.tagraw');
+          const menuTags = Array.from(menuTagsRaw).sort((a, b) => {
+            const idA = parseInt(a.id.replace('tagraw', ''));
+            const idB = parseInt(b.id.replace('tagraw', ''));
+            return idA - idB;
+          });
+          menuTags.forEach((menuTag, l) => {
+            menuTag.addEventListener('click', function() {
+              // Flip tag status
+              tagStatus[l] = -tagStatus[l];
+              // Toggle active class
+              menuTag.classList.toggle('active', tagStatus[l] === 1);
+//               menuTag.classList.toggle('deactive', tagStatus[i] === 0);
+//               activatedTagIndices = tagStatus.map((status, i) => status === 1 ? i : 0).filter(index => index !== 0);
+              activatedTagIndices = [];
+              menuTags.forEach((menuTag, m) => {
+                if (tagStatus[m] === 1) {
+                  activatedTagIndices.push(m);
+                }
+              });
+
+              // console.log(tagStatus);
+
+              if (activatedTagIndices.length >= 1) {
+                feelLuckyDiv.innerHTML = '<div class="container">\
+                  <button id="tagAny" style="color:#fff;background-color:#000;\
+                  border: 2.5px solid #000;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                  font-size:16px;padding:0.5rem;display:inline-block;\
+                  text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Any</button>&nbsp;\
+                  <button id="tagFilter" style="color:#fff;background-color:#000;\
+                  border: 2.5px solid #000;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                  font-size:16px;padding:0.5rem;display:inline-block;\
+                  text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Common</button>&nbsp;\
+                  <button style="color:#000;background-color:#fff;\
+                  border: 2.5px solid #303030;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                  font-size:16px;padding:0.5rem;display:inline-block;\
+                  text-align:center;border-radius: 8px;height: 40px;">\
+                  <a href="'+permalink+'">手气不错</a></button></div>';
+              } else {
+                feelLuckyDiv.innerHTML = '<div class="container">\
+                  <button id="tagAny" style="color:#999999;background-color:#fff;\
+                  border: 2.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                  font-size:16px;padding:0.5rem;display:inline-block;\
+                  text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Any</button>&nbsp;\
+                  <button id="tagFilter" style="color:#999999;background-color:#fff;\
+                  border: 2.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                  font-size:16px;padding:0.5rem;display:inline-block;\
+                  text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Common</button>&nbsp;\
+                  <button style="color:#000;background-color:#fff;\
+                  border: 2.5px solid #303030;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                  font-size:16px;padding:0.5rem;display:inline-block;\
+                  text-align:center;border-radius: 8px;height: 40px;">\
+                  <a href="'+permalink+'">手气不错</a></button></div>';
+              }
+
+              const countAny = document.getElementById('tagAny');
+              countAny.addEventListener('click', function() {
+
+                const filterElementsDivAny = document.getElementById('filterBlock');
+                filterElementsDivAny.innerHTML = "";
+
+                const compileIndexAny = activatedTagIndices.map((index) => {
+                  return indexSequences[index];
+                }).flat().filter((value, index, self) => {
+                  return self.indexOf(value) === index;
+                });
+
+                if (compileIndexAny.length >= 1) {
+                  for (var n = 0; n < compileIndexAny.length; n++) {
+                    var index = compileIndexAny[n];
+                    var titleDivFilter = document.createElement('div');
+                    var tagDivFilter = document.createElement('span');
+                    tagDivFilter.style.lineHeight = '1.25';
+
+                    var filename = allFilenames[index];
+                    var title = allTitles[index];
+                    var tag = allTags[index];
+                    var permalinkFilter = "https://wzetto.github.io/wz369.github.io/omoi_main/essays/"+filename+".html";
+
+                    titleDivFilter.innerHTML = '<h5><a href="'+permalinkFilter+'">'+filename+'</a></h5>';
+
+                    // tag array
+                    for (var o = 0; o < tag.length; o++) {
+                      var codeElement = document.createElement('code');
+                      codeElement.style.backgroundColor = '#fff';
+                      codeElement.style.border = '1.5px solid #303030';
+                      codeElement.style.boxShadow = '0 0 1px rgba(0,0,0,.1)';
+                      codeElement.style.borderRadius = '8px';
+                      codeElement.style.display = 'inline-block';
+                      codeElement.innerHTML = '<a href="https://fgo.wiki/w/%E7%89%B9%E6%8B%89%E6%B4%9B%E5%85%8B">'+tag[o]+'</a>';
+                      tagDivFilter.appendChild(codeElement);
+                    }
+
+                    filterElementsDivAny.appendChild(titleDivFilter);
+                    filterElementsDivAny.appendChild(tagDivFilter);
+                  }
+                } else {
+                    var titleDivFilter = document.createElement('div');
+                    titleDivFilter.innerHTML = '<h4>OoOps!</h4>';
+                    filterElementsDivAny.appendChild(titleDivFilter);
+                }
+
+                var seperateDiv = document.createElement('div');
+                seperateDiv.innerHTML = '<hr style="width:200px;text-align:center">';
+                filterElementsDivAny.appendChild(seperateDiv);
+              });
+
+              const countBtn = document.getElementById('tagFilter');
+              countBtn.addEventListener('click', function() {
+  //                 Return chosen indices for titles/authors/etc.
+                const filterElementsDiv = document.getElementById('filterBlock');
+                filterElementsDiv.innerHTML = "";
+
+                // Intersect
+                const chosenIndex = activatedTagIndices.map((index) => {return indexSequences[index];});
+                let compileIndex = chosenIndex[0];
+                let compileNew = [];
+
+                console.log('chosenIndex:',chosenIndex);
+
+                for (i = 0; i < chosenIndex.length; i++) {
+                  const sub1 = [chosenIndex[i]].flat();
+                  compileNew = [];
+
+                  for (j = 0; j < sub1.length; j++) {
+                    const sub2 = sub1[j];
+                    // console.log('raw2',compileIndex);
+                    const boardIndex = compileIndex.findIndex((value) => value - sub2 === 0);
+
+                    if (boardIndex !== -1) {
+                      compileNew.push(sub2);
+                    }
+                  }
+
+                  compileIndex = [...compileNew];
+                }
+
+                console.log('compileIndex:',compileIndex);
+                console.log(tagStatus);
+
+                // title, author, mainpoint
+
+                if (compileIndex.length >= 1) {
+                  for (var n = 0; n < compileIndex.length; n++) {
+                    var index = compileIndex[n];
+                    var titleDivFilter = document.createElement('div');
+                    var tagDivFilter = document.createElement('span');
+                    tagDivFilter.style.lineHeight = '1.25';
+
+                    var filename = allFilenames[index];
+                    var title = allTitles[index];
+                    var tag = allTags[index];
+                    var permalinkFilter = "https://wzetto.github.io/wz369.github.io/omoi_main/essays/"+filename+".html";
+                    titleDivFilter.innerHTML = '<h5><a href="'+permalinkFilter+'">'+filename+'</a></h5>';
+
+                    // tag array
+                    for (var o = 0; o < tag.length; o++) {
+                      var codeElement = document.createElement('code');
+                      codeElement.style.backgroundColor = '#fff';
+                      codeElement.style.border = '1.5px solid #303030';
+                      codeElement.style.boxShadow = '0 0 1px rgba(0,0,0,.1)';
+                      codeElement.style.borderRadius = '8px';
+                      codeElement.style.display = 'inline-block';
+                      codeElement.innerHTML = '<a href="https://fgo.wiki/w/%E7%89%B9%E6%8B%89%E6%B4%9B%E5%85%8B">'+tag[o]+'</a>';
+                      tagDivFilter.appendChild(codeElement);
+                    }
+
+                    filterElementsDiv.appendChild(titleDivFilter);
+                    filterElementsDiv.appendChild(tagDivFilter);
+                  }
+                } else {
+                    var titleDivFilter = document.createElement('div');
+                    titleDivFilter.innerHTML = '<h4>OoOps!</h4>';
+                    filterElementsDiv.appendChild(titleDivFilter);
+                }
+
+                var seperateDiv = document.createElement('div');
+                seperateDiv.innerHTML = '<hr style="width:200px;text-align:center"><br>';
+                filterElementsDiv.appendChild(seperateDiv);
+              });
+            });
+          });
+        </script>
+
+
+
+        <h3>一部抜粋（对己</h3>
 
 <h5 id="o202112">2021.12</h5>
 <p><code style="background-color:#41378e">12/30</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2021-12-30东山汤.html"> &gt;&gt; 东山汤</a></p>
@@ -198,7 +535,7 @@ my Ph.D. graduation. One new reason get for finishing my Ph.D.(
 <code style="background-color:#77308e">10/30</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-10-30andy_warhol_re.html"> &gt;&gt; Andy Warhol～re</a><br /></p>
 
 <h5 id="o202211">2022.11</h5>
-<p><code style="background-color:#77308e">11/03</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-11-3bloodborne.html"> &gt;&gt; 夜明け( </a><br />
+<p><code style="background-color:#77308e">11/03</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-11-3bloodborne.html"> &gt;&gt; 夜明け </a><br />
 <code style="background-color:#77308e">11/10</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-11-10eine_alpensinfonie.html"> &gt;&gt; Eine Alpensinfonie </a><br />
 <code style="background-color:#77308e">11/14</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-11-14meme.html"> &gt;&gt; meme </a><br />
 <code style="background-color:#77308e">11/19</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-11-19pini_di_roma.html"> &gt;&gt; Pini di roma </a><br /></p>
@@ -216,17 +553,127 @@ my Ph.D. graduation. One new reason get for finishing my Ph.D.(
 <code style="background-color:#802e8d">01/27</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-1-27from732.html"> &gt;&gt; From 732</a><br />
 <code style="background-color:#802e8d">01/31</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-1-15红绿灯.html"> &gt;&gt; 红绿灯</a><br /></p>
 
+<h5 id="o202302">2023.2</h5>
+<p><code style="background-color:#892c8c">02/26</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-2-26充数.html"> &gt;&gt; 充下数</a><br /></p>
+
+<h5 id="o202303">2023.3</h5>
+<p><code style="background-color:#892c8c">03/07</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-3-7新教伦理.html"> &gt;&gt; 新教伦理与资本主义精神~re</a><br />
+<code style="background-color:#892c8c">03/26</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-3-26献给阿尔吉侬的花束.html"> &gt;&gt; 献给阿尔吉侬的花束~re</a><br /></p>
+
+<h5 id="o202304">2023.4</h5>
+<p><code style="background-color:#92298a">04/17</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-4-17土味homekit.html"> &gt;&gt; 土味homekit(</a><br />
+<code style="background-color:#92298a">04/21</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-4-21大文字.html"> &gt;&gt; 日落？</a><br /></p>
+
+<h5 id="o202306">2023.6</h5>
+<p><code style="background-color:#9a2788">06/25</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-6-25奏章1.html"> &gt;&gt; FGO奏章1~re</a><br /></p>
+
+<h5 id="o202307">2023.7</h5>
+
+<h5 id="o202308">2023.8</h5>
+<p><code style="background-color:#a32485">08/05</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-8-5赞美太阳.html"> &gt;&gt; 赞美太阳！</a><br />
+<code style="background-color:#a32485">08/14</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-8-14meme.html"> &gt;&gt; meme</a><br />
+<code style="background-color:#a32485">08/16</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-8-16大文字.html"> &gt;&gt; 大文字</a><br /></p>
+
+<h5 id="o202309">2023.9</h5>
+
+<p><code style="background-color:#a32485">09/11</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-9-11titan_goblet.html"> &gt;&gt; The Titan’s Goblet</a><br /></p>
+
+<h5 id="o202310">2023.10</h5>
+<p><code style="background-color:#aa2182">10/30</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-10-30大文字.html"> &gt;&gt; 大文字</a><br /></p>
+
+<h5 id="o202311">2023.11</h5>
+<p><code style="background-color:#aa2182">11/03</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-11-03大文字.html"> &gt;&gt; 大文字</a><br />
+<code style="background-color:#aa2182">11/19</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-11-19大文字.html"> &gt;&gt; 大文字</a><br />
+<code style="background-color:#aa2182">11/30</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-11-30大文字.html"> &gt;&gt; 大文字</a><br /></p>
+
+<h5 id="o202312">2023.12</h5>
+<p><code style="background-color:#b21e7f">12/03</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-12-03茅场.html"> &gt;&gt; 茅场</a><br />
+<code style="background-color:#b21e7f">12/10</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-12-10大文字.html"> &gt;&gt; 大文字</a><br />
+<code style="background-color:#b21e7f">12/26</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-12-26大文字.html"> &gt;&gt; 大文字</a><br /></p>
+
+<h5 id="o202401">2024.1</h5>
+<p><code style="background-color:#b21e7f">01/01</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-1-1贡嘎.html"> &gt;&gt; 贡嘎</a><br />
+<code style="background-color:#b21e7f">01/18</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-1-18meme.html"> &gt;&gt; meme</a><br /></p>
+
+<h5 id="o202402">2024.2</h5>
+<p><code style="background-color:#b91c7c">02/04</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-2-4大文字.html"> &gt;&gt; 大文字</a><br />
+<code style="background-color:#b91c7c">02/11</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-2-12大文字（雾）.html"> &gt;&gt; 大文字（雾）</a><br />
+<code style="background-color:#b91c7c">02/18</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-2-18脚力.html"> &gt;&gt; 脚力</a><br /></p>
+
+<h5 id="o202403">2024.3</h5>
+<p><code style="background-color:#b91c7c">03/21</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-3-21脚力2.html"> &gt;&gt; 脚力2</a><br /></p>
+
+<h5 id="o202406">2024.6</h5>
+<p><code style="background-color:#c61874">06/08</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-6-8パルクと死の天使.html"> &gt;&gt; The Parca and the Angel of Death</a><br />
+<code style="background-color:#c61874">06/08</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-6-8川西.html"> &gt;&gt; 川西</a><br />
+<code style="background-color:#c61874">06/10</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-6-10脚力3.html"> &gt;&gt; 脚力3</a><br /></p>
+
+<h5 id="o202408">2024.8</h5>
+
+<p><code style="background-color:#cc1870">08/20</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-8-20大文字.html"> &gt;&gt; 大文字</a><br />
+<code style="background-color:#cc1870">08/20</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-8-20脚力4.html"> &gt;&gt; 脚力4</a><br /></p>
+
+<h5 id="o202410">2024.10</h5>
+
+<p><code style="background-color:#d2196b">10/06</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-10-06大文字(秋.html"> &gt;&gt; 大文字（秋</a><br />
+<code style="background-color:#d2196b">10/19</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-10-19大文字.html"> &gt;&gt; 大文字（夜</a><br />
+<code style="background-color:#d2196b">10/26</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-10-26大文字.html"> &gt;&gt; 大文字（山</a><br /></p>
+
+<h5 id="o202411">2024.11</h5>
+
+<p><code style="background-color:#d2196b">11/04</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-11-4大文字.html"> &gt;&gt; 大文字</a><br />
+<code style="background-color:#d2196b">11/21</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-11-21大文字.html"> &gt;&gt; 大文字</a><br /></p>
+
+<h5 id="o202412">2024.12</h5>
+
+<p><code style="background-color:#d71b66">12/27</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-12-27大文字.html"> &gt;&gt; 大文字</a><br /></p>
+
+<h5 id="o202501">2025.1</h5>
+
+<p><code style="background-color:#d71b66">01/13</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2025-1-14大文字3!!.html"> &gt;&gt; 大文字 3!!</a><br /></p>
+
+<h5 id="o202502">2025.2</h5>
+
+<p><code style="background-color:#dc1e62">02/15</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2025-2-15大文字.html"> &gt;&gt; 大文字</a><br /></p>
+
+<h5 id="o202508">2025.8</h5>
+
+<p><code style="background-color:#e72c52">08/22</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2025-8-22大文字.html"> &gt;&gt; 大文字</a><br /></p>
+
+<h5 id="o202509">2025.9</h5>
+
+<p><code style="background-color:#e72c52">09/30</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2025-9-30大文字.html"> &gt;&gt; 大文字</a><br /></p>
+
+<h5 id="o202512">2025.12</h5>
+
+<p><code style="background-color:#ed3847">12/29</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2025-12-1大文字.html"> &gt;&gt; 大文字</a><br /></p>
+
+<h5 id="o202601">2026.1</h5>
+
+<p><code style="background-color:#ed3847">01/01</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-9-22fgo奏章3.html"> &gt;&gt; fgo奏章3</a><br />
+<code style="background-color:#ed3847">01/02</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2025-1-27疯狂山脉.html"> &gt;&gt; 疯狂山脉</a><br /></p>
+
+<h5 id="o202602">2026.2</h5>
+
+<p><code style="background-color:#E23D4E">02/03</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2026-2-3大文字.html"> &gt;&gt; 大文字</a><br />
+<code style="background-color:#E23D4E">02/09</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2026-2-9大文字.html"> &gt;&gt; 大文字</a><br /></p>
+
+<h5 id="o202605">2026.5</h5>
+
+<p><code style="background-color:#D84355">05/10</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2026-5-10GW.html"> &gt;&gt; GW随笔</a><br />
+<code style="background-color:#D84355">05/10</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2026-5-10paraponera_clavata.html"> &gt;&gt; Paraponera Clavata</a><br /></p>
+
 <hr style="width:50px;text-align:left;margin-left:0" />
 
 <h3 id="olitcontrib">微小的工作</h3>
 
-<ul>
-  <li><a href="https://wzetto.github.io/wz369.github.io/omoi_main/yuyake_recog/Yuyake_recog.html">Yuyake recognition</a><br /></li>
-  <li><a href="https://wzetto.github.io/wz369.github.io/omoi_main/low_temp_lift/low_temp_lift.html">Low_temp_lift</a><br /></li>
-  <li><a href="https://wzetto.github.io/wz369.github.io/omoi_main/Fujifitting/fujifitting.html">Fujifitting</a><br /></li>
-  <li><a href="https://wzetto.github.io/wz369.github.io/omoi_main/pyMD/classical_try.html">PyMD</a></li>
-  <li><a href="https://wzetto.github.io/wz369.github.io/omoi_main/wbrecog/try1.html">WBdisloc</a></li>
-</ul>
+<!-- - [Yuyake recognition](https://wzetto.github.io/wz369.github.io/omoi_main/yuyake_recog/Yuyake_recog.html)<br>
+- [Low_temp_lift](https://wzetto.github.io/wz369.github.io/omoi_main/low_temp_lift/low_temp_lift.html)<br>
+- [Fujifitting](https://wzetto.github.io/wz369.github.io/omoi_main/Fujifitting/fujifitting.html)<br>
+- [PyMD](https://wzetto.github.io/wz369.github.io/omoi_main/pyMD/classical_try.html)
+- [WBdisloc](https://wzetto.github.io/wz369.github.io/omoi_main/wbrecog/try1.html)
+- [CrystalProj](https://wzetto.github.io/wz369.github.io/omoi_main/crystalProj/try1.html)
+- [CrystalOverlap](https://wzetto.github.io/wz369.github.io/omoi_main/crystalOverlap/try1.html) -->
 
 <h3 id="-home"><a href="https://wzetto.github.io/wz369.github.io/">&lt; HOME</a></h3>
 <br>
@@ -234,51 +681,52 @@ my Ph.D. graduation. One new reason get for finishing my Ph.D.(
         <p style="text-align: center;">
           <img src="https://drive.google.com/thumbnail?id=1hcY5U4qLbe6QHDNCK6wzERxcDnTxm0Dp&sz=w800" width="200px"/>
         </p>
-        <h6 align='center'>Zhi Wang © 2021-2023</h6>
+        <h6 align='center'>Zhi Wang © 2021-2026 Design & Maintain</h6>
       </div>
         <div class="inner_right">
-          <h5 a onclick="navibar()" id="o202112t" color="#000000">2021.12</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202201t" color="#000000">2022.1</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202202t" color="#000000">2022.2</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202203t" color="#000000">2022.3</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202204t" color="#000000">2022.4</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202205t" color="#000000">2022.5</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202206t" color="#000000">2022.6</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202207t" color="#000000">2022.7</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202208t" color="#000000">2022.8</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202209t" color="#000000">2022.9</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202210t" color="#000000">2022.10</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202211t" color="#000000">2022.11</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202212t" color="#000000">2022.12</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="o202301t" color="#000000">2023.1</h5>
-          <hr style="width:20px;text-align:left;margin-left:0">
-          <h5 a onclick="navibar()" id="olitcontribt" color="#000000">微小的工作</h5>
+          <div id="date-container"></div>
+            <script>
+              const container = document.getElementById('date-container');
+
+              const startYear = 2021, startMonth = 12;
+
+              const now = new Date();
+              const endYear = now.getFullYear();
+              const endMonth = now.getMonth() + 1; 
+
+              for (let year = startYear; year <= endYear; year++) {
+                const mStart = (year === startYear) ? startMonth : 1;
+                const mEnd = (year === endYear) ? endMonth : 12;
+
+                for (let month = mStart; month <= mEnd; month++) {
+                  const h6 = document.createElement('h6');
+
+                  h6.onclick = navibar;
+
+                  h6.id = `o${year}${String(month).padStart(2, '0')}t`;
+                  h6.className = 'omoi_navi_text';
+                  h6.innerText = `${year}.${month}`;
+
+                  container.appendChild(h6);
+                }
+              }
+            </script>
+          <h5 onclick="navibar()" id="olitcontribt" style="color:#bdbbbb;">微小的工作</h5>
       </div>
     </div>
+
+
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner_bottom">
         
-        <p class="copyright">wz369.github.io.git maintained by <a href="https://github.com/wzetto">wzetto</a></p>
+        <p class="copyright">wz369.github.io maintained & theme created by <a href="https://github.com/wzetto">wzetto</a></p>
         
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
         <!-- <p style="position: absolute; bottom: 0; width:100%; text-align: center">有り得ざる妖精の王よ——</p>
         -->
-        <p id='bottom_text'>取るに足りない、ちさな虫の一噛みで崩れる</p>
+        <p id='bottom_text'></p>
         <script src="https://wzetto.github.io/wz369.github.io/js/bottom/bottom_text_home.js"></script>
       </footer>
     </div>

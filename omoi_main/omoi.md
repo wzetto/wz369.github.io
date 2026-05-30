@@ -205,6 +205,11 @@ title: 想法等
 <code style="background-color:#E23D4E">02/03</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2026-2-3大文字.html"> \>\> 大文字</a><br>
 <code style="background-color:#E23D4E">02/09</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2026-2-9大文字.html"> \>\> 大文字</a><br>
 
+<h5 id="o202605">2026.5</h5>
+
+<code style="background-color:#D84355">05/10</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2026-5-10GW.html"> \>\> GW随笔</a><br>
+<code style="background-color:#D84355">05/10</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2026-5-10paraponera_clavata.html"> \>\> Paraponera Clavata</a><br>
+
 <hr style="width:50px;text-align:left;margin-left:0">
 
 <h3 id="olitcontrib">微小的工作</h3>
