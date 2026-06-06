@@ -33,4 +33,4 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_bunagatake_try2.js
 <img src="https://drive.google.com/thumbnail?id=1c0LKlD4bwT-XMpKn0vZZOPP1mgZeGRev&sz=w400" />
 <hr style="width:50px;text-align:left;margin-left:0">
 
-#### [< back](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
+#### <a href="https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html"><img src="/images/icon/ico_detailarw_bk.svg" alt="back" style="height:0.9em; vertical-align:middle;"></a>

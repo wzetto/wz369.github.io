@@ -26,7 +26,7 @@ With some other tricks?(
 
 下一步扩展到3维尝试应用，添加位错之类。但效率实在比不上成熟包体，故就当增加熟悉喽。
 
-### [< back](https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html)
+### <a href="https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html"><img src="/images/icon/ico_detailarw_bk.svg" alt="back" style="height:0.9em; vertical-align:middle;"></a>
 
 <script>
   window.onload = function(){

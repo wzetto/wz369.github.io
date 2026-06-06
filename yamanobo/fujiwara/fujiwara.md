@@ -52,4 +52,4 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_fujiwara.js
 - 尖锐的鎌が岳，本次原计划鈴鹿セブンマウンテン縦走之一，不知何时能攀爬。
 <img src="https://drive.google.com/thumbnail?id=1GCZnofRFi8tXz_gWVRKCZv0U_z-Ph5mC&sz=w1200" width="800px" />
 <hr style="width:50px;text-align:left;margin-left:0">
-#### [< back](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
+#### <a href="https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html"><img src="/images/icon/ico_detailarw_bk.svg" alt="back" style="height:0.9em; vertical-align:middle;"></a>

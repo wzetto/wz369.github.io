@@ -47,4 +47,4 @@ title: '五色海子'
 
 
 
-#### [< back](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
+#### <a href="https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html"><img src="/images/icon/ico_detailarw_bk.svg" alt="back" style="height:0.9em; vertical-align:middle;"></a>

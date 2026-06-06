@@ -46,4 +46,4 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_ryozen.js
 下山因气候，路况，密林及动物腥味，来往无人等等察觉十分不妙，为避免在铁皮避难小屋靠一根士力架过夜（经典复刻（，遂慌张下山，为本次美好山行作一滑稽结尾。
 
 哪次冬天露个营。
-#### [< back](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
+#### <a href="https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html"><img src="/images/icon/ico_detailarw_bk.svg" alt="back" style="height:0.9em; vertical-align:middle;"></a>

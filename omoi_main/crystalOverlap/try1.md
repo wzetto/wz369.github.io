@@ -14,7 +14,7 @@ layout: formal_default
 <img src="https://drive.google.com/thumbnail?id=19mJQah-ygEZ9qf5FBntXCQ0Ldg4cozwV&sz=w1600" width="1200px"/>
 <br>
 
-### [< back](https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html)
+### <a href="https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html"><img src="/images/icon/ico_detailarw_bk.svg" alt="back" style="height:0.9em; vertical-align:middle;"></a>
 
 <script>
   window.onload = function(){

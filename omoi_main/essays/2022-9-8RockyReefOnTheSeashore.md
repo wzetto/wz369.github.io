@@ -11,4 +11,4 @@ filename: 2022-9-8RockyReefOnTheSeashore
 <hr style="width:50px;text-align:left;margin-left:0">
 C. D. Friedrich, 1824.
 <hr style="width:50px;text-align:left;margin-left:0">
-### [< back](https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html)
+### <a href="https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html"><img src="/images/icon/ico_detailarw_bk.svg" alt="back" style="height:0.9em; vertical-align:middle;"></a>

@@ -19,4 +19,4 @@ layout: fuji_default
 
 大文字和比叡山不愧是左京双雄；大文字的脊线略怪，是因为站在鸭川的NW面视角——大概曲线整体与富士山低合目处相似，毕竟算法是类似与母体比较的方式；Mayon山与富士山出奇的相似，成层火山大抵是有套普适演化模型。
 
-### [< back](https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html)
+### <a href="https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html"><img src="/images/icon/ico_detailarw_bk.svg" alt="back" style="height:0.9em; vertical-align:middle;"></a>

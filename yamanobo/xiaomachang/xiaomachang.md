@@ -32,4 +32,4 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_xiaomachang.js
 其实下山时猛盯海子塘峰看。也许是感受到了此行的珍贵，事后，也就是来日后自然得到验证。也许是无比渴望的想以未来视角看待这座山，以此深刻的，以一种无限迭代的方式存进记忆中。
 这个方法失去了对山峰的实在把握。
 
-#### [< back](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
+#### <a href="https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html"><img src="/images/icon/ico_detailarw_bk.svg" alt="back" style="height:0.9em; vertical-align:middle;"></a>

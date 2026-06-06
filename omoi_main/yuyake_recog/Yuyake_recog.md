@@ -22,4 +22,4 @@ over。
   <img width="400" height="300" src="https://wzetto.github.io/wz369.github.io/images/omoi/yuyake_recog/IMG_9708.jpeg">
 </p>
 
-#### [< back](https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html)
+#### <a href="https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html"><img src="/images/icon/ico_detailarw_bk.svg" alt="back" style="height:0.9em; vertical-align:middle;"></a>

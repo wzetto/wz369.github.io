@@ -49,7 +49,7 @@ filename: 2022-10-30andy_warhol_re
 
 > They occupy a space between representation and abstraction,..., which similarly point to a **threshold**.
 
-### [< back](https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html)
+### <a href="https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html"><img src="/images/icon/ico_detailarw_bk.svg" alt="back" style="height:0.9em; vertical-align:middle;"></a>
 
 <script>
   window.onload = function(){

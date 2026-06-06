@@ -25,58 +25,105 @@ function generateIds() {
 
 const allIds = generateIds();
 
-window.onscroll = function() {
-    side_column();
-};
+let lastActiveId = null;
+let scrollTicking = false;
+
+function requestSideColumnUpdate() {
+    if (scrollTicking) return;
+
+    scrollTicking = true;
+    window.requestAnimationFrame(() => {
+        side_column();
+        scrollTicking = false;
+    });
+}
+
+window.addEventListener("scroll", requestSideColumnUpdate, { passive: true });
+window.addEventListener("resize", requestSideColumnUpdate);
+
+function getActiveId(positions) {
+    const activeLine = Math.min(window.innerHeight * 0.45, 420);
+    let activeId = null;
+    let firstBelowId = null;
+
+    allIds.forEach(id => {
+        const pos = positions[id];
+        if (pos === undefined) return;
+
+        if (pos <= activeLine) {
+            activeId = id;
+        } else if (!firstBelowId) {
+            firstBelowId = id;
+        }
+    });
+
+    return activeId || firstBelowId;
+}
+
+function getVisibleIds(rects) {
+    return allIds.filter(id => {
+        const rect = rects[id];
+        if (!rect) return false;
+
+        return rect.bottom >= 0 && rect.top <= window.innerHeight;
+    });
+}
+
+function centerSidebarOn(activeId) {
+    const sidebarEl = document.getElementById("o" + activeId + "t");
+    const sidebarContainer = document.querySelector(".inner_right");
+    if (!sidebarEl || !sidebarContainer) return;
+
+    if (typeof sidebarEl.scrollIntoView === "function") {
+        sidebarEl.scrollIntoView({ block: "center", inline: "nearest" });
+    }
+
+    const containerRect = sidebarContainer.getBoundingClientRect();
+    const elRect = sidebarEl.getBoundingClientRect();
+    const relativeTop = elRect.top - containerRect.top + sidebarContainer.scrollTop;
+    const targetTop = relativeTop - containerRect.height / 2 + elRect.height / 2;
+    const maxTop = sidebarContainer.scrollHeight - sidebarContainer.clientHeight;
+    const boundedTop = Math.max(0, Math.min(targetTop, maxTop));
+
+    if (Math.abs(sidebarContainer.scrollTop - boundedTop) > 1) {
+        sidebarContainer.scrollTop = boundedTop;
+    }
+}
 
 function side_column() {
-    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    const windowH = window.innerHeight;
-    
-    const firstRef = document.getElementById("o" + allIds[0] + "t");
-    if (!firstRef) return; // Safety check
-    
-    const minH = firstRef.getBoundingClientRect().top; 
-
     const positions = {};
+    const rects = {};
     
     allIds.forEach(id => {
         const el = document.getElementById("o" + id);
         if (el) {
-            positions[id] = el.getBoundingClientRect().top;
+            const rect = el.getBoundingClientRect();
+            positions[id] = rect.top;
+            rects[id] = rect;
         }
     });
 
-    // 2. Second pass: Apply styles
+    const currentActiveId = getActiveId(positions);
+    const activeIndex = allIds.indexOf(currentActiveId);
+    const visibleIds = new Set(getVisibleIds(rects));
+
     allIds.forEach((id, i) => {
         const navText = document.getElementById("o" + id + "t");
-        const pos = positions[id];
+        if (!navText) return;
 
-        if (!navText || pos === undefined) return;
-
-        // Check Previous and Next IDs for the "Gray" logic
-        const prevId = i > 0 ? allIds[i - 1] : null;
-        const nextId = i < allIds.length - 1 ? allIds[i + 1] : null;
-        
-        const prevPos = prevId ? positions[prevId] : null;
-        const nextPos = nextId ? positions[nextId] : null;
-
-        // Logic for Active (Black)
-        if (pos >= minH && pos < windowH - 10) {
-            navText.style.color = "#000000"; 
-        } 
-        // Logic for Neighbors (Dark Gray)
-        else if (
-            (prevPos !== null && prevPos >= minH && prevPos < windowH - 10) ||
-            (nextPos !== null && nextPos >= minH && nextPos < windowH - 10)
-        ) {
+        if (visibleIds.has(id) || id === currentActiveId) {
+            navText.style.color = "#000000";
+        } else if (activeIndex !== -1 && Math.abs(i - activeIndex) === 1) {
             navText.style.color = "#909090";
-        } 
-        // Logic for Inactive (Light Gray)
-        else {
+        } else {
             navText.style.color = "#bdbbbb";
         }
     });
+
+    if (currentActiveId && currentActiveId !== lastActiveId) {
+        lastActiveId = currentActiveId;
+        centerSidebarOn(currentActiveId);
+    }
 }
 
 function navibar() {
@@ -89,6 +136,9 @@ function navibar() {
         const targetContent = document.getElementById("o" + id); // The content to scroll to
 
         if (navItem && targetContent) {
+            if (navItem.dataset.omoiBound === "true") return;
+            navItem.dataset.omoiBound = "true";
+
             navItem.addEventListener('click', () => {
                 const headerH = headerEl ? headerEl.getBoundingClientRect().height : 0;
                 
@@ -116,4 +166,8 @@ function navibar() {
     });
 }
 
-document.addEventListener("DOMContentLoaded", navibar);
+document.addEventListener("DOMContentLoaded", () => {
+    navibar();
+    side_column();
+});
+window.addEventListener("load", side_column);

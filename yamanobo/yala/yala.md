@@ -71,4 +71,4 @@ pk5270 - 雅拉 E face
 
 下山后去中古村泡温泉，雅拉常规线难度不大，整体能模仿日本模式的话应该会很良性。但是参考格聂，悲哀啊。
 
-#### [< back](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
+#### <a href="https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html"><img src="/images/icon/ico_detailarw_bk.svg" alt="back" style="height:0.9em; vertical-align:middle;"></a>

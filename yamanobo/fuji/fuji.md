@@ -11,4 +11,4 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_fuji.js
 
 与研究室国人进行的日本最高峰攀登，在山顶体验到川西都少见的强对流云。并因火山碎屑，自身老化等原因损失了伴随至今的scarpa。
 
-#### [< back](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
+#### <a href="https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html"><img src="/images/icon/ico_detailarw_bk.svg" alt="back" style="height:0.9em; vertical-align:middle;"></a>

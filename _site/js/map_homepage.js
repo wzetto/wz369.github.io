@@ -1,13 +1,515 @@
 var map = L.map('map_home').setView([35.023151, 135.804174], 13);
 
-L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid3pldHRvIiwiYSI6ImNreHVnMTRuODVzdW4yeXFxYTgxM3dyanUifQ.lOyz4mpFDxjWo7qWeq6AYA', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset: -1,
-    accessToken: 'your.mapbox.access.token'
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom: 18
 }).addTo(map);
+
+var trailFiles = [
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        url: "/yamanobo/baihaizi/baihaizi.gpx",
+        title: "baihaizi"
+    },
+
+
+
+    {
+        url: "/yamanobo/bunagatake/20210228bunagatake.gpx",
+        title: "20210228bunagatake"
+    },
+
+
+
+    {
+        url: "/yamanobo/bunagatake/20241215%E6%AD%A6%E5%A5%88%E3%83%B6%E5%B2%B3.gpx",
+        title: "20241215武奈ヶ岳"
+    },
+
+
+
+    {
+        url: "/yamanobo/fuji/20220816fuji.gpx",
+        title: "20220816fuji"
+    },
+
+
+
+    {
+        url: "/yamanobo/fujiwara/20221203%E8%97%A4%E5%8E%9F%E5%B2%B3.gpx",
+        title: "20221203藤原岳"
+    },
+
+
+
+    {
+        url: "/yamanobo/ibuki/210206_ibuki.gpx",
+        title: "210206_ibuki"
+    },
+
+
+
+    {
+        url: "/yamanobo/ibuki/ibuki_2501.gpx",
+        title: "ibuki_2501"
+    },
+
+
+
+    {
+        url: "/yamanobo/ibuki/ibuki_2601.gpx",
+        title: "ibuki_2601"
+    },
+
+
+
+    {
+        url: "/yamanobo/kaimon/20210322%E9%96%8B%E8%81%9E%E5%B2%B3.gpx",
+        title: "20210322開聞岳"
+    },
+
+
+
+    {
+        url: "/yamanobo/lenggacuo/lengacuo2.gpx",
+        title: "lengacuo2"
+    },
+
+
+
+    {
+        url: "/yamanobo/lenggacuo/lenggacuo1.gpx",
+        title: "lenggacuo1"
+    },
+
+
+
+    {
+        url: "/yamanobo/minya_konka/2020_minya_konka.gpx",
+        title: "2020_minya_konka"
+    },
+
+
+
+
+
+    {
+        url: "/yamanobo/minya_konka/231231_fullview.gpx",
+        title: "231231_fullview"
+    },
+
+
+
+    {
+        url: "/yamanobo/ryozen/20210410%E9%9C%8A%E4%BB%99%E5%B1%B1.gpx",
+        title: "20210410霊仙山"
+    },
+
+
+
+    {
+        url: "/yamanobo/ryozen/20220226%E9%9C%8A%E4%BB%99%E5%B1%B1.gpx",
+        title: "20220226霊仙山"
+    },
+
+
+
+    {
+        url: "/yamanobo/siguniang/2020_erguniang.gpx",
+        title: "2020_erguniang"
+    },
+
+
+
+    {
+        url: "/yamanobo/siguniang/2020_sanguniang.gpx",
+        title: "2020_sanguniang"
+    },
+
+
+
+    {
+        url: "/yamanobo/siguniang/2020_sanguniang_mark.gpx",
+        title: "2020_sanguniang_mark"
+    },
+
+
+
+    {
+        url: "/yamanobo/tiewadian/%E9%93%81%E7%93%A6%E6%AE%BF%E5%8D%95%E6%97%A5.gpx",
+        title: "铁瓦殿单日"
+    },
+
+
+
+    {
+        url: "/yamanobo/tsurugi-miune/20210920_tsurugi.gpx",
+        title: "20210920_tsurugi"
+    },
+
+
+
+    {
+        url: "/yamanobo/xiaomachang/xiaomachang.gpx",
+        title: "xiaomachang"
+    },
+
+
+
+    {
+        url: "/yamanobo/yala/yala.gpx",
+        title: "yala"
+    },
+
+
+
+    {
+        url: "/yamanobo/yamu/20230505%E9%9B%85%E5%A7%86.gpx",
+        title: "20230505雅姆"
+    },
+
+
+
+
+
+
+
+
+
+
+];
+
+var trailLayer = L.featureGroup().addTo(map);
+var trailBounds = L.latLngBounds();
+
+function pointFromGpxElement(point) {
+    var lat = Number(point.getAttribute('lat'));
+    var lon = Number(point.getAttribute('lon'));
+
+    if (!Number.isFinite(lat) || !Number.isFinite(lon)) {
+        return null;
+    }
+
+    return [lat, lon];
+}
+
+function collectPointSequence(parent, tagName) {
+    var sequence = [];
+    var points = parent.getElementsByTagName(tagName);
+
+    for (var i = 0; i < points.length; i++) {
+        var point = pointFromGpxElement(points[i]);
+
+        if (point) {
+            sequence.push(point);
+        }
+    }
+
+    return sequence;
+}
+
+function addTrailPolyline(sequence, title) {
+    if (sequence.length < 2) {
+        return false;
+    }
+
+    var line = L.polyline(sequence, {
+        color: '#DC143C',
+        weight: 3,
+        opacity: 0.85,
+        smoothFactor: 2.0
+    }).bindPopup('<b>' + title + '</b>');
+
+    line.addTo(trailLayer);
+    trailBounds.extend(line.getBounds());
+    return true;
+}
+
+function drawTrailFromGpx(gpxText, title) {
+    var gpx = new DOMParser().parseFromString(gpxText, 'text/xml');
+    var parserError = gpx.getElementsByTagName('parsererror');
+    var drewTrail = false;
+    var segments;
+    var routes;
+
+    if (parserError.length > 0) {
+        return false;
+    }
+
+    segments = gpx.getElementsByTagName('trkseg');
+    for (var i = 0; i < segments.length; i++) {
+        drewTrail = addTrailPolyline(collectPointSequence(segments[i], 'trkpt'), title) || drewTrail;
+    }
+
+    if (segments.length === 0) {
+        drewTrail = addTrailPolyline(collectPointSequence(gpx, 'trkpt'), title) || drewTrail;
+    }
+
+    routes = gpx.getElementsByTagName('rte');
+    for (var j = 0; j < routes.length; j++) {
+        drewTrail = addTrailPolyline(collectPointSequence(routes[j], 'rtept'), title) || drewTrail;
+    }
+
+    return drewTrail;
+}
+
+function loadTrail(trail) {
+    return fetch(trail.url)
+        .then(function(response) {
+            if (!response.ok) {
+                throw new Error('Could not load ' + trail.url);
+            }
+
+            return response.text();
+        })
+        .then(function(gpxText) {
+            return drawTrailFromGpx(gpxText, trail.title);
+        })
+        .catch(function(error) {
+            console.warn(error);
+            return false;
+        });
+}
+
+Promise.all(trailFiles.map(loadTrail)).then(function(results) {
+    var loadedTrails = results.filter(Boolean).length;
+
+    if (loadedTrails > 0 && trailBounds.isValid()) {
+        map.fitBounds(trailBounds, {
+            padding: [24, 24],
+            maxZoom: 10
+        });
+    }
+});
 
 var marker_icon = L.icon({
     iconUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/map_icon2.png',

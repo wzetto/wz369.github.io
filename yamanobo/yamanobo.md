@@ -56,4 +56,5 @@ layout: map_homepage
 
 <code style="background-color:#829460;">関西百名山</code> [\>\> 藤原岳](https://wzetto.github.io/wz369.github.io/yamanobo/fujiwara/fujiwara.html)
 
-### [\<\< HOME](https://wzetto.github.io/wz369.github.io/)
+### <a href="https://wzetto.github.io/wz369.github.io/"><img src="/images/icon/ico_detailarw_bk.svg" alt="back" style="height:0.9em; vertical-align:middle;"></a>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.125 6.375">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #1a1a1a;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="_デザイン" data-name="デザイン" transform="matrix(-0.75, 0, 0, 0.75, 10.125, 0)">
+    <g>
+      <polyline vector-effect="non-scaling-stroke" class="cls-1" points="9.27 1.66 12.76 4.9 9.27 8.13"/>
+      <polyline vector-effect="non-scaling-stroke" class="cls-1" points="12.53 4.9 .5 4.9 .5 0"/>
+    </g>
+  </g>
+</svg>

@@ -22,7 +22,7 @@ layout: formal_default
 <hr style="width:50px;text-align:left;margin-left:0">
 <iframe src="https://www.youtube.com/embed/e5llubuWXeo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen width="100%" height="400px"> </iframe>
 
-### [< back](https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html)
+### <a href="https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html"><img src="/images/icon/ico_detailarw_bk.svg" alt="back" style="height:0.9em; vertical-align:middle;"></a>
 
 <script>
   window.onload = function(){

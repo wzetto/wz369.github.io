@@ -67,6 +67,11 @@
       #tagMenu {
         padding: 5px;
       }
+
+      /* spacing between date block and essay title — change the value to adjust */
+      code[style*="background-color"] {
+        margin-right: 0.6em;
+      }
       
       .tagraw {
         display: inline-block;
@@ -74,8 +79,8 @@
         margin: 5px;
         background-color: white;
         color: black;
-        border: 2px solid black;
-        border-radius: 8px;
+        border: 1.5px solid black;
+        border-radius: 6px;
         cursor: pointer;
       }
 
@@ -118,15 +123,6 @@
     
     <!-- MAIN CONTENT -->
     <!-- scss format defined in #id term -->
-    <button onclick="topFunction()" id="back_top" title="Back to top">TOP</button>
-    <script src="https://wzetto.github.io/wz369.github.io/js/BackTop/bt_1.js"></script>
-
-    <button id="to_new" title="Scroll to updates">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16"> 
-        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/> 
-      </svg>
-    </button>
-    <script src="https://wzetto.github.io/wz369.github.io/js/bottom/to_new.js"></script>
 
     <script src="https://wzetto.github.io/wz369.github.io/js/gif/gifffer.min.js"></script>
     <script>
@@ -135,7 +131,7 @@
       }
     </script>
 <!--     Loading the navigation bar -->
-    <script src="https://wzetto.github.io/wz369.github.io/js/side/omoi_main.js"></script>
+    <script src="{{ '/js/side/omoi_main.js?v=' | append: site.github.build_revision | relative_url }}"></script>
 
     <div class="row">
       <div class="inner_left">
@@ -150,19 +146,17 @@
 
         {% for page in paper_pages %}
 
-          {% assign page_tags = page.tags | join: "," | split: "," %}
-          {% assign tags_array = tags_array | push: page.tags %}
-          {% assign titles_array = titles_array | push: page.title %}
-          {% assign filenames_array = filenames_array | push: page.filename %}
+          {% if page.tags and page.tags != empty and page.filename %}
+            {% assign page_tags = page.tags | join: "," | split: "," %}
+            {% assign tags_array = tags_array | push: page_tags %}
+            {% assign titles_array = titles_array | push: page.title %}
+            {% assign filenames_array = filenames_array | push: page.filename %}
+          {% endif %}
 
         {% endfor %}        
         
         <span style="line-height: 1.25;">
-          <h4 style="color:#6b6b6b">本</h4>
-          <div id="tagMenuBook"></div>
-          <hr style="width:40px;text-align:left;margin-left:0">
-          <h4 style="color:#6b6b6b">其他</h4>
-          <div id="tagMenuOthers"></div>
+          <div id="tagMenuAll"></div>
         </span>
         <br>
         <div id="feelLucky"></div>
@@ -182,6 +176,10 @@
 
           for (var i = 0; i < allTags.length; i++) {
             var tagNew = allTags[i];
+
+            if (!Array.isArray(tagNew)) {
+              continue;
+            }
 
             for (var j = 0; j < tagNew.length; j++) {
               var tag = tagNew[j];
@@ -205,10 +203,7 @@
 
           // Menu bar of tags
           let activatedTagIndices = [];
-          const tagMenuDiv = {
-            '本': document.getElementById('tagMenuBook'),
-            '其他': document.getElementById('tagMenuOthers'),
-          };
+          const tagMenuAll = document.getElementById('tagMenuAll');
 
           for (var z = 0; z < tagSequences.length; z++) {
             var menuDiv = document.createElement('div');
@@ -219,14 +214,12 @@
             menuDiv.id = tagDividRaw;
             menuDiv.classList.add('tagraw')
 
-            if (tagMenuDiv[splitTag]) {
-              if (splitTag === "author") {
-                menuDiv.innerHTML = ''+splitContent+'';
-              } else {
-                menuDiv.innerHTML = ''+tagSequences[z]+'';
-              }
-              tagMenuDiv[splitTag].appendChild(menuDiv);
+            if (splitTag === "author") {
+              menuDiv.innerHTML = ''+splitContent+'';
+            } else {
+              menuDiv.innerHTML = ''+tagSequences[z]+'';
             }
+            tagMenuAll.appendChild(menuDiv);
           }
           // Do statistics on tag.
           // Create an array to track tag status
@@ -246,17 +239,17 @@
 
           feelLuckyDiv.innerHTML = '<div class="container">\
             <button id="tagAny" style="color:#999999;background-color:#fff;\
-            border: 2.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+            border: 1.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
             font-size:16px;padding:0.5rem;display:inline-block;\
-            text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Any</button>&nbsp;\
+            text-align:center;border-radius: 6px;cursor: pointer;height: 40px;">Any</button>&nbsp;\
             <button id="tagFilter" style="color:#999999;background-color:#fff;\
-            border: 2.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+            border: 1.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
             font-size:16px;padding:0.5rem;display:inline-block;\
-            text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Common</button>&nbsp;\
+            text-align:center;border-radius: 6px;cursor: pointer;height: 40px;">Common</button>&nbsp;\
             <button style="color:#000;background-color:#fff;\
-            border: 2.5px solid #303030;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+            border: 1.5px solid #303030;box-shadow: 0 0 1px rgba(0,0,0,.1);\
             font-size:16px;padding:0.5rem;display:inline-block;\
-            text-align:center;border-radius: 8px;height: 40px;">\
+            text-align:center;border-radius: 6px;height: 40px;">\
             <a href="'+permalink+'">手气不错</a></button></div>';
 
           //Count activated tags
@@ -290,32 +283,32 @@
               if (activatedTagIndices.length >= 1) {
                 feelLuckyDiv.innerHTML = '<div class="container">\
                   <button id="tagAny" style="color:#fff;background-color:#000;\
-                  border: 2.5px solid #000;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                  border: 1.5px solid #000;box-shadow: 0 0 1px rgba(0,0,0,.1);\
                   font-size:16px;padding:0.5rem;display:inline-block;\
-                  text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Any</button>&nbsp;\
+                  text-align:center;border-radius: 6px;cursor: pointer;height: 40px;">Any</button>&nbsp;\
                   <button id="tagFilter" style="color:#fff;background-color:#000;\
-                  border: 2.5px solid #000;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                  border: 1.5px solid #000;box-shadow: 0 0 1px rgba(0,0,0,.1);\
                   font-size:16px;padding:0.5rem;display:inline-block;\
-                  text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Common</button>&nbsp;\
+                  text-align:center;border-radius: 6px;cursor: pointer;height: 40px;">Common</button>&nbsp;\
                   <button style="color:#000;background-color:#fff;\
-                  border: 2.5px solid #303030;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                  border: 1.5px solid #303030;box-shadow: 0 0 1px rgba(0,0,0,.1);\
                   font-size:16px;padding:0.5rem;display:inline-block;\
-                  text-align:center;border-radius: 8px;height: 40px;">\
+                  text-align:center;border-radius: 6px;height: 40px;">\
                   <a href="'+permalink+'">手气不错</a></button></div>';
               } else {
                 feelLuckyDiv.innerHTML = '<div class="container">\
                   <button id="tagAny" style="color:#999999;background-color:#fff;\
-                  border: 2.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                  border: 1.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
                   font-size:16px;padding:0.5rem;display:inline-block;\
-                  text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Any</button>&nbsp;\
+                  text-align:center;border-radius: 6px;cursor: pointer;height: 40px;">Any</button>&nbsp;\
                   <button id="tagFilter" style="color:#999999;background-color:#fff;\
-                  border: 2.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                  border: 1.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
                   font-size:16px;padding:0.5rem;display:inline-block;\
-                  text-align:center;border-radius: 8px;cursor: pointer;height: 40px;">Common</button>&nbsp;\
+                  text-align:center;border-radius: 6px;cursor: pointer;height: 40px;">Common</button>&nbsp;\
                   <button style="color:#000;background-color:#fff;\
-                  border: 2.5px solid #303030;box-shadow: 0 0 1px rgba(0,0,0,.1);\
+                  border: 1.5px solid #303030;box-shadow: 0 0 1px rgba(0,0,0,.1);\
                   font-size:16px;padding:0.5rem;display:inline-block;\
-                  text-align:center;border-radius: 8px;height: 40px;">\
+                  text-align:center;border-radius: 6px;height: 40px;">\
                   <a href="'+permalink+'">手气不错</a></button></div>';
               }
 
@@ -455,7 +448,7 @@
         <p style="text-align: center;">
           <img src="https://drive.google.com/thumbnail?id=1hcY5U4qLbe6QHDNCK6wzERxcDnTxm0Dp&sz=w800" width="200px"/>
         </p>
-        <h6 align='center'>Zhi Wang © 2021-2026 Design & Maintain</h6>
+        <h6 align='center'>Zhi Wang © 2021-2026</h6>
       </div>
         <div class="inner_right">
           <div id="date-container"></div>
