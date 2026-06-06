@@ -24,4 +24,4 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_tiewadian.js
 <img src="https://drive.google.com/thumbnail?id=1rTnf-0n2NvUxufAQNeicUGXBmMazIgbf&sz=w800" />
 <hr style="width:50px;text-align:left;margin-left:0">
 另，顶上垃圾成群，蝇虫乱飞。良好的户外环境需要多方构建。<br>
-#### [< back](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
+#### <a href="https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html"><img src="https://wzetto.github.io/wz369.github.io/images/icon/ico_detailarw_bk.svg" alt="back" style="height:0.9em; vertical-align:middle;"></a>

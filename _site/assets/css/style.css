@@ -254,7 +254,7 @@ Full-Width Styles
 
 #fullwidthimg { max-width: 100%; /*origin: no height definition*/ padding: 20px 10px; margin: 0 auto; }
 
-#bottom_text { color: #f2f2f2; position: absolute; bottom: 0; width: 100%; text-align: center; }
+#bottom_text { color: #f2f2f2; position: absolute; left: 0; bottom: 0; width: 100%; text-align: center; }
 
 #back_top { /*change into center solid*/ display: none; position: fixed; z-index: 5; right: 5%; bottom: 5%; background-color: #f2f2f2; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", Meiryo, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK JP", "Source Han Sans JP"; font-size: 16px; color: #303030; cursor: pointer; border: 1.5px solid #303030; border-radius: 4.5px; padding: 5px; transition: 0.4s; }
 
@@ -274,7 +274,7 @@ Full-Width Styles
 
 #header_pages { position: sticky; top: 0; max-width: 100%; max-height: 200%; /*background-size: cover;*/ height: 100%; width: auto; /*Additional*/ background: rgba(33, 33, 33, 0.85); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); transition: 0.5s; z-index: 5; }
 
-#project_title { margin: 0; color: #fff; font-size: 34px; /*Additional*/ position: relative; top: 5%; left: 10%; font-weight: 700; transition: 0.5s; /*text-shadow: #111 0px 0px 10px;*/ }
+#project_title { margin: 0; color: #fff; font-size: 34px; /*Additional*/ position: relative; top: 5%; left: auto; margin-left: 10%; font-weight: 700; transition: 0.5s; /*text-shadow: #111 0px 0px 10px;*/ }
 
 #project_tagline { color: #dbdbdb; font-size: 18px; font-weight: 500; margin: 20px; display: inline-block; background: rgba(33, 33, 33, 0.6); /*text-shadow: #212121 0px 0px 14px;*/ }
 
@@ -320,7 +320,7 @@ Small Device Styles
 @media screen and (max-width: 992px) { img { max-width: 100%; } }
 @media screen and (max-width: 480px) { body { font-size: 14px; }
   #downloads { display: none; }
-  #project_title { margin: 0; color: #fff; font-size: 24px; /*追加*/ position: relative; top: 5%; left: 0%; font-weight: 700; transition: 0.5s; /*text-shadow: #111 0px 0px 10px;*/ }
+  #project_title { margin: 0; color: #fff; font-size: 24px; /*追加*/ position: relative; top: 5%; left: auto; margin-left: 0; font-weight: 700; transition: 0.5s; /*text-shadow: #111 0px 0px 10px;*/ }
   .inner { min-width: 320px; max-width: 100%; }
   .inner_left { min-width: 320px; max-width: 100%; width: 100%; margin-left: 5%; margin-right: 5%; }
   .inner_right { display: none; }
@@ -337,7 +337,7 @@ Small Device Styles
   #downloads { display: none; }
   .inner { min-width: 240px; max-width: 100%; }
   .inner_top { max-width: 100%; min-width: 240px; /*origin: no height definition*/ margin: 0 auto; transition: 0.5s; }
-  #project_title { margin: 0; color: #fff; font-size: 21px; /*追加*/ position: relative; top: 5%; left: 0%; font-weight: 700; transition: 0.5s; /*text-shadow: #111 0px 0px 10px;*/ }
+  #project_title { margin: 0; color: #fff; font-size: 21px; /*追加*/ position: relative; top: 5%; left: auto; margin-left: 0; font-weight: 700; transition: 0.5s; /*text-shadow: #111 0px 0px 10px;*/ }
   h1 { font-size: 21px; }
   h2 { font-size: 21px; }
   h3 { font-size: 18px; }

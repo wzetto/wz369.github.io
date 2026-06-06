@@ -2,6 +2,8 @@
 title: Paraponera Clavata
 layout: formal_default
 omoicomment: true
+tags:
+- 其他/随笔
 filename: 2026-5-10paraponera_clavata
 ---
 
@@ -77,7 +79,7 @@ QWEN 3.6 35B 轮椅。放弃思考这块。
 
 <img src="https://drive.google.com/thumbnail?id=1fqHKXc9CJLYEmMjMgWn1ostVcTsEjfCE&sz=w2800" width="600px" />
 
-### [< back](https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html)
+### <a href="https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html"><img src="https://wzetto.github.io/wz369.github.io/images/icon/ico_detailarw_bk.svg" alt="back" style="height:0.9em; vertical-align:middle;"></a>
 
 <script>
   window.onload = function(){

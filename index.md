@@ -2,19 +2,44 @@
 title: 'wz'
 layout: default
 ---
-<h1>记录想法和爬山等</h1>
 
 <img src="https://drive.google.com/thumbnail?id=1eNW-8aKNSI5Qk6-37yjbJ3BbMWyYodFY&sz=w2400"  width="1200px"><br>
-<h4>Archive</h4>
 
-- [Cluster Expansion (CE)-related models](https://wzetto.github.io/wz369.github.io/Research_etc/MSAD/research_on_MSAD.html)<br>
-- [(personal) SQS-drl](https://shinkansen2.jr-central.co.jp/)<br>
+<style>
+  .home-essay-nav {
+    --home-subtitle-gap: 28px;
+    --home-subtitle-font-size: 16px;
+    display: flex;
+    align-items: flex-start;
+    column-gap: var(--home-subtitle-gap);
+  }
+
+  .home-essay-nav h4,
+  .home-essay-nav-links {
+    margin: 14px 0;
+  }
+
+  .home-essay-nav-links a {
+    display: block;
+    font-size: var(--home-subtitle-font-size);
+  }
+</style>
+
+<div class="home-essay-nav">
+  <h4>随笔</h4>
+  <div class="home-essay-nav-links">
+    <a href="https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html">爬山</a>
+    <a href="https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html">想法</a>
+  </div>
+</div>
+
+<!-- <h5>Archive</h5> -->
+
+<!-- [Cluster Expansion (CE)-related models](https://wzetto.github.io/wz369.github.io/Research_etc/MSAD/research_on_MSAD.html)<br> -->
+<!-- [(personal) SQS-drl](https://shinkansen2.jr-central.co.jp/)<br> -->
 <!-- https://wzetto.github.io/wz369.github.io/Research_etc/SQS_drl/Introduction.html -->
-- [Paper Collection](https://wzetto.github.io/wz369.github.io/Research_etc/PaperCollect/main.html)
-<h4>随笔</h4>
+<!-- [Paper Collection](https://wzetto.github.io/wz369.github.io/Research_etc/PaperCollect/main.html) -->
 
-- [爬山](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
-- [想法](https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html)
 <!-- <hr style="width:20px;text-align:left;margin-left:0"> -->
 <br>
 <!-- <h6 style="text-align:center">----工事ちゅう----</h6> -->

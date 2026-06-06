@@ -26,4 +26,4 @@ filename: 2022-6-25eldenring
 
 另一个有趣的点，在游玩过程中，‘打完这个BOSS就去睡觉’这种强行投射在彼方的欲望，似乎颇具后现代性。这么说来，我还真能在法环世界投射出一个褪色人分身(笑
 
-### [< back](https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html)
+### <a href="https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html"><img src="https://wzetto.github.io/wz369.github.io/images/icon/ico_detailarw_bk.svg" alt="back" style="height:0.9em; vertical-align:middle;"></a>

@@ -1,13 +1,126 @@
+---
+---
+
 var map = L.map('map_home').setView([35.023151, 135.804174], 13);
 
-L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid3pldHRvIiwiYSI6ImNreHVnMTRuODVzdW4yeXFxYTgxM3dyanUifQ.lOyz4mpFDxjWo7qWeq6AYA', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset: -1,
-    accessToken: 'your.mapbox.access.token'
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom: 18
 }).addTo(map);
+
+var trailFiles = [
+{% for trail in site.static_files %}
+{% if trail.path contains '/yamanobo/' and trail.extname == '.gpx' %}
+    {
+        url: {{ trail.path | relative_url | jsonify }},
+        title: {{ trail.name | replace: '.gpx', '' | jsonify }}
+    },
+{% endif %}
+{% endfor %}
+];
+
+var trailLayer = L.featureGroup().addTo(map);
+var trailBounds = L.latLngBounds();
+
+function pointFromGpxElement(point) {
+    var lat = Number(point.getAttribute('lat'));
+    var lon = Number(point.getAttribute('lon'));
+
+    if (!Number.isFinite(lat) || !Number.isFinite(lon)) {
+        return null;
+    }
+
+    return [lat, lon];
+}
+
+function collectPointSequence(parent, tagName) {
+    var sequence = [];
+    var points = parent.getElementsByTagName(tagName);
+
+    for (var i = 0; i < points.length; i++) {
+        var point = pointFromGpxElement(points[i]);
+
+        if (point) {
+            sequence.push(point);
+        }
+    }
+
+    return sequence;
+}
+
+function addTrailPolyline(sequence, title) {
+    if (sequence.length < 2) {
+        return false;
+    }
+
+    var line = L.polyline(sequence, {
+        color: '#DC143C',
+        weight: 3,
+        opacity: 0.85,
+        smoothFactor: 2.0
+    }).bindPopup('<b>' + title + '</b>');
+
+    line.addTo(trailLayer);
+    trailBounds.extend(line.getBounds());
+    return true;
+}
+
+function drawTrailFromGpx(gpxText, title) {
+    var gpx = new DOMParser().parseFromString(gpxText, 'text/xml');
+    var parserError = gpx.getElementsByTagName('parsererror');
+    var drewTrail = false;
+    var segments;
+    var routes;
+
+    if (parserError.length > 0) {
+        return false;
+    }
+
+    segments = gpx.getElementsByTagName('trkseg');
+    for (var i = 0; i < segments.length; i++) {
+        drewTrail = addTrailPolyline(collectPointSequence(segments[i], 'trkpt'), title) || drewTrail;
+    }
+
+    if (segments.length === 0) {
+        drewTrail = addTrailPolyline(collectPointSequence(gpx, 'trkpt'), title) || drewTrail;
+    }
+
+    routes = gpx.getElementsByTagName('rte');
+    for (var j = 0; j < routes.length; j++) {
+        drewTrail = addTrailPolyline(collectPointSequence(routes[j], 'rtept'), title) || drewTrail;
+    }
+
+    return drewTrail;
+}
+
+function loadTrail(trail) {
+    return fetch(trail.url)
+        .then(function(response) {
+            if (!response.ok) {
+                throw new Error('Could not load ' + trail.url);
+            }
+
+            return response.text();
+        })
+        .then(function(gpxText) {
+            return drawTrailFromGpx(gpxText, trail.title);
+        })
+        .catch(function(error) {
+            console.warn(error);
+            return false;
+        });
+}
+
+Promise.all(trailFiles.map(loadTrail)).then(function(results) {
+    var loadedTrails = results.filter(Boolean).length;
+
+    if (loadedTrails > 0 && trailBounds.isValid()) {
+        map.fitBounds(trailBounds, {
+            padding: [24, 24],
+            maxZoom: 10
+        });
+    }
+});
 
 var marker_icon = L.icon({
     iconUrl: 'https://wzetto.github.io/wz369.github.io/images/icon/map_icon2.png',

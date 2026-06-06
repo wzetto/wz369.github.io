@@ -118,14 +118,19 @@ function indexOfMax(arr) {
     if (arr.length === 0) {
         return -1;
     }
-    var max = arr[0];
+
+    var max = Number(arr[0]);
     var maxIndex = 0;
+
     for (var i = 1; i < arr.length; i++) {
-        if (arr[i] > max) {
+        var value = Number(arr[i]);
+
+        if (Number.isFinite(value) && value > max) {
             maxIndex = i;
-            max = arr[i];
+            max = value;
         }
     }
+
     return maxIndex;
 }
 

@@ -447,6 +447,7 @@ Full-Width Styles
 #bottom_text {
 	color: #f2f2f2;
 	position: absolute;
+  left: 0;
 	bottom: 0;
 	width: 100%;
 	text-align: center;
@@ -561,7 +562,8 @@ Full-Width Styles
   /*Additional*/
   position: relative;
   top: 5%;
-  left: 10%;
+  left: auto;
+  margin-left: 10%;
   font-weight: 700;
   transition: 0.5s;
   /*text-shadow: #111 0px 0px 10px;*/
@@ -716,7 +718,8 @@ Small Device Styles
 	  /*追加*/
 	  position: relative;
 	  top: 5%;
-	  left: 0%;
+    left: auto;
+    margin-left: 0;
 	  font-weight: 700;
 	  transition: 0.5s;
 	  /*text-shadow: #111 0px 0px 10px;*/
@@ -810,7 +813,8 @@ Small Device Styles
 	  /*追加*/
 	  position: relative;
 	  top: 5%;
-	  left: 0%;
+    left: auto;
+    margin-left: 0;
 	  font-weight: 700;
 	  transition: 0.5s;
 	  /*text-shadow: #111 0px 0px 10px;*/

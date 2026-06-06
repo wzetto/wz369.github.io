@@ -22,4 +22,4 @@ js_url: https://wzetto.github.io/wz369.github.io/js/map_baihaizi.js
 <img src="https://drive.google.com/thumbnail?id=1-BvppG3MXrTL9QhN4jArsqT4yhNpBik3&sz=w800" />
 <hr style="width:50px;text-align:left;margin-left:0">
 
-#### [< back](https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html)
+#### <a href="https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html"><img src="https://wzetto.github.io/wz369.github.io/images/icon/ico_detailarw_bk.svg" alt="back" style="height:0.9em; vertical-align:middle;"></a>
