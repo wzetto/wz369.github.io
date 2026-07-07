@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="image/png" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
     <link rel="shortcut icon" sizes="192x192" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
     <link rel="apple-touch-icon" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=4b47541cda8f4a2de7517fc73504f023220d525a">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=8a1a6efc2834c318b7bb5602fcf6e7cc4072bbeb">
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>想法等 | wz369.github.io</title>
 <meta name="generator" content="Jekyll v3.10.0" />
@@ -75,59 +75,6 @@
     <!--* define some css style -->
     <style>
 
-      .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      #tagMenu {
-        padding: 5px;
-      }
-
-      /* spacing between date block and essay title — change the value to adjust */
-      code[style*="background-color"] {
-        margin-right: 0.6em;
-      }
-      
-      .tagraw {
-        display: inline-block;
-        padding: 3px 3px;
-        margin: 5px;
-        background-color: white;
-        color: black;
-        border: 1.5px solid black;
-        border-radius: 6px;
-        cursor: pointer;
-      }
-
-      .tagraw.active {
-        background-color: black;
-        color: white;
-      }
-      
-      .tagraw.deactive {
-        background-color: white;
-        color: black;
-      }
-
-      .tagraw:hover::after {
-        color: #000000;
-        transition: color 0.3s ease;
-      }
-
-      .tagraw:hover, a:focus {
-        text-decoration: none;
-        color: #da3450;
-        transition: color 0.3s ease;
-      }
-
-      .tagraw::selection {
-        background: #da3450;
-        color: #fff;
-      }
-      
-/*       side bar click event define */
       .clickable-text {
         color: #000000;
         cursor: pointer;
@@ -135,6 +82,157 @@
 
       .clickable-text:hover {
         text-decoration: underline;
+      }
+
+      .omoi-month-anchor {
+        display: block;
+        height: 0;
+        line-height: 0;
+      }
+
+      #omoiTimelineContent h5 {
+        margin: 1.75em 0 0.35em 0;
+        color: #202020;
+        font-size: 1.65em;
+        font-weight: 800;
+        line-height: 1.15;
+      }
+
+      #omoiTimelineContent h5:first-child {
+        margin-top: 0.9em;
+      }
+
+      #omoiTimelineContent .omoi-month-title {
+        margin: 0.75em 0 0.25em 0.35em;
+        color: #71717a;
+        font-size: 0.95em;
+        font-weight: 300;
+        line-height: 1.2;
+      }
+
+      #omoiTimelineContent p {
+        margin: 0.15em 0 0.55em;
+        line-height: 1.7;
+      }
+
+      #omoiTimelineContent code[style*="background-color"] {
+        display: inline-block;
+        margin-left: 1.15em;
+        margin-right: 0.6em;
+        padding: calc(0.12em + 1px) 0.28em;
+        box-sizing: border-box;
+        color: #f2f2f2;
+        font-size: 0.86em;
+        line-height: 1.05;
+        vertical-align: 0.06em;
+        border-radius: 4px;
+      }
+
+      .essay-theme-graph {
+        position: relative;
+        width: 100%;
+        min-height: 360px;
+        margin: 0 0 24px;
+        background: #f2f2f2;
+        overflow: hidden;
+      }
+
+      .essay-theme-graph.is-hidden {
+        display: none;
+      }
+
+      .essay-graph-toggle {
+        display: inline-block;
+        margin: 0 0 8px;
+        padding: 3px 6px;
+        border: 1.5px solid #202020;
+        border-radius: 4px;
+        background: #fff;
+        color: #202020;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+          "Noto Sans", "Liberation Sans",
+          "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", Meiryo,
+          "PingFang SC", "Microsoft YaHei",
+          "Noto Sans CJK JP", "Source Han Sans JP",
+          sans-serif;
+        font-size: 14px;
+        line-height: 1.35;
+        box-shadow: 0 0 10px rgba(0,0,0,.1);
+        cursor: pointer;
+      }
+
+      .essay-graph-toggle + .essay-graph-toggle {
+        margin-left: 6px;
+      }
+
+      .essay-graph-toggle.is-active {
+        color: #fff;
+        background: #202020;
+      }
+
+      .essay-theme-graph svg {
+        display: block;
+        width: 100%;
+        height: 420px;
+      }
+
+      .essay-theme-graph .link {
+        stroke: #cfcfcf;
+        stroke-opacity: 0.72;
+      }
+
+      .essay-theme-graph .node {
+        cursor: pointer;
+      }
+
+      .essay-theme-graph .theme-node {
+        stroke: #303030;
+        stroke-width: 1.5px;
+      }
+
+      .essay-theme-graph .essay-node {
+        stroke: #f2f2f2;
+        stroke-width: 1.4px;
+        opacity: 0.68;
+        transition: opacity 0.2s ease;
+      }
+
+      .essay-theme-graph .essay-node:hover {
+        opacity: 1;
+      }
+
+      .essay-theme-graph .node-label {
+        fill: #202020;
+        font-size: 11px;
+        pointer-events: none;
+        paint-order: stroke;
+        stroke: #f2f2f2;
+        stroke-width: 3px;
+        stroke-linejoin: round;
+      }
+
+      .essay-theme-graph .theme-label {
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      .essay-theme-graph-empty {
+        padding: 24px;
+        color: #777;
+      }
+
+      @media screen and (max-width: 720px) {
+        .essay-theme-graph {
+          min-height: 300px;
+        }
+
+        .essay-theme-graph svg {
+          height: 340px;
+        }
+
+        .essay-theme-graph .node-label {
+          font-size: 10px;
+        }
       }
     </style>
     
@@ -148,313 +246,357 @@
       }
     </script>
 <!--     Loading the navigation bar -->
-    <script src="/js/side/omoi_main.js?v=4b47541cda8f4a2de7517fc73504f023220d525a"></script>
+    <script src="/js/side/omoi_main.js?v=8a1a6efc2834c318b7bb5602fcf6e7cc4072bbeb"></script>
 
     <div class="row">
       <div class="inner_left">
-        
-        <h6 style="position: absolute; top: 0; right: 0; padding: 5px;"> Friedrich "The Sea of Ice" </h6>
-        
-        
-        <!-- *Extract tags array -->
-        
-        
-        
+        <h6 style="position: absolute; top: 0; right: 0; padding: 5px;"> Friedrich "The Sea of Ice" </h6><button id="essayGraphToggle" class="essay-graph-toggle" type="button">Graph OFF</button>
+        <button id="essayLuckyButton" class="essay-graph-toggle" type="button">手气不错</button>
+        <div id="essayThemeGraph" class="essay-theme-graph is-hidden"></div>
 
-                
-        
-        <span style="line-height: 1.25;">
-          <div id="tagMenuAll"></div>
-        </span>
-        <br>
-        <div id="feelLucky"></div>
-        <br>
-        <div id="filterBlock"></div>
-        <!-- <div id="tagBlock"></div> -->
-
+        <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
         <script>
 
-          <!-- *convert liquid array to javascript array -->
-          var allTags = [["其他/随笔"],["其他/随笔"],["其他/随笔"],["其他/随笔"],["其他/随笔"],["本/社科"],["本/方法论","本/哲学"],["本/哲学","本/方法论"],["其他/日落和大文字"],["其他/欣赏"],["本/哲学","本/艺术"],["其他/随笔"],["其他/日落和大文字"],["其他/随笔","其他/欣赏"],["其他/meme"],["其他/欣赏"],["本/🎮"],["本/社科"],["其他/日落和大文字"],["本/社科"],["本/社科"],["其他/随笔"],["其他/日落和大文字"],["本/社科"],["本/社科"],["其他/随笔"],["其他/随笔"],["其他/随笔"],["本/社科"],["本/🎮"],["其他/随笔"],["本/社科"],["其他/随笔"],["其他/随笔"],["其他/随笔"],["其他/日落和大文字"],["其他/随笔","其他/欣赏"],["本/社科"],["其他/随笔"],["其他/随笔"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/随笔"],["其他/日落和大文字"],["其他/欣赏"],["其他/meme"],["其他/随笔"],["其他/日落和大文字"],["其他/随笔"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/随笔","其他/欣赏"],["本/科幻"],["本/社科"],["其他/随笔"],["其他/日落和大文字"],["本/🎮"],["其他/meme"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/欣赏"],["本/社科"],["其他/meme"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["本/哲学"],["其他/日落和大文字"],["本/其他"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字","其他/随笔"],["其他/日落和大文字"],["其他/随笔"],["其他/随笔","其他/日落和大文字"],["其他/欣赏"],["其他/随笔"],["其他/日落和大文字"],["其他/随笔","其他/日落和大文字"],["本/🎮"],["本/🎮"],["本/科幻"],["本/科幻"],["其他/日落和大文字"],["本/其他"],["其他/日落和大文字"],["本/🎮"],["本/其他"],["其他/日落和大文字"],["本/🎮"],["本/🎮"],["本/🎮"],["本/🎮"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/随笔"],["其他/随笔"],["本/🎮"],["其他/随笔"]];
-          var allTitles = ["2022.1.12","2022.1.15","2022.1.19","2022.1.20","2022.1.25","2022.10.10 小词典","2022.10.19 读书笔记","2022.10.23 读书笔记~序","2022.10.28 日落","Flowers","2022.10.30 读书笔记","2022.10.5 构图实验","2022.10.6 日落","2022.10.10 Eine Alpensinfonie","2022.11.14 meme","2022.10.19 Pini di roma","通关纪念！","2022.12.20 读书笔记","2022.12.6 From room 732","2022.2.12读书笔记","2022.2.22读书笔记","2022.2.9","2022.3.11大文字","2022.3.12读书笔记","2022.3.23读书笔记","2022.3.8东方市","2022.4.12进度","2022.4.1田","2022.5.19读书笔记","2022.6.25通关","2022.7.15无法到达","2022.8.17读书笔记","2022.8.27Danse Macabre","2022.8.28 Godskin Apostles","2022.8.30 叉烧爽度","2022.8.1日落","2022.8.6","2022.9.12 读书笔记","2022.9.17 生死于时光机","2022.9.1 坐过站！","2022.9.25 ここすき","2022.9.30 日落","2022.9.4 毁灭","2022.9.7 日落","2022.9.8 Rocky Reef On The Seashore","meme","Signal","2023.1.27 From room 732","2023.1.8","2023.10.30","2023.11.3","2023.11.19","2023.11.30","2023.12.03","2023.12.10","2023.12.26","2023.2.26充数","2023.3.21 读书笔记","2023.3.7 读书笔记",":)","2023.4.21 日落?","2023.6.25 读书笔记?","晴天娃娃","2023.8.16 五山送り火","2023.8.4","The Titan's Goblet","2023.9.23 读书笔记","meme","2024.1.1","2024.10.06","2024.10.19","2024.10.26","2024.10.7 读书笔记","2024.11.21","2024.11.24 读书笔记","2024.11.4","2024.12.27","2024.2.11","2024.2.18","2024.2.4","2024.3.21","2024.6.10","La Parque et l'ange de la mort (The Parca and the Angel of Death)","2024.6.8川西","2024.8.20","2024.8.20","2024.9.22 读书笔记?","2024.9.22 读书笔记?","2024.9.22 读书笔记","读书笔记","2025.1.13","2024.11.24 读书笔记","2025.12.1","2025.12.28 读书笔记?","2025.12.30读书笔记","2025.2.15","2025.2.18　推し！","2025.4.7 读书笔记?","2025.5.6 读书笔记?","2025.7.28 读书笔记?","2025.8.22","2025.9.30","2026.3.24","2026.2.3","2026.2.9","2026.5.10","Paraponera Clavata","2026.6.14","Paraponera clavata"];
-          var allFilenames = ["2022-1-12尖山子","2022-1-15风景","2022-1-19自行车","2022-1-20液氮液面","2022-1-25环形山","2022-10-10小词典","2022-10-19谈谈方法","2022-10-23纯粹理性批判re1","2022-10-28日落","2022-10-29flowers","2022-10-30andy_warhol_re","2022-10-5构图实验","2022-10-6日落","2022-11-10eine_alpensinfonie","2022-11-14meme","2022-11-19pini_di_roma","2022-11-3bloodborne","2022-12-20消费社会","2022-12-6room732","2022-2-12虚構時代の果て_re_1","2022-2-22虚構時代の果て_re_2","2022-2-9rough","2022-3-11大文字","2022-3-12虚構時代の果て_re_3","2022-3-23哈贝马斯导读","2022-3-8东方市","2022-4-12","2022-4-1田","2022-5-19虚構時代の果て_re_4","2022-6-25eldenring","2022-7-15山顶","2022-8-17历史的终结与最后的人~re","2022-8-27Danse_macabre","2022-8-28godskin_apostles","2022-8-30chashugamma","2022-8-3日落","2022-8-6双王子","2022-9-12虚構の時代の果てre5","2022-9-17生死于时光机","2022-9-1坐过站","2022-9-25ここすき","2022-9-30日落","2022-9-4毁灭","2022-9-7日落","2022-9-8RockyReefOnTheSeashore","2023-1-11meme","2023-1-15红绿灯","2023-1-27from732","2023-1-8Castoria","2023-10-30大文字","2023-11-03大文字","2023-11-19大文字","2023-11-30大文字","2023-12-03茅场","2023-12-10大文字","2023-12-26大文字","2023-2-26充数","2023-3-26献给阿尔吉侬的花束","2023-3-7新教伦理","2023-4-17土味homekit","2023-4-21大文字","2023-6-25奏章1","2023-8-14meme","2023-8-16大文字","2023-8-5赞美太阳","2023-9-11titan_goblet","2023-9-23跨越边界的社区","2024-1-18meme","2024-1-1贡嘎","2024-10-06大文字(秋","2024-10-19大文字","2024-10-26大文字","2024-10-7德勒兹_尼采与哲学","2024-11-21大文字","2024-11-24失去的二十年","2024-11-4大文字","2024-12-27大文字","2024-2-12大文字（雾）","2024-2-18脚力","2024-2-4大文字","2024-3-21脚力","2024-6-10脚力3","2024-6-8パルクと死の天使","2024-6-8川西","2024-8-20大文字","2024-8-20脚力4","2024-9-22fgo奏章3","2024-9-22fgo奏章3","2024-9-22メソポタミアの神話","2024-9-22银河系漫游指南","2025-1-14大文字3!!","2025-1-27疯狂山脉","2025-12-1大文字","2025-12-28fgo终章","2025-12-30奥德赛.md","2025-2-15大文字","2025-2-18推し","2025-4-7无限机兵","2025-5-6奏章4","2025-7-28鳴潮2_6","2025-8-22大文字","2025-9-30大文字","2026-3-24phdsummary","2026-2-3大文字","2026-2-9大文字","2026-5-10GW","2026-5-10paraponera_clavata","2026-6-14鳴潮","2026-6-28bulletant_mandiblesimu"];
+          var essayGraphTags = [["其他/随笔"],["其他/随笔"],["其他/随笔"],["其他/随笔"],["其他/随笔"],["本/社科"],["本/方法论","本/哲学"],["本/哲学","本/方法论"],["其他/日落和大文字"],["其他/欣赏"],["本/哲学","本/艺术"],["其他/随笔"],["其他/日落和大文字"],["其他/随笔","其他/欣赏"],["其他/meme"],["其他/欣赏"],["本/🎮"],["本/社科"],["其他/日落和大文字"],["本/社科"],["本/社科"],["其他/随笔"],["其他/日落和大文字"],["本/社科"],["本/社科"],["其他/随笔"],["其他/随笔"],["其他/随笔"],["本/社科"],["本/🎮"],["其他/随笔"],["本/社科"],["其他/随笔"],["其他/随笔"],["其他/随笔"],["其他/日落和大文字"],["其他/随笔","其他/欣赏"],["本/社科"],["其他/随笔"],["其他/随笔"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/随笔"],["其他/日落和大文字"],["其他/欣赏"],["其他/meme"],["其他/随笔"],["其他/日落和大文字"],["其他/随笔"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/随笔","其他/欣赏"],["本/科幻"],["本/社科"],["其他/随笔"],["其他/日落和大文字"],["本/🎮"],["其他/meme"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/欣赏"],["其他/meme"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字","其他/随笔"],["其他/日落和大文字"],["其他/随笔"],["其他/随笔","其他/日落和大文字"],["其他/欣赏"],["其他/随笔"],["其他/日落和大文字"],["其他/随笔","其他/日落和大文字"],["本/🎮"],["其他/日落和大文字"],["本/其他"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/日落和大文字"],["其他/随笔"],["其他/随笔"],["其他/随笔"]];
+          var essayGraphTitles = ["2022.1.12","2022.1.15","2022.1.19","2022.1.20","2022.1.25","2022.10.10 小词典","2022.10.19 读书笔记","2022.10.23 读书笔记~序","2022.10.28 日落","Flowers","2022.10.30 读书笔记","2022.10.5 构图实验","2022.10.6 日落","2022.10.10 Eine Alpensinfonie","2022.11.14 meme","2022.10.19 Pini di roma","通关纪念！","2022.12.20 读书笔记","2022.12.6 From room 732","2022.2.12读书笔记","2022.2.22读书笔记","2022.2.9","2022.3.11大文字","2022.3.12读书笔记","2022.3.23读书笔记","2022.3.8东方市","2022.4.12进度","2022.4.1田","2022.5.19读书笔记","2022.6.25通关","2022.7.15无法到达","2022.8.17读书笔记","2022.8.27Danse Macabre","2022.8.28 Godskin Apostles","2022.8.30 叉烧爽度","2022.8.1日落","2022.8.6","2022.9.12 读书笔记","2022.9.17 生死于时光机","2022.9.1 坐过站！","2022.9.25 ここすき","2022.9.30 日落","2022.9.4 毁灭","2022.9.7 日落","2022.9.8 Rocky Reef On The Seashore","meme","Signal","2023.1.27 From room 732","2023.1.8","2023.10.30","2023.11.3","2023.11.19","2023.11.30","2023.12.03","2023.12.10","2023.12.26","2023.2.26充数","2023.3.21 读书笔记","2023.3.7 读书笔记",":)","2023.4.21 日落?","2023.6.25 读书笔记?","晴天娃娃","2023.8.16 五山送り火","2023.8.4","The Titan's Goblet","meme","2024.1.1","2024.10.06","2024.10.19","2024.10.26","2024.11.21","2024.11.4","2024.12.27","2024.2.11","2024.2.18","2024.2.4","2024.3.21","2024.6.10","La Parque et l'ange de la mort (The Parca and the Angel of Death)","2024.6.8川西","2024.8.20","2024.8.20","2024.9.22 读书笔记?","2025.1.13","2024.11.24 读书笔记","2025.12.1","2025.2.15","2025.8.22","2025.9.30","2026.2.3","2026.2.9","2026.5.10","Paraponera Clavata","Paraponera clavata"];
+          var essayGraphFilenames = ["2022-1-12尖山子","2022-1-15风景","2022-1-19自行车","2022-1-20液氮液面","2022-1-25环形山","2022-10-10小词典","2022-10-19谈谈方法","2022-10-23纯粹理性批判re1","2022-10-28日落","2022-10-29flowers","2022-10-30andy_warhol_re","2022-10-5构图实验","2022-10-6日落","2022-11-10eine_alpensinfonie","2022-11-14meme","2022-11-19pini_di_roma","2022-11-3bloodborne","2022-12-20消费社会","2022-12-6room732","2022-2-12虚構時代の果て_re_1","2022-2-22虚構時代の果て_re_2","2022-2-9rough","2022-3-11大文字","2022-3-12虚構時代の果て_re_3","2022-3-23哈贝马斯导读","2022-3-8东方市","2022-4-12","2022-4-1田","2022-5-19虚構時代の果て_re_4","2022-6-25eldenring","2022-7-15山顶","2022-8-17历史的终结与最后的人~re","2022-8-27Danse_macabre","2022-8-28godskin_apostles","2022-8-30chashugamma","2022-8-3日落","2022-8-6双王子","2022-9-12虚構の時代の果てre5","2022-9-17生死于时光机","2022-9-1坐过站","2022-9-25ここすき","2022-9-30日落","2022-9-4毁灭","2022-9-7日落","2022-9-8RockyReefOnTheSeashore","2023-1-11meme","2023-1-15红绿灯","2023-1-27from732","2023-1-8Castoria","2023-10-30大文字","2023-11-03大文字","2023-11-19大文字","2023-11-30大文字","2023-12-03茅场","2023-12-10大文字","2023-12-26大文字","2023-2-26充数","2023-3-26献给阿尔吉侬的花束","2023-3-7新教伦理","2023-4-17土味homekit","2023-4-21大文字","2023-6-25奏章1","2023-8-14meme","2023-8-16大文字","2023-8-5赞美太阳","2023-9-11titan_goblet","2024-1-18meme","2024-1-1贡嘎","2024-10-06大文字(秋","2024-10-19大文字","2024-10-26大文字","2024-11-21大文字","2024-11-4大文字","2024-12-27大文字","2024-2-12大文字（雾）","2024-2-18脚力","2024-2-4大文字","2024-3-21脚力","2024-6-10脚力3","2024-6-8パルクと死の天使","2024-6-8川西","2024-8-20大文字","2024-8-20脚力4","2024-9-22fgo奏章3","2025-1-14大文字3!!","2025-1-27疯狂山脉","2025-12-1大文字","2025-2-15大文字","2025-8-22大文字","2025-9-30大文字","2026-2-3大文字","2026-2-9大文字","2026-5-10GW","2026-5-10paraponera_clavata","2026-6-28bulletant_mandiblesimu"];
+          var essayGraphUrls = ["/omoi_main/essays/2022-1-12%E5%B0%96%E5%B1%B1%E5%AD%90.html","/omoi_main/essays/2022-1-15%E9%A3%8E%E6%99%AF.html","/omoi_main/essays/2022-1-19%E8%87%AA%E8%A1%8C%E8%BD%A6.html","/omoi_main/essays/2022-1-20%E6%B6%B2%E6%B0%AE%E6%B6%B2%E9%9D%A2.html","/omoi_main/essays/2022-1-25%E7%8E%AF%E5%BD%A2%E5%B1%B1.html","/omoi_main/essays/2022-10-10%E5%B0%8F%E8%AF%8D%E5%85%B8.html","/omoi_main/essays/2022-10-19%E8%B0%88%E8%B0%88%E6%96%B9%E6%B3%95.html","/omoi_main/essays/2022-10-23%E7%BA%AF%E7%B2%B9%E7%90%86%E6%80%A7%E6%89%B9%E5%88%A4re1.html","/omoi_main/essays/2022-10-28%E6%97%A5%E8%90%BD.html","/omoi_main/essays/2022-10-29flowers.html","/omoi_main/essays/2022-10-30andy_warhol_re.html","/omoi_main/essays/2022-10-5%E6%9E%84%E5%9B%BE%E5%AE%9E%E9%AA%8C.html","/omoi_main/essays/2022-10-6%E6%97%A5%E8%90%BD.html","/omoi_main/essays/2022-11-10eine_alpensinfonie.html","/omoi_main/essays/2022-11-14meme.html","/omoi_main/essays/2022-11-19pini_di_roma.html","/omoi_main/essays/2022-11-3bloodborne.html","/omoi_main/essays/2022-12-20%E6%B6%88%E8%B4%B9%E7%A4%BE%E4%BC%9A.html","/omoi_main/essays/2022-12-6room732.html","/omoi_main/essays/2022-2-12%E8%99%9A%E6%A7%8B%E6%99%82%E4%BB%A3%E3%81%AE%E6%9E%9C%E3%81%A6_re_1.html","/omoi_main/essays/2022-2-22%E8%99%9A%E6%A7%8B%E6%99%82%E4%BB%A3%E3%81%AE%E6%9E%9C%E3%81%A6_re_2.html","/omoi_main/essays/2022-2-9rough.html","/omoi_main/essays/2022-3-11%E5%A4%A7%E6%96%87%E5%AD%97.html","/omoi_main/essays/2022-3-12%E8%99%9A%E6%A7%8B%E6%99%82%E4%BB%A3%E3%81%AE%E6%9E%9C%E3%81%A6_re_3.html","/omoi_main/essays/2022-3-23%E5%93%88%E8%B4%9D%E9%A9%AC%E6%96%AF%E5%AF%BC%E8%AF%BB_re.html","/omoi_main/essays/2022-3-8%E4%B8%9C%E6%96%B9%E5%B8%82.html","/omoi_main/essays/2022-4-12.html","/omoi_main/essays/2022-4-1%E7%94%B0.html","/omoi_main/essays/2022-5-19%E8%99%9A%E6%A7%8B%E6%99%82%E4%BB%A3%E3%81%AE%E6%9E%9C%E3%81%A6_re_4.html","/omoi_main/essays/2022-6-25eldenring.html","/omoi_main/essays/2022-7-15%E5%B1%B1%E9%A1%B6.html","/omoi_main/essays/2022-8-17%E5%8E%86%E5%8F%B2%E7%9A%84%E7%BB%88%E7%BB%93%E4%B8%8E%E6%9C%80%E5%90%8E%E7%9A%84%E4%BA%BA~re.html","/omoi_main/essays/2022-8-27Danse_macabre.html","/omoi_main/essays/2022-8-28godskin_apostles.html","/omoi_main/essays/2022-8-30chashugamma.html","/omoi_main/essays/2022-8-3%E6%97%A5%E8%90%BD.html","/omoi_main/essays/2022-8-6%E5%8F%8C%E7%8E%8B%E5%AD%90.html","/omoi_main/essays/2022-9-12%E8%99%9A%E6%A7%8B%E3%81%AE%E6%99%82%E4%BB%A3%E3%81%AE%E6%9E%9C%E3%81%A6re5.html","/omoi_main/essays/2022-9-17%E7%94%9F%E6%AD%BB%E4%BA%8E%E6%97%B6%E5%85%89%E6%9C%BA.html","/omoi_main/essays/2022-9-1%E5%9D%90%E8%BF%87%E7%AB%99.html","/omoi_main/essays/2022-9-25%E3%81%93%E3%81%93%E3%81%99%E3%81%8D.html","/omoi_main/essays/2022-9-30%E6%97%A5%E8%90%BD.html","/omoi_main/essays/2022-9-4%E6%AF%81%E7%81%AD.html","/omoi_main/essays/2022-9-7%E6%97%A5%E8%90%BD.html","/omoi_main/essays/2022-9-8RockyReefOnTheSeashore.html","/omoi_main/essays/2023-1-11meme.html","/omoi_main/essays/2023-1-15%E7%BA%A2%E7%BB%BF%E7%81%AF.html","/omoi_main/essays/2023-1-27from732.html","/omoi_main/essays/2023-1-8Castoria.html","/omoi_main/essays/2023-10-30%E5%A4%A7%E6%96%87%E5%AD%97.html","/omoi_main/essays/2023-11-03%E5%A4%A7%E6%96%87%E5%AD%97.html","/omoi_main/essays/2023-11-19%E5%A4%A7%E6%96%87%E5%AD%97.html","/omoi_main/essays/2023-11-30%E5%A4%A7%E6%96%87%E5%AD%97.html","/omoi_main/essays/2023-12-03%E8%8C%85%E5%9C%BA.html","/omoi_main/essays/2023-12-10%E5%A4%A7%E6%96%87%E5%AD%97.html","/omoi_main/essays/2023-12-26%E5%A4%A7%E6%96%87%E5%AD%97.html","/omoi_main/essays/2023-2-26%E5%85%85%E6%95%B0.html","/omoi_main/essays/2023-3-26%E7%8C%AE%E7%BB%99%E9%98%BF%E5%B0%94%E5%90%89%E4%BE%AC%E7%9A%84%E8%8A%B1%E6%9D%9F.html","/omoi_main/essays/2023-3-7%E6%96%B0%E6%95%99%E4%BC%A6%E7%90%86.html","/omoi_main/essays/2023-4-17%E5%9C%9F%E5%91%B3homekit.html","/omoi_main/essays/2023-4-21%E5%A4%A7%E6%96%87%E5%AD%97.html","/omoi_main/essays/2023-6-25%E5%A5%8F%E7%AB%A01.html","/omoi_main/essays/2023-8-14meme.html","/omoi_main/essays/2023-8-16%E5%A4%A7%E6%96%87%E5%AD%97.html","/omoi_main/essays/2023-8-5%E8%B5%9E%E7%BE%8E%E5%A4%AA%E9%98%B3.html","/omoi_main/essays/2023-9-11titan_goblet.html","/omoi_main/essays/2024-1-18meme.html","/omoi_main/essays/2024-1-1%E8%B4%A1%E5%98%8E.html","/omoi_main/essays/2024-10-06%E5%A4%A7%E6%96%87%E5%AD%97(%E7%A7%8B.html","/omoi_main/essays/2024-10-19%E5%A4%A7%E6%96%87%E5%AD%97.html","/omoi_main/essays/2024-10-26%E5%A4%A7%E6%96%87%E5%AD%97.html","/omoi_main/essays/2024-11-21%E5%A4%A7%E6%96%87%E5%AD%97.html","/omoi_main/essays/2024-11-4%E5%A4%A7%E6%96%87%E5%AD%97.html","/omoi_main/essays/2024-12-27%E5%A4%A7%E6%96%87%E5%AD%97.html","/omoi_main/essays/2024-2-12%E5%A4%A7%E6%96%87%E5%AD%97%EF%BC%88%E9%9B%BE%EF%BC%89.html","/omoi_main/essays/2024-2-18%E8%84%9A%E5%8A%9B.html","/omoi_main/essays/2024-2-4%E5%A4%A7%E6%96%87%E5%AD%97.html","/omoi_main/essays/2024-3-21%E8%84%9A%E5%8A%9B2.html","/omoi_main/essays/2024-6-10%E8%84%9A%E5%8A%9B3.html","/omoi_main/essays/2024-6-8%E3%83%91%E3%83%AB%E3%82%AF%E3%81%A8%E6%AD%BB%E3%81%AE%E5%A4%A9%E4%BD%BF.html","/omoi_main/essays/2024-6-8%E5%B7%9D%E8%A5%BF.html","/omoi_main/essays/2024-8-20%E5%A4%A7%E6%96%87%E5%AD%97.html","/omoi_main/essays/2024-8-20%E8%84%9A%E5%8A%9B4.html","/omoi_main/essays/2024-9-22fgo%E5%A5%8F%E7%AB%A03.html","/omoi_main/essays/2025-1-14%E5%A4%A7%E6%96%87%E5%AD%973!!.html","/omoi_main/essays/2025-1-27%E7%96%AF%E7%8B%82%E5%B1%B1%E8%84%89.html","/omoi_main/essays/2025-12-1%E5%A4%A7%E6%96%87%E5%AD%97.html","/omoi_main/essays/2025-2-15%E5%A4%A7%E6%96%87%E5%AD%97.html","/omoi_main/essays/2025-8-22%E5%A4%A7%E6%96%87%E5%AD%97.html","/omoi_main/essays/2025-9-30%E5%A4%A7%E6%96%87%E5%AD%97.html","/omoi_main/essays/2026-2-3%E5%A4%A7%E6%96%87%E5%AD%97.html","/omoi_main/essays/2026-2-9%E5%A4%A7%E6%96%87%E5%AD%97.html","/omoi_main/essays/2026-5-10GW.html","/omoi_main/essays/2026-5-10paraponera_clavata.html","/omoi_main/essays/2026-6-28bulletant_mandiblesimu.html"];
 
-          var tagCounts = {};
-          var tagIndexes = {};
-
-          for (var i = 0; i < allTags.length; i++) {
-            var tagNew = allTags[i];
-
-            if (!Array.isArray(tagNew)) {
-              continue;
+          function drawEssayThemeGraph() {
+            var graphEl = document.getElementById('essayThemeGraph');
+            if (!graphEl || typeof d3 === 'undefined') {
+              return;
             }
 
-            for (var j = 0; j < tagNew.length; j++) {
-              var tag = tagNew[j];
-              if (tagCounts[tag] === undefined) {
-                tagCounts[tag] = 0;
-                tagIndexes[tag] = [];
+            if (graphEl.dataset.rendered === 'true') {
+              return;
+            }
+
+            graphEl.dataset.rendered = 'true';
+
+            var themeCounts = {};
+            var essayNodes = [];
+            var links = [];
+
+            essayGraphTags.forEach(function(tags, index) {
+              if (!Array.isArray(tags) || tags.length === 0) {
+                return;
               }
-              tagCounts[tag]++;
-              tagIndexes[tag].push(i);
-            }
-          }
 
-          var tagSequences = [];
-          var indexSequences = [];
-          for (var tag in tagCounts) {
-            var count = tagCounts[tag];
-            var indexes = tagIndexes[tag];
-            tagSequences.push(tag + ' (' + count + ')');
-            indexSequences.push(indexes);
-          }
+              var filename = essayGraphFilenames[index];
+              var title = essayGraphTitles[index] || filename;
+              var essayId = 'essay:' + filename;
+              var primaryTheme = tags[0];
 
-          // Menu bar of tags
-          let activatedTagIndices = [];
-          const tagMenuAll = document.getElementById('tagMenuAll');
-
-          for (var z = 0; z < tagSequences.length; z++) {
-            var menuDiv = document.createElement('div');
-            var tagDividRaw = 'tagraw'+z;
-            var tagJumpto = 'tag'+z;
-            const splitTag = tagSequences[z].split('/')[0]
-            const splitContent = tagSequences[z].split('/')[1];
-            menuDiv.id = tagDividRaw;
-            menuDiv.classList.add('tagraw')
-
-            if (splitTag === "author") {
-              menuDiv.innerHTML = ''+splitContent+'';
-            } else {
-              menuDiv.innerHTML = ''+tagSequences[z]+'';
-            }
-            tagMenuAll.appendChild(menuDiv);
-          }
-          // Do statistics on tag.
-          // Create an array to track tag status
-          const numTags = tagSequences.length; // Replace with actual number of tags
-          let tagStatus = Array(numTags).fill(-1); // Initialize all values to -1
-
-          // Feel lucky button
-          const feelLuckyDiv = document.getElementById('feelLucky');
-
-          function getRndInteger(min, max) {
-            return Math.floor(Math.random()*(max - min)) + min;
-          }
-
-          var randomIndex = getRndInteger(0, allTitles.length);
-          var randomPage = allFilenames[randomIndex];
-          var permalink = "https://wzetto.github.io/wz369.github.io/omoi_main/essays/"+randomPage+".html";
-
-          feelLuckyDiv.innerHTML = '<div class="container">\
-            <button id="tagAny" style="color:#999999;background-color:#fff;\
-            border: 1.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
-            font-size:16px;padding:0.5rem;display:inline-block;\
-            text-align:center;border-radius: 6px;cursor: pointer;height: 40px;">Any</button>&nbsp;\
-            <button id="tagFilter" style="color:#999999;background-color:#fff;\
-            border: 1.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
-            font-size:16px;padding:0.5rem;display:inline-block;\
-            text-align:center;border-radius: 6px;cursor: pointer;height: 40px;">Common</button>&nbsp;\
-            <button style="color:#000;background-color:#fff;\
-            border: 1.5px solid #303030;box-shadow: 0 0 1px rgba(0,0,0,.1);\
-            font-size:16px;padding:0.5rem;display:inline-block;\
-            text-align:center;border-radius: 6px;height: 40px;">\
-            <a href="'+permalink+'">手气不错</a></button></div>';
-
-          //Count activated tags
-          activatedTagIndices.length = 0;
-
-//           function activateTagFilter() {
-          // Add click event to each tag element
-          const menuTagsRaw = document.querySelectorAll('.tagraw');
-          const menuTags = Array.from(menuTagsRaw).sort((a, b) => {
-            const idA = parseInt(a.id.replace('tagraw', ''));
-            const idB = parseInt(b.id.replace('tagraw', ''));
-            return idA - idB;
-          });
-          menuTags.forEach((menuTag, l) => {
-            menuTag.addEventListener('click', function() {
-              // Flip tag status
-              tagStatus[l] = -tagStatus[l];
-              // Toggle active class
-              menuTag.classList.toggle('active', tagStatus[l] === 1);
-//               menuTag.classList.toggle('deactive', tagStatus[i] === 0);
-//               activatedTagIndices = tagStatus.map((status, i) => status === 1 ? i : 0).filter(index => index !== 0);
-              activatedTagIndices = [];
-              menuTags.forEach((menuTag, m) => {
-                if (tagStatus[m] === 1) {
-                  activatedTagIndices.push(m);
-                }
+              essayNodes.push({
+                id: essayId,
+                type: 'essay',
+                title: title,
+                filename: filename,
+                url: essayGraphUrls[index],
+                tags: tags,
+                primaryTheme: primaryTheme
               });
 
-              // console.log(tagStatus);
-
-              if (activatedTagIndices.length >= 1) {
-                feelLuckyDiv.innerHTML = '<div class="container">\
-                  <button id="tagAny" style="color:#fff;background-color:#000;\
-                  border: 1.5px solid #000;box-shadow: 0 0 1px rgba(0,0,0,.1);\
-                  font-size:16px;padding:0.5rem;display:inline-block;\
-                  text-align:center;border-radius: 6px;cursor: pointer;height: 40px;">Any</button>&nbsp;\
-                  <button id="tagFilter" style="color:#fff;background-color:#000;\
-                  border: 1.5px solid #000;box-shadow: 0 0 1px rgba(0,0,0,.1);\
-                  font-size:16px;padding:0.5rem;display:inline-block;\
-                  text-align:center;border-radius: 6px;cursor: pointer;height: 40px;">Common</button>&nbsp;\
-                  <button style="color:#000;background-color:#fff;\
-                  border: 1.5px solid #303030;box-shadow: 0 0 1px rgba(0,0,0,.1);\
-                  font-size:16px;padding:0.5rem;display:inline-block;\
-                  text-align:center;border-radius: 6px;height: 40px;">\
-                  <a href="'+permalink+'">手气不错</a></button></div>';
-              } else {
-                feelLuckyDiv.innerHTML = '<div class="container">\
-                  <button id="tagAny" style="color:#999999;background-color:#fff;\
-                  border: 1.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
-                  font-size:16px;padding:0.5rem;display:inline-block;\
-                  text-align:center;border-radius: 6px;cursor: pointer;height: 40px;">Any</button>&nbsp;\
-                  <button id="tagFilter" style="color:#999999;background-color:#fff;\
-                  border: 1.5px solid #999999;box-shadow: 0 0 1px rgba(0,0,0,.1);\
-                  font-size:16px;padding:0.5rem;display:inline-block;\
-                  text-align:center;border-radius: 6px;cursor: pointer;height: 40px;">Common</button>&nbsp;\
-                  <button style="color:#000;background-color:#fff;\
-                  border: 1.5px solid #303030;box-shadow: 0 0 1px rgba(0,0,0,.1);\
-                  font-size:16px;padding:0.5rem;display:inline-block;\
-                  text-align:center;border-radius: 6px;height: 40px;">\
-                  <a href="'+permalink+'">手气不错</a></button></div>';
-              }
-
-              const countAny = document.getElementById('tagAny');
-              countAny.addEventListener('click', function() {
-
-                const filterElementsDivAny = document.getElementById('filterBlock');
-                filterElementsDivAny.innerHTML = "";
-
-                const compileIndexAny = activatedTagIndices.map((index) => {
-                  return indexSequences[index];
-                }).flat().filter((value, index, self) => {
-                  return self.indexOf(value) === index;
+              tags.forEach(function(tag) {
+                themeCounts[tag] = (themeCounts[tag] || 0) + 1;
+                links.push({
+                  source: 'theme:' + tag,
+                  target: essayId
                 });
-
-                if (compileIndexAny.length >= 1) {
-                  for (var n = 0; n < compileIndexAny.length; n++) {
-                    var index = compileIndexAny[n];
-                    var titleDivFilter = document.createElement('div');
-                    var tagDivFilter = document.createElement('span');
-                    tagDivFilter.style.lineHeight = '1.25';
-
-                    var filename = allFilenames[index];
-                    var title = allTitles[index];
-                    var tag = allTags[index];
-                    var permalinkFilter = "https://wzetto.github.io/wz369.github.io/omoi_main/essays/"+filename+".html";
-
-                    titleDivFilter.innerHTML = '<h5><a href="'+permalinkFilter+'">'+filename+'</a></h5>';
-
-                    // tag array
-                    for (var o = 0; o < tag.length; o++) {
-                      var codeElement = document.createElement('code');
-                      codeElement.style.backgroundColor = '#fff';
-                      codeElement.style.border = '1.5px solid #303030';
-                      codeElement.style.boxShadow = '0 0 1px rgba(0,0,0,.1)';
-                      codeElement.style.borderRadius = '8px';
-                      codeElement.style.display = 'inline-block';
-                      codeElement.innerHTML = '<a href="https://fgo.wiki/w/%E7%89%B9%E6%8B%89%E6%B4%9B%E5%85%8B">'+tag[o]+'</a>';
-                      tagDivFilter.appendChild(codeElement);
-                    }
-
-                    filterElementsDivAny.appendChild(titleDivFilter);
-                    filterElementsDivAny.appendChild(tagDivFilter);
-                  }
-                } else {
-                    var titleDivFilter = document.createElement('div');
-                    titleDivFilter.innerHTML = '<h4>OoOps!</h4>';
-                    filterElementsDivAny.appendChild(titleDivFilter);
-                }
-
-                var seperateDiv = document.createElement('div');
-                seperateDiv.innerHTML = '<hr style="width:200px;text-align:center">';
-                filterElementsDivAny.appendChild(seperateDiv);
-              });
-
-              const countBtn = document.getElementById('tagFilter');
-              countBtn.addEventListener('click', function() {
-  //                 Return chosen indices for titles/authors/etc.
-                const filterElementsDiv = document.getElementById('filterBlock');
-                filterElementsDiv.innerHTML = "";
-
-                // Intersect
-                const chosenIndex = activatedTagIndices.map((index) => {return indexSequences[index];});
-                let compileIndex = chosenIndex[0];
-                let compileNew = [];
-
-                console.log('chosenIndex:',chosenIndex);
-
-                for (i = 0; i < chosenIndex.length; i++) {
-                  const sub1 = [chosenIndex[i]].flat();
-                  compileNew = [];
-
-                  for (j = 0; j < sub1.length; j++) {
-                    const sub2 = sub1[j];
-                    // console.log('raw2',compileIndex);
-                    const boardIndex = compileIndex.findIndex((value) => value - sub2 === 0);
-
-                    if (boardIndex !== -1) {
-                      compileNew.push(sub2);
-                    }
-                  }
-
-                  compileIndex = [...compileNew];
-                }
-
-                console.log('compileIndex:',compileIndex);
-                console.log(tagStatus);
-
-                // title, author, mainpoint
-
-                if (compileIndex.length >= 1) {
-                  for (var n = 0; n < compileIndex.length; n++) {
-                    var index = compileIndex[n];
-                    var titleDivFilter = document.createElement('div');
-                    var tagDivFilter = document.createElement('span');
-                    tagDivFilter.style.lineHeight = '1.25';
-
-                    var filename = allFilenames[index];
-                    var title = allTitles[index];
-                    var tag = allTags[index];
-                    var permalinkFilter = "https://wzetto.github.io/wz369.github.io/omoi_main/essays/"+filename+".html";
-                    titleDivFilter.innerHTML = '<h5><a href="'+permalinkFilter+'">'+filename+'</a></h5>';
-
-                    // tag array
-                    for (var o = 0; o < tag.length; o++) {
-                      var codeElement = document.createElement('code');
-                      codeElement.style.backgroundColor = '#fff';
-                      codeElement.style.border = '1.5px solid #303030';
-                      codeElement.style.boxShadow = '0 0 1px rgba(0,0,0,.1)';
-                      codeElement.style.borderRadius = '8px';
-                      codeElement.style.display = 'inline-block';
-                      codeElement.innerHTML = '<a href="https://fgo.wiki/w/%E7%89%B9%E6%8B%89%E6%B4%9B%E5%85%8B">'+tag[o]+'</a>';
-                      tagDivFilter.appendChild(codeElement);
-                    }
-
-                    filterElementsDiv.appendChild(titleDivFilter);
-                    filterElementsDiv.appendChild(tagDivFilter);
-                  }
-                } else {
-                    var titleDivFilter = document.createElement('div');
-                    titleDivFilter.innerHTML = '<h4>OoOps!</h4>';
-                    filterElementsDiv.appendChild(titleDivFilter);
-                }
-
-                var seperateDiv = document.createElement('div');
-                seperateDiv.innerHTML = '<hr style="width:200px;text-align:center"><br>';
-                filterElementsDiv.appendChild(seperateDiv);
               });
             });
-          });
+
+            function hashText(text) {
+              var hash = 2166136261;
+              for (var i = 0; i < text.length; i++) {
+                hash ^= text.charCodeAt(i);
+                hash += (hash << 1) + (hash << 4) + (hash << 7) + (hash << 8) + (hash << 24);
+              }
+              return hash >>> 0;
+            }
+
+            var themes = Object.keys(themeCounts).sort(function(a, b) {
+              return hashText(a) - hashText(b);
+            });
+
+            if (!themes.length || !essayNodes.length) {
+              graphEl.innerHTML = '<div class="essay-theme-graph-empty">No tagged essays found.</div>';
+              return;
+            }
+
+            graphEl.innerHTML = '';
+
+            var titleBlockColors = [
+              '#41378e', '#4d368f', '#58358f', '#63348f',
+              '#6d328f', '#77308e', '#802e8d', '#892c8c',
+              '#92298a', '#9a2788', '#a32485', '#aa2182',
+              '#b21e7f', '#b91c7c', '#c61874', '#cc1870',
+              '#d2196b', '#d71b66', '#dc1e62', '#e72c52',
+              '#ed3847', '#E23D4E', '#D84355', '#CD485C'
+            ];
+
+            var interpolateTitleColor = d3.interpolateRgbBasis(titleBlockColors);
+            var themeColors = {};
+            themes.forEach(function(theme, index) {
+              var samplePoint = themes.length <= 1 ? 0.5 : index / (themes.length - 1);
+              themeColors[theme] = interpolateTitleColor(samplePoint);
+            });
+
+            var themeNodes = themes.map(function(theme) {
+              return {
+                id: 'theme:' + theme,
+                type: 'theme',
+                title: theme,
+                count: themeCounts[theme],
+                primaryTheme: theme
+              };
+            });
+
+            var nodes = themeNodes.concat(essayNodes);
+            var nodeById = new Map(nodes.map(function(node) {
+              return [node.id, node];
+            }));
+
+            links = links.filter(function(link) {
+              return nodeById.has(link.source) && nodeById.has(link.target);
+            });
+
+            var svg = d3.select(graphEl).append('svg');
+            var linkLayer = svg.append('g');
+            var nodeLayer = svg.append('g');
+            var labelLayer = svg.append('g');
+            var activeSimulation = null;
+            var themeIndex = new Map(themes.map(function(theme, index) {
+              return [theme, index];
+            }));
+
+            function nodeRadius(node) {
+              if (node.type === 'theme') {
+                return 11 + Math.sqrt(node.count) * 1.8;
+              }
+
+              return 5.5;
+            }
+
+            function collisionRadius(node) {
+              if (node.type === 'theme') {
+                return nodeRadius(node) + 18;
+              }
+
+              return 9;
+            }
+
+            function themePosition(theme, width, height) {
+              if (!theme) {
+                return {
+                  x: width / 2,
+                  y: height / 2
+                };
+              }
+
+              var index = themeIndex.get(theme) || 0;
+              var mobile = window.matchMedia('(max-width: 720px)').matches;
+              var left = mobile ? width * 0.16 : width * 0.2;
+              var right = mobile ? width * 0.88 : width * 0.9;
+              var t = themes.length <= 1 ? 0.5 : index / (themes.length - 1);
+              var wave = Math.sin(t * Math.PI * 2.6 - Math.PI / 3);
+              var stagger = index % 2 === 0 ? -1 : 1;
+
+              return {
+                x: left + (right - left) * t,
+                y: height * (mobile ? 0.5 : 0.48) + wave * height * 0.18 + stagger * height * 0.045
+              };
+            }
+
+            function keepInBounds(node, width, height) {
+              var radius = nodeRadius(node);
+              var sidePadding = node.type === 'theme' ? 64 : 10;
+              var topPadding = node.type === 'theme' ? 42 : 10;
+              var bottomPadding = node.type === 'theme' ? 18 : 10;
+              var minX = radius + sidePadding;
+              var maxX = width - radius - sidePadding;
+              var minY = radius + topPadding;
+              var maxY = height - radius - bottomPadding;
+
+              node.x = Math.max(minX, Math.min(maxX, node.x));
+              node.y = Math.max(minY, Math.min(maxY, node.y));
+            }
+
+            function nodeColor(node) {
+              return themeColors[node.primaryTheme || node.title] || titleBlockColors[0];
+            }
+
+            function labelFor(node) {
+              if (node.type === 'theme') {
+                return node.title.replace(/^.*\//, '') + ' (' + node.count + ')';
+              }
+
+              return node.title.length > 15 ? node.title.slice(0, 14) + '...' : node.title;
+            }
+
+            function render() {
+              var rect = graphEl.getBoundingClientRect();
+              var width = Math.max(rect.width, 320);
+              var height = window.matchMedia('(max-width: 720px)').matches ? 340 : 420;
+
+              if (activeSimulation) {
+                activeSimulation.stop();
+              }
+
+              svg.attr('viewBox', '0 0 ' + width + ' ' + height);
+
+              var simulationNodes = nodes.map(function(node) {
+                return Object.assign({}, node);
+              });
+              var simulationLinks = links.map(function(link) {
+                return Object.assign({}, link);
+              });
+
+              activeSimulation = d3.forceSimulation(simulationNodes)
+                .force('link', d3.forceLink(simulationLinks).id(function(d) { return d.id; }).distance(function(d) {
+                  return d.source.type === 'theme' || d.target.type === 'theme' ? 72 : 44;
+                }).strength(0.55))
+                .force('charge', d3.forceManyBody().strength(function(d) {
+                  return d.type === 'essay' ? -46 : -380;
+                }))
+                .force('collision', d3.forceCollide().radius(function(d) {
+                  return collisionRadius(d);
+                }).strength(0.96).iterations(3))
+                .force('x', d3.forceX(function(d) {
+                  return themePosition(d.primaryTheme || d.title, width, height).x;
+                }).strength(function(d) {
+                  return d.type === 'essay' ? 0.1 : 0.34;
+                }))
+                .force('y', d3.forceY(function(d) {
+                  return themePosition(d.primaryTheme || d.title, width, height).y;
+                }).strength(function(d) {
+                  return d.type === 'essay' ? 0.1 : 0.34;
+                }));
+
+              var link = linkLayer.selectAll('line')
+                .data(simulationLinks)
+                .join('line')
+                .attr('class', 'link')
+                .attr('stroke-width', 1);
+
+              var node = nodeLayer.selectAll('circle')
+                .data(simulationNodes)
+                .join('circle')
+                .attr('class', function(d) {
+                  return d.type === 'theme' ? 'node theme-node' : 'node essay-node';
+                })
+                .attr('r', function(d) {
+                  return nodeRadius(d);
+                })
+                .attr('fill', nodeColor)
+                .on('click', function(event, d) {
+                  if (d.type === 'essay' && d.url) {
+                    window.location.href = d.url;
+                  }
+                })
+                .call(d3.drag()
+                  .on('start', function(event, d) {
+                    if (!event.active) activeSimulation.alphaTarget(0.3).restart();
+                    d.fx = d.x;
+                    d.fy = d.y;
+                  })
+                  .on('drag', function(event, d) {
+                    d.fx = event.x;
+                    d.fy = event.y;
+                  })
+                  .on('end', function(event, d) {
+                    if (!event.active) activeSimulation.alphaTarget(0);
+                    d.fx = null;
+                    d.fy = null;
+                  }));
+
+              var label = labelLayer.selectAll('text')
+                .data(simulationNodes.filter(function(d) {
+                  return d.type === 'theme' || themeCounts[d.primaryTheme] <= 4;
+                }))
+                .join('text')
+                .attr('class', function(d) {
+                  return d.type === 'theme' ? 'node-label theme-label' : 'node-label';
+                })
+                .attr('text-anchor', 'middle')
+                .text(labelFor);
+
+              activeSimulation.on('tick', function() {
+                simulationNodes.forEach(function(d) {
+                  keepInBounds(d, width, height);
+                });
+
+                link
+                  .attr('x1', function(d) { return d.source.x; })
+                  .attr('y1', function(d) { return d.source.y; })
+                  .attr('x2', function(d) { return d.target.x; })
+                  .attr('y2', function(d) { return d.target.y; });
+
+                node
+                  .attr('cx', function(d) { return d.x; })
+                  .attr('cy', function(d) { return d.y; });
+
+                label
+                  .attr('x', function(d) { return d.x; })
+                  .attr('y', function(d) {
+                    return d.y + (d.type === 'theme' ? -20 : -9);
+                  });
+              });
+            }
+
+            render();
+            var resizeTimer;
+            window.addEventListener('resize', function() {
+              if (graphEl.classList.contains('is-hidden')) {
+                return;
+              }
+
+              clearTimeout(resizeTimer);
+              resizeTimer = setTimeout(render, 160);
+            });
+          }
+
+          var essayGraphToggle = document.getElementById('essayGraphToggle');
+          var essayLuckyButton = document.getElementById('essayLuckyButton');
+          var essayGraph = document.getElementById('essayThemeGraph');
+
+          if (essayLuckyButton) {
+            essayLuckyButton.addEventListener('click', function() {
+              if (!essayGraphUrls.length) {
+                return;
+              }
+
+              var randomUrl = essayGraphUrls[Math.floor(Math.random() * essayGraphUrls.length)];
+              if (randomUrl) {
+                window.location.href = randomUrl;
+              }
+            });
+          }
+
+          if (essayGraphToggle && essayGraph) {
+            essayGraphToggle.addEventListener('click', function() {
+              var willShow = essayGraph.classList.contains('is-hidden');
+              essayGraph.classList.toggle('is-hidden', !willShow);
+              essayGraphToggle.classList.toggle('is-active', willShow);
+              essayGraphToggle.innerText = willShow ? 'Graph ON' : 'Graph OFF';
+
+              if (willShow) {
+                drawEssayThemeGraph();
+              }
+            });
+          }
         </script>
 
 
 
-        <h5 id="o202112">2021.12</h5>
+        <div id="omoiTimelineContent">
+          <h5>2021</h5>
+<h6 id="o202112" class="omoi-month-title">12</h6>
 <p><code style="background-color:#41378e">12/30</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2021-12-30东山汤.html"> 东山汤</a></p>
 
-<h5 id="o202201">2022.1</h5>
+<h5>2022</h5>
+<h6 id="o202201" class="omoi-month-title">1</h6>
 <p><code style="background-color:#41378e">01/01</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-1-1kebab.html"> kebab</a><br />
 <code style="background-color:#41378e">01/02</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-1-2計画.html"> 計画</a><br />
 <code style="background-color:#41378e">01/04</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-1-4mdr.html"> mdr</a><br />
@@ -465,33 +607,33 @@
 <code style="background-color:#41378e">01/25</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-1-25环形山.html"> 环形山</a><br />
 <code style="background-color:#41378e">01/27</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-1-27更正.html"> 更正</a><br /></p>
 
-<h5 id="o202202">2022.2</h5>
+<h6 id="o202202" class="omoi-month-title">2</h6>
 <p><code style="background-color:#4d368f">02/09</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-2-9rough.html"> 乌云上坡远山</a><br />
 <code style="background-color:#4d368f">02/12</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-2-12虚構時代の果て_re_1.html"> 虚構の時代の果て〜re_1</a><br />
 <code style="background-color:#4d368f">02/12</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-2-18魔法使いの夜～メインテーマ.html"> 魔法使いの夜〜メインテーマ</a><br />
 <code style="background-color:#4d368f">02/22</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-2-22虚構時代の果て_re_2.html"> 虚構の時代の果て〜re_2</a><br /></p>
 
-<h5 id="o202203">2022.3</h5>
+<h6 id="o202203" class="omoi-month-title">3</h6>
 <p><code style="background-color:#4d368f">03/08</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-3-8东方市.html"> 东方市</a><br />
 <code style="background-color:#4d368f">03/11</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-3-11大文字.html"> 大文字</a><br />
 <code style="background-color:#4d368f">03/12</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-3-12虚構時代の果て_re_3.html"> 虚構時代の果て～re:3</a><br />
 <code style="background-color:#4d368f">03/23</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-3-23哈贝马斯导读_re.html"> 哈贝马斯导读〜re</a><br /></p>
 
-<h5 id="o202204">2022.4</h5>
+<h6 id="o202204" class="omoi-month-title">4</h6>
 <p><code style="background-color:#58358f">04/01</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-4-1田.html"> 田</a><br />
 <code style="background-color:#58358f">04/12</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-4-12.html"> 进度</a><br /></p>
 
-<h5 id="o202205">2022.5</h5>
+<h6 id="o202205" class="omoi-month-title">5</h6>
 <p><code style="background-color:#58358f">05/19</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-5-19虚構時代の果て_re_4.html"> 虚構時代の果て～re:4</a><br /></p>
 
-<h5 id="o202206">2022.6</h5>
+<h6 id="o202206" class="omoi-month-title">6</h6>
 <p><code style="background-color:#63348f">06/30</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-6-25eldenring.html"> 通关</a><br /></p>
 
-<h5 id="o202207">2022.7</h5>
+<h6 id="o202207" class="omoi-month-title">7</h6>
 <p><code style="background-color:#63348f">07/15</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-7-15山顶.html"> 无法到达的</a><br />
 <code style="background-color:#63348f">07/28</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-7-28中土.html"> Riders of Rohan</a><br /></p>
 
-<h5 id="o202208">2022.8</h5>
+<h6 id="o202208" class="omoi-month-title">8</h6>
 <p><code style="background-color:#6d328f">08/03</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-8-3日落.html"> 日落</a><br />
 <code style="background-color:#6d328f">08/06</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-8-6双王子.html"> 双王子</a><br />
 <code style="background-color:#6d328f">08/07</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-8-7篝火.html"> 篝火</a><br />
@@ -502,7 +644,7 @@
 <code style="background-color:#6d328f">08/28</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-8-28godskin_apostles.html"> Godskin Apostles</a><br />
 <code style="background-color:#6d328f">08/30</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-8-30chashugamma.html"> 叉烧爽度</a><br /></p>
 
-<h5 id="o202209">2022.9</h5>
+<h6 id="o202209" class="omoi-month-title">9</h6>
 <p><code style="background-color:#6d328f">09/01</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-9-1坐过站.html"> 坐过站！</a><br />
 <code style="background-color:#6d328f">09/04</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-9-4毁灭.html"> 毁灭</a><br />
 <code style="background-color:#6d328f">09/07</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-9-7日落.html"> 日落</a><br />
@@ -514,7 +656,7 @@
 <code style="background-color:#6d328f">09/25</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-9-25ここすき.html"> ここすき</a><br />
 <code style="background-color:#6d328f">09/30</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-9-30日落.html"> 日落</a><br /></p>
 
-<h5 id="o202210">2022.10</h5>
+<h6 id="o202210" class="omoi-month-title">10</h6>
 <p><code style="background-color:#77308e">10/05</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-10-5构图实验.html"> 构图尝试</a><br />
 <code style="background-color:#77308e">10/06</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-10-6日落.html"> 日落</a><br />
 <code style="background-color:#77308e">10/19</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-10-19谈谈方法.html"> 谈谈方法&amp;导论～re</a><br />
@@ -523,136 +665,140 @@
 <code style="background-color:#77308e">10/29</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-10-29flowers.html"> Flowers</a><br />
 <code style="background-color:#77308e">10/30</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-10-30andy_warhol_re.html"> Andy Warhol～re</a><br /></p>
 
-<h5 id="o202211">2022.11</h5>
+<h6 id="o202211" class="omoi-month-title">11</h6>
 <p><code style="background-color:#77308e">11/03</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-11-3bloodborne.html"> 夜明け </a><br />
 <code style="background-color:#77308e">11/10</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-11-10eine_alpensinfonie.html"> Eine Alpensinfonie </a><br />
 <code style="background-color:#77308e">11/14</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-11-14meme.html"> meme </a><br />
 <code style="background-color:#77308e">11/19</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-11-19pini_di_roma.html"> Pini di roma </a><br /></p>
 
-<h5 id="o202212">2022.12</h5>
+<h6 id="o202212" class="omoi-month-title">12</h6>
 <p><code style="background-color:#802e8d">12/06</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-12-6room732.html"> From 732 </a><br />
 <code style="background-color:#802e8d">12/09</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-12-9b9.html"> 贝9</a><br />
 <code style="background-color:#802e8d">12/19</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-12-19mahlerno6.html"> From chatGPT</a><br />
 <code style="background-color:#802e8d">12/20</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2022-12-20消费社会.html"> 消费社会～re</a><br /></p>
 
-<h5 id="o202301">2023.1</h5>
+<h5>2023</h5>
+<h6 id="o202301" class="omoi-month-title">1</h6>
 <p><code style="background-color:#802e8d">01/01</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-1-1newyear.html"> 計画</a><br />
 <code style="background-color:#802e8d">01/08</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-1-8Castoria.html"> Castoria</a><br />
 <code style="background-color:#802e8d">01/11</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-1-11meme.html"> meme</a><br />
 <code style="background-color:#802e8d">01/27</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-1-27from732.html"> From 732</a><br />
 <code style="background-color:#802e8d">01/31</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-1-15红绿灯.html"> 红绿灯</a><br /></p>
 
-<h5 id="o202302">2023.2</h5>
+<h6 id="o202302" class="omoi-month-title">2</h6>
 <p><code style="background-color:#892c8c">02/26</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-2-26充数.html"> 充下数</a><br /></p>
 
-<h5 id="o202303">2023.3</h5>
+<h6 id="o202303" class="omoi-month-title">3</h6>
 <p><code style="background-color:#892c8c">03/07</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-3-7新教伦理.html"> 新教伦理与资本主义精神~re</a><br />
 <code style="background-color:#892c8c">03/26</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-3-26献给阿尔吉侬的花束.html"> 献给阿尔吉侬的花束~re</a><br /></p>
 
-<h5 id="o202304">2023.4</h5>
+<h6 id="o202304" class="omoi-month-title">4</h6>
 <p><code style="background-color:#92298a">04/17</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-4-17土味homekit.html"> 土味homekit(</a><br />
 <code style="background-color:#92298a">04/21</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-4-21大文字.html"> 日落？</a><br /></p>
 
-<h5 id="o202306">2023.6</h5>
+<h6 id="o202306" class="omoi-month-title">6</h6>
 <p><code style="background-color:#9a2788">06/25</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-6-25奏章1.html"> FGO奏章1~re</a><br /></p>
 
-<h5 id="o202307">2023.7</h5>
+<div id="o202307" class="omoi-month-anchor"></div>
 
-<h5 id="o202308">2023.8</h5>
+<h6 id="o202308" class="omoi-month-title">8</h6>
 <p><code style="background-color:#a32485">08/05</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-8-5赞美太阳.html"> 赞美太阳！</a><br />
 <code style="background-color:#a32485">08/14</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-8-14meme.html"> meme</a><br />
 <code style="background-color:#a32485">08/16</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-8-16大文字.html"> 大文字</a><br /></p>
 
-<h5 id="o202309">2023.9</h5>
+<h6 id="o202309" class="omoi-month-title">9</h6>
 
 <p><code style="background-color:#a32485">09/11</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-9-11titan_goblet.html"> The Titan’s Goblet</a><br /></p>
 
-<h5 id="o202310">2023.10</h5>
+<h6 id="o202310" class="omoi-month-title">10</h6>
 <p><code style="background-color:#aa2182">10/30</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-10-30大文字.html"> 大文字</a><br /></p>
 
-<h5 id="o202311">2023.11</h5>
+<h6 id="o202311" class="omoi-month-title">11</h6>
 <p><code style="background-color:#aa2182">11/03</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-11-03大文字.html"> 大文字</a><br />
 <code style="background-color:#aa2182">11/19</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-11-19大文字.html"> 大文字</a><br />
 <code style="background-color:#aa2182">11/30</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-11-30大文字.html"> 大文字</a><br /></p>
 
-<h5 id="o202312">2023.12</h5>
+<h6 id="o202312" class="omoi-month-title">12</h6>
 <p><code style="background-color:#b21e7f">12/03</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-12-03茅场.html"> 茅场</a><br />
 <code style="background-color:#b21e7f">12/10</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-12-10大文字.html"> 大文字</a><br />
 <code style="background-color:#b21e7f">12/26</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2023-12-26大文字.html"> 大文字</a><br /></p>
 
-<h5 id="o202401">2024.1</h5>
+<h5>2024</h5>
+<h6 id="o202401" class="omoi-month-title">1</h6>
 <p><code style="background-color:#b21e7f">01/01</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-1-1贡嘎.html"> 贡嘎</a><br />
 <code style="background-color:#b21e7f">01/18</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-1-18meme.html"> meme</a><br /></p>
 
-<h5 id="o202402">2024.2</h5>
+<h6 id="o202402" class="omoi-month-title">2</h6>
 <p><code style="background-color:#b91c7c">02/04</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-2-4大文字.html"> 大文字</a><br />
 <code style="background-color:#b91c7c">02/11</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-2-12大文字（雾）.html"> 大文字（雾）</a><br />
 <code style="background-color:#b91c7c">02/18</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-2-18脚力.html"> 脚力</a><br /></p>
 
-<h5 id="o202403">2024.3</h5>
+<h6 id="o202403" class="omoi-month-title">3</h6>
 <p><code style="background-color:#b91c7c">03/21</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-3-21脚力2.html"> 脚力2</a><br /></p>
 
-<h5 id="o202406">2024.6</h5>
+<h6 id="o202406" class="omoi-month-title">6</h6>
 <p><code style="background-color:#c61874">06/08</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-6-8パルクと死の天使.html"> The Parca and the Angel of Death</a><br />
 <code style="background-color:#c61874">06/08</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-6-8川西.html"> 川西</a><br />
 <code style="background-color:#c61874">06/10</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-6-10脚力3.html"> 脚力3</a><br /></p>
 
-<h5 id="o202408">2024.8</h5>
+<h6 id="o202408" class="omoi-month-title">8</h6>
 
 <p><code style="background-color:#cc1870">08/20</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-8-20大文字.html"> 大文字</a><br />
 <code style="background-color:#cc1870">08/20</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-8-20脚力4.html"> 脚力4</a><br /></p>
 
-<h5 id="o202410">2024.10</h5>
+<h6 id="o202410" class="omoi-month-title">10</h6>
 
 <p><code style="background-color:#d2196b">10/06</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-10-06大文字(秋.html"> 大文字（秋</a><br />
 <code style="background-color:#d2196b">10/19</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-10-19大文字.html"> 大文字（夜</a><br />
 <code style="background-color:#d2196b">10/26</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-10-26大文字.html"> 大文字（山</a><br /></p>
 
-<h5 id="o202411">2024.11</h5>
+<h6 id="o202411" class="omoi-month-title">11</h6>
 
 <p><code style="background-color:#d2196b">11/04</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-11-4大文字.html"> 大文字</a><br />
 <code style="background-color:#d2196b">11/21</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-11-21大文字.html"> 大文字</a><br /></p>
 
-<h5 id="o202412">2024.12</h5>
+<h6 id="o202412" class="omoi-month-title">12</h6>
 
 <p><code style="background-color:#d71b66">12/27</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-12-27大文字.html"> 大文字</a><br /></p>
 
-<h5 id="o202501">2025.1</h5>
+<h5>2025</h5>
+<h6 id="o202501" class="omoi-month-title">1</h6>
 
 <p><code style="background-color:#d71b66">01/13</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2025-1-14大文字3!!.html"> 大文字 3!!</a><br /></p>
 
-<h5 id="o202502">2025.2</h5>
+<h6 id="o202502" class="omoi-month-title">2</h6>
 
 <p><code style="background-color:#dc1e62">02/15</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2025-2-15大文字.html"> 大文字</a><br /></p>
 
-<h5 id="o202508">2025.8</h5>
+<h6 id="o202508" class="omoi-month-title">8</h6>
 
 <p><code style="background-color:#e72c52">08/22</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2025-8-22大文字.html"> 大文字</a><br /></p>
 
-<h5 id="o202509">2025.9</h5>
+<h6 id="o202509" class="omoi-month-title">9</h6>
 
 <p><code style="background-color:#e72c52">09/30</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2025-9-30大文字.html"> 大文字</a><br /></p>
 
-<h5 id="o202512">2025.12</h5>
+<h6 id="o202512" class="omoi-month-title">12</h6>
 
 <p><code style="background-color:#ed3847">12/29</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2025-12-1大文字.html"> 大文字</a><br /></p>
 
-<h5 id="o202601">2026.1</h5>
+<h5>2026</h5>
+<h6 id="o202601" class="omoi-month-title">1</h6>
 
 <p><code style="background-color:#ed3847">01/01</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2024-9-22fgo奏章3.html"> fgo奏章3</a><br />
 <code style="background-color:#ed3847">01/02</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2025-1-27疯狂山脉.html"> 疯狂山脉</a><br /></p>
 
-<h5 id="o202602">2026.2</h5>
+<h6 id="o202602" class="omoi-month-title">2</h6>
 
 <p><code style="background-color:#E23D4E">02/03</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2026-2-3大文字.html"> 大文字</a><br />
 <code style="background-color:#E23D4E">02/09</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2026-2-9大文字.html"> 大文字</a><br /></p>
 
-<h5 id="o202605">2026.5</h5>
+<h6 id="o202605" class="omoi-month-title">5</h6>
 
 <p><code style="background-color:#D84355">05/10</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2026-5-10GW.html"> GW随笔</a><br />
 <code style="background-color:#D84355">05/10</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2026-5-10paraponera_clavata.html"> Paraponera clavata</a><br /></p>
 
-<h5 id="o202606">2026.6</h5>
+<h6 id="o202606" class="omoi-month-title">6</h6>
 
 <p><code style="background-color:#CD485C">06/28</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2026-6-28bulletant_mandiblesimu.html"> 搬水</a><br /></p>
 
@@ -671,7 +817,9 @@
 <h3><a href="https://wzetto.github.io/wz369.github.io/"><img src="https://wzetto.github.io/wz369.github.io/images/icon/ico_detailarw_bk.svg" alt="back" style="height:0.9em; vertical-align:middle;" /></a></h3>
 
 <!-- ### [< HOME](https://wzetto.github.io/wz369.github.io/) -->
-<br>
+
+        </div>
+        <br>
         <br>
         <p style="text-align: center;">
           <img src="https://drive.google.com/thumbnail?id=1hcY5U4qLbe6QHDNCK6wzERxcDnTxm0Dp&sz=w800" width="200px"/>

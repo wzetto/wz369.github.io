@@ -242,10 +242,6 @@ var trailFiles = [
 
 
 
-
-
-
-
     {
         url: "/yamanobo/baihaizi/baihaizi.gpx",
         title: "baihaizi"

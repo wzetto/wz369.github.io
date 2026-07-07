@@ -121,10 +121,8 @@ import { STLLoader } from 'three/addons/loaders/STLLoader.js';
   // --- Load STL files ---
   const loader = new STLLoader();
   const stlFiles = [
-    { file: 'mandibleconfig0.stl', material: mandibleMaterial },
-    { file: 'mandibleconfig1.stl', material: mandibleMaterial },
-    { file: 'mandibleconfig2.stl', material: mandibleMaterial },
-    { file: 'water_surface0.stl', material: waterMaterial }
+    { file: 'mandible_config.stl', material: mandibleMaterial },
+    { file: 'water_config0.stl', material: waterMaterial }
   ];
 
   const allMeshes = [];
