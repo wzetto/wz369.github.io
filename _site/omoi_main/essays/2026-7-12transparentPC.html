@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="shortcut icon" type="image/png" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="shortcut icon" sizes="192x192" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="apple-touch-icon" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=2d7debc151fdd5a3e2a16c50d57816f40f733139">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>透明PC打印 | wz369.github.io</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="透明PC打印" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://0.0.0.0:4000/omoi_main/essays/2026-7-12transparentPC.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/omoi_main/essays/2026-7-12transparentPC.html" />
+<meta property="og:site_name" content="wz369.github.io" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="透明PC打印" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"透明PC打印","url":"http://0.0.0.0:4000/omoi_main/essays/2026-7-12transparentPC.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
+<script>
+const config = {
+    startOnLoad:true,
+    theme: 'forest',
+    flowchart: {
+        useMaxWidth:false,
+        htmlLabels:true
+        }
+};
+mermaid.initialize(config);
+window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+</script>
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+    <script type="text/x-mathjax-config">
+       MathJax.Hub.Config({
+         tex2jax: {
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           processEscapes: true
+         }
+       });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- HEADER -->
+    <div id="header_pages" class="outer">
+        <header class="inner_top background_img_formal">
+          
+          <!-- 
+            <a id="forkme_banner" href="https://github.com/wzetto/wz369.github.io">View on GitHub</a>
+           -->
+          <a href="https://wzetto.github.io/wz369.github.io/"></a>
+          
+          <h1 id="project_title">透明PC打印</h1>
+          
+          
+         
+          
+        </header>
+    </div>
+    
+    <script src="https://wzetto.github.io/wz369.github.io/js/header/header_scroll_formal.js"></script>
+    
+    <!-- MAIN CONTENT -->
+    
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <div class="row">
+      <div class="inner_left">
+        
+        <h6 style="position: absolute; top: 0; right: 0; padding: 5px;"> Friedrich "The Sea of Ice" </h6>
+
+        
+          <code style="background-color:#fff;border: 1.5px solid #303030;box-shadow: 0 0 1px rgba(0,0,0,.1)">
+            <a href="https://fgo.wiki/w/%E7%89%B9%E6%8B%89%E6%B4%9B%E5%85%8B">其他/随笔</a>
+          </code>
+        
+
+        <p>参数文件：<a href="https://makerworld.com/en/models/3067499-pc-clear-translucent#profileId-3452860"><img src="../../images/icon/makerworld.svg" alt="" aria-hidden="true" style="width:1em; height:1em; vertical-align:-0.12em; margin-right:0.25em;" />MakerWorld</a></p>
+
+<h3 id="介绍">介绍</h3>
+
+<p>梅雨季周末躲家里，除了蹬codex外不整点实验浑身难受。故使用拓竹P2S 0.6 mm / 0.8 mm 碳化钨头进行了对透明PC耗材打印的尝试。PC耗材生产厂家为拓竹。</p>
+
+<p>该工程塑料拥有89%透光率，与透明PETG相比拥有更高强度以及高温耐性（glass transition temperature），也就是更难打印。</p>
+
+<p>FDM相比光固化天然不适合打印透明材料，这是自我折磨课题，以期获得对打印过程的更深入理解。</p>
+
+<h3 id="思路和手法">思路和手法</h3>
+
+<p>参考拓竹官方和Maker World，Reddit老哥对半透明PETG的打印攻略，以及5.6 Pro的跟进和思路sampling。</p>
+
+<p>由于涉及实验，5.6 Pro会列举大量参数，但并非全对，也并非完全，不完全对会导致结果完全不对，故需要对可能的参数进行调整试错，再根据GPT的反馈和实验获得的对照来加强理解以及寻找优化梯度，最终发现GPT对线横截面的判断错误，也许是拓竹官方指南是PETG材料的原因，而这是为数不多的参考资料。调参人，并且废机器。是时候学下FDM模拟了…后处理是在底面和表面涂UV胶，待渗透进孔隙后用紫光灯固化。</p>
+
+<h3 id="结果">结果</h3>
+
+<p>导致非透明的原因是界面造成的光散射在试料内部的发生，主要的界面是FDM法在走线过程中，新的熔融塑料线接触到旧的塑料线时，如果新旧接触部分未能通过：新线加热旧线使其软化产生扩散 的话则会产生界面。需要消除的是此类边界，消除的思路是让<strong>新的高温塑料线熔化接触到的旧凝固塑料线</strong>，消除的手段是减缓新塑料线的冷却，具体的参数是高初始温度，高环境温度，低打印速度，<strong>低体积流量</strong>但是<strong>高流量比（flow ratio）</strong>，通过过挤出的扁平走线降低空隙率以及增加新-旧线接触面积（也许是比接触面积，考虑小挤出体积冷却更慢的优势）。</p>
+
+<p style="text-align: center;">
+<img src="https://drive.google.com/thumbnail?id=1JLXteSwqB5yTRYJ7opKM5lf9yNqL_Foe&amp;sz=w2800" width="300px" />
+</p>
+
+<p>跟官方透明件参数的对比。小气泡是UV胶涂布过程产生，以及内部仍有微小边界。没办法，尽力了，太折磨。</p>
+
+<p style="text-align: center;"><em>左 0.6 mm / 中 0.8 mm / 右 0.6 mm 官方参数</em></p>
+<p style="text-align: center;">
+<img src="https://drive.google.com/thumbnail?id=19v_UKh2he7FXTjCCX61_YBnYrh1UE8UI&amp;sz=w2800" width="600px" />
+</p>
+
+<p>透，虽说拿远了仍然是毛玻璃效果。没办法，尽力了。</p>
+
+<p style="text-align: center;">
+<img src="https://drive.google.com/thumbnail?id=1akwEbqp2wlRnCrINoNq1HztwvUhAmgPy&amp;sz=w2800" width="300px" />
+</p>
+
+<p style="text-align: center;">
+<img src="https://drive.google.com/thumbnail?id=1Y_yre2pbo7mKy15FVRM7uixyfCm0OVNd&amp;sz=w2800" width="300px" />
+</p>
+
+<p>对各项参数和环境的评价（主观体验，与参数重要性不一定等价，以及具体数值采用0.8 mm喷嘴的数据）：</p>
+
+<h5 id="夯">夯</h5>
+
+<ul>
+  <li>flow ratio: 1.03以上可，甚至可以升到1.1。虽说后者因为挤出过多塑料会导致表面不平整，但无敌的高温碳化钨喷嘴会在打印更上一层时将不平整的部分刮到试料边缘，然后后处理即可。缺点是废机器。</li>
+  <li>layer height $h=0.16\ mm$, line width $w = 0.82\ mm$, printing speed $&lt; 10 mm/s$ 作用同上，高flow ratio + 低体积流量大概能增加比表面积优化导热。</li>
+</ul>
+
+<h5 id="顶级">顶级</h5>
+
+<ul>
+  <li>nozzle temperature： 290 deg.C。</li>
+  <li>infill-wall overlap to 45%. 也是遵循新旧重叠消除边界的思路的暴力手段。（走线图中红色infill与橙色wall的重叠率）</li>
+</ul>
+
+<p style="text-align: center;">
+<img src="https://drive.google.com/thumbnail?id=132_Vz023x0bki2EsEUbwenAgrIKzs4vQ&amp;sz=w2800" width="400px" />
+</p>
+
+<ul>
+  <li>三绿E2 pro烘干机。能干到110 deg.C，但这是鼓风干燥机的下位替代，因为牢日的炉子太贵，走阿里的话，前一阵子跟阿里合作的佐川急便刚被杀鸡儆猴，剩下的顺丰遵纪守法一定会报税。（倒反天罡）</li>
+</ul>
+
+<p style="text-align: center;">
+<img src="https://drive.google.com/thumbnail?id=1YfglxpBnX2OhvD4XoVqOCOY72kOXiw1X&amp;sz=w2800" width="200px" />
+</p>
+
+<h5 id="人上人">人上人</h5>
+
+<ul>
+  <li>5.6 Pro，提供当前实验数据和.3mf参数文件后会生成指南和新.3mf文件，但有雷！打印一版试样至少需2h，若是考虑PC材料干燥时间一个晚上会流逝。若是使用埋雷参数进行实验会跌入绝望之渊！</li>
+</ul>
+
+<h5 id="npc">NPC</h5>
+
+<ul>
+  <li>P2S机器：
+    <ul>
+      <li>喷嘴和热床温度够</li>
+      <li>但没有腔温控制，所以到达理想的50度左右腔温，需要提前加热1h</li>
+      <li>而同时考虑到PC分解以及微塑料等启动了外排装置（Hon&amp;Guan HI 100SD，与通风口和打印机的两个连接件用PETG-CF制作）。一旦吸入环境空气则会逐渐降温。</li>
+    </ul>
+  </li>
+  <li>PC材料：
+    <ul>
+      <li>高模量（拓竹性能2.1 GPa）和高glass transition temperature ($T_g\approx 145\ ^{\circ}C$)，导致零件与腔温的温差过大的话热应力会使得零件翘曲，例如：</li>
+    </ul>
+  </li>
+</ul>
+
+<p style="text-align: center;">
+<img src="https://drive.google.com/thumbnail?id=1ZcHX--Keoy2FhfGBqscTbcp0bz-1HpEo&amp;sz=w2800" width="300px" />
+</p>
+
+<ul>
+  <li>以上的对策是在打印完成后，通过调整热床温度逐步降温，四舍五入也是在退火。例如，每次下降20K，稳定后再进行后续降温。直到热床（约等于零件温度）与腔温差小于20 K时可取出。以及，延伸来讲，打印功能件时brim（帽檐）设置不可少。</li>
+</ul>
+
+<h5 id="拉完了">拉完了</h5>
+
+<ul>
+  <li>smooth PEI plate （拓竹光面板）：并非光面。导致的底面凹凸需要后续涂胶处理。</li>
+</ul>
+
+<h3><a href="https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html"><img src="https://wzetto.github.io/wz369.github.io/images/icon/ico_detailarw_bk.svg" alt="back" style="height:0.9em; vertical-align:middle;" /></a></h3>
+
+<script>
+  window.onload = function(){
+    let txt = document.getElementById("side_text");
+    txt.innerHTML = "";
+  }
+</script>
+
+<br>
+        <div id="gitalk-container"></div>
+        <script>
+          var gitalk = new Gitalk({
+              clientID: '7b560b97e4bda87153dd',
+              clientSecret: '71c1745a9c776d439e0de7e8712c4c90a7441709',
+              repo: 'gitalk-cobuffer',
+              owner: 'wzetto',
+              admin: ['wzetto'],
+              id: '透明PC打印',
+              distractionFreeMode: false,
+              title: 'Omoi'
+          })
+          gitalk.render('gitalk-container')
+        </script>
+        <p style="text-align: center;">
+          <img src="https://drive.google.com/thumbnail?id=1hcY5U4qLbe6QHDNCK6wzERxcDnTxm0Dp&sz=w800" width="200px"/>
+        </p>
+        <h6 align='center'>Zhi Wang © 2021-2026</h6>
+      </div>
+      <div class="inner_right">
+        <h5 id="side_text">> Main content</h5>
+      </div>
+     </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner_bottom">
+        
+        <p class="copyright">wz369.github.io maintained by <a href="https://github.com/wzetto">wzetto</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <!-- <p style="position: absolute; bottom: 0; width:100%; text-align: center">有り得ざる妖精の王よ——</p>
+        -->
+        <p id='bottom_text'></p>
+        <!-- <script src="https://wzetto.github.io/wz369.github.io/js/bottom/bottom_text_home.js"></script>-->
+      </footer>
+    </div>
+  </body>
+</html>

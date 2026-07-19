@@ -17,7 +17,7 @@
   <body>
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript"
-            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG">
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_SVG">
     </script>
     <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
     <script type="text/x-mathjax-config">
@@ -28,7 +28,7 @@
          }
        });
     </script>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
     <!-- HEADER -->
     <div id="header_pages" class="outer">
       <header class="inner_top background_img_formal">
@@ -492,7 +492,7 @@
                 .attr('fill', nodeColor)
                 .on('click', function(event, d) {
                   if (d.type === 'essay' && d.url) {
-                    window.location.href = d.url;
+                    window.location.href = 'https://wzetto.github.io/wz369.github.io' + d.url;
                   }
                 })
                 .call(d3.drag()
@@ -510,6 +510,9 @@
                     d.fx = null;
                     d.fy = null;
                   }));
+
+              node.append('title')
+                .text(function(d) { return d.title; });
 
               var label = labelLayer.selectAll('text')
                 .data(simulationNodes.filter(function(d) {
@@ -569,7 +572,7 @@
 
               var randomUrl = essayGraphUrls[Math.floor(Math.random() * essayGraphUrls.length)];
               if (randomUrl) {
-                window.location.href = randomUrl;
+                window.location.href = 'https://wzetto.github.io/wz369.github.io' + randomUrl;
               }
             });
           }
