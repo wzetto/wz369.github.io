@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
     <link rel="shortcut icon" sizes="192x192" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
     <link rel="apple-touch-icon" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=2d7debc151fdd5a3e2a16c50d57816f40f733139">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=be88f0ebf282104a46cc25a5e43b8026fa5b80c3">
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>透明PC打印 | wz369.github.io</title>
 <meta name="generator" content="Jekyll v3.10.0" />
@@ -119,7 +119,7 @@ window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
 
 <h3 id="结果">结果</h3>
 
-<p>导致非透明的原因是界面造成的光散射在试料内部的发生，主要的界面是FDM法在走线过程中，新的熔融塑料线接触到旧的塑料线时，如果新旧接触部分未能通过：新线加热旧线使其软化产生扩散 的话则会产生界面。需要消除的是此类边界，消除的思路是让<strong>新的高温塑料线熔化接触到的旧凝固塑料线</strong>，消除的手段是减缓新塑料线的冷却，具体的参数是高初始温度，高环境温度，低打印速度，<strong>低体积流量</strong>但是<strong>高流量比（flow ratio）</strong>，通过过挤出的扁平走线降低空隙率以及增加新-旧线接触面积（也许是比接触面积，考虑小挤出体积冷却更慢的优势）。</p>
+<p>导致非透明的原因是界面造成的光散射在试料内部的发生，主要的界面是FDM法在走线过程中，新的熔融塑料线接触到旧的塑料线时，如果新旧接触部分未能通过：新线加热旧线使其软化产生扩散 的话则会产生界面。需要消除的是此类边界，消除的思路是让<strong>新的高温塑料线软化接触到的旧凝固塑料线</strong>，消除的手段是减缓新塑料线的冷却，具体的参数是高初始温度，高环境温度，低打印速度，<strong>低体积流量</strong>但是<strong>高流量比（flow ratio）</strong>，通过过挤出的扁平走线降低空隙率以及增加新-旧线接触面积（也许是比接触面积，考虑小挤出体积传热更充分的优势）。</p>
 
 <p style="text-align: center;">
 <img src="https://drive.google.com/thumbnail?id=1JLXteSwqB5yTRYJ7opKM5lf9yNqL_Foe&amp;sz=w2800" width="300px" />
@@ -141,6 +141,10 @@ window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
 <p style="text-align: center;">
 <img src="https://drive.google.com/thumbnail?id=1Y_yre2pbo7mKy15FVRM7uixyfCm0OVNd&amp;sz=w2800" width="300px" />
 </p>
+
+<p>前处理流程是：
+耗材：&gt; 80 deg.C干燥至少8 h。提前针对本耗材和打印参数进行flow dynamics（K值）调节。
+机器：洗完板子后高温热床调平，然后热床110 deg.C将腔温升至 &gt; 50 deg.C，板子打印部位涂胶。打印时机箱风扇全关，留外排扇（负压即可，考虑到温度损失，转速越小越好）。</p>
 
 <p>对各项参数和环境的评价（主观体验，与参数重要性不一定等价，以及具体数值采用0.8 mm喷嘴的数据）：</p>
 

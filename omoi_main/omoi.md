@@ -221,9 +221,8 @@ title: 想法等
 <h6 id="o202607" class="omoi-month-title">7</h6>
 
 <code style="background-color:#CD485C">07/12</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2026-7-12transparentPC.html"> 透明PC打印</a><br>
-
 <code style="background-color:#CD485C">07/17</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2026-7-17睡觉.html"> 睡觉</a><br>
-
+<code style="background-color:#CD485C">07/25</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2026-7-25konkabanner.html"> 旗云</a><br>
 
 <!-- <hr style="width:50px;text-align:left;margin-left:0"> -->
 

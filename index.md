@@ -1,5 +1,5 @@
 ---
-title: 'wz'
+title: ''
 layout: default
 ---
 
