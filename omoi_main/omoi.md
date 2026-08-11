@@ -224,6 +224,10 @@ title: 想法等
 <code style="background-color:#CD485C">07/17</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2026-7-17睡觉.html"> 睡觉</a><br>
 <code style="background-color:#CD485C">07/25</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2026-7-25konkabanner.html"> 旗云</a><br>
 
+<h6 id="o202608" class="omoi-month-title">8</h6>
+
+<code style="background-color:#C24E63">08/11</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2026-8-9sqsdrl.html"> SQS drl renew</a><br>
+
 <!-- <hr style="width:50px;text-align:left;margin-left:0"> -->
 
 
