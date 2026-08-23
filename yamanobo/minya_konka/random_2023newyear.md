@@ -1,7 +1,7 @@
 ---
 title: 随机康定
 layout: map_default
-js_url: https://wzetto.github.io/wz369.github.io/js/map_231231_randkonka.js
+js_url: /js/map_231231_randkonka.js
 ---
 
 23年底跟缪老师最后的康定之旅？分为三段，最后一段以半腐败方式成功。

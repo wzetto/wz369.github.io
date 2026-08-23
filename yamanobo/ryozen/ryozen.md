@@ -1,7 +1,7 @@
 ---
 title: '霊仙山'
 layout: map_default
-js_url: https://wzetto.github.io/wz369.github.io/js/map_ryozen.js
+js_url: /js/map_ryozen.js
 ---
 2021.1.17<br>
 **前往车站时，一株八重桜。下吧！梅雨。**<br>

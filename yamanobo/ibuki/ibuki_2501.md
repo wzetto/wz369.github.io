@@ -1,7 +1,7 @@
 ---
 title: 伊吹山 25.02
 layout: map_default
-js_url: https://wzetto.github.io/wz369.github.io/js/map_ibuki2501.js
+js_url: /js/map_ibuki2501.js
 ---
 
 <img src="https://drive.google.com/thumbnail?id=1dfVUBuJyQvpMqIxgOKNpD5KrA7IA3oib&sz=w2800" width="800px" />

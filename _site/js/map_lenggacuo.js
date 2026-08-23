@@ -1,8 +1,8 @@
-var osm_map = new L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+var osm_map = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: 'Map data &copy; <a href="http://www.osm.org">OpenStreetMap</a>'
 })
 
-var google_map = new L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
+var google_map = new L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
     maxZoom: 20,
     subdomains:['mt0','mt1','mt2','mt3']
 });
@@ -20,7 +20,7 @@ L.control.layers(map_baselayer, null, {
   collapsed: true
 }).addTo(map)
 
-var gpx = 'https://wzetto.github.io/wz369.github.io/yamanobo/lenggacuo/lenggacuo1.gpx';
+var gpx = 'lenggacuo1.gpx';
 new L.GPX(gpx, {
   async: true,
   polyline_options: {
@@ -31,7 +31,7 @@ new L.GPX(gpx, {
   map.fitBounds(e.target.getBounds());
 }).addTo(map);
 
-var gpx2 = 'https://wzetto.github.io/wz369.github.io/yamanobo/lenggacuo/lengacuo2.gpx';
+var gpx2 = 'lengacuo2.gpx';
 new L.GPX(gpx2, {
   async: true,
   polyline_options: {

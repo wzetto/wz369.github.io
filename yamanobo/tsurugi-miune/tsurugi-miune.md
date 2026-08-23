@@ -1,7 +1,7 @@
 ---
 title: 剣山～三嶺縦走
 layout: map_default
-js_url: https://wzetto.github.io/wz369.github.io/js/map_tsurugi_miune.js
+js_url: /js/map_tsurugi_miune.js
 ---
 
 2021.12.31

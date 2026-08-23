@@ -1,4 +1,4 @@
-var osm_map = new L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+var osm_map = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: 'Map data &copy; <a href="http://www.osm.org">OpenStreetMap</a>'
 })
 
@@ -19,7 +19,7 @@ L.control.layers(map_baselayer, null, {
   collapsed: true
 }).addTo(map)
 
-var gpxFile = 'https://wzetto.github.io/wz369.github.io/yamanobo/bunagatake/20210228bunagatake.gpx';
+var gpxFile = '20210228bunagatake.gpx';
 new L.GPX(gpxFile, {
   async: true,
   marker_options: {

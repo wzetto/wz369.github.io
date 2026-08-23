@@ -1,7 +1,7 @@
 ---
 title: '開聞岳'
 layout: map_default
-js_url: https://wzetto.github.io/wz369.github.io/js/map_kaimon.js
+js_url: /js/map_kaimon.js
 ---
 2022.01.22
 <hr style="width:50px;text-align:left;margin-left:0">

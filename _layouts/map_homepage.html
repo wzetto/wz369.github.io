@@ -48,7 +48,52 @@
     </div>
     
     <script src="https://wzetto.github.io/wz369.github.io/js/header/header_scroll_formal.js"></script>
-    
+
+    <!--* define some css style -->
+    <style>
+      #yamanoboContent h5 {
+        margin: 1.75em 0 0.35em 0;
+        color: #202020;
+        font-size: 1.65em;
+        font-weight: 800;
+        line-height: 1.15;
+      }
+
+      #yamanoboContent h5:first-child {
+        margin-top: 0.9em;
+      }
+
+      #yamanoboContent .yama-badge {
+        display: inline-block;
+        margin-left: 1.15em;
+        margin-right: 0.6em;
+        padding: calc(0.12em + 1px) 0.28em;
+        box-sizing: border-box;
+        color: #f7f7fa;
+        font-size: 0.86em;
+        line-height: 1.05;
+        vertical-align: 0.06em;
+        border-radius: 4px;
+      }
+
+      #yamanoboContent .yama-badge--hair {
+        background-color: #514a9a;
+      }
+
+      #yamanoboContent .yama-badge--hairband {
+        background-color: #356f9b;
+      }
+
+      #yamanoboContent .yama-badge--highlight {
+        background-color: #b83b52;
+      }
+
+      #yamanoboContent p {
+        margin: 0.15em 0 0.55em;
+        line-height: 1.7;
+      }
+    </style>
+
     <!-- MAIN CONTENT -->
     
     <div id="main_content_wrap" class="outer">
@@ -61,7 +106,9 @@
       <script src="{{ '/js/map_homepage.js' | relative_url }}"></script>
       <section id="main_content" class="inner">
         <h6 style="position: absolute; top: 0; right: 0; padding: 5px;"> Friedrich "The Sea of Ice" </h6>
-        {{ content }}<br>
+        <div id="yamanoboContent">
+          {{ content }}
+        </div><br>
         <br>
         <p style="text-align: center;">
           <img src="https://drive.google.com/thumbnail?id=1hcY5U4qLbe6QHDNCK6wzERxcDnTxm0Dp&sz=w800" width="200px"/>

@@ -1,7 +1,7 @@
 ---
 title: '富士山<夏>'
 layout: map_fuji
-js_url: https://wzetto.github.io/wz369.github.io/js/map_fuji.js
+js_url: /js/map_fuji.js
 ---
 2022.08<br>
 

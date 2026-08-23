@@ -1,7 +1,7 @@
 ---
 title: 二峰
 layout: map_default
-js_url: https://wzetto.github.io/wz369.github.io/js/map_erguniang.js
+js_url: /js/map_erguniang.js
 ---
 2022.1.11<br>
 <img src="https://drive.google.com/thumbnail?id=11Z1mrgUbd5Q5c1iGo6BZ2B5RKGA_WU_d&sz=w800" />

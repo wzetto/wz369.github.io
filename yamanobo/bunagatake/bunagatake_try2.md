@@ -1,7 +1,7 @@
 ---
 title: '武奈ヶ岳 ver.2'
 layout: map_default
-js_url: https://wzetto.github.io/wz369.github.io/js/map_bunagatake_try2.js
+js_url: /js/map_bunagatake_try2.js
 ---
 
 <style>

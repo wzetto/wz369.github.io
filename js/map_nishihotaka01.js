@@ -2,25 +2,26 @@ var osm_map = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.pn
   attribution: 'Map data &copy; <a href="http://www.osm.org">OpenStreetMap</a>'
 })
 
-var google_map = new L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
-    maxZoom: 20,
-    subdomains:['mt0','mt1','mt2','mt3']
-});
+var kokudo_map = new L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png', {
+	attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">国土地理院</a>'
+})
 
 var map = L.map('map',{
-  layers: [osm_map]
+  layers: [kokudo_map]
 });
 
 var map_baselayer = {
   'OpenStreetMap': osm_map,
-  'GoogleSatellite': google_map
+  '国土地理院': kokudo_map
 };
 
 L.control.layers(map_baselayer, null, {
   collapsed: true
 }).addTo(map)
 
-var gpxFile = '20221203藤原岳.gpx';
+// Resolve the track beside this report so it works both at the domain root
+// during local development and below the repository path on GitHub Pages.
+var gpxFile = 'yamap_2026-08-15_07_24.gpx';
 new L.GPX(gpxFile, {
   async: true,
   marker_options: {
@@ -71,7 +72,7 @@ var elements = gpx.getElementsByTagName('trkpt');
 var elementsAlt = gpx.getElementsByTagName('ele');
 var arrEle = [];
 for (i=0; elementsAlt.length>i; i++){
-	arrEle.push(elementsAlt[i].textContent);
+	arrEle.push(elementsAlt[i].innerHTML);
 }
 var startPoint = elements.item(0);
 var endPoint = elements.item(elements.length-1);

@@ -340,6 +340,13 @@ var trailFiles = [
 
 
     {
+        url: "/yamanobo/nishihotaka/yamap_2026-08-15_07_24.gpx",
+        title: "yamap_2026-08-15_07_24"
+    },
+
+
+
+    {
         url: "/yamanobo/ryozen/20210410%E9%9C%8A%E4%BB%99%E5%B1%B1.gpx",
         title: "20210410霊仙山"
     },

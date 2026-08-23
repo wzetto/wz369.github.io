@@ -1,7 +1,7 @@
 ---
 title: '武奈ヶ岳'
 layout: map_default
-js_url: https://wzetto.github.io/wz369.github.io/js/map_bunagatake.js
+js_url: /js/map_bunagatake.js
 ---
 2022.01.23
 <hr style="width:50px;text-align:left;margin-left:0">

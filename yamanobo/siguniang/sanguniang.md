@@ -1,7 +1,7 @@
 ---
 title: 三峰
 layout: map_default
-js_url: https://wzetto.github.io/wz369.github.io/js/map_sanguniang.js
+js_url: /js/map_sanguniang.js
 ---
 
 <style>

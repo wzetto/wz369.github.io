@@ -1,7 +1,7 @@
 ---
 title: '藤原岳'
 layout: map_default
-js_url: https://wzetto.github.io/wz369.github.io/js/map_fujiwara.js
+js_url: /js/map_fujiwara.js
 ---
 2022.12<br>
 

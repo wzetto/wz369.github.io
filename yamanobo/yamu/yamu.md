@@ -1,7 +1,7 @@
 ---
 title: '雅姆'
 layout: map_default
-js_url: https://wzetto.github.io/wz369.github.io/js/map_yamu.js
+js_url: /js/map_yamu.js
 ---
 2023.05<br>
 

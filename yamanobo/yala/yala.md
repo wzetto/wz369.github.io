@@ -1,7 +1,7 @@
 ---
 title: 雅拉徒步
 layout: map_default
-js_url: https://wzetto.github.io/wz369.github.io/js/map_yala.js
+js_url: /js/map_yala.js
 ---
 
 2022.1.2

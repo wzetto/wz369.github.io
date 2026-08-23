@@ -1,8 +1,8 @@
-var osm_map = new L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+var osm_map = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: 'Map data &copy; <a href="http://www.osm.org">OpenStreetMap</a>'
 })
 
-var google_map = new L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
+var google_map = new L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
     maxZoom: 20,
     subdomains:['mt0','mt1','mt2','mt3']
 });
@@ -20,7 +20,7 @@ L.control.layers(map_baselayer, null, {
   collapsed: true
 }).addTo(map)
 
-var gpxFile = 'https://wzetto.github.io/wz369.github.io/yamanobo/siguniang/2020_erguniang.gpx';
+var gpxFile = '2020_erguniang.gpx';
 new L.GPX(gpxFile, {
   async: true,
   marker_options: {
