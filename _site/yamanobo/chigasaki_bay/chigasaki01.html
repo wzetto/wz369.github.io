@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="shortcut icon" type="image/png" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="shortcut icon" sizes="192x192" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="apple-touch-icon" href="https://wzetto.github.io/wz369.github.io/images/icon/sideicon192.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>湘南海岸骑行 | wz369.github.io</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="湘南海岸骑行" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://0.0.0.0:4000/yamanobo/chigasaki_bay/chigasaki01.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/yamanobo/chigasaki_bay/chigasaki01.html" />
+<meta property="og:site_name" content="wz369.github.io" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="湘南海岸骑行" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"湘南海岸骑行","url":"http://0.0.0.0:4000/yamanobo/chigasaki_bay/chigasaki01.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+    <script type="text/x-mathjax-config">
+       MathJax.Hub.Config({
+         tex2jax: {
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           processEscapes: true
+         }
+       });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- HEADER -->
+    <div id="header_pages" class="outer">
+        
+        <header class="inner_top background_img_formal">
+          
+          <!-- 
+            <a id="forkme_banner" href="https://github.com/wzetto/wz369.github.io">View on GitHub</a>
+           -->
+
+          <h1 id="project_title">湘南海岸骑行</h1>
+          
+          
+         
+          
+        </header>
+    </div>
+    
+    <script src="https://wzetto.github.io/wz369.github.io/js/header/header_scroll_formal.js"></script>
+    
+    <!-- MAIN CONTENT -->
+    
+    <div id="main_content_wrap" class="outer">
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script><br>
+      <hr style="width:200px;text-align:center"><br>
+      <div id="map_shell" class="map-shell">
+        <div id="map"></div>
+        <div id="map_3d" class="map-3d" hidden></div>
+        <div id="map_status" class="map-status" role="status" hidden></div>
+        <div class="map-toolbar">
+          <div class="map-mode-control" role="group" aria-label="Map view">
+            <button type="button" class="is-active" data-map-mode="2d" aria-pressed="true">2D</button>
+            <button type="button" data-map-mode="3d" aria-pressed="false">3D</button>
+          </div>
+          <button type="button" id="map_fullscreen_button" class="map-shell-fullscreen-button" aria-label="Enter fullscreen" aria-pressed="false" title="Enter fullscreen"><span aria-hidden="true">&#x26F6;</span></button>
+          <details class="map-help">
+            <summary aria-label="3D map controls" title="3D map controls"><span aria-hidden="true">?</span></summary>
+            <div class="map-help-panel" role="note">
+              <strong class="map-help-title">3D controls</strong>
+              <span class="map-help-label">Mouse</span>
+              <ul>
+                <li><kbd>Ctrl</kbd> + left-drag or right-drag: rotate and tilt</li>
+                <li>Scroll or <kbd>+</kbd> / <kbd>-</kbd>: zoom</li>
+              </ul>
+              <span class="map-help-label">Touch</span>
+              <ul>
+                <li>Twist two fingers: rotate</li>
+                <li>Slide two fingers vertically: tilt</li>
+                <li>Pinch: zoom</li>
+              </ul>
+              <p>Compass: reset north. Move over the altitude plot to locate the same trail point.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+      <div id='chart'></div>
+      <script src="https://code.highcharts.com/highcharts.js"></script>
+      <h7 style='text-align:center'>Touch or long-press icons for details.</h7>
+      
+      <script src="/js/map_chigasaki01.js"></script>
+      <script src="/js/map_experience.js"></script>
+      <script src="/js/map_chart_link.js"></script>
+      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+      <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+      <section id="main_content" class="inner">
+        <p>2026.9<br /></p>
+
+<p>从横滨出发往返100km能实现沿海骑行,因为海边正好有路,出发前是这么设想的.但实际上并不能全程享受,或者有限制条件,即</p>
+
+<ol>
+  <li>东部 江之岛(镰仓)附近有海边铺装路面,但是汇集全球游客,需要时刻抢道.本次未涉及,因为之前体验过,不太休闲.</li>
+  <li>中部 茅ヶ崎有不错的靠近沙滩的铺装路面.大部分骑行人都是神奈川冲浪者.</li>
+  <li>西部 前往热海方向,沿海公路无法通行自行车,需走专用‘太平洋岸自行车道’.名字给到夯,但大部分都在内陆骑行,并非沿岸.</li>
+</ol>
+
+<p>当然,本次目的实则有二,一是海岸拉练,二是试一下最近的视频生成3dgs来保存实景记忆的工作流,主要也是趁Astra刚发布还没唐,赶紧把手头难搞的东西扔进去.虽说蹬自行车的几个小时一周额度也被蹬完了,但好在还有几张赎罪券.</p>
+
+<p>3dgs效果如下,随机选了一块封闭沙地,用手持iPhone的挂壁法整出的效果.要是换上360相机效果有多好我不敢想.jpg</p>
+
+<!-- chigasaki-3dgs:start -->
+<div class="chigasaki-splat-embed" style="margin: 1.5rem 0;">
+  <iframe src="/assets/3dgs/chigasaki01/index.html" title="Chigasaki Coast 3D scene: rotate, pan and zoom" loading="lazy" allow="fullscreen" allowfullscreen="" style="display:block; width:100%; height:clamp(460px, 72vh, 680px); border:0; border-radius:10px; background:#192732;">
+  </iframe>
+  <p style="font-size:0.9rem; margin-top:0.6rem;">
+    <a href="/assets/3dgs/chigasaki01/index.html" target="_blank" rel="noopener">Open 3D viewer ↗</a>
+  </p>
+</div>
+<!-- chigasaki-3dgs:end -->
+
+<p><em>妙脆角</em></p>
+
+<p><img src="https://drive.google.com/thumbnail?id=1G1u6LRqA7Jr7GHOE3fVWiNiFwQMKJwyr&amp;sz=w2800" width="400px" /></p>
+
+<p><em>太平洋岸自行车道</em></p>
+
+<p><img src="https://drive.google.com/thumbnail?id=1ZSEMGEdB0vaiNuB6ObEGvOyDHjRrke8b&amp;sz=w2800" width="600px" /></p>
+
+<p><em>中部的沿岸风景1</em></p>
+
+<p><img src="https://drive.google.com/thumbnail?id=15pkHhijkI_jYhhCMmwdo1IRVOkJJVGUd&amp;sz=w2800" width="600px" /></p>
+
+<p><em>中部的沿岸风景2</em></p>
+
+<p><img src="https://drive.google.com/thumbnail?id=154qV0SNvOJ3M9y9xt0WeKYfpDyLIAaX3&amp;sz=w2800" width="600px" /></p>
+
+<h4><a href="https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html"><img src="https://wzetto.github.io/wz369.github.io/images/icon/ico_detailarw_bk.svg" alt="back" style="height:0.9em; vertical-align:middle;" /></a></h4>
+<br>
+        <br>
+        <div id="gitalk-container"></div>
+        <script>
+          var gitalk = new Gitalk({
+              clientID: '7b560b97e4bda87153dd',
+              clientSecret: '71c1745a9c776d439e0de7e8712c4c90a7441709',
+              repo: 'gitalk-cobuffer',
+              owner: 'wzetto',
+              admin: ['wzetto'],
+              id: '湘南海岸骑行',
+              distractionFreeMode: false,
+              title: 'Yamanobo'
+          })
+          gitalk.render('gitalk-container')
+        </script>
+        <p style="text-align: center;">
+          <img src="https://drive.google.com/thumbnail?id=1hcY5U4qLbe6QHDNCK6wzERxcDnTxm0Dp&sz=w800" width="200px"/>
+        </p>
+        <h6 align='center'>Zhi Wang © 2021-2026</h6>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner_bottom">
+        
+        <p class="copyright">wz369.github.io maintained by <a href="https://github.com/wzetto">wzetto</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <p id='bottom_text'></p>
+        <script type='text/javascript' src='https://wzetto.github.io/wz369.github.io/js/bottom/bottom_text.js'></script>
+      </footer>
+    </div>
+  </body>
+</html>

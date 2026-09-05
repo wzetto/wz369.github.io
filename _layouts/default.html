@@ -29,7 +29,7 @@
        });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-    <!-- HEADER -->
+{% unless page.hide_header %}    <!-- HEADER -->
     <div id="header_pages" class="outer">
         <header class="inner_top background_img_formal">
           
@@ -55,7 +55,7 @@
         </header>
     </div>
     
-    <script src="https://wzetto.github.io/wz369.github.io/js/header/header_scroll_formal.js"></script>
+    <script src="https://wzetto.github.io/wz369.github.io/js/header/header_scroll_formal.js"></script>{% endunless %}
     
     <!-- MAIN CONTENT -->
     <script src="https://wzetto.github.io/wz369.github.io/js/gif/gifffer.min.js"></script>
@@ -66,7 +66,7 @@
     </script>
     <div class="row">
       <div class="inner_left">
-        <h6 style="position: absolute; top: 0; right: 0; padding: 5px;"> Friedrich "The Sea of Ice" </h6>
+{% unless page.hide_header %}        <h6 style="position: absolute; top: 0; right: 0; padding: 5px;"> Friedrich "The Sea of Ice" </h6>{% endunless %}
         <script async src="https://js.sitesearch360.com/plugin/bundle/7057.js"></script>
         {{ content }}<br>
 <!--         <script async src="https://js.sitesearch360.com/plugin/bundle/7057.js"></script> -->

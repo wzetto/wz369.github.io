@@ -618,9 +618,221 @@ Full-Width Styles
   background: url(../images/sprite_download.png) no-repeat top right;
 }
 
-#map {
+.map-shell {
+  position: relative;
   height: 350px;
   z-index: 4;
+  overflow: hidden;
+  background: #111;
+}
+
+#map,
+#map_3d {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#map {
+  z-index: 4;
+}
+
+#map_3d {
+  z-index: 5;
+}
+
+#map_3d[hidden] {
+  display: none;
+}
+
+.map-shell:fullscreen,
+.map-shell:-webkit-full-screen,
+.map-shell.map--fullscreen-fallback {
+  width: 100%;
+  height: 100%;
+  background: #111;
+}
+
+.map-shell.map--fullscreen-fallback {
+  position: fixed !important;
+  inset: 0;
+  z-index: 10000;
+}
+
+html.map-fullscreen-fallback-active,
+html.map-fullscreen-fallback-active body {
+  overflow: hidden;
+}
+
+html.map-fullscreen-fallback-active #main_content_wrap {
+  z-index: 10000;
+}
+
+.map-toolbar {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  z-index: 1000;
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  transform: translateX(-50%);
+}
+
+.map-mode-control {
+  display: flex;
+  padding: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
+}
+
+.map-mode-control button {
+  box-sizing: border-box;
+  min-width: 42px;
+  height: 28px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+  color: #222;
+  cursor: pointer;
+  font: 600 13px/28px sans-serif;
+}
+
+.map-mode-control button.is-active {
+  background: #222;
+  color: #fff;
+}
+
+.map-mode-control button:focus-visible {
+  outline: 2px solid #dc143c;
+  outline-offset: 1px;
+}
+
+.map-help {
+  position: relative;
+}
+
+.map-shell-fullscreen-button,
+.map-help > summary {
+  box-sizing: border-box;
+  width: 32px;
+  height: 34px;
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
+  color: #222;
+  cursor: pointer;
+  font: 700 17px/32px sans-serif;
+  text-align: center;
+}
+
+.map-shell-fullscreen-button {
+  padding: 0;
+}
+
+.map-help > summary::-webkit-details-marker {
+  display: none;
+}
+
+.map-shell-fullscreen-button:hover,
+.map-shell-fullscreen-button:focus-visible,
+.map-shell-fullscreen-button[aria-pressed="true"],
+.map-help > summary:hover,
+.map-help > summary:focus-visible,
+.map-help[open] > summary {
+  background: #222;
+  color: #fff;
+}
+
+.map-shell-fullscreen-button:focus-visible,
+.map-help > summary:focus-visible {
+  outline: 2px solid #dc143c;
+  outline-offset: 1px;
+}
+
+.map-help-panel {
+  position: absolute;
+  top: 40px;
+  right: -36px;
+  box-sizing: border-box;
+  width: 250px;
+  max-width: calc(100vw - 24px);
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  background: rgba(20, 20, 20, 0.96);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font: 12px/1.45 sans-serif;
+  text-align: left;
+}
+
+.map-help-title,
+.map-help-label {
+  display: block;
+}
+
+.map-help-title {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.map-help-label {
+  margin-top: 7px;
+  color: #b9d7f2;
+  font-weight: 700;
+}
+
+.map-help-panel ul {
+  margin: 3px 0 0;
+  padding-left: 17px;
+}
+
+.map-help-panel p {
+  margin: 9px 0 0;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.map-help-panel kbd {
+  padding: 1px 4px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  background: #f6f6f6;
+  color: #222;
+  font: 11px/1.2 monospace;
+}
+
+.map-status {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 900;
+  max-width: calc(100% - 40px);
+  padding: 8px 12px;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  background: rgba(17, 17, 17, 0.88);
+  color: #fff;
+  font: 600 13px/1.4 sans-serif;
+  text-align: center;
+}
+
+.map-status[hidden] {
+  display: none;
+}
+
+.maplibregl-popup-content {
+  padding: 6px 8px;
+  border-radius: 4px;
+  color: #222;
+  font: 12px/1.35 sans-serif;
 }
 
 #chart {

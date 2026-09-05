@@ -1,0 +1,29 @@
+:root { color-scheme: dark; font: 16px/1.5 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #f6f7f8; background: #192732; }
+* { box-sizing: border-box; }
+html, body, #scene { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+button { font: inherit; font-size: .875rem; color: inherit; border: 1px solid #ffffff38; border-radius: 7px; background: #223543ed; min-height: 40px; padding: 7px 12px; cursor: pointer; touch-action: manipulation; }
+button:hover:not(:disabled) { background: #3b5363; }
+button:focus-visible, #canvas:focus-visible { outline: 3px solid #a9e4f7; outline-offset: 3px; }
+button:disabled { opacity: .5; cursor: default; }
+[hidden] { display: none !important; }
+#scene { position: relative; background: #192732 center/cover no-repeat; }
+#canvas { position: absolute; inset: 0; touch-action: none; }
+#canvas canvas { display: block; width: 100%; height: 100%; }
+.topbar { position: absolute; z-index: 2; top: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: space-between; padding: 16px; gap: 12px; background: linear-gradient(#0b1828b3, transparent); pointer-events: none; }
+.topbar button { pointer-events: auto; }
+.title { font-size: 1rem; font-weight: 650; text-shadow: 0 1px 6px #0008; }
+.title span { display: block; font-size: .75rem; font-weight: 400; color: #d5e0e8; }
+.welcome { position: absolute; inset: 0; display: grid; place-items: center; background: #0d1c2a38; }
+.welcome-card { text-align: center; padding: 20px 28px; border-radius: 12px; background: #122532c9; backdrop-filter: blur(12px); max-width: 90%; }
+#start { background: #e3f1f4; color: #163c4d; font-size: 1rem; font-weight: 650; padding: 12px 22px; }
+.loading { position: absolute; left: 50%; top: 46%; transform: translate(-50%, -50%); background: #142734e8; padding: 14px 22px; border-radius: 10px; text-align: center; width: max-content; max-width: 90%; }
+.spinner { display: inline-block; width: 16px; height: 16px; border: 2px solid #ffffff50; border-top-color: #fff; border-radius: 50%; margin-right: 8px; animation: spin 1s linear infinite; vertical-align: middle; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.error { position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); padding: 18px; border-radius: 10px; background: #382b30f2; width: min(420px, 90%); text-align: center; }
+.error p { margin: 0 0 12px; }
+.bottom-panel { position: absolute; bottom: 0; left: 0; right: 0; padding: 24px 14px 12px; background: linear-gradient(transparent, #0a1824e8 28%); pointer-events: none; }
+#reset { pointer-events: auto; }
+.hint { margin: 9px 0 0; color: #d1dde4; font-size: .75rem; }
+.hint span { display: block; }
+@media (max-width: 620px) { .topbar { padding: 10px; } .bottom-panel { padding: 20px 10px 10px; } button { padding: 6px 9px; } .title { font-size: .95rem; } }
+@media (prefers-reduced-motion: reduce) { .spinner { animation-duration: 2s; } }

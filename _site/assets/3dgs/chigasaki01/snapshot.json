@@ -1,0 +1,16 @@
+{
+  "step": 55000,
+  "source_bytes": 3934357138,
+  "source_unchanged_during_export": true,
+  "gaussians_in_checkpoint": 5543017,
+  "nonfinite_removed": 0,
+  "exported_gaussians": 4990195,
+  "ply_bytes": 1237569941,
+  "ply_sha256": "15097a8e5c090b7cdd7d560a6a3afdf0a9455df1a84812e638e9549d5b7e203a",
+  "coordinate_system": "Nerfstudio normalized model coordinates, Z up",
+  "sh_degree": 3,
+  "camera_count": 1046,
+  "reference_point_count": 465489,
+  "execution": "CPU only; immutable snapshot; no training or optimizer changes",
+  "source_checkpoint": "step-000055000.ckpt"
+}

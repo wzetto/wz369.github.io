@@ -1,0 +1,407 @@
+{
+  "schema_version": 1,
+  "id": "chigasaki-test-step-89999",
+  "title": "Chigasaki Coast · 3D Scene",
+  "status": "completed-training-snapshot",
+  "step": 89999,
+  "coordinate_system": "Nerfstudio normalized model coordinates, Z up",
+  "cameras": [
+    {
+      "name": "Fence / path",
+      "image": "frame_000002.png",
+      "position": [
+        0.11183371394872665,
+        -0.5438686013221741,
+        -0.009422771632671356
+      ],
+      "target": [
+        -0.18919074535369873,
+        -0.15441301465034485,
+        -0.09722157567739487
+      ],
+      "up": [
+        -0.12047498673200607,
+        0.12878701090812683,
+        0.9843270182609558
+      ],
+      "fov": 24.485008398595397,
+      "camera_to_world": [
+        [
+          0.7893180251121521,
+          -0.12047498673200607,
+          0.602048933506012,
+          0.11183371394872665
+        ],
+        [
+          0.6137681603431702,
+          0.12878701090812683,
+          -0.7789111733436584,
+          -0.5438686013221741
+        ],
+        [
+          0.01630324125289917,
+          0.9843270182609558,
+          0.17559760808944702,
+          -0.009422771632671356
+        ]
+      ]
+    },
+    {
+      "name": "Wide path",
+      "image": "frame_001734.png",
+      "position": [
+        -0.0741967111825943,
+        0.4080928564071655,
+        0.004486303310841322
+      ],
+      "target": [
+        -0.3566499948501587,
+        0.8121353387832642,
+        -0.07899903506040573
+      ],
+      "up": [
+        -0.0946638360619545,
+        0.13754788041114807,
+        0.9859611392021179
+      ],
+      "fov": 24.485008398595397,
+      "camera_to_world": [
+        [
+          0.819706916809082,
+          -0.0946638360619545,
+          0.5649065375328064,
+          -0.0741967111825943
+        ],
+        [
+          0.5727819800376892,
+          0.13754788041114807,
+          -0.8080849647521973,
+          0.4080928564071655
+        ],
+        [
+          -0.0012052357196807861,
+          0.9859611392021179,
+          0.16697067022323608,
+          0.004486303310841322
+        ]
+      ]
+    },
+    {
+      "name": "Fence detail",
+      "image": "frame_007235.png",
+      "position": [
+        -0.7558730244636536,
+        0.6172453165054321,
+        0.0032174973748624325
+      ],
+      "target": [
+        -1.194809079170227,
+        0.4032016098499298,
+        -0.10411588102579117
+      ],
+      "up": [
+        -0.2097795009613037,
+        -0.05920612812042236,
+        0.975954532623291
+      ],
+      "fov": 24.485008398595397,
+      "camera_to_world": [
+        [
+          -0.4305034875869751,
+          -0.2097795009613037,
+          0.8778720498085022,
+          -0.7558730244636536
+        ],
+        [
+          0.9017959237098694,
+          -0.05920612812042236,
+          0.42808741331100464,
+          0.6172453165054321
+        ],
+        [
+          -0.03782850503921509,
+          0.975954532623291,
+          0.21466675400733948,
+          0.0032174973748624325
+        ]
+      ]
+    },
+    {
+      "name": "Bicycle",
+      "image": "frame_011766.png",
+      "position": [
+        0.18354874849319458,
+        -0.5308576822280884,
+        0.011206623166799545
+      ],
+      "target": [
+        0.5188604593276978,
+        -0.2843206822872162,
+        -0.2658954858779907
+      ],
+      "up": [
+        0.43831053376197815,
+        0.3393486440181732,
+        0.8323018550872803
+      ],
+      "fov": 24.485008398595397,
+      "camera_to_world": [
+        [
+          0.5984549522399902,
+          0.43831053376197815,
+          -0.6706233620643616,
+          0.18354874849319458
+        ],
+        [
+          -0.8010746240615845,
+          0.3393486440181732,
+          -0.4930739998817444,
+          -0.5308576822280884
+        ],
+        [
+          0.011455580592155457,
+          0.8323018550872803,
+          0.5542042255401611,
+          0.011206623166799545
+        ]
+      ]
+    },
+    {
+      "name": "Fence front",
+      "image": "frame_013498.png",
+      "position": [
+        -0.24156469106674194,
+        0.5642454624176025,
+        0.043413810431957245
+      ],
+      "target": [
+        -0.570704996585846,
+        0.19166988134384155,
+        -0.010009847581386566
+      ],
+      "up": [
+        -0.06702542304992676,
+        -0.08335596323013306,
+        0.994263231754303
+      ],
+      "fov": 24.485008398595397,
+      "camera_to_world": [
+        [
+          -0.7497828006744385,
+          -0.06702542304992676,
+          0.658280611038208,
+          -0.24156469106674194
+        ],
+        [
+          0.6616656184196472,
+          -0.08335596323013306,
+          0.745151162147522,
+          0.5642454624176025
+        ],
+        [
+          0.004927575588226318,
+          0.994263231754303,
+          0.10684731602668762,
+          0.043413810431957245
+        ]
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "full",
+      "label": "Full",
+      "files": [
+        {
+          "file": "full-01.spz",
+          "count": 1484929,
+          "sh_degree": 3,
+          "bytes": 38475481,
+          "sha256": "fe7c8b26f36aa5d71adcf93e00306ebf4c7273d9edfe1c86c101a7dc4a270ca3"
+        },
+        {
+          "file": "full-02.spz",
+          "count": 1484928,
+          "sh_degree": 3,
+          "bytes": 39458508,
+          "sha256": "2e0fabcfaeba153f0f14240cd62f4665296ea3eef33d2cf07afd628dee2a332a"
+        }
+      ],
+      "render_scale": 0.01,
+      "bytes": 77933989,
+      "count": 2969857,
+      "sh_degree": 3,
+      "partition_axis": "y",
+      "simplification": "none; every cleaned Gaussian retained once in spatial chunks"
+    }
+  ],
+  "default_variant": "full",
+  "cleanup": {
+    "original_gaussians": 4874931,
+    "retained_gaussians": 2969857,
+    "removed_gaussians": 1905074,
+    "removed_fraction": 0.3907899414371198,
+    "stages": [
+      {
+        "reason": "invalid_numeric_values_or_zero_quaternion",
+        "removed": 0,
+        "remaining": 4874931
+      },
+      {
+        "reason": "negligible_opacity",
+        "removed": 30365,
+        "remaining": 4844566
+      },
+      {
+        "reason": "outside_scene_bounds",
+        "removed": 919133,
+        "remaining": 3925433
+      },
+      {
+        "reason": "oversized_blurred_gaussians",
+        "removed": 2949,
+        "remaining": 3922484
+      },
+      {
+        "reason": "explicit_camera_clearance",
+        "removed": 677,
+        "remaining": 3921807
+      },
+      {
+        "reason": "unsupported_by_sparse_reference",
+        "removed": 650898,
+        "remaining": 3270909
+      },
+      {
+        "reason": "explicit_bright_neutral_sky_region",
+        "removed": 17216,
+        "remaining": 3253693
+      },
+      {
+        "reason": "tiny_isolated_components",
+        "removed": 109,
+        "remaining": 3253584
+      },
+      {
+        "reason": "disconnected_from_main_scene",
+        "removed": 13,
+        "remaining": 3253571
+      },
+      {
+        "reason": "explicit_reviewed_local_floater_regions",
+        "removed": 283714,
+        "remaining": 2969857
+      }
+    ],
+    "retained_bounds": {
+      "min": [
+        -1.6014453172683716,
+        -1.6484423875808716,
+        -0.38066861033439636
+      ],
+      "max": [
+        2.2227258682250977,
+        2.6213719844818115,
+        0.10741699486970901
+      ]
+    },
+    "limitations": [
+      "Geometry heuristics cannot identify every floater or recover blurred detail.",
+      "Connected artifacts can survive; real unsupported detached geometry can be removed.",
+      "Compare renders before choosing final thresholds; this pipeline does not retrain the model.",
+      "Explicit scene crop, not semantic detection. Poorly reconstructed real background can also be removed. All units are normalized PLY world units."
+    ]
+  },
+  "provenance": {
+    "snapshot": {
+      "step": 89999,
+      "source_bytes": 3934357138,
+      "source_unchanged_during_export": true,
+      "gaussians_in_checkpoint": 5543017,
+      "nonfinite_removed": 0,
+      "exported_gaussians": 4874931,
+      "ply_bytes": 1208984469,
+      "ply_sha256": "23808ce5fe147e24ed92041a3490bec068b51f008acb8ebe760b45108876a465",
+      "coordinate_system": "Nerfstudio normalized model coordinates, Z up",
+      "sh_degree": 3,
+      "camera_count": 1046,
+      "reference_point_count": 465489,
+      "execution": "CPU only; immutable snapshot; no training or optimizer changes",
+      "training_iterations": 90000,
+      "training_complete": true,
+      "source_checkpoint": "step-000089999.ckpt"
+    },
+    "clean_ply": {
+      "file": "clean-private-v4.ply",
+      "count": 2969857,
+      "sh_degree": 3,
+      "bytes": 736526117,
+      "sha256": "bbd08764caac4a8f79295a865f8a874d6139f49ecb114e9989baf640fa909cd3"
+    },
+    "cleanup_report_sha256": "0fde6a204c19c1cb6c64d6d0226223e3282c6de47cb0968156c914b3f569f39e"
+  },
+  "build": {
+    "packages": {
+      "@playcanvas/splat-transform": "3.3.3",
+      "@sparkjsdev/spark": "2.1.0",
+      "three": "0.180.0",
+      "playcanvas": "2.21.4"
+    },
+    "execution": "CPU only",
+    "format": "spz",
+    "spz_version": 3,
+    "spz_geometry_scale": 100.0,
+    "spz_encoded_max_abs_position": 262.13719844818115,
+    "spz_position_grid_in_model_units": 2.44140625e-06,
+    "spark_ext_splats_required": true,
+    "sh_iterations": null,
+    "sh_note": "All source SH bands retained; delivery attributes are quantized",
+    "decimation": "none (full model only)",
+    "file_limit_bytes_exclusive": 100000000,
+    "package_lock_sha256": "0da773333d6b253ca22d59325290a1f632844ac10f4ac5960ce4fb1c792736a0",
+    "in_progress": false,
+    "created_at": "2026-09-05T23:20:53.906086+00:00",
+    "timings": {
+      "vendor": {
+        "elapsed_seconds": 0.042,
+        "exit_code": 0
+      },
+      "full_spatial_partition": {
+        "elapsed_seconds": 2.474,
+        "exit_code": 0
+      },
+      "full_01_conversion": {
+        "elapsed_seconds": 8.243,
+        "exit_code": 0
+      },
+      "full_02_conversion": {
+        "elapsed_seconds": 8.623,
+        "exit_code": 0
+      }
+    },
+    "elapsed_seconds": 19.425
+  },
+  "training_iterations": 90000,
+  "training_complete": true,
+  "overview": {
+    "position": [
+      2.752814696764464,
+      -4.804913114336084,
+      4.050482007423234
+    ],
+    "target": [
+      0.31064027547836304,
+      0.48646479845046997,
+      -0.01980869472026825
+    ],
+    "fov": 50,
+    "aspect": 1
+  },
+  "privacy": {
+    "method": "Bicycle frame color detail suppressed in the Gaussian data before web export",
+    "affected_gaussians": 28706,
+    "applied_before_compression": true,
+    "report_sha256": "d58b11e99916a3e55a766ffd0718900c183bf946577379511f3ad79d9755a765",
+    "output_sha256": "bbd08764caac4a8f79295a865f8a874d6139f49ecb114e9989baf640fa909cd3"
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "original_gaussians": 4874931,
+  "retained_gaussians": 2969857,
+  "removed_gaussians": 1905074,
+  "removed_fraction": 0.3907899414371198,
+  "stages": [
+    {
+      "reason": "invalid_numeric_values_or_zero_quaternion",
+      "removed": 0,
+      "remaining": 4874931
+    },
+    {
+      "reason": "negligible_opacity",
+      "removed": 30365,
+      "remaining": 4844566
+    },
+    {
+      "reason": "outside_scene_bounds",
+      "removed": 919133,
+      "remaining": 3925433
+    },
+    {
+      "reason": "oversized_blurred_gaussians",
+      "removed": 2949,
+      "remaining": 3922484
+    },
+    {
+      "reason": "explicit_camera_clearance",
+      "removed": 677,
+      "remaining": 3921807
+    },
+    {
+      "reason": "unsupported_by_sparse_reference",
+      "removed": 650898,
+      "remaining": 3270909
+    },
+    {
+      "reason": "explicit_bright_neutral_sky_region",
+      "removed": 17216,
+      "remaining": 3253693
+    },
+    {
+      "reason": "tiny_isolated_components",
+      "removed": 109,
+      "remaining": 3253584
+    },
+    {
+      "reason": "disconnected_from_main_scene",
+      "removed": 13,
+      "remaining": 3253571
+    },
+    {
+      "reason": "explicit_reviewed_local_floater_regions",
+      "removed": 283714,
+      "remaining": 2969857
+    }
+  ],
+  "retained_bounds": {
+    "min": [
+      -1.6014453172683716,
+      -1.6484423875808716,
+      -0.38066861033439636
+    ],
+    "max": [
+      2.2227258682250977,
+      2.6213719844818115,
+      0.10741699486970901
+    ]
+  },
+  "limitations": [
+    "Geometry heuristics cannot identify every floater or recover blurred detail.",
+    "Connected artifacts can survive; real unsupported detached geometry can be removed.",
+    "Compare renders before choosing final thresholds; this pipeline does not retrain the model.",
+    "Explicit scene crop, not semantic detection. Poorly reconstructed real background can also be removed. All units are normalized PLY world units."
+  ],
+  "version": 1,
+  "parameters": {
+    "bounds_quantile": 0.02,
+    "bounds_padding": 0.12,
+    "min_opacity": 0.005,
+    "max_scale_fraction": 0.075,
+    "max_middle_scale_fraction": 0.025,
+    "max_scale": 0.05,
+    "max_middle_scale": 0.02,
+    "max_reference_distance": 0.04,
+    "sky_min_height": 0.04,
+    "sky_min_brightness": 0.7,
+    "sky_max_saturation": 0.2,
+    "voxel_size": 0.02,
+    "voxel_resolution": 256,
+    "max_grid_cells": 12000000,
+    "connection_radius": 1,
+    "floater_min_points": 64,
+    "floater_min_voxels": 4,
+    "reference_min_points": 3,
+    "secondary_min_fraction": 0.02,
+    "max_remove_fraction": 0.65,
+    "chunk_size": 200000
+  },
+  "source_bounds": {
+    "min": [
+      -32.078487396240234,
+      -15.156898498535156,
+      -19.418331146240234
+    ],
+    "max": [
+      14.178223609924316,
+      40.34393310546875,
+      12.105121612548828
+    ]
+  },
+  "crop_bounds": {
+    "min": [
+      -1.6015202163696287,
+      -1.6484528106689451,
+      -0.38077314839363097
+    ],
+    "max": [
+      2.222736174964904,
+      2.621442593955993,
+      0.34110184535980226
+    ]
+  },
+  "crop_bounds_source": "robust sparse reference bounds",
+  "coordinate_units": "PLY world units; references must already match the PLY (not necessarily meters)",
+  "effective_thresholds": {
+    "scene_diagonal": 5.77737373031265,
+    "max_axis_scale": 0.05,
+    "max_middle_axis_scale": 0.02,
+    "voxel_size": 0.02,
+    "grid_shape": [
+      195,
+      217,
+      40
+    ],
+    "grid_cells": 1692600
+  },
+  "reference": {
+    "sparse_points": 465489,
+    "points_inside_crop_grid": 448835,
+    "camera_centers": 1046,
+    "explicit_camera_clearance": true
+  },
+  "safeguard_passed": true,
+  "elapsed_seconds": 7.543,
+  "dry_run": false,
+  "output_written": true,
+  "source_preserved": true,
+  "fields_preserved": [
+    "x",
+    "y",
+    "z",
+    "nx",
+    "ny",
+    "nz",
+    "f_dc_0",
+    "f_dc_1",
+    "f_dc_2",
+    "f_rest_0",
+    "f_rest_1",
+    "f_rest_2",
+    "f_rest_3",
+    "f_rest_4",
+    "f_rest_5",
+    "f_rest_6",
+    "f_rest_7",
+    "f_rest_8",
+    "f_rest_9",
+    "f_rest_10",
+    "f_rest_11",
+    "f_rest_12",
+    "f_rest_13",
+    "f_rest_14",
+    "f_rest_15",
+    "f_rest_16",
+    "f_rest_17",
+    "f_rest_18",
+    "f_rest_19",
+    "f_rest_20",
+    "f_rest_21",
+    "f_rest_22",
+    "f_rest_23",
+    "f_rest_24",
+    "f_rest_25",
+    "f_rest_26",
+    "f_rest_27",
+    "f_rest_28",
+    "f_rest_29",
+    "f_rest_30",
+    "f_rest_31",
+    "f_rest_32",
+    "f_rest_33",
+    "f_rest_34",
+    "f_rest_35",
+    "f_rest_36",
+    "f_rest_37",
+    "f_rest_38",
+    "f_rest_39",
+    "f_rest_40",
+    "f_rest_41",
+    "f_rest_42",
+    "f_rest_43",
+    "f_rest_44",
+    "opacity",
+    "scale_0",
+    "scale_1",
+    "scale_2",
+    "rot_0",
+    "rot_1",
+    "rot_2",
+    "rot_3"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "source_preserved": true,
+  "all_sh_bands_preserved": true,
+  "gaussian_decimation": "none",
+  "timings": {
+    "vendor": {
+      "elapsed_seconds": 0.042,
+      "exit_code": 0
+    },
+    "full_spatial_partition": {
+      "elapsed_seconds": 2.474,
+      "exit_code": 0
+    },
+    "full_01_conversion": {
+      "elapsed_seconds": 8.243,
+      "exit_code": 0
+    },
+    "full_02_conversion": {
+      "elapsed_seconds": 8.623,
+      "exit_code": 0
+    }
+  },
+  "total_elapsed_seconds": 19.425,
+  "delivery_bytes": 83754479,
+  "largest_file_bytes": 39458508,
+  "all_files_below_limit": true,
+  "variants": [
+    {
+      "id": "full",
+      "label": "Full",
+      "files": [
+        {
+          "file": "full-01.spz",
+          "count": 1484929,
+          "sh_degree": 3,
+          "bytes": 38475481,
+          "sha256": "fe7c8b26f36aa5d71adcf93e00306ebf4c7273d9edfe1c86c101a7dc4a270ca3"
+        },
+        {
+          "file": "full-02.spz",
+          "count": 1484928,
+          "sh_degree": 3,
+          "bytes": 39458508,
+          "sha256": "2e0fabcfaeba153f0f14240cd62f4665296ea3eef33d2cf07afd628dee2a332a"
+        }
+      ],
+      "render_scale": 0.01,
+      "bytes": 77933989,
+      "count": 2969857,
+      "sh_degree": 3,
+      "partition_axis": "y",
+      "simplification": "none; every cleaned Gaussian retained once in spatial chunks"
+    }
+  ]
+}

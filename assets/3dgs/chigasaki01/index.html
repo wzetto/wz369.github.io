@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chigasaki Coast · 3D Scene</title>
+  <link rel="stylesheet" href="viewer.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three/three.module.min.js","three/addons/":"./vendor/three/addons/","@sparkjsdev/spark":"./vendor/spark/spark.module.min.js"}}</script>
+</head>
+<body>
+  <main id="scene" aria-label="Interactive 3D scene of Chigasaki Coast">
+    <div id="canvas" tabindex="0" aria-label="3D scene: drag to orbit, scroll to zoom, right-drag to pan, and double-click to recenter. Arrow keys pan, plus and minus zoom, and R resets the view."></div>
+    <div class="topbar">
+      <div class="title">Chigasaki Coast <span id="model-label">Test model</span></div>
+      <button id="fullscreen" type="button" aria-label="Enter fullscreen">Fullscreen ↗</button>
+    </div>
+    <div id="welcome" class="welcome">
+      <div class="welcome-card">
+        <button id="start" type="button" disabled>Preparing…</button>
+      </div>
+    </div>
+    <div id="loading" class="loading" hidden>
+      <span class="spinner" aria-hidden="true"></span>
+      <span id="progress" role="status" aria-live="polite">Loading scene…</span>
+    </div>
+    <div id="error" class="error" role="alert" hidden>
+      <p id="error-message"></p>
+      <button id="retry" type="button">Retry</button>
+    </div>
+    <div class="bottom-panel">
+      <button id="reset" type="button" aria-label="Reset view to the whole scene" disabled>Reset view</button>
+      <p class="hint">Drag to orbit · Scroll to zoom · Right-drag to pan · Double-click to recenter<span>Touch: one finger to orbit, two to zoom or pan</span><span>Keyboard: arrows to pan · + / − to zoom · R to reset</span></p>
+    </div>
+    <noscript><p class="error">Enable JavaScript to explore the 3D scene.</p></noscript>
+  </main>
+  <script type="module" src="viewer.js"></script>
+</body>
+</html>

@@ -74,6 +74,13 @@
         return altitude ? time + '<br>' + altitude : time;
     }
 
+    function formatHoverText(point) {
+        var time = Highcharts.dateFormat('%H:%M:%S', point.time);
+        var altitude = Number.isFinite(point.ele) ? Math.round(point.ele) + ' m' : '';
+
+        return altitude ? time + ' / ' + altitude : time;
+    }
+
     function installChartMapLink() {
         var chart;
         var trackPoints;
@@ -133,6 +140,10 @@
             hoverMarker.openTooltip();
             hoverMarker.bringToFront();
 
+            if (window.mapExperience) {
+                window.mapExperience.showHoverPoint(trackPoint, formatHoverText(trackPoint));
+            }
+
             if (!window.map.getBounds().pad(-0.05).contains(latlng)) {
                 window.map.panInside(latlng, {
                     padding: [24, 24],
@@ -147,6 +158,10 @@
                 opacity: 0,
                 fillOpacity: 0
             });
+
+            if (window.mapExperience) {
+                window.mapExperience.clearHoverPoint();
+            }
         }
 
         Highcharts.addEvent(chart.container, 'mousemove', showHoverPoint);

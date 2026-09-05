@@ -79,12 +79,42 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script><br>
       <hr style="width:200px;text-align:center"><br>
-      <div id='map'></div>
+      <div id="map_shell" class="map-shell">
+        <div id="map"></div>
+        <div id="map_3d" class="map-3d" hidden></div>
+        <div id="map_status" class="map-status" role="status" hidden></div>
+        <div class="map-toolbar">
+          <div class="map-mode-control" role="group" aria-label="Map view">
+            <button type="button" class="is-active" data-map-mode="2d" aria-pressed="true">2D</button>
+            <button type="button" data-map-mode="3d" aria-pressed="false">3D</button>
+          </div>
+          <button type="button" id="map_fullscreen_button" class="map-shell-fullscreen-button" aria-label="Enter fullscreen" aria-pressed="false" title="Enter fullscreen"><span aria-hidden="true">&#x26F6;</span></button>
+          <details class="map-help">
+            <summary aria-label="3D map controls" title="3D map controls"><span aria-hidden="true">?</span></summary>
+            <div class="map-help-panel" role="note">
+              <strong class="map-help-title">3D controls</strong>
+              <span class="map-help-label">Mouse</span>
+              <ul>
+                <li><kbd>Ctrl</kbd> + left-drag or right-drag: rotate and tilt</li>
+                <li>Scroll or <kbd>+</kbd> / <kbd>-</kbd>: zoom</li>
+              </ul>
+              <span class="map-help-label">Touch</span>
+              <ul>
+                <li>Twist two fingers: rotate</li>
+                <li>Slide two fingers vertically: tilt</li>
+                <li>Pinch: zoom</li>
+              </ul>
+              <p>Compass: reset north. Move over the altitude plot to locate the same trail point.</p>
+            </div>
+          </details>
+        </div>
+      </div>
       <div id='chart'></div>
       <script src="https://code.highcharts.com/highcharts.js"></script>
       <h7 style='text-align:center'>Touch or long-press icons for details.</h7>
       
       <script src="/js/map_ryozen.js"></script>
+      <script src="/js/map_experience.js"></script>
       <script src="/js/map_chart_link.js"></script>
       <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
       <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>

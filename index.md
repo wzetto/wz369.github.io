@@ -1,6 +1,7 @@
 ---
 title: ''
 layout: default
+hide_header: false
 ---
 
 <img src="https://drive.google.com/thumbnail?id=1eNW-8aKNSI5Qk6-37yjbJ3BbMWyYodFY&sz=w2400"  width="1200px"><br>
@@ -28,7 +29,7 @@ layout: default
 <div class="home-essay-nav">
   <h4>随笔</h4>
   <div class="home-essay-nav-links">
-    <a href="https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html">爬山</a>
+    <a href="https://wzetto.github.io/wz369.github.io/yamanobo/yamanobo.html">户外</a>
     <a href="https://wzetto.github.io/wz369.github.io/omoi_main/omoi.html">想法</a>
   </div>
 </div>

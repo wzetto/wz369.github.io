@@ -1,0 +1,89 @@
+{
+  "source_preserved": true,
+  "all_sh_bands_preserved": true,
+  "gaussian_decimation": "adaptive merging for lite only",
+  "timings": {
+    "vendor": {
+      "elapsed_seconds": 0.039,
+      "exit_code": 0
+    },
+    "lite_uniform_merge_prepass": {
+      "elapsed_seconds": 80.039,
+      "exit_code": 0
+    },
+    "lite_decimation": {
+      "elapsed_seconds": 55.378,
+      "exit_code": 0
+    },
+    "lite_conversion": {
+      "elapsed_seconds": 4.289,
+      "exit_code": 0
+    },
+    "full_spatial_partition": {
+      "elapsed_seconds": 3.778,
+      "exit_code": 0
+    },
+    "full_01_conversion": {
+      "elapsed_seconds": 4.858,
+      "exit_code": 0
+    },
+    "full_02_conversion": {
+      "elapsed_seconds": 5.531,
+      "exit_code": 0
+    },
+    "full_03_conversion": {
+      "elapsed_seconds": 4.816,
+      "exit_code": 0
+    }
+  },
+  "total_elapsed_seconds": 158.918,
+  "delivery_bytes": 110736880,
+  "largest_file_bytes": 27321031,
+  "all_files_below_limit": true,
+  "variants": [
+    {
+      "id": "lite",
+      "label": "Lightweight",
+      "file": "lite.spz",
+      "render_scale": 0.01,
+      "simplification": "CPU uniform pairwise-merging prepass to 2M, then adaptive Gaussian merging; all input SH bands retained",
+      "count": 1000000,
+      "sh_degree": 3,
+      "bytes": 25202744,
+      "sha256": "074f9ca736b284e949a419435a772899a6ab1567416d62ebd3e055960c390be1"
+    },
+    {
+      "id": "full",
+      "label": "Full",
+      "files": [
+        {
+          "file": "full-01.spz",
+          "count": 1101277,
+          "sh_degree": 3,
+          "bytes": 25903477,
+          "sha256": "215c551520da615c2d9d5383bbc4f91275102086ba52c25370699607a6a57055"
+        },
+        {
+          "file": "full-02.spz",
+          "count": 1101277,
+          "sh_degree": 3,
+          "bytes": 27321031,
+          "sha256": "e3a2291dd38c9c8124a0a9558780f7b7bb7ce6de8a5a52cb3a487ab9dc47bf36"
+        },
+        {
+          "file": "full-03.spz",
+          "count": 1101277,
+          "sh_degree": 3,
+          "bytes": 26489093,
+          "sha256": "a6ad9718523cf0e7672b2fa6c1b7a18ba5391f0afcf2199ebcf4af1a9eb1bea0"
+        }
+      ],
+      "render_scale": 0.01,
+      "bytes": 79713601,
+      "count": 3303831,
+      "sh_degree": 3,
+      "partition_axis": "y",
+      "simplification": "none; every cleaned Gaussian retained once in spatial chunks"
+    }
+  ]
+}

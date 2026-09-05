@@ -1,0 +1,234 @@
+{
+  "original_gaussians": 4990195,
+  "retained_gaussians": 3303831,
+  "removed_gaussians": 1686364,
+  "removed_fraction": 0.3379354914988292,
+  "stages": [
+    {
+      "reason": "invalid_numeric_values_or_zero_quaternion",
+      "removed": 0,
+      "remaining": 4990195
+    },
+    {
+      "reason": "negligible_opacity",
+      "removed": 34448,
+      "remaining": 4955747
+    },
+    {
+      "reason": "outside_scene_bounds",
+      "removed": 967494,
+      "remaining": 3988253
+    },
+    {
+      "reason": "oversized_blurred_gaussians",
+      "removed": 2955,
+      "remaining": 3985298
+    },
+    {
+      "reason": "explicit_camera_clearance",
+      "removed": 710,
+      "remaining": 3984588
+    },
+    {
+      "reason": "unsupported_by_sparse_reference",
+      "removed": 661118,
+      "remaining": 3323470
+    },
+    {
+      "reason": "explicit_bright_neutral_sky_region",
+      "removed": 19511,
+      "remaining": 3303959
+    },
+    {
+      "reason": "tiny_isolated_components",
+      "removed": 114,
+      "remaining": 3303845
+    },
+    {
+      "reason": "disconnected_from_main_scene",
+      "removed": 14,
+      "remaining": 3303831
+    }
+  ],
+  "retained_bounds": {
+    "min": [
+      -1.6015113592147827,
+      -1.6484421491622925,
+      -0.3797024190425873
+    ],
+    "max": [
+      2.2227225303649902,
+      2.62139892578125,
+      0.3411003351211548
+    ]
+  },
+  "limitations": [
+    "Geometry heuristics cannot identify every floater or recover blurred detail.",
+    "Connected artifacts can survive; real unsupported detached geometry can be removed.",
+    "Compare renders before choosing final thresholds; this pipeline does not retrain the model."
+  ],
+  "version": 1,
+  "parameters": {
+    "bounds_quantile": 0.02,
+    "bounds_padding": 0.12,
+    "min_opacity": 0.005,
+    "max_scale_fraction": 0.075,
+    "max_middle_scale_fraction": 0.025,
+    "max_scale": 0.05,
+    "max_middle_scale": 0.02,
+    "max_reference_distance": 0.04,
+    "sky_min_height": 0.04,
+    "sky_min_brightness": 0.7,
+    "sky_max_saturation": 0.2,
+    "voxel_size": 0.02,
+    "voxel_resolution": 256,
+    "max_grid_cells": 12000000,
+    "connection_radius": 1,
+    "floater_min_points": 64,
+    "floater_min_voxels": 4,
+    "reference_min_points": 3,
+    "secondary_min_fraction": 0.02,
+    "max_remove_fraction": 0.65,
+    "chunk_size": 200000
+  },
+  "source_bounds": {
+    "min": [
+      -32.078487396240234,
+      -15.156898498535156,
+      -19.418331146240234
+    ],
+    "max": [
+      14.178223609924316,
+      40.343936920166016,
+      12.105121612548828
+    ]
+  },
+  "crop_bounds": {
+    "min": [
+      -1.6015202163696287,
+      -1.6484528106689451,
+      -0.38077314839363097
+    ],
+    "max": [
+      2.222736174964904,
+      2.621442593955993,
+      0.34110184535980226
+    ]
+  },
+  "crop_bounds_source": "robust sparse reference bounds",
+  "coordinate_units": "PLY world units; references must already match the PLY (not necessarily meters)",
+  "effective_thresholds": {
+    "scene_diagonal": 5.77737373031265,
+    "max_axis_scale": 0.05,
+    "max_middle_axis_scale": 0.02,
+    "voxel_size": 0.02,
+    "grid_shape": [
+      195,
+      217,
+      40
+    ],
+    "grid_cells": 1692600
+  },
+  "components": {
+    "fine_count": 230,
+    "coarse_count": 8,
+    "retained_coarse_count": 1,
+    "largest_component_gaussians": 3303831,
+    "policy": "largest component plus components supported by sparse reference"
+  },
+  "reference": {
+    "sparse_points": 465489,
+    "points_inside_crop_grid": 448835,
+    "camera_centers": 1046,
+    "explicit_camera_clearance": true
+  },
+  "retained_scale_sample": {
+    "quantiles": [
+      0.01,
+      0.5,
+      0.9,
+      0.99
+    ],
+    "max_axis_scale": [
+      0.0003386018482262505,
+      0.0016022528263943475,
+      0.004092882525999469,
+      0.011578193831894163
+    ],
+    "middle_axis_scale": [
+      0.00010857772924982187,
+      0.0004930364111855463,
+      0.0015023327134248616,
+      0.00482934544938676
+    ]
+  },
+  "safeguard_passed": true,
+  "elapsed_seconds": 8.3,
+  "dry_run": false,
+  "output_written": true,
+  "source_preserved": true,
+  "fields_preserved": [
+    "x",
+    "y",
+    "z",
+    "nx",
+    "ny",
+    "nz",
+    "f_dc_0",
+    "f_dc_1",
+    "f_dc_2",
+    "f_rest_0",
+    "f_rest_1",
+    "f_rest_2",
+    "f_rest_3",
+    "f_rest_4",
+    "f_rest_5",
+    "f_rest_6",
+    "f_rest_7",
+    "f_rest_8",
+    "f_rest_9",
+    "f_rest_10",
+    "f_rest_11",
+    "f_rest_12",
+    "f_rest_13",
+    "f_rest_14",
+    "f_rest_15",
+    "f_rest_16",
+    "f_rest_17",
+    "f_rest_18",
+    "f_rest_19",
+    "f_rest_20",
+    "f_rest_21",
+    "f_rest_22",
+    "f_rest_23",
+    "f_rest_24",
+    "f_rest_25",
+    "f_rest_26",
+    "f_rest_27",
+    "f_rest_28",
+    "f_rest_29",
+    "f_rest_30",
+    "f_rest_31",
+    "f_rest_32",
+    "f_rest_33",
+    "f_rest_34",
+    "f_rest_35",
+    "f_rest_36",
+    "f_rest_37",
+    "f_rest_38",
+    "f_rest_39",
+    "f_rest_40",
+    "f_rest_41",
+    "f_rest_42",
+    "f_rest_43",
+    "f_rest_44",
+    "opacity",
+    "scale_0",
+    "scale_1",
+    "scale_2",
+    "rot_0",
+    "rot_1",
+    "rot_2",
+    "rot_3"
+  ]
+}

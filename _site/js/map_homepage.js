@@ -246,6 +246,50 @@ var trailFiles = [
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     {
         url: "/yamanobo/baihaizi/baihaizi.gpx",
         title: "baihaizi"
@@ -263,6 +307,13 @@ var trailFiles = [
     {
         url: "/yamanobo/bunagatake/20241215%E6%AD%A6%E5%A5%88%E3%83%B6%E5%B2%B3.gpx",
         title: "20241215武奈ヶ岳"
+    },
+
+
+
+    {
+        url: "/yamanobo/chigasaki_bay/260905%E8%8C%85%E3%83%B6%E5%B4%8E%E6%B5%B7%E5%B2%B8.gpx",
+        title: "260905茅ヶ崎海岸"
     },
 
 
