@@ -403,5 +403,6 @@
     "applied_before_compression": true,
     "report_sha256": "d58b11e99916a3e55a766ffd0718900c183bf946577379511f3ad79d9755a765",
     "output_sha256": "bbd08764caac4a8f79295a865f8a874d6139f49ecb114e9989baf640fa909cd3"
-  }
+  },
+  "asset_base_url": "https://assets.ereshkigal.ai/3dgs/chigasaki01/v1/"
 }
