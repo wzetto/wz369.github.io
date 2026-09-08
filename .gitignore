@@ -2,3 +2,6 @@ omoi_main/ssg
 .archive
 .history
 notes
+
+# Serve Gaussian model binaries from Cloudflare R2.
+/assets/3dgs/**/*.spz
