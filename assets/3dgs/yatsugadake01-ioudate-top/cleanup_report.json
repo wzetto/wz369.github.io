@@ -1,0 +1,130 @@
+{
+  "original_gaussians": 4180592,
+  "retained_gaussians": 4180529,
+  "removed_gaussians": 63,
+  "removed_fraction": 1.5069636070680899e-05,
+  "stages": [
+    {
+      "reason": "small_unsupported_isolated_specks",
+      "removed": 63,
+      "remaining": 4180529
+    }
+  ],
+  "retained_bounds": {
+    "min": [
+      -5.010326862335205,
+      -10.968403816223145,
+      -7.5761494636535645
+    ],
+    "max": [
+      7.275801181793213,
+      8.80185604095459,
+      3.8918769359588623
+    ]
+  },
+  "limitations": [
+    "Natural fog deliberately retained by user choice.",
+    "No global bounds/scale/connectivity deletion; unobserved views remain imperfect."
+  ],
+  "version": 1,
+  "parameters": {
+    "reference_distance": 0.03,
+    "maximum_sigma": 0.005484994525035018,
+    "middle_sigma": 0.0026343748767590574,
+    "scale_calibration": "Fresh final baseline p99; candidate selector only",
+    "selector": "Exact pinned baseline tiny_isolated_components membership",
+    "extra_opacity_floor": false
+  },
+  "source_bounds": {
+    "min": [
+      -5.010326862335205,
+      -10.968403816223145,
+      -7.5761494636535645
+    ],
+    "max": [
+      7.275801181793213,
+      8.80185604095459,
+      3.8918769359588623
+    ]
+  },
+  "crop_bounds": {
+    "min": [
+      -5.010326862335205,
+      -10.968403816223145,
+      -7.5761494636535645
+    ],
+    "max": [
+      7.275801181793213,
+      8.80185604095459,
+      3.8918769359588623
+    ]
+  },
+  "crop_bounds_source": "Validation envelope only; no global crop",
+  "safeguard_passed": true,
+  "output_written": true,
+  "source_preserved": true,
+  "fields_preserved": [
+    "x",
+    "y",
+    "z",
+    "nx",
+    "ny",
+    "nz",
+    "f_dc_0",
+    "f_dc_1",
+    "f_dc_2",
+    "f_rest_0",
+    "f_rest_1",
+    "f_rest_2",
+    "f_rest_3",
+    "f_rest_4",
+    "f_rest_5",
+    "f_rest_6",
+    "f_rest_7",
+    "f_rest_8",
+    "f_rest_9",
+    "f_rest_10",
+    "f_rest_11",
+    "f_rest_12",
+    "f_rest_13",
+    "f_rest_14",
+    "f_rest_15",
+    "f_rest_16",
+    "f_rest_17",
+    "f_rest_18",
+    "f_rest_19",
+    "f_rest_20",
+    "f_rest_21",
+    "f_rest_22",
+    "f_rest_23",
+    "f_rest_24",
+    "f_rest_25",
+    "f_rest_26",
+    "f_rest_27",
+    "f_rest_28",
+    "f_rest_29",
+    "f_rest_30",
+    "f_rest_31",
+    "f_rest_32",
+    "f_rest_33",
+    "f_rest_34",
+    "f_rest_35",
+    "f_rest_36",
+    "f_rest_37",
+    "f_rest_38",
+    "f_rest_39",
+    "f_rest_40",
+    "f_rest_41",
+    "f_rest_42",
+    "f_rest_43",
+    "f_rest_44",
+    "opacity",
+    "scale_0",
+    "scale_1",
+    "scale_2",
+    "rot_0",
+    "rot_1",
+    "rot_2",
+    "rot_3"
+  ]
+}

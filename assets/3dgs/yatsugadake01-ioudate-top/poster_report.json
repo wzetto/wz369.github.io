@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "poster": {
+    "file": "poster.jpg",
+    "format": "JPEG",
+    "width": 1600,
+    "height": 900,
+    "bytes": 358112,
+    "sha256": "04ac7696a9c1dfd2763a0e82f76731db6e854db19d66260acae212a57a3f9f75"
+  },
+  "method": "explicit image file; validated and copied without reencoding",
+  "model_provenance_verified": true,
+  "capture_provenance": {
+    "schema_version": 1,
+    "method": "Direct WebGL canvas JPEG from full cleaned SPZ model; no UI overlay or image synthesis",
+    "created_at": "2026-09-14T10:51:00.524977+00:00",
+    "poster": {
+      "file": "poster.jpg",
+      "format": "JPEG",
+      "width": 1600,
+      "height": 900,
+      "bytes": 358112,
+      "sha256": "04ac7696a9c1dfd2763a0e82f76731db6e854db19d66260acae212a57a3f9f75"
+    },
+    "scene_id": "yatsugadake01-ioudate-top-step-55000",
+    "step": 55000,
+    "manifest_sha256": "24722ef2f5324b667554324a01733c2f6dc200355d7749e752372d4b6f19ade2",
+    "asset_transport": "local-parts",
+    "variant": "full",
+    "model_parts": [
+      {
+        "file": "full-01.spz",
+        "bytes": 32554001,
+        "sha256": "6e387444140e9a664b1dfdeb337af90f0e45641d4dcd53d1b16c53ea9deaf9bf"
+      },
+      {
+        "file": "full-02.spz",
+        "bytes": 32996826,
+        "sha256": "83dfa1f96c50aa459e82e8bf902ba814525a293e354173badf21e06bfa47cbae"
+      },
+      {
+        "file": "full-03.spz",
+        "bytes": 32763203,
+        "sha256": "b3c567df8bfd47bd4069684b2ff96d9bde3ff6dad0ce75b8518d24d10ddb16b4"
+      }
+    ],
+    "model_parts_verified": "Browser SHA256 of the exact bytes passed to SplatMesh before decoding",
+    "source_provenance": {
+      "snapshot": {
+        "step": 55000,
+        "source_bytes": 3122899090,
+        "source_unchanged_during_export": true,
+        "gaussians_in_checkpoint": 4396890,
+        "nonfinite_removed": 0,
+        "exported_gaussians": 4180592,
+        "ply_bytes": 1036788397,
+        "ply_sha256": "3b163e03ca2644a895313fd74e2d888f59c2b00db67f73faab5e39f860f7817c",
+        "coordinate_system": "Nerfstudio normalized model coordinates, Z up",
+        "sh_degree": 3,
+        "camera_count": 1520,
+        "reference_point_count": 1097485,
+        "parser_settings": {
+          "data": "/media/wz/partition3/project/3dgs/video/yatsugadake/ioudate_top_260912/processed_clean",
+          "auto_scale_poses": true,
+          "center_method": "poses",
+          "depth_unit_scale_factor": 0.001,
+          "downscale_factor": 1,
+          "eval_interval": 20,
+          "eval_mode": "interval",
+          "load_3D_points": true,
+          "mask_color": null,
+          "orientation_method": "up",
+          "scale_factor": 1.0,
+          "scene_scale": 1.0,
+          "train_split_fraction": 0.9
+        },
+        "camera_presets_source": "explicit",
+        "cameras_without_sparse_observations": [],
+        "execution": "CPU only; immutable snapshot; no training or optimizer changes",
+        "training_iterations": 55001,
+        "training_complete": false,
+        "source_checkpoint": "step-000055000.ckpt"
+      },
+      "clean_ply": {
+        "file": "clean.ply",
+        "count": 4180529,
+        "sh_degree": 3,
+        "bytes": 1036772773,
+        "sha256": "e672c54921f4ef6767605c29edc996ed4cef7e3b0246b761da25e33ad7b4f675"
+      },
+      "cleanup_report_sha256": "9382e22aeedfd8d96f25755f2ea6ac174f1ebb7e49e29accaae9e788494d7c23",
+      "final_selection": {
+        "scene_id": "yatsugadake01-ioudate-top",
+        "selected_step": 55000,
+        "checkpoint_sha256": "acd881aa125f9485c7e76f6a3644a6e347402c9f951684b271737e9e2a006297",
+        "snapshot_sha256": "0ee3b0caa56a7e2382dab24b8eedb1cb907a53d4bf81b6967c5a75999d5b287d",
+        "clean_ply_sha256": "e672c54921f4ef6767605c29edc996ed4cef7e3b0246b761da25e33ad7b4f675",
+        "review_sha256": "d6fb356e20fa58f190780f96faf9a15e5793970a27b9447f162959cf688c2e3f",
+        "completed_run_iterations": 60000,
+        "training_run_complete": true,
+        "approved_for_packaging": true,
+        "schema_version": 1,
+        "checkpoint": "step-000055000.ckpt",
+        "review": "final-cleanup-privacy-review.json",
+        "report_sha256": "0be60db5ed15ce0aaa4cf45a850e8eceed32344e0a64dcd9af56474c90ff2e8b"
+      }
+    },
+    "cleanup": {
+      "original_gaussians": 4180592,
+      "retained_gaussians": 4180529,
+      "removed_gaussians": 63,
+      "removed_fraction": 1.5069636070680899e-05,
+      "stages": [
+        {
+          "reason": "small_unsupported_isolated_specks",
+          "removed": 63,
+          "remaining": 4180529
+        }
+      ],
+      "retained_bounds": {
+        "min": [
+          -5.010326862335205,
+          -10.968403816223145,
+          -7.5761494636535645
+        ],
+        "max": [
+          7.275801181793213,
+          8.80185604095459,
+          3.8918769359588623
+        ]
+      },
+      "limitations": [
+        "Natural fog deliberately retained by user choice.",
+        "No global bounds/scale/connectivity deletion; unobserved views remain imperfect."
+      ]
+    },
+    "privacy": null,
+    "camera": {
+      "position": [
+        -0.02978533692657942,
+        -0.2696093916893005,
+        0.009041407145559732
+      ],
+      "target": [
+        -0.4904431998729705,
+        -0.16488727927207947,
+        -0.1547500193119049
+      ],
+      "up": [
+        -0.3277849555015564,
+        0.03476661443710327,
+        0.9441124796867371
+      ],
+      "fov": 42.15109627236289,
+      "near": 0.003,
+      "far": 100,
+      "aspect": 1.7777777777777777
+    },
+    "camera_preset": "overview",
+    "render": {
+      "width": 1600,
+      "height": 900,
+      "pixel_ratio": 1,
+      "background": "#192732",
+      "jpeg_quality": 0.9,
+      "render_scale": 0.02,
+      "ext_splats": true,
+      "lod": false,
+      "packages": {
+        "@playcanvas/splat-transform": "3.3.3",
+        "@sparkjsdev/spark": "2.1.0",
+        "three": "0.180.0",
+        "playcanvas": "2.21.4"
+      }
+    }
+  },
+  "capture_report_sha256": "13b75b8d3a47bfc8f7f1399c8583d34a5fc207c61e478e405ad52bc0422ef855",
+  "verification": "Poster bytes and capture model inventory/source/privacy metadata match this package"
+}

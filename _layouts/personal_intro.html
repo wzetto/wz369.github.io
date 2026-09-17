@@ -43,8 +43,8 @@
     
     <!-- MAIN CONTENT -->
     <script src="https://wzetto.github.io/wz369.github.io/js/BackTop/navi_2208fukuyama.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <link rel="stylesheet" href="{{ '/assets/vendor/gitalk/gitalk.css' | relative_url }}">
+    <script src="{{ '/assets/vendor/gitalk/gitalk.min.js' | relative_url }}"></script>
     <div class="row">
       <div class="inner_left">
         {{ content }}<br>
@@ -52,11 +52,11 @@
         <script>
           var gitalk = new Gitalk({
               clientID: '7b560b97e4bda87153dd',
-              clientSecret: '71c1745a9c776d439e0de7e8712c4c90a7441709',
+              proxy: 'https://comments.ereshkigal.ai/oauth/access_token',
               repo: 'gitalk-cobuffer',
               owner: 'wzetto',
               admin: ['wzetto'],
-              id: '{{ page.title }}',
+              id: {{ page.title | jsonify }},
               distractionFreeMode: True,
               title: 'Omoi'
           })

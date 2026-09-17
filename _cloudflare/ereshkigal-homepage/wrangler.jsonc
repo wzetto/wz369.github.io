@@ -1,0 +1,17 @@
+{
+  "name": "ereshkigal-homepage",
+  "main": "worker.mjs",
+  "account_id": "ca67a069662b732f7911528aa1bc4e9a",
+  "compatibility_date": "2026-09-11",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    { "pattern": "ereshkigal.ai", "custom_domain": true },
+    { "pattern": "www.ereshkigal.ai", "custom_domain": true }
+  ],
+  "observability": {
+    "enabled": true,
+    "logs": { "enabled": true, "invocation_logs": true, "head_sampling_rate": 1 },
+    "traces": { "enabled": true, "head_sampling_rate": 0.01 }
+  }
+}

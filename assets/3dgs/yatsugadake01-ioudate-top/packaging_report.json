@@ -1,0 +1,76 @@
+{
+  "source_preserved": true,
+  "all_sh_bands_preserved": true,
+  "gaussian_decimation": "none",
+  "timings": {
+    "vendor": {
+      "elapsed_seconds": 0.064,
+      "exit_code": 0
+    },
+    "full_spatial_partition": {
+      "elapsed_seconds": 2.942,
+      "exit_code": 0
+    },
+    "full_01_conversion": {
+      "elapsed_seconds": 7.458,
+      "exit_code": 0
+    },
+    "full_02_conversion": {
+      "elapsed_seconds": 7.826,
+      "exit_code": 0
+    },
+    "full_03_conversion": {
+      "elapsed_seconds": 7.535,
+      "exit_code": 0
+    }
+  },
+  "total_elapsed_seconds": 25.881,
+  "delivery_bytes": 104682698,
+  "largest_file_bytes": 32996826,
+  "all_files_below_limit": true,
+  "variants": [
+    {
+      "id": "full",
+      "label": "Full",
+      "files": [
+        {
+          "file": "full-01.spz",
+          "count": 1393510,
+          "sh_degree": 3,
+          "bytes": 32554001,
+          "sha256": "6e387444140e9a664b1dfdeb337af90f0e45641d4dcd53d1b16c53ea9deaf9bf"
+        },
+        {
+          "file": "full-02.spz",
+          "count": 1393510,
+          "sh_degree": 3,
+          "bytes": 32996826,
+          "sha256": "83dfa1f96c50aa459e82e8bf902ba814525a293e354173badf21e06bfa47cbae"
+        },
+        {
+          "file": "full-03.spz",
+          "count": 1393509,
+          "sh_degree": 3,
+          "bytes": 32763203,
+          "sha256": "b3c567df8bfd47bd4069684b2ff96d9bde3ff6dad0ce75b8518d24d10ddb16b4"
+        }
+      ],
+      "render_scale": 0.02,
+      "bytes": 98314030,
+      "count": 4180529,
+      "sh_degree": 3,
+      "partition_axis": "y",
+      "simplification": "none; every cleaned Gaussian retained once in spatial chunks"
+    }
+  ],
+  "poster": {
+    "file": "poster.jpg",
+    "format": "JPEG",
+    "width": 1600,
+    "height": 900,
+    "bytes": 358112,
+    "sha256": "04ac7696a9c1dfd2763a0e82f76731db6e854db19d66260acae212a57a3f9f75"
+  },
+  "poster_report_sha256": "7d2f92c056ec10c684966e7b708a14e43d244ff18f896093ae9965ef9f631676",
+  "poster_attached_at": "2026-09-14T10:52:39.728069+00:00"
+}

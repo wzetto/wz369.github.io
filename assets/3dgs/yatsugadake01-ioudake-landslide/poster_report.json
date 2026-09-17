@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "poster": {
+    "file": "poster.jpg",
+    "format": "JPEG",
+    "width": 1600,
+    "height": 900,
+    "bytes": 404120,
+    "sha256": "9f882b7714eb44fd20a9c7bfedc84f2cebcd720390329472b21fb1d0bf638df2"
+  },
+  "method": "explicit image file; validated and copied without reencoding",
+  "model_provenance_verified": true,
+  "capture_provenance": {
+    "schema_version": 1,
+    "method": "Direct WebGL canvas JPEG from full cleaned SPZ model; no UI overlay or image synthesis",
+    "created_at": "2026-09-15T12:51:34.898556+00:00",
+    "poster": {
+      "file": "poster.jpg",
+      "format": "JPEG",
+      "width": 1600,
+      "height": 900,
+      "bytes": 404120,
+      "sha256": "9f882b7714eb44fd20a9c7bfedc84f2cebcd720390329472b21fb1d0bf638df2"
+    },
+    "scene_id": "yatsugadake01-ioudake-landslide-step-29999",
+    "step": 29999,
+    "manifest_sha256": "5e05565ff11ea9262c8a84420ad5288102c79542de2235cc0a3faf994bffb08d",
+    "asset_transport": "local-parts",
+    "variant": "full",
+    "model_parts": [
+      {
+        "file": "full-01.spz",
+        "bytes": 25932432,
+        "sha256": "3cbbca8124907fa953eb02c2daaf26800df408f852a1a8285a3f48ad8c66479f"
+      },
+      {
+        "file": "full-02.spz",
+        "bytes": 26723331,
+        "sha256": "649bc7ada2d84d6a7688c6ff68cdd644cb55fcec816106a68e8fe75613225b25"
+      },
+      {
+        "file": "full-03.spz",
+        "bytes": 27715189,
+        "sha256": "a0fe1a44d3faa1a599bbae972f1aebfbc154b9ef688d6ff805d1a814a56c7db0"
+      }
+    ],
+    "model_parts_verified": "Browser SHA256 of the exact bytes passed to SplatMesh before decoding",
+    "source_provenance": {
+      "snapshot": {
+        "step": 29999,
+        "source_bytes": 2853058450,
+        "source_unchanged_during_export": true,
+        "gaussians_in_checkpoint": 4015759,
+        "nonfinite_removed": 0,
+        "exported_gaussians": 4015582,
+        "ply_bytes": 995865917,
+        "ply_sha256": "1a2994553fd08c3dd546edf1e9623ee8821c12d831c5aab15dd7025cc0b7067e",
+        "coordinate_system": "Nerfstudio normalized model coordinates, Z up",
+        "sh_degree": 3,
+        "camera_count": 1520,
+        "reference_point_count": 513498,
+        "parser_settings": {
+          "data": "/media/wz/partition3/project/3dgs/video/yatsugadake/ioudake_landslide_260912/processed_clean",
+          "auto_scale_poses": true,
+          "center_method": "poses",
+          "depth_unit_scale_factor": 0.001,
+          "downscale_factor": 1,
+          "eval_interval": 20,
+          "eval_mode": "interval",
+          "load_3D_points": true,
+          "mask_color": null,
+          "orientation_method": "up",
+          "scale_factor": 1.0,
+          "scene_scale": 1.0,
+          "train_split_fraction": 0.9
+        },
+        "camera_presets_source": "explicit",
+        "cameras_without_sparse_observations": [],
+        "execution": "CPU only; immutable snapshot; no training or optimizer changes",
+        "training_iterations": 30000,
+        "training_complete": true,
+        "source_checkpoint": "step-000029999.ckpt"
+      },
+      "clean_ply": {
+        "file": "preview-preserved.ply",
+        "count": 4015582,
+        "sh_degree": 3,
+        "bytes": 995865917,
+        "sha256": "1a2994553fd08c3dd546edf1e9623ee8821c12d831c5aab15dd7025cc0b7067e"
+      },
+      "cleanup_report_sha256": "0b4da125e56c2597c98babf2daa70c18c2f43876cedb4988e395aed5dc11b9a5"
+    },
+    "cleanup": {
+      "original_gaussians": 4015582,
+      "retained_gaussians": 4015582,
+      "removed_gaussians": 0,
+      "removed_fraction": 0.0,
+      "stages": [
+        {
+          "reason": "invalid_numeric_values_or_zero_quaternion",
+          "removed": 0,
+          "remaining": 4015582
+        },
+        {
+          "reason": "outside_scene_bounds",
+          "removed": 0,
+          "remaining": 4015582
+        },
+        {
+          "reason": "oversized_blurred_gaussians",
+          "removed": 0,
+          "remaining": 4015582
+        },
+        {
+          "reason": "tiny_isolated_components",
+          "removed": 0,
+          "remaining": 4015582
+        },
+        {
+          "reason": "disconnected_from_main_scene",
+          "removed": 0,
+          "remaining": 4015582
+        }
+      ],
+      "retained_bounds": {
+        "min": [
+          -41.779117584228516,
+          -6.736514091491699,
+          -23.749406814575195
+        ],
+        "max": [
+          53.665077209472656,
+          33.98609924316406,
+          31.68821907043457
+        ]
+      },
+      "limitations": [
+        "Geometry heuristics cannot identify every floater or recover blurred detail.",
+        "Connected artifacts can survive; real unsupported detached geometry can be removed.",
+        "Compare renders before choosing final thresholds; this pipeline does not retrain the model."
+      ]
+    },
+    "privacy": null,
+    "camera": {
+      "position": [
+        0.49639829993247986,
+        -0.11525289714336401,
+        -0.0314449705183506
+      ],
+      "target": [
+        0.30719641750629134,
+        0.17375840518662172,
+        0.013595383972418322
+      ],
+      "up": [
+        -0.17328625917434692,
+        -0.26142171025276184,
+        0.9495422840118408
+      ],
+      "fov": 42.14616272626802,
+      "near": 0.003,
+      "far": 100,
+      "aspect": 1.7777777777777777
+    },
+    "camera_preset": "overview",
+    "render": {
+      "width": 1600,
+      "height": 900,
+      "pixel_ratio": 1,
+      "background": "#192732",
+      "jpeg_quality": 0.9,
+      "render_scale": 0.03125,
+      "ext_splats": true,
+      "lod": false,
+      "packages": {
+        "@playcanvas/splat-transform": "3.3.3",
+        "@sparkjsdev/spark": "2.1.0",
+        "three": "0.180.0",
+        "playcanvas": "2.21.4"
+      }
+    }
+  },
+  "capture_report_sha256": "60c407c8a28707d34cd43234199e99a3fa43e92e6d8e4c7507b993991e50f7b0",
+  "verification": "Poster bytes and capture model inventory/source/privacy metadata match this package"
+}

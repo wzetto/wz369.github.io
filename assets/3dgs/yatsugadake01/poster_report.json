@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "poster": {
+    "file": "poster.jpg",
+    "format": "JPEG",
+    "width": 1600,
+    "height": 900,
+    "bytes": 300764,
+    "sha256": "f43bff0dc1a36f45b0ab84c098d47fbd488f6fb86d803e2448f11edf227331b7"
+  },
+  "method": "explicit image file; validated and copied without reencoding",
+  "model_provenance_verified": true,
+  "capture_provenance": {
+    "schema_version": 1,
+    "method": "Direct WebGL canvas JPEG from full cleaned SPZ model; no UI overlay or image synthesis",
+    "created_at": "2026-09-14T10:47:47.418460+00:00",
+    "poster": {
+      "file": "poster.jpg",
+      "format": "JPEG",
+      "width": 1600,
+      "height": 900,
+      "bytes": 300764,
+      "sha256": "f43bff0dc1a36f45b0ab84c098d47fbd488f6fb86d803e2448f11edf227331b7"
+    },
+    "scene_id": "yatsugadake01-step-59999",
+    "step": 59999,
+    "manifest_sha256": "61e5cac1b1b79e8bf3aa889209059ffead7a96cbb9f74c5be1195eb2b66d96ec",
+    "asset_transport": "local-parts",
+    "variant": "full",
+    "model_parts": [
+      {
+        "file": "full-01.spz",
+        "bytes": 32809375,
+        "sha256": "e194c2f60332f8ea82145774ba88016d25823b627610e0fd3bf31335af6936ab"
+      },
+      {
+        "file": "full-02.spz",
+        "bytes": 32597819,
+        "sha256": "976b47a07643b586bb89c4e9e43d62d37ada087d5ec3f5f545362a37b0fa3435"
+      },
+      {
+        "file": "full-03.spz",
+        "bytes": 33118275,
+        "sha256": "a1223ca5c7700984bdf15ba3f890d6079ab5fe91ca8d05a4fc6042133fb1fd4f"
+      }
+    ],
+    "model_parts_verified": "Browser SHA256 of the exact bytes passed to SplatMesh before decoding",
+    "source_provenance": {
+      "snapshot": {
+        "step": 59999,
+        "source_bytes": 3041689810,
+        "source_unchanged_during_export": true,
+        "gaussians_in_checkpoint": 4282187,
+        "nonfinite_removed": 0,
+        "exported_gaussians": 4062387,
+        "ply_bytes": 1007473557,
+        "ply_sha256": "fcd0a000518f18ddfc8951669c2e9967a76a760ebeae84fe89a56ad9b079aaf2",
+        "coordinate_system": "Nerfstudio normalized model coordinates, Z up",
+        "sh_degree": 3,
+        "camera_count": 1094,
+        "reference_point_count": 602738,
+        "parser_settings": {
+          "data": "/media/wz/partition3/project/3dgs/video/yatsugadake/chizouone_260912/processed_clean",
+          "auto_scale_poses": true,
+          "center_method": "poses",
+          "depth_unit_scale_factor": 0.001,
+          "downscale_factor": 1,
+          "eval_interval": 20,
+          "eval_mode": "interval",
+          "load_3D_points": true,
+          "mask_color": null,
+          "orientation_method": "up",
+          "scale_factor": 1.0,
+          "scene_scale": 1.0,
+          "train_split_fraction": 0.9
+        },
+        "camera_presets_source": "explicit",
+        "cameras_without_sparse_observations": [],
+        "execution": "CPU only; immutable snapshot; no training or optimizer changes",
+        "training_iterations": 60000,
+        "training_complete": true,
+        "source_checkpoint": "step-000059999.ckpt"
+      },
+      "clean_ply": {
+        "file": "narrow_dirt.ply",
+        "count": 4056036,
+        "sh_degree": 3,
+        "bytes": 1005898509,
+        "sha256": "336b7c0876ac2bf85c45de100968e3320b7a80aef24711ea6123f3489d846d56"
+      },
+      "cleanup_report_sha256": "00d09aa7091241c7d4cee572f68d99050361a0e40ea55e8c77abc3b490a147e4",
+      "final_selection": {
+        "scene_id": "yatsugadake01",
+        "selected_step": 59999,
+        "checkpoint_sha256": "1990e8e58d2a8d225ba6ba9ed460ee08000cc4c8e04c93e3c5798c1d82d2d6e6",
+        "snapshot_sha256": "20b0007ffb12e80215753b2cbf2b06aeddd7831ac9e96f6eb1508ca8226b051e",
+        "clean_ply_sha256": "336b7c0876ac2bf85c45de100968e3320b7a80aef24711ea6123f3489d846d56",
+        "review_sha256": "7d7a73b1fe53f442698ab65364b52fb6962db24e5aae31be9ffdf547d47e1dea",
+        "completed_run_iterations": 60000,
+        "training_run_complete": true,
+        "approved_for_packaging": true,
+        "schema_version": 1,
+        "checkpoint": "step-000059999.ckpt",
+        "review": "final-cleanup-privacy-review.json",
+        "report_sha256": "183db0548f8392ce47cc654056b3536a6008dd4c1386f91e6535296178ca5fdc"
+      }
+    },
+    "cleanup": {
+      "original_gaussians": 4062387,
+      "retained_gaussians": 4056036,
+      "removed_gaussians": 6351,
+      "removed_fraction": 0.0015633665625653095,
+      "stages": [
+        {
+          "reason": "invalid_numeric_values_or_zero_quaternion",
+          "removed": 0,
+          "remaining": 4062387
+        },
+        {
+          "reason": "negligible_opacity",
+          "removed": 6266,
+          "remaining": 4056121
+        },
+        {
+          "reason": "small_unsupported_isolated_dirt",
+          "removed": 85,
+          "remaining": 4056036
+        }
+      ],
+      "retained_bounds": {
+        "min": [
+          -13.140599250793457,
+          -12.199136734008789,
+          -9.18770694732666
+        ],
+        "max": [
+          16.9362735748291,
+          11.948325157165527,
+          5.744794845581055
+        ]
+      },
+      "limitations": [
+        "Coherent natural fog is deliberately retained; atmosphere is not labeled noise.",
+        "Full atmospheric extents remain; use authored camera presets or sparse-reference main-scene overview bounds, never automatic raw-Gaussian bounds framing.",
+        "Only a narrow geometric dirt hypothesis is removed; unobserved exterior artifacts may remain.",
+        "No production approval; actual multi-view Gaussian render and privacy review remain required."
+      ]
+    },
+    "privacy": null,
+    "camera": {
+      "position": [
+        0.1206578239798546,
+        0.49843469262123097,
+        -0.0227980911731719
+      ],
+      "target": [
+        0.08167290687561034,
+        0.982917547225952,
+        -0.14008654654026031
+      ],
+      "up": [
+        0.014106109738349915,
+        0.23634189367294312,
+        0.9715676307678223
+      ],
+      "fov": 42.10322417329271,
+      "near": 0.003,
+      "far": 100,
+      "aspect": 1.7777777777777777
+    },
+    "camera_preset": "overview",
+    "render": {
+      "width": 1600,
+      "height": 900,
+      "pixel_ratio": 1,
+      "background": "#192732",
+      "jpeg_quality": 0.9,
+      "render_scale": 0.01,
+      "ext_splats": true,
+      "lod": false,
+      "packages": {
+        "@playcanvas/splat-transform": "3.3.3",
+        "@sparkjsdev/spark": "2.1.0",
+        "three": "0.180.0",
+        "playcanvas": "2.21.4"
+      }
+    }
+  },
+  "capture_report_sha256": "660c195f041f28db1d0e5daeb7c08db60f02185462ea9d52774dd07896715f9f",
+  "verification": "Poster bytes and capture model inventory/source/privacy metadata match this package"
+}

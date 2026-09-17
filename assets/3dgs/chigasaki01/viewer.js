@@ -27,6 +27,22 @@ function fail(message, error) {
   $('welcome').hidden = true;
 }
 
+function setupPoster() {
+  const poster = $('poster');
+  if (!poster || !manifest.poster) return;
+  try {
+    // New packages keep this small image beside the page; legacy packages may
+    // still store their poster with the externally hosted model files.
+    const base = manifest.poster_base_url === './' ? new URL('./', location.href)
+      : manifest.poster_base_url ? resolveAssetBase(manifest.poster_base_url) : assetBaseUrl;
+    const url = new URL(manifest.poster, base);
+    if (!['http:', 'https:'].includes(url.protocol) || url.username || url.password) return;
+    poster.addEventListener('load', () => { poster.hidden = false; }, { once: true });
+    poster.addEventListener('error', () => { poster.hidden = true; }, { once: true });
+    poster.src = url.href;
+  } catch { /* A missing preview must never prevent loading the 3D scene. */ }
+}
+
 function setEnabled(enabled) {
   $('reset').disabled = !enabled;
 }
@@ -225,7 +241,7 @@ try {
   if (!response.ok) throw new Error(`Manifest HTTP ${response.status}`);
   manifest = await response.json();
   assetBaseUrl = resolveAssetBase(manifest.asset_base_url);
-  if (manifest.poster) root.style.backgroundImage = `url("${new URL(manifest.poster, assetBaseUrl).href}")`;
+  setupPoster();
   $('model-label').textContent = manifest.training_complete
     ? `Snapshot · ${(manifest.training_iterations ?? manifest.step + 1).toLocaleString('en-US')} iterations`
     : `Test snapshot · Step ${manifest.step.toLocaleString('en-US')}`;

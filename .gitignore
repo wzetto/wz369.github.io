@@ -5,3 +5,17 @@ notes
 
 # Serve Gaussian model binaries from Cloudflare R2.
 /assets/3dgs/**/*.spz
+
+# Generated site and local build state.
+/_site/
+/.jekyll-cache/
+/.jekyll-metadata
+/.sass-cache/
+.DS_Store
+
+# Local credentials and Worker development state.
+.env
+.env.*
+.dev.vars
+.dev.vars.*
+.wrangler/

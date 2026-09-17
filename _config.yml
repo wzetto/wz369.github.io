@@ -8,3 +8,5 @@ plugins:
 
 exclude:
   - backup
+  - omoi_main/ssg
+  - notes

@@ -58,29 +58,23 @@
     
     <!-- MAIN CONTENT -->
     
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <link rel="stylesheet" href="{{ '/assets/vendor/gitalk/gitalk.css' | relative_url }}">
+    <script src="{{ '/assets/vendor/gitalk/gitalk.min.js' | relative_url }}"></script>
     <div class="row">
       <div class="inner_left">
         
         <h6 style="position: absolute; top: 0; right: 0; padding: 5px;"> Friedrich "The Sea of Ice" </h6>
-
-        {% for tag in page.tags %}
-          <code style="background-color:#fff;border: 1.5px solid #303030;box-shadow: 0 0 1px rgba(0,0,0,.1)">
-            <a href="https://fgo.wiki/w/%E7%89%B9%E6%8B%89%E6%B4%9B%E5%85%8B">{{ tag }}</a>
-          </code>
-        {% endfor %}
 
         {{ content }}<br>
         <div id="gitalk-container"></div>
         <script>
           var gitalk = new Gitalk({
               clientID: '7b560b97e4bda87153dd',
-              clientSecret: '71c1745a9c776d439e0de7e8712c4c90a7441709',
+              proxy: 'https://comments.ereshkigal.ai/oauth/access_token',
               repo: 'gitalk-cobuffer',
               owner: 'wzetto',
               admin: ['wzetto'],
-              id: '{{ page.title }}',
+              id: {{ page.title | jsonify }},
               distractionFreeMode: false,
               title: 'Omoi'
           })

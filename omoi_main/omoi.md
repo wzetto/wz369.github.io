@@ -228,6 +228,10 @@ title: 想法等
 
 <code style="background-color:#C24E63">08/11</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2026-8-9sqsdrl.html"> SQS drl renew</a><br>
 
+
+<h6 id="o202609" class="omoi-month-title">9</h6>
+
+<code style="background-color:#C24E63">09/13</code><a href="https://wzetto.github.io/wz369.github.io/omoi_main/essays/2026-9-13小花.html"> 小花</a><br>
 <!-- <hr style="width:50px;text-align:left;margin-left:0"> -->
 
 

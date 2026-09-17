@@ -404,5 +404,16 @@
     "report_sha256": "d58b11e99916a3e55a766ffd0718900c183bf946577379511f3ad79d9755a765",
     "output_sha256": "bbd08764caac4a8f79295a865f8a874d6139f49ecb114e9989baf640fa909cd3"
   },
-  "asset_base_url": "https://assets.ereshkigal.ai/3dgs/chigasaki01/v1/"
+  "asset_base_url": "https://assets.ereshkigal.ai/3dgs/chigasaki01/v1/",
+  "poster": "poster.jpg",
+  "poster_base_url": "./",
+  "poster_info": {
+    "file": "poster.jpg",
+    "format": "JPEG",
+    "width": 1600,
+    "height": 900,
+    "bytes": 399549,
+    "sha256": "f55f44408f2ea32469aa9f0974cd7bb3ef1342fdfd4ae202990934cc15767ff1"
+  },
+  "poster_report_sha256": "7316f97ea697d1f240ef8c5f6c69ef11c9e2c354b804146257145a0620854311"
 }

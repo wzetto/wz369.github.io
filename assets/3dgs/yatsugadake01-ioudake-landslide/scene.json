@@ -1,0 +1,418 @@
+{
+  "schema_version": 1,
+  "id": "yatsugadake01-ioudake-landslide-step-29999",
+  "title": "Ioudake Landslide · 30,000-step preview · 3D Scene",
+  "status": "completed-training-snapshot",
+  "step": 29999,
+  "coordinate_system": "Nerfstudio normalized model coordinates, Z up",
+  "cameras": [
+    {
+      "name": "Overview",
+      "image": "frame_000000.png",
+      "position": [
+        0.49639829993247986,
+        -0.11525289714336395,
+        -0.0314449705183506
+      ],
+      "target": [
+        0.22483614087104797,
+        0.2995660901069641,
+        0.03320161625742912
+      ],
+      "up": [
+        -0.17328625917434692,
+        -0.26142171025276184,
+        0.9495422840118408
+      ],
+      "fov": 42.14616272626802,
+      "camera_to_world": [
+        [
+          0.8215764760971069,
+          -0.17328625917434692,
+          0.5431243181228638,
+          0.49639829993247986
+        ],
+        [
+          0.4933147728443146,
+          -0.26142171025276184,
+          -0.8296380043029785,
+          -0.11525289714336395
+        ],
+        [
+          0.28574931621551514,
+          0.9495422840118408,
+          -0.12929317355155945,
+          -0.0314449705183506
+        ]
+      ]
+    },
+    {
+      "name": "Landslide face",
+      "image": "frame_001483.png",
+      "position": [
+        0.3946216404438019,
+        -0.01052053365856409,
+        0.005731259472668171
+      ],
+      "target": [
+        0.3017151355743408,
+        0.479551762342453,
+        0.04033612087368965
+      ],
+      "up": [
+        -0.2077951282262802,
+        -0.10804116725921631,
+        0.9721873998641968
+      ],
+      "fov": 42.14616272626802,
+      "camera_to_world": [
+        [
+          0.9603617787361145,
+          -0.2077951282262802,
+          0.1858130395412445,
+          0.3946216404438019
+        ],
+        [
+          0.1662636399269104,
+          -0.10804116725921631,
+          -0.9801446199417114,
+          -0.01052053365856409
+        ],
+        [
+          0.2237447202205658,
+          0.9721873998641968,
+          -0.06920972466468811,
+          0.005731259472668171
+        ]
+      ]
+    },
+    {
+      "name": "Pale slope",
+      "image": "frame_002966.png",
+      "position": [
+        0.4585403800010681,
+        0.054506853222846985,
+        0.03100980445742607
+      ],
+      "target": [
+        0.2769016921520233,
+        0.5180648565292358,
+        -0.015048626810312271
+      ],
+      "up": [
+        -0.26186051964759827,
+        -0.006717294454574585,
+        0.9650824069976807
+      ],
+      "fov": 42.14616272626802,
+      "camera_to_world": [
+        [
+          0.8941245079040527,
+          -0.26186051964759827,
+          0.3632773756980896,
+          0.4585403800010681
+        ],
+        [
+          0.37471434473991394,
+          -0.006717294454574585,
+          -0.9271159768104553,
+          0.054506853222846985
+        ],
+        [
+          0.2452153116464615,
+          0.9650824069976807,
+          0.09211686253547668,
+          0.03100980445742607
+        ]
+      ]
+    },
+    {
+      "name": "Valley",
+      "image": "frame_004540.png",
+      "position": [
+        0.30273357033729553,
+        -0.01668025739490986,
+        -0.002473394386470318
+      ],
+      "target": [
+        0.43287792801856995,
+        0.46593815088272095,
+        -0.014386440627276897
+      ],
+      "up": [
+        0.02104417234659195,
+        0.018999338150024414,
+        0.99959796667099
+      ],
+      "fov": 42.14616272626802,
+      "camera_to_world": [
+        [
+          0.9653014540672302,
+          0.02104417234659195,
+          -0.26028871536254883,
+          0.30273357033729553
+        ],
+        [
+          -0.2606855034828186,
+          0.018999338150024414,
+          -0.9652368426322937,
+          -0.01668025739490986
+        ],
+        [
+          -0.015367284417152405,
+          0.99959796667099,
+          0.02382609248161316,
+          -0.002473394386470318
+        ]
+      ]
+    },
+    {
+      "name": "Lower gully",
+      "image": "frame_006890.png",
+      "position": [
+        0.37581777572631836,
+        0.10013606399297714,
+        0.045229893177747726
+      ],
+      "target": [
+        0.40973156690597534,
+        0.5955646634101868,
+        -0.013082746416330338
+      ],
+      "up": [
+        -0.07070983946323395,
+        0.12137472629547119,
+        0.9900849461555481
+      ],
+      "fov": 42.14616272626802,
+      "camera_to_world": [
+        [
+          0.9951881766319275,
+          -0.07070983946323395,
+          -0.06782761216163635,
+          0.37581777572631836
+        ],
+        [
+          -0.058908551931381226,
+          0.12137472629547119,
+          -0.9908571839332581,
+          0.10013606399297714
+        ],
+        [
+          0.07829591631889343,
+          0.9900849461555481,
+          0.11662527918815613,
+          0.045229893177747726
+        ]
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "full",
+      "label": "Full",
+      "files": [
+        {
+          "file": "full-01.spz",
+          "count": 1338528,
+          "sh_degree": 3,
+          "bytes": 25932432,
+          "sha256": "3cbbca8124907fa953eb02c2daaf26800df408f852a1a8285a3f48ad8c66479f"
+        },
+        {
+          "file": "full-02.spz",
+          "count": 1338528,
+          "sh_degree": 3,
+          "bytes": 26723331,
+          "sha256": "649bc7ada2d84d6a7688c6ff68cdd644cb55fcec816106a68e8fe75613225b25"
+        },
+        {
+          "file": "full-03.spz",
+          "count": 1338526,
+          "sh_degree": 3,
+          "bytes": 27715189,
+          "sha256": "a0fe1a44d3faa1a599bbae972f1aebfbc154b9ef688d6ff805d1a814a56c7db0"
+        }
+      ],
+      "render_scale": 0.03125,
+      "bytes": 80370952,
+      "count": 4015582,
+      "sh_degree": 3,
+      "partition_axis": "x",
+      "simplification": "none; every cleaned Gaussian retained once in spatial chunks"
+    }
+  ],
+  "default_variant": "full",
+  "cleanup": {
+    "original_gaussians": 4015582,
+    "retained_gaussians": 4015582,
+    "removed_gaussians": 0,
+    "removed_fraction": 0.0,
+    "stages": [
+      {
+        "reason": "invalid_numeric_values_or_zero_quaternion",
+        "removed": 0,
+        "remaining": 4015582
+      },
+      {
+        "reason": "outside_scene_bounds",
+        "removed": 0,
+        "remaining": 4015582
+      },
+      {
+        "reason": "oversized_blurred_gaussians",
+        "removed": 0,
+        "remaining": 4015582
+      },
+      {
+        "reason": "tiny_isolated_components",
+        "removed": 0,
+        "remaining": 4015582
+      },
+      {
+        "reason": "disconnected_from_main_scene",
+        "removed": 0,
+        "remaining": 4015582
+      }
+    ],
+    "retained_bounds": {
+      "min": [
+        -41.779117584228516,
+        -6.736514091491699,
+        -23.749406814575195
+      ],
+      "max": [
+        53.665077209472656,
+        33.98609924316406,
+        31.68821907043457
+      ]
+    },
+    "limitations": [
+      "Geometry heuristics cannot identify every floater or recover blurred detail.",
+      "Connected artifacts can survive; real unsupported detached geometry can be removed.",
+      "Compare renders before choosing final thresholds; this pipeline does not retrain the model."
+    ]
+  },
+  "provenance": {
+    "snapshot": {
+      "step": 29999,
+      "source_bytes": 2853058450,
+      "source_unchanged_during_export": true,
+      "gaussians_in_checkpoint": 4015759,
+      "nonfinite_removed": 0,
+      "exported_gaussians": 4015582,
+      "ply_bytes": 995865917,
+      "ply_sha256": "1a2994553fd08c3dd546edf1e9623ee8821c12d831c5aab15dd7025cc0b7067e",
+      "coordinate_system": "Nerfstudio normalized model coordinates, Z up",
+      "sh_degree": 3,
+      "camera_count": 1520,
+      "reference_point_count": 513498,
+      "parser_settings": {
+        "data": "/media/wz/partition3/project/3dgs/video/yatsugadake/ioudake_landslide_260912/processed_clean",
+        "auto_scale_poses": true,
+        "center_method": "poses",
+        "depth_unit_scale_factor": 0.001,
+        "downscale_factor": 1,
+        "eval_interval": 20,
+        "eval_mode": "interval",
+        "load_3D_points": true,
+        "mask_color": null,
+        "orientation_method": "up",
+        "scale_factor": 1.0,
+        "scene_scale": 1.0,
+        "train_split_fraction": 0.9
+      },
+      "camera_presets_source": "explicit",
+      "cameras_without_sparse_observations": [],
+      "execution": "CPU only; immutable snapshot; no training or optimizer changes",
+      "training_iterations": 30000,
+      "training_complete": true,
+      "source_checkpoint": "step-000029999.ckpt"
+    },
+    "clean_ply": {
+      "file": "preview-preserved.ply",
+      "count": 4015582,
+      "sh_degree": 3,
+      "bytes": 995865917,
+      "sha256": "1a2994553fd08c3dd546edf1e9623ee8821c12d831c5aab15dd7025cc0b7067e"
+    },
+    "cleanup_report_sha256": "0b4da125e56c2597c98babf2daa70c18c2f43876cedb4988e395aed5dc11b9a5"
+  },
+  "build": {
+    "packages": {
+      "@playcanvas/splat-transform": "3.3.3",
+      "@sparkjsdev/spark": "2.1.0",
+      "three": "0.180.0",
+      "playcanvas": "2.21.4"
+    },
+    "execution": "CPU only",
+    "format": "spz",
+    "spz_version": 3,
+    "spz_geometry_scale": 32.0,
+    "spz_encoded_max_abs_position": 1717.282470703125,
+    "spz_position_grid_in_model_units": 7.62939453125e-06,
+    "spark_ext_splats_required": true,
+    "sh_iterations": null,
+    "sh_note": "All source SH bands retained; delivery attributes are quantized",
+    "decimation": "none (full model only)",
+    "file_limit_bytes_exclusive": 100000000,
+    "package_lock_sha256": "0da773333d6b253ca22d59325290a1f632844ac10f4ac5960ce4fb1c792736a0",
+    "in_progress": false,
+    "created_at": "2026-09-15T12:49:16.610388+00:00",
+    "timings": {
+      "vendor": {
+        "elapsed_seconds": 1.232,
+        "exit_code": 0
+      },
+      "full_spatial_partition": {
+        "elapsed_seconds": 2.736,
+        "exit_code": 0
+      },
+      "full_01_conversion": {
+        "elapsed_seconds": 4.879,
+        "exit_code": 0
+      },
+      "full_02_conversion": {
+        "elapsed_seconds": 5.31,
+        "exit_code": 0
+      },
+      "full_03_conversion": {
+        "elapsed_seconds": 5.266,
+        "exit_code": 0
+      }
+    },
+    "elapsed_seconds": 19.469
+  },
+  "training_iterations": 30000,
+  "training_complete": true,
+  "overview": {
+    "position": [
+      0.49639829993247986,
+      -0.11525289714336395,
+      -0.0314449705183506
+    ],
+    "target": [
+      0.30719641750629134,
+      0.17375840518662172,
+      0.013595383972418322
+    ],
+    "up": [
+      -0.17328625917434692,
+      -0.26142171025276184,
+      0.9495422840118408
+    ],
+    "fov": 42.14616272626802,
+    "aspect": 1.7777777777777777
+  },
+  "poster": "poster.jpg",
+  "poster_base_url": "./",
+  "poster_info": {
+    "file": "poster.jpg",
+    "format": "JPEG",
+    "width": 1600,
+    "height": 900,
+    "bytes": 404120,
+    "sha256": "9f882b7714eb44fd20a9c7bfedc84f2cebcd720390329472b21fb1d0bf638df2"
+  },
+  "poster_report_sha256": "82079a7a330a71de67ee032f99a3d24b5c90b0672bca1d77f8e2ac052d1936d8"
+}

@@ -28,11 +28,13 @@ layout: map_homepage
 
 <code class="yama-badge yama-badge--hairband">鈴鹿山脈</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/ryozen/ryozen.html"> 霊仙山</a><br>
 
-<code class="yama-badge yama-badge--hairband">百名山</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/kaimon/kaimon.html"> 開聞岳</a><br>
+<code class="yama-badge yama-badge--hairband">独立火山</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/kaimon/kaimon.html"> 開聞岳</a><br>
 
-<code class="yama-badge yama-badge--highlight">百名山</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/fuji/fuji.html"> 富士山</a><br>
+<code class="yama-badge yama-badge--highlight">独立火山</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/fuji/fuji.html"> 富士山</a><br>
 
 <h5>秋冬</h5>
+
+<code class="yama-badge yama-badge--hairband">八ヶ岳山系</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/yatsugadake/yatsugadake01.html"> 八ヶ岳-硫黄岳縦走</a><br>
 
 <code class="yama-badge yama-badge--hairband">湘南海岸</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/chigasaki_bay/chigasaki01.html"> 湘南海岸骑行</a><br>
 
@@ -42,15 +44,15 @@ layout: map_homepage
 
 <code class="yama-badge yama-badge--hair">大雪山脉</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/minya_konka/random_2023newyear.html"> 贡嘎腐败</a><br>
 
-<code class="yama-badge yama-badge--hairband">百名山</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/ibuki/ibuki_before_21-12.html"> 伊吹山 ver. 21~22</a><br>
+<code class="yama-badge yama-badge--hairband">伊吹山地</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/ibuki/ibuki_before_21-12.html"> 伊吹山 ver. 21~22</a><br>
 
-<code class="yama-badge yama-badge--hairband">百名山</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/ibuki/ibuki_2501.html"> 伊吹山 ver. 25</a><br>
+<code class="yama-badge yama-badge--hairband">伊吹山地</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/ibuki/ibuki_2501.html"> 伊吹山 ver. 25</a><br>
 
-<code class="yama-badge yama-badge--hairband">百名山</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/ibuki/ibuki_2601.html"> 伊吹山 final season</a><br>
+<code class="yama-badge yama-badge--hairband">伊吹山地</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/ibuki/ibuki_2601.html"> 伊吹山 final season</a><br>
 
-<code class="yama-badge yama-badge--hairband">百名山</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/arashima/arashima.html"> 荒島岳</a><br>
+<code class="yama-badge yama-badge--hairband">両白山地</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/arashima/arashima.html"> 荒島岳</a><br>
 
-<code class="yama-badge yama-badge--hairband">百名山</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/tsurugi-miune/tsurugi-miune.html"> 剣山ー三嶺縦走</a><br>
+<code class="yama-badge yama-badge--hairband">四国山地</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/tsurugi-miune/tsurugi-miune.html"> 剣山ー三嶺縦走</a><br>
 
 <code class="yama-badge yama-badge--hairband">比良山系</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/bunagatake/bunagatake.html"> 武奈ヶ岳</a><br>
 
