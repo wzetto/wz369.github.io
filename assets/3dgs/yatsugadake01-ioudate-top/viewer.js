@@ -1,10 +1,20 @@
 const $ = (id) => document.getElementById(id);
 const root = $('scene');
 let manifest, renderer, scene, camera, controls, mesh, spark, THREE, SplatMesh;
+let cameraNavigation, OrbitControls;
 let busy = false;
 let currentVariant;
 let visible = true;
 let assetBaseUrl = new URL('./', location.href);
+
+root.addEventListener('keydown', (event) => {
+  const disclosure = root.querySelector('.camera-controls');
+  if (event.key !== 'Escape' || !disclosure?.open) return;
+  disclosure.open = false;
+  cameraNavigation?.clear();
+  disclosure.querySelector('summary').focus({ preventScroll: true });
+  event.preventDefault();
+});
 
 function resolveAssetBase(value, pageUrl = location.href) {
   if (value == null || value === '') return new URL('./', pageUrl);
@@ -45,6 +55,7 @@ function setupPoster() {
 
 function setEnabled(enabled) {
   $('reset').disabled = !enabled;
+  cameraNavigation?.setEnabled(enabled);
 }
 
 function disposeScene(group) {
@@ -66,9 +77,31 @@ function overview() {
   return { position: position.toArray(), target: target.toArray(), fov, aspect: 1 };
 }
 
+function replaceCamera(next) {
+  const target = controls?.target.clone();
+  const maxDistance = controls?.maxDistance ?? 8;
+  controls?.dispose();
+  camera = next;
+  controls = new OrbitControls(camera, renderer.domElement);
+  controls.enableDamping = false;
+  controls.minDistance = .015;
+  controls.maxDistance = Math.max(maxDistance, target ? next.position.distanceTo(target) * 1.01 : 0);
+  camera.far = Math.max(camera.far, controls.maxDistance * 2);
+  camera.updateProjectionMatrix();
+  controls.zoomSpeed = .8;
+  controls.panSpeed = .8;
+  if (target) controls.target.copy(target);
+  controls.addEventListener('change', () => cameraNavigation?.sync());
+  controls.update();
+}
+
 function resetView() {
   if (!camera) return;
   const view = overview();
+  cameraNavigation?.clear();
+  if (camera.isOrthographicCamera) {
+    replaceCamera(new THREE.PerspectiveCamera(view.fov, camera.aspect, .003, camera.far));
+  }
   camera.position.fromArray(view.position);
   camera.up.fromArray(view.up || [0, 0, 1]);
   camera.fov = view.fov;
@@ -82,11 +115,19 @@ function resetView() {
   camera.far = Math.max(100, controls.maxDistance * 2);
   camera.updateProjectionMatrix();
   camera.lookAt(controls.target);
-  controls.update();
+  // OrbitControls caches its up basis at construction; refresh it after axis/reset changes.
+  replaceCamera(camera);
+  cameraNavigation?.sync();
 }
 
 function zoom(factor) {
   if (!controls || busy) return;
+  if (camera.isOrthographicCamera) {
+    camera.zoom = Math.max(.02, Math.min(100, camera.zoom / factor));
+    camera.updateProjectionMatrix();
+    controls.update();
+    return;
+  }
   const offset = camera.position.clone().sub(controls.target);
   const length = Math.max(controls.minDistance, Math.min(controls.maxDistance, offset.length() * factor));
   camera.position.copy(controls.target).add(offset.setLength(length));
@@ -94,10 +135,12 @@ function zoom(factor) {
 }
 
 async function setup() {
-  const [three, sparkModule, orbit] = await Promise.all([
-    import('three'), import('@sparkjsdev/spark'), import('three/addons/controls/OrbitControls.js')
+  const [three, sparkModule, orbit, navigation] = await Promise.all([
+    import('three'), import('@sparkjsdev/spark'), import('three/addons/controls/OrbitControls.js'),
+    import('./camera-navigation.js?v=20260917-glass3')
   ]);
   THREE = three;
+  OrbitControls = orbit.OrbitControls;
   SplatMesh = sparkModule.SplatMesh;
   renderer = new THREE.WebGLRenderer({ antialias: false, alpha: false });
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
@@ -110,29 +153,36 @@ async function setup() {
   scene = new THREE.Scene();
   camera = new THREE.PerspectiveCamera(60, 1, .003, 100);
   camera.up.set(0, 0, 1); // The exported model and camera poses share Nerfstudio's Z-up coordinates.
-  controls = new orbit.OrbitControls(camera, renderer.domElement);
-  controls.enableDamping = false;
-  controls.minDistance = .015;
-  controls.maxDistance = 8;
-  controls.zoomSpeed = .8;
-  controls.panSpeed = .8;
+  replaceCamera(camera);
   spark = new sparkModule.SparkRenderer({ renderer });
   scene.add(spark);
   const resize = () => {
     const width = root.clientWidth, height = root.clientHeight;
     renderer.setSize(width, height);
     camera.aspect = width / Math.max(1, height);
+    if (camera.isOrthographicCamera) {
+      const halfHeight = (camera.top - camera.bottom) / 2;
+      camera.left = -halfHeight * camera.aspect;
+      camera.right = halfHeight * camera.aspect;
+    }
     camera.updateProjectionMatrix();
   };
   new ResizeObserver(resize).observe(root);
   resize();
   resetView();
+  cameraNavigation = navigation.createCameraNavigation({
+    THREE, root, canvas: $('canvas'), getCamera: () => camera, getControls: () => controls,
+    replaceCamera, getFov: () => overview().fov
+  });
   new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; }).observe(root);
-  renderer.setAnimationLoop(() => {
-    if (!document.hidden && visible) renderer.render(scene, camera);
+  renderer.setAnimationLoop((time) => {
+    if (!document.hidden && visible) {
+      cameraNavigation.update(time);
+      renderer.render(scene, camera);
+    } else cameraNavigation.clear();
   });
   $('canvas').addEventListener('keydown', (event) => {
-    if (busy || !mesh) return;
+    if (busy || !mesh || event.ctrlKey || event.metaKey || event.altKey) return;
     if (event.key === '+' || event.key === '=') zoom(.8);
     else if (event.key === '-') zoom(1.25);
     else if (event.key.toLowerCase() === 'r') resetView();
@@ -202,6 +252,7 @@ async function load(variantId) {
     root.dataset.variant = currentVariant;
     root.dataset.splats = String(variant.count ?? '');
     setEnabled(true);
+    $('canvas').focus({ preventScroll: true });
   } catch (error) {
     disposeScene(candidate);
     fail('The scene could not load. Check your connection and try again.', error);
@@ -230,6 +281,7 @@ document.addEventListener('fullscreenchange', () => {
 window.addEventListener('pagehide', (event) => {
   if (event.persisted) return; // Back/forward cache restores this live WebGL scene.
   renderer?.setAnimationLoop(null);
+  cameraNavigation?.dispose();
   controls?.dispose();
   disposeScene(mesh);
   spark?.dispose();
