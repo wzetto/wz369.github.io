@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "yatsugadake01-ioudake-landslide-step-29999",
-  "title": "Ioudake Landslide \u00b7 3D Scene",
+  "title": "Ioudake Landslide \u00b7 30,000-step preview \u00b7 3D Scene",
   "status": "completed-training-snapshot",
   "step": 29999,
   "coordinate_system": "Nerfstudio normalized model coordinates, Z up",
@@ -211,24 +211,35 @@
     {
       "id": "full",
       "label": "Full",
-      "format": "rad",
-      "file": "full-lod.rad",
-      "bytes": 237815704,
+      "files": [
+        {
+          "file": "full-01.spz",
+          "count": 1338528,
+          "sh_degree": 3,
+          "bytes": 25932432,
+          "sha256": "3cbbca8124907fa953eb02c2daaf26800df408f852a1a8285a3f48ad8c66479f"
+        },
+        {
+          "file": "full-02.spz",
+          "count": 1338528,
+          "sh_degree": 3,
+          "bytes": 26723331,
+          "sha256": "649bc7ada2d84d6a7688c6ff68cdd644cb55fcec816106a68e8fe75613225b25"
+        },
+        {
+          "file": "full-03.spz",
+          "count": 1338526,
+          "sh_degree": 3,
+          "bytes": 27715189,
+          "sha256": "a0fe1a44d3faa1a599bbae972f1aebfbc154b9ef688d6ff805d1a814a56c7db0"
+        }
+      ],
+      "render_scale": 0.03125,
+      "bytes": 80370952,
       "count": 4015582,
-      "lod_count": 5325092,
       "sh_degree": 3,
-      "render_scale": 1
-    },
-    {
-      "id": "lite",
-      "label": "Lite",
-      "format": "rad",
-      "file": "lite-lod.rad",
-      "bytes": 128646752,
-      "count": 4015582,
-      "lod_count": 5325092,
-      "sh_degree": 1,
-      "render_scale": 1
+      "partition_axis": "x",
+      "simplification": "none; every cleaned Gaussian retained once in spatial chunks"
     }
   ],
   "default_variant": "full",
@@ -328,20 +339,49 @@
     "cleanup_report_sha256": "0b4da125e56c2597c98babf2daa70c18c2f43876cedb4988e395aed5dc11b9a5"
   },
   "build": {
-    "format": "rad",
-    "generator": "Spark build-lod",
-    "spark_version": "2.1.0",
-    "spark_commit": "f22236f95fdd8078f0c12e3aab479523d401daf6",
-    "method": "quality / BhattLod 1.75",
-    "input": "preview-preserved.ply",
-    "execution": "workstation CPU, four-core affinity, no GPU",
-    "created_at": "2026-09-17T23:13:03.901799+00:00",
     "packages": {
       "@playcanvas/splat-transform": "3.3.3",
       "@sparkjsdev/spark": "2.1.0",
       "three": "0.180.0",
       "playcanvas": "2.21.4"
-    }
+    },
+    "execution": "CPU only",
+    "format": "spz",
+    "spz_version": 3,
+    "spz_geometry_scale": 32.0,
+    "spz_encoded_max_abs_position": 1717.282470703125,
+    "spz_position_grid_in_model_units": 7.62939453125e-06,
+    "spark_ext_splats_required": true,
+    "sh_iterations": null,
+    "sh_note": "All source SH bands retained; delivery attributes are quantized",
+    "decimation": "none (full model only)",
+    "file_limit_bytes_exclusive": 100000000,
+    "package_lock_sha256": "0da773333d6b253ca22d59325290a1f632844ac10f4ac5960ce4fb1c792736a0",
+    "in_progress": false,
+    "created_at": "2026-09-15T12:49:16.610388+00:00",
+    "timings": {
+      "vendor": {
+        "elapsed_seconds": 1.232,
+        "exit_code": 0
+      },
+      "full_spatial_partition": {
+        "elapsed_seconds": 2.736,
+        "exit_code": 0
+      },
+      "full_01_conversion": {
+        "elapsed_seconds": 4.879,
+        "exit_code": 0
+      },
+      "full_02_conversion": {
+        "elapsed_seconds": 5.31,
+        "exit_code": 0
+      },
+      "full_03_conversion": {
+        "elapsed_seconds": 5.266,
+        "exit_code": 0
+      }
+    },
+    "elapsed_seconds": 19.469
   },
   "training_iterations": 30000,
   "training_complete": true,
@@ -374,104 +414,5 @@
     "bytes": 404120,
     "sha256": "9f882b7714eb44fd20a9c7bfedc84f2cebcd720390329472b21fb1d0bf638df2"
   },
-  "poster_report_sha256": "82079a7a330a71de67ee032f99a3d24b5c90b0672bca1d77f8e2ac052d1936d8",
-  "asset_base_url": "https://assets.ereshkigal.ai/3dgs/yatsugadake01-ioudake-landslide/v2/",
-  "delivery": {
-    "format": "paged-rad",
-    "version": "v2",
-    "automatic_quality": true,
-    "desktop": "full",
-    "iphone_ipad_android": "lite",
-    "source_geometry_preserved": true,
-    "source_leaf_count_verified": 4015582,
-    "hash_alignment_performed": false,
-    "scene_id": "yatsugadake01-ioudake-landslide"
-  },
-  "previous_delivery": {
-    "variants": [
-      {
-        "id": "full",
-        "label": "Full",
-        "files": [
-          {
-            "file": "full-01.spz",
-            "count": 1338528,
-            "sh_degree": 3,
-            "bytes": 25932432,
-            "sha256": "3cbbca8124907fa953eb02c2daaf26800df408f852a1a8285a3f48ad8c66479f"
-          },
-          {
-            "file": "full-02.spz",
-            "count": 1338528,
-            "sh_degree": 3,
-            "bytes": 26723331,
-            "sha256": "649bc7ada2d84d6a7688c6ff68cdd644cb55fcec816106a68e8fe75613225b25"
-          },
-          {
-            "file": "full-03.spz",
-            "count": 1338526,
-            "sh_degree": 3,
-            "bytes": 27715189,
-            "sha256": "a0fe1a44d3faa1a599bbae972f1aebfbc154b9ef688d6ff805d1a814a56c7db0"
-          }
-        ],
-        "render_scale": 0.03125,
-        "bytes": 80370952,
-        "count": 4015582,
-        "sh_degree": 3,
-        "partition_axis": "x",
-        "simplification": "none; every cleaned Gaussian retained once in spatial chunks"
-      }
-    ],
-    "build": {
-      "packages": {
-        "@playcanvas/splat-transform": "3.3.3",
-        "@sparkjsdev/spark": "2.1.0",
-        "three": "0.180.0",
-        "playcanvas": "2.21.4"
-      },
-      "execution": "CPU only",
-      "format": "spz",
-      "spz_version": 3,
-      "spz_geometry_scale": 32.0,
-      "spz_encoded_max_abs_position": 1717.282470703125,
-      "spz_position_grid_in_model_units": 7.62939453125e-06,
-      "spark_ext_splats_required": true,
-      "sh_iterations": null,
-      "sh_note": "All source SH bands retained; delivery attributes are quantized",
-      "decimation": "none (full model only)",
-      "file_limit_bytes_exclusive": 100000000,
-      "package_lock_sha256": "0da773333d6b253ca22d59325290a1f632844ac10f4ac5960ce4fb1c792736a0",
-      "in_progress": false,
-      "created_at": "2026-09-15T12:49:16.610388+00:00",
-      "timings": {
-        "vendor": {
-          "elapsed_seconds": 1.232,
-          "exit_code": 0
-        },
-        "full_spatial_partition": {
-          "elapsed_seconds": 2.736,
-          "exit_code": 0
-        },
-        "full_01_conversion": {
-          "elapsed_seconds": 4.879,
-          "exit_code": 0
-        },
-        "full_02_conversion": {
-          "elapsed_seconds": 5.31,
-          "exit_code": 0
-        },
-        "full_03_conversion": {
-          "elapsed_seconds": 5.266,
-          "exit_code": 0
-        }
-      },
-      "elapsed_seconds": 19.469
-    }
-  },
-  "poster_reference": {
-    "source_format": "spz",
-    "source_manifest": "source-scene.json",
-    "note": "Retained actual-model poster from the accepted full SPZ delivery of the same source geometry; not a new RAD capture."
-  }
+  "poster_report_sha256": "82079a7a330a71de67ee032f99a3d24b5c90b0672bca1d77f8e2ac052d1936d8"
 }

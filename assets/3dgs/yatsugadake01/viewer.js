@@ -1,3 +1,7 @@
+import { selectVariant, isPagedVariant, rendererProfile, modelOptions, startLabel,
+  requireByteRanges, createRenderGate, guardPagedLoads, disposeSpark, coordinateViewers,
+  installRadTransport, releaseSiblingRuntime } from './scene-delivery.js?v=20260918-rad3';
+
 const $ = (id) => document.getElementById(id);
 const root = $('scene');
 let manifest, renderer, scene, camera, controls, mesh, spark, THREE, SplatMesh;
@@ -6,6 +10,14 @@ let busy = false;
 let currentVariant;
 let visible = true;
 let assetBaseUrl = new URL('./', location.href);
+let resizeObserver, visibilityObserver, renderGate, sceneEvents, loadAbort, radTransport;
+let generation = 0;
+let runtimeRequested = false, retiring = false;
+const viewerCoordinator = coordinateViewers(() => {
+  if (retiring) return;
+  retiring = runtimeRequested;
+  releaseSiblingRuntime({ release: () => releaseScene(true), runtimeRequested });
+});
 
 root.addEventListener('keydown', (event) => {
   const disclosure = root.querySelector('.camera-controls');
@@ -30,6 +42,7 @@ function resolveAssetBase(value, pageUrl = location.href) {
 
 function fail(message, error) {
   console.error(message, error);
+  releaseScene(false);
   root.dataset.state = 'error';
   $('error-message').textContent = message;
   $('error').hidden = false;
@@ -40,7 +53,6 @@ function fail(message, error) {
 function setupPoster() {
   const poster = $('poster');
   if (!poster || !manifest.poster) return;
-  // Preserve the existing versioned poster URL.
   if (poster.getAttribute('src')) return;
   try {
     // New packages keep this small image beside the page; legacy packages may
@@ -62,7 +74,40 @@ function setEnabled(enabled) {
 
 function disposeScene(group) {
   if (!group) return;
+  group.removeFromParent();
   for (const child of [...group.children]) { group.remove(child); child.dispose(); }
+}
+
+function releaseScene(showWelcome) {
+  ++generation;
+  loadAbort?.abort();
+  loadAbort = undefined;
+  radTransport?.dispose();
+  radTransport = undefined;
+  renderGate?.cancel();
+  renderGate = undefined;
+  busy = false;
+  setEnabled(false);
+  sceneEvents?.abort();
+  resizeObserver?.disconnect();
+  visibilityObserver?.disconnect();
+  renderer?.setAnimationLoop(null);
+  cameraNavigation?.dispose();
+  controls?.dispose();
+  disposeScene(mesh);
+  disposeSpark(spark);
+  if (renderer) {
+    renderer.dispose();
+    renderer.forceContextLoss();
+    renderer.domElement.remove();
+  }
+  renderer = scene = camera = controls = mesh = spark = cameraNavigation = undefined;
+  root.querySelector('.camera-controls').open = false;
+  if (showWelcome && manifest) {
+    root.dataset.state = 'idle';
+    $('loading').hidden = $('error').hidden = true;
+    $('welcome').hidden = false;
+  }
 }
 
 function overview() {
@@ -95,6 +140,11 @@ function replaceCamera(next) {
   if (target) controls.target.copy(target);
   controls.addEventListener('change', () => cameraNavigation?.sync());
   controls.update();
+  if (spark) {
+    spark.sortRadial = !camera.isOrthographicCamera;
+    spark.sortDirty = true;
+    spark.setDirty();
+  }
 }
 
 function resetView() {
@@ -136,19 +186,26 @@ function zoom(factor) {
   controls.update();
 }
 
-async function setup() {
+async function setup(variant, token) {
+  runtimeRequested = true;
   const [three, sparkModule, orbit, navigation] = await Promise.all([
     import('three'), import('@sparkjsdev/spark'), import('three/addons/controls/OrbitControls.js'),
     import('./camera-navigation.js?v=20260917-glass3')
   ]);
+  if (token !== generation) throw new DOMException('Scene released', 'AbortError');
   THREE = three;
   OrbitControls = orbit.OrbitControls;
   SplatMesh = sparkModule.SplatMesh;
+  // Ensure the shared WASM is initialized before a paged constructor can schedule metadata fetching.
+  await SplatMesh.staticInitialized;
+  if (token !== generation) throw new DOMException('Scene released', 'AbortError');
+  sceneEvents = new AbortController();
+  const listen = (element, type, callback) => element.addEventListener(type, callback, { signal: sceneEvents.signal });
   renderer = new THREE.WebGLRenderer({ antialias: false, alpha: false });
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
+  renderer.setPixelRatio(variant.id === 'lite' ? 1 : Math.min(window.devicePixelRatio || 1, 1.5));
   renderer.setClearColor(0x192732, 1);
   $('canvas').appendChild(renderer.domElement);
-  renderer.domElement.addEventListener('webglcontextlost', (event) => {
+  listen(renderer.domElement, 'webglcontextlost', (event) => {
     event.preventDefault();
     fail('The graphics context was lost. Reload the scene to try again.');
   });
@@ -156,7 +213,7 @@ async function setup() {
   camera = new THREE.PerspectiveCamera(60, 1, .003, 100);
   camera.up.set(0, 0, 1); // The exported model and camera poses share Nerfstudio's Z-up coordinates.
   replaceCamera(camera);
-  spark = new sparkModule.SparkRenderer({ renderer });
+  spark = new sparkModule.SparkRenderer({ renderer, ...rendererProfile(variant.id, isPagedVariant(variant)) });
   scene.add(spark);
   const resize = () => {
     const width = root.clientWidth, height = root.clientHeight;
@@ -169,21 +226,28 @@ async function setup() {
     }
     camera.updateProjectionMatrix();
   };
-  new ResizeObserver(resize).observe(root);
+  resizeObserver = new ResizeObserver(resize);
+  resizeObserver.observe(root);
   resize();
   resetView();
   cameraNavigation = navigation.createCameraNavigation({
     THREE, root, canvas: $('canvas'), getCamera: () => camera, getControls: () => controls,
     replaceCamera, getFov: () => overview().fov
   });
-  new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; }).observe(root);
+  visibilityObserver = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; });
+  visibilityObserver.observe(root);
   renderer.setAnimationLoop((time) => {
+    if (token !== generation) return;
     if (!document.hidden && visible) {
-      cameraNavigation.update(time);
-      renderer.render(scene, camera);
+      try {
+        cameraNavigation.update(time);
+        renderer.render(scene, camera);
+        renderGate?.observe({ frame: renderer.info.render.frame, activeSplats: spark.activeSplats,
+          instanceCount: spark.geometry.instanceCount, pagedSplats: mesh?.children[0]?.paged?.numSplats ?? 0 });
+      } catch (error) { fail('The graphics renderer stopped. Try the scene again.', error); }
     } else cameraNavigation.clear();
   });
-  $('canvas').addEventListener('keydown', (event) => {
+  listen($('canvas'), 'keydown', (event) => {
     if (busy || !mesh || event.ctrlKey || event.metaKey || event.altKey) return;
     if (event.key === '+' || event.key === '=') zoom(.8);
     else if (event.key === '-') zoom(1.25);
@@ -199,8 +263,8 @@ async function setup() {
     } else return;
     event.preventDefault();
   });
-  renderer.domElement.addEventListener('pointerdown', () => $('canvas').focus({ preventScroll: true }));
-  renderer.domElement.addEventListener('dblclick', (event) => {
+  listen(renderer.domElement, 'pointerdown', () => $('canvas').focus({ preventScroll: true }));
+  listen(renderer.domElement, 'dblclick', (event) => {
     if (!mesh || busy) return;
     const rect = renderer.domElement.getBoundingClientRect();
     const pointer = new THREE.Vector2(2*(event.clientX-rect.left)/rect.width-1, 1-2*(event.clientY-rect.top)/rect.height);
@@ -212,7 +276,11 @@ async function setup() {
 }
 
 async function load(variantId) {
-  if (busy) return;
+  if (busy || retiring) return;
+  releaseScene(false);
+  const token = generation;
+  loadAbort = new AbortController();
+  const active = () => token === generation;
   busy = true;
   setEnabled(false);
   $('error').hidden = true;
@@ -222,43 +290,80 @@ async function load(variantId) {
   root.dataset.state = 'loading';
   let candidate;
   try {
-    if (!renderer) await setup();
-    if (mesh) { scene.remove(mesh); disposeScene(mesh); mesh = undefined; }
     const variant = manifest.variants.find((item) => item.id === variantId);
     if (!variant) throw new Error('Unknown model variant');
+    const paged = isPagedVariant(variant);
+    if (paged) {
+      if (variant.files || !variant.file) throw new Error('This viewer expects one streaming RAD file per variant.');
+      const url = new URL(variant.file, assetBaseUrl).href;
+      radTransport = installRadTransport(url, variant.bytes, { signal: loadAbort.signal });
+      $('progress').textContent = 'Checking scene streaming…';
+      await requireByteRanges(url, variant.bytes, { signal: loadAbort.signal });
+      if (!active()) return;
+    }
+    // Do not retire another model until the selected endpoint has passed its streaming check.
+    viewerCoordinator.activate();
+    await setup(variant, token);
+    if (!active()) return;
     candidate = new THREE.Group();
+    // Spark discovers paged meshes during rendering, before they have loaded any splats.
+    mesh = candidate;
+    scene.add(candidate);
     const files = variant.files || [{file: variant.file, bytes: variant.bytes}];
     let completedBytes = 0;
     // Spatial chunks bound decoding memory. Spark sorts the meshes together.
     for (const file of files) {
-      const part = new SplatMesh({
-        url: new URL(file.file, assetBaseUrl).href,
-        extSplats: true,
-        lod: true,
-        onProgress: (event) => {
-          const loaded = completedBytes + Math.min(event.loaded, file.bytes);
-          const percent = Math.min(100, Math.round(100*loaded/variant.bytes));
-          $('progress').textContent = percent < 100 ? `Downloading scene ${percent}%` : 'Preparing 3D details…';
-        }
-      });
+      const part = new SplatMesh(modelOptions(variant, new URL(file.file, assetBaseUrl).href, (event) => {
+        if (!active()) return;
+        const loaded = completedBytes + Math.min(event.loaded, file.bytes);
+        const percent = Math.min(100, Math.round(100*loaded/variant.bytes));
+        $('progress').textContent = percent < 100 ? `Downloading scene ${percent}%` : 'Preparing 3D details…';
+      }));
       part.scale.setScalar(variant.render_scale ?? 1);
       candidate.add(part);
-      await part.initialized;
+      if (paged) {
+        guardPagedLoads(part.paged, { isActive: active, onError: (error) => {
+          queueMicrotask(() => { if (active()) fail('Streaming stopped. Check your connection and try again.', error); });
+        } });
+        $('progress').textContent = `Streaming ${variant.id === 'lite' ? 'Lite' : 'Full'} overview…`;
+        // initialized only prepares the object. RAD metadata and real drawn frames are the readiness gate.
+        const deadline = setTimeout(() => {
+          if (active()) fail('Scene streaming timed out. Check your connection and try again.');
+        }, 120000);
+        try {
+          await part.initialized;
+          await part.paged.getRadMeta();
+        } finally { clearTimeout(deadline); }
+        if (!active()) return;
+        $('progress').textContent = 'Drawing the first details…';
+        renderGate = createRenderGate();
+        await renderGate.promise;
+        if (!active()) return;
+        renderGate = undefined;
+      } else {
+        await part.initialized;
+        if (!active()) { part.dispose(); return; }
+      }
       completedBytes += file.bytes;
     }
-    mesh = candidate;
-    scene.add(mesh);
     currentVariant = variant.id;
     $('loading').hidden = true;
     root.dataset.state = 'ready';
     root.dataset.variant = currentVariant;
     root.dataset.splats = String(variant.count ?? '');
+    root.dataset.delivery = paged ? 'paged-rad' : 'spz';
+    console.info('[3dgs ready]', JSON.stringify({
+      sceneId: manifest.delivery?.scene_id ?? manifest.id ?? manifest.scene_id ?? null, quality: variant.id,
+      delivery: root.dataset.delivery, sourceCount: variant.count ?? null,
+      activeSplats: spark.activeSplats, maxPagedSplats: spark.pager?.maxSplats ?? null,
+      pixelRatio: renderer.getPixelRatio(),
+      radRequests: radTransport?.getStats() ?? null,
+    }));
     setEnabled(true);
     $('canvas').focus({ preventScroll: true });
   } catch (error) {
-    disposeScene(candidate);
-    fail('The scene could not load. Check your connection and try again.', error);
-  } finally { busy = false; }
+    if (active()) fail('The scene could not load. Check your connection and try again.', error);
+  } finally { if (active()) busy = false; }
 }
 
 $('start').addEventListener('click', () => load(currentVariant));
@@ -280,26 +385,23 @@ document.addEventListener('fullscreenchange', () => {
   $('fullscreen').textContent = document.fullscreenElement ? 'Exit fullscreen ↙' : 'Fullscreen ↗';
   $('fullscreen').setAttribute('aria-label', document.fullscreenElement ? 'Exit fullscreen' : 'Enter fullscreen');
 });
-window.addEventListener('pagehide', (event) => {
-  if (event.persisted) return; // Back/forward cache restores this live WebGL scene.
-  renderer?.setAnimationLoop(null);
-  cameraNavigation?.dispose();
-  controls?.dispose();
-  disposeScene(mesh);
-  spark?.dispose();
-  renderer?.dispose();
-});
+// Release the GPU pool even for bfcache; navigating back shows the lightweight poster again.
+window.addEventListener('pagehide', () => releaseScene(true));
 
 try {
-  const response = await fetch('scene.json');
+  const manifestUrl = new URL('scene.json', import.meta.url);
+  manifestUrl.search = new URL(import.meta.url).search;
+  const response = await fetch(manifestUrl, { cache: 'no-store' });
   if (!response.ok) throw new Error(`Manifest HTTP ${response.status}`);
   manifest = await response.json();
   assetBaseUrl = resolveAssetBase(manifest.asset_base_url);
   setupPoster();
-  const variant = manifest.variants.find((item) => item.id === 'full') || manifest.variants[0];
+  const variant = selectVariant(manifest.variants, navigator, location.search);
   if (!variant) throw new Error('No model files are available.');
   currentVariant = variant.id;
   $('start').disabled = false;
-  $('start').textContent = `Download ~${Math.round(variant.bytes / 1e6)} MB`;
+  $('start').textContent = startLabel(variant);
+  $('start').title = isPagedVariant(variant) ? 'Streams details as you explore. Only one scene stays active per article.' : '';
+  root.dataset.variant = currentVariant;
   root.dataset.state = 'idle';
 } catch (error) { fail('Scene information could not load. Refresh the page to try again.', error); }
