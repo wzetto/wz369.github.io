@@ -1,9 +1,12 @@
-<div class="embed-container">
+<div class="embed-container" style="max-width: {{ include.width | default: '100%' }};">
   <iframe
       src="https://www.youtube.com/embed/{{ include.id }}"
+      title="{{ include.title | default: 'YouTube video player' }}"
       width="100%"
-      height="100%"
       frameborder="0"
-      allow="fullscreen">
+      loading="lazy"
+      {% if include.height %}style="height: {{ include.height }};"{% elsif include.ratio %}style="aspect-ratio: {{ include.ratio }};"{% endif %}
+      allow="fullscreen; encrypted-media; picture-in-picture"
+      allowfullscreen>
   </iframe>
 </div>

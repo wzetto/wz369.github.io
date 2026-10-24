@@ -59,6 +59,19 @@
 	transition: 0.5s;
 }
 
+.embed-container {
+	max-width: 100%;
+	margin: 1.5rem auto;
+}
+
+.embed-container iframe {
+	display: block;
+	width: 100%;
+	height: auto;
+	border: 0;
+	aspect-ratio: 16 / 9;
+}
+
 @media screen and (max-width: 992px) {
 	.background_img_formal {
 		background-image: url('{{ site.baseurl }}/images/header/sea_of_ice_part.png');

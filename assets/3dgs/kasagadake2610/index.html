@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <title>Mt. Kasa · 3D Scene</title>
+  <link rel="stylesheet" href="viewer.css?v=20261006-eye6">
+  <script type="importmap">{"imports":{"three":"./vendor/three/three.module.min.js","three/addons/":"./vendor/three/addons/","@sparkjsdev/spark":"./vendor/spark/spark.module.min.js"}}</script>
+</head>
+<body>
+  <main id="scene" aria-label="Interactive 3D scene of Mt. Kasa">
+    <img id="poster" class="scene-poster" alt="" aria-hidden="true" decoding="async" fetchpriority="high" hidden>
+    <div id="canvas" tabindex="0" aria-label="3D scene at eye level from where the photos were taken: drag to look around, scroll or pinch to zoom the field of view, right-drag or drag with two fingers to pan, and double-click to face a point. Click to focus. W and S walk forward and backward; A and D step left and right. Arrow keys turn your head. Q and E rotate the view counter-clockwise and clockwise; Option- or Alt-drag and a two-finger twist also rotate it, and the level button straightens it. Plus and minus zoom, R returns to the starting view, and the view cube selects axis-aligned orthographic views."></div>
+    <div class="topbar">
+      <div class="title" data-backdrop-probe><span class="title-text">Mt. Kasa</span></div>
+      <div class="top-controls" data-backdrop-probe>
+        <details class="camera-controls">
+          <summary class="controls-toggle glass glass-press" aria-label="Camera controls" title="Controls">
+            <svg class="glyph" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M3.75 7h9.5M17.25 7h3M3.75 12h3M10.75 12h9.5M3.75 17h11.5M19.25 17h1"/><circle cx="15.25" cy="7" r="2"/><circle cx="8.75" cy="12" r="2"/><circle cx="17.25" cy="17" r="2"/></svg>
+            <span class="controls-label">Controls</span>
+          </summary>
+          <div class="controls-popover glass glass-regular" data-backdrop-probe>
+            <div class="controls-scroll">
+              <p class="camera-controls-status">Load the scene to use these controls.</p>
+              <div class="controls-sections">
+                <section class="movement-guide">
+                  <h2>Move</h2>
+                  <div class="key-guide" role="group" aria-label="Move"><button type="button" data-move="w" aria-label="Move forward" aria-keyshortcuts="W" title="Hold to move forward" disabled><span class="key-cap" aria-hidden="true">W</span><svg class="glyph key-arrow" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button><button type="button" data-move="a" aria-label="Move left" aria-keyshortcuts="A" title="Hold to move left" disabled><span class="key-cap" aria-hidden="true">A</span><svg class="glyph key-arrow" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" data-move="s" aria-label="Move backward" aria-keyshortcuts="S" title="Hold to move backward" disabled><span class="key-cap" aria-hidden="true">S</span><svg class="glyph key-arrow" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></button><button type="button" data-move="d" aria-label="Move right" aria-keyshortcuts="D" title="Hold to move right" disabled><span class="key-cap" aria-hidden="true">D</span><svg class="glyph key-arrow" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button><button type="button" class="walk-speed" aria-label="Walking speed: 1×; click to change" title="Walking speed 1× · click to change" disabled><span class="walk-speed-value">1×</span></button></div>
+                  <span class="walk-speed-status visually-hidden" role="status"></span>
+                </section>
+                <section class="views-guide">
+                  <h2>View</h2>
+                  <div class="camera-axis-host"><p class="axis-placeholder">Axis views appear after loading.</p></div>
+                </section>
+                <section class="roll-guide">
+                  <h2>Rotate</h2>
+                  <div class="roll-buttons" role="group" aria-label="Rotate view"><button type="button" data-roll="ccw" aria-label="Rotate view 15° counter-clockwise" title="Rotate 15° counter-clockwise · hold to repeat" disabled><svg class="glyph" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3.75" y="10.25" width="10" height="10" rx="2.25"/><path d="M8.5 6.75h3.25a7.5 7.5 0 0 1 7.5 7.5v1.5M11 4.25 8.5 6.75 11 9.25"/></svg></button><button type="button" data-roll="cw" aria-label="Rotate view 15° clockwise" title="Rotate 15° clockwise · hold to repeat" disabled><svg class="glyph" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><g transform="matrix(-1 0 0 1 24 0)"><rect x="3.75" y="10.25" width="10" height="10" rx="2.25"/><path d="M8.5 6.75h3.25a7.5 7.5 0 0 1 7.5 7.5v1.5M11 4.25 8.5 6.75 11 9.25"/></g></svg></button></div>
+                  <p><span class="copy-fine">Hold Q / E, or Option/Alt-drag</span><span class="copy-touch">Twist with two fingers</span></p>
+                </section>
+                <section class="gesture-guide">
+                  <p class="copy-fine">Drag to look around · Scroll to zoom · Right-drag to pan · W A S D to walk</p>
+                  <p class="copy-touch">Drag to look around · Pinch to zoom · Two fingers to pan or twist</p>
+                </section>
+              </div>
+              <p class="controls-shortcuts copy-fine">Arrows turn · + / − zoom · R resets · Esc closes</p>
+              <p class="controls-quote" lang="en">All this time my own part in the dreams seemed to be that of a disembodied consciousness with a range of vision wider than the normal; floating freely about, yet confined to the ordinary avenues and speeds of travel. <span class="quote-source">— <cite>The Shadow Out of Time</cite></span></p>
+            </div>
+          </div>
+        </details>
+        <div class="top-icons glass-group">
+          <button id="level-view" class="glass-item glass-icon" type="button" aria-label="Level view" title="Level view" hidden>
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path class="level-pointer" d="M12 2.8 15 12H9z"/><path class="level-tail" d="M9 12h6l-3 9.2z"/><path d="M2.8 12h3.4M17.8 12h3.4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          </button>
+          <button id="fullscreen" class="glass-item glass-icon" type="button" aria-label="Enter fullscreen" title="Fullscreen">
+            <svg class="glyph icon-enter" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M14.25 3.75h6v6M20.25 3.75l-6.5 6.5M9.75 20.25h-6v-6M3.75 20.25l6.5-6.5"/></svg>
+            <svg class="glyph icon-exit" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20.25 9.75h-6v-6M14.25 9.75l6-6M3.75 14.25h6v6M9.75 14.25l-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="welcome" class="welcome">
+      <div class="welcome-card">
+        <button id="start" class="glass glass-press" type="button" disabled>
+          <svg class="glyph" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 2.75 20 7.25v9.5l-8 4.5-8-4.5v-9.5z"/><path d="M4 7.25l8 4.5 8-4.5M12 11.75v9.5"/></svg>
+          <span class="start-label">Preparing…</span>
+        </button>
+      </div>
+    </div>
+    <div id="loading" class="loading glass" hidden>
+      <span class="spinner" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><g stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 2.75v4.5"/><path d="M12 2.75v4.5" transform="rotate(45 12 12)" opacity=".88"/><path d="M12 2.75v4.5" transform="rotate(90 12 12)" opacity=".76"/><path d="M12 2.75v4.5" transform="rotate(135 12 12)" opacity=".64"/><path d="M12 2.75v4.5" transform="rotate(180 12 12)" opacity=".52"/><path d="M12 2.75v4.5" transform="rotate(225 12 12)" opacity=".4"/><path d="M12 2.75v4.5" transform="rotate(270 12 12)" opacity=".3"/><path d="M12 2.75v4.5" transform="rotate(315 12 12)" opacity=".22"/></g></svg></span>
+      <span id="progress" role="status" aria-live="polite">Loading scene…</span>
+    </div>
+    <div id="error" class="error glass glass-regular" role="alert" hidden>
+      <p id="error-message"></p>
+      <button id="retry" class="glass-item" type="button">Retry</button>
+    </div>
+    <div class="bottom-panel">
+      <div class="toolbar-row" role="group" aria-label="Scene viewing options" data-backdrop-probe>
+        <div class="view-toolbar glass">
+          <label class="scene-selector glass-item" for="quality-select">
+            <span class="selector-caption">Quality</span>
+            <select id="quality-select" disabled>
+              <option value="full">Full</option>
+              <option value="lite">Lite</option>
+            </select>
+            <svg class="glyph selector-chevron" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M8 9.5 12 5.5l4 4M8 14.5l4 4 4-4"/></svg>
+          </label>
+          <span class="toolbar-divider" aria-hidden="true"></span>
+          <button id="reset" class="glass-item" type="button" aria-label="Reset to the starting view" aria-keyshortcuts="R" title="Reset to the starting view" disabled>
+            <svg class="glyph" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4.25 12a7.75 7.75 0 1 0 2.27-5.48L4.25 8.75"/><path d="M4.25 4v4.75H9"/></svg>
+            <span class="reset-label">Reset</span>
+          </button>
+        </div>
+      </div>
+      <p class="hint" data-backdrop-probe><span class="copy-fine">Drag to look around · Q / E to rotate</span><span class="copy-touch">Drag to look around · Twist to rotate</span> · <span class="hint-more">More in <svg class="glyph" viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><path d="M3.75 7h9.5M17.25 7h3M3.75 12h3M10.75 12h9.5M3.75 17h11.5M19.25 17h1"/><circle cx="15.25" cy="7" r="2"/><circle cx="8.75" cy="12" r="2"/><circle cx="17.25" cy="17" r="2"/></svg>&#8202;Controls</span></p>
+    </div>
+    <noscript><p class="error glass glass-regular">Enable JavaScript to explore the 3D scene.</p></noscript>
+  </main>
+  <script type="module" src="viewer.js?v=20261006-eye6"></script>
+</body>
+</html>

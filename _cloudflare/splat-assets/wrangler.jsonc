@@ -1,0 +1,14 @@
+{
+  "name": "splat-assets",
+  "main": "worker.mjs",
+  "account_id": "ca67a069662b732f7911528aa1bc4e9a",
+  "compatibility_date": "2026-10-07",
+  "workers_dev": true,
+  "preview_urls": false,
+  "r2_buckets": [{ "binding": "MODELS", "bucket_name": "zetto-3dgs" }],
+  "observability": {
+    "enabled": true,
+    "logs": { "enabled": true, "invocation_logs": false, "head_sampling_rate": 1 },
+    "traces": { "enabled": true, "head_sampling_rate": 0.01 }
+  }
+}

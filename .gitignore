@@ -5,6 +5,11 @@ notes
 
 # Serve Gaussian model binaries from Cloudflare R2.
 /assets/3dgs/**/*.spz
+/assets/3dgs/boeing737engine/
+/assets/3dgs/osmo360-room-shot01/
+/assets/3dgs/osmo360-room-shot02/
+/assets/3dgs/osmo360-room-shot03/
+
 
 # Generated site and local build state.
 /_site/

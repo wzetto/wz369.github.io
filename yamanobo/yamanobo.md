@@ -34,7 +34,13 @@ layout: map_homepage
 
 <h5>秋冬</h5>
 
-<code class="yama-badge yama-badge--hairband">八ヶ岳山系</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/yatsugadake/yatsugadake01.html"> 八ヶ岳-硫黄岳縦走</a><br>
+<code class="yama-badge yama-badge--hairband">赤石山脈</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/kitadake/kitadake2610.html"> 北岳</a><br>
+
+<code class="yama-badge yama-badge--hairband">飛騨山脈</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/tateyama/tateyama2610.html"> 立山</a><br>
+
+<code class="yama-badge yama-badge--hairband">飛騨山脈</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/kasagadake/kasagadake2610.html"> 笠ヶ岳</a><br>
+
+<code class="yama-badge yama-badge--hairband">八ヶ岳山系</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/yatsugadake/yatsugadake01.html"> 赤岳-硫黄岳縦走</a><br>
 
 <code class="yama-badge yama-badge--hairband">湘南海岸</code><a href="https://wzetto.github.io/wz369.github.io/yamanobo/chigasaki_bay/chigasaki01.html"> 湘南海岸骑行</a><br>
 
