@@ -4,19 +4,49 @@ layout: map_default
 js_url: /js/map_tateyama2610.js
 ---
 
+<!-- tateyama2610-article-insertion:start -->
+<style id="tateyama2610-article-layout">
+body:has(.tateyama2610-splat-embed) #header_pages {
+  position: relative;
+  overflow: hidden;
+}
+.tateyama2610-splat-embed iframe {
+  /* Leave room for the site header's scroll transition when focusing the viewer. */
+  scroll-margin-top: 220px;
+}
+body:has(.tateyama2610-splat-embed) #main_content.inner {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  max-width: 1100px;
+  margin: 2% auto 0;
+  padding: 0;
+}
+body:has(.tateyama2610-splat-embed) #main_content.inner > p {
+  margin-inline: 10px;
+}
+@media (max-width: 480px) {
+  body:has(.tateyama2610-splat-embed) .inner_top,
+  body:has(.tateyama2610-splat-embed) .inner_bottom {
+    box-sizing: border-box;
+    min-width: 0;
+  }
+}
+</style>
+
 <!-- tateyama2610-3dgs:start -->
-<div class="tateyama2610-splat-embed" style="margin: 1.5rem 0;">
+<div class="tateyama2610-splat-embed" style="margin:1.5rem 0;">
   <iframe
-    src="{{ '/assets/3dgs/tateyama2610/index.html' | relative_url }}"
-    title="Mt. Oyama, Tateyama 3D scene"
+    name="tateyama2610-viewer"
+    src="https://ereshkigal.ai/space/tateyama-2026-10/"
+    title="立山 2026-10"
     loading="lazy"
     allow="fullscreen"
     allowfullscreen
-    style="display:block; width:100%; height:clamp(460px, 72vh, 680px); height:clamp(460px, 72dvh, 680px); border:0; border-radius:10px; background:#192732;">
+    style="display:block;width:100%;height:clamp(460px,72vh,760px);height:clamp(460px,72dvh,760px);border:0;border-radius:10px;background:#192732;">
   </iframe>
-  <p style="font-size:0.9rem; margin-top:0.6rem;">
-    <a href="{{ '/assets/3dgs/tateyama2610/index.html' | relative_url }}?quality=full" target="_blank" rel="noopener">Full · Open full viewer ↗</a>
-    · <a href="{{ '/assets/3dgs/tateyama2610/index.html' | relative_url }}?quality=lite" target="_blank" rel="noopener">Lite · Lightweight mode ↗</a>
+  <p style="font-size:0.9rem;margin-top:0.6rem;">
+    <a href="https://ereshkigal.ai/space/tateyama-2026-10/" target="_blank" rel="noopener">Open in new window ↗</a>
   </p>
 </div>
 <!-- tateyama2610-3dgs:end -->

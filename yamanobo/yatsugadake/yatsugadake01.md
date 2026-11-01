@@ -87,7 +87,10 @@ Myrmica. 传奇山顶耐冻王. 大概在抓异巢雄蚁. 9月了居然还有在
   <img src="https://drive.google.com/thumbnail?id=1IKlz1hyXqKwkccl4Cldt2lE2qUmetAX-&sz=w1600" width="400px"/>
 </p>
 
-https://drive.google.com/file/d/1_NKeioZ7fThGYLlKhG2fMSNz0_jmsxrj/view?usp=sharing
+<p style="text-align: center;">
+  <img src="https://drive.google.com/thumbnail?id=1_NKeioZ7fThGYLlKhG2fMSNz0_jmsxrj&sz=w1600" width="400px"/>
+</p>
+
 
 硫黄岳本来有个火口可看,但圆滚滚山顶看不到任何东西,遂躺平.
 

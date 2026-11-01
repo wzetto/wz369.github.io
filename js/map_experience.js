@@ -17,6 +17,317 @@
         features: []
     };
 
+    function setupSplatScrollGuard(embed) {
+        var iframe = embed.querySelector('iframe');
+        var stage;
+        var guard;
+        var activeZone = null;
+        var topMenuOpen = false;
+        var lastMoveX = null;
+        var lastMoveY = null;
+        var lastPointerZoneAt = 0;
+        var idleTimer = null;
+        var focusPoll = null;
+
+        if (!iframe || (iframe.parentNode && iframe.parentNode.classList && iframe.parentNode.classList.contains('splat-embed-stage'))) {
+            return;
+        }
+
+        stage = document.createElement('div');
+        stage.className = 'splat-embed-stage';
+        stage.style.position = 'relative';
+        iframe.parentNode.insertBefore(stage, iframe);
+        stage.appendChild(iframe);
+
+        guard = document.createElement('div');
+        guard.className = 'splat-scroll-guard';
+        guard.setAttribute('aria-hidden', 'true');
+        guard.style.position = 'absolute';
+        guard.style.inset = '0';
+        guard.style.zIndex = '2';
+        guard.style.background = 'transparent';
+        stage.appendChild(guard);
+
+        function clearTimers() {
+            if (idleTimer) {
+                clearTimeout(idleTimer);
+                idleTimer = null;
+            }
+            if (focusPoll) {
+                clearInterval(focusPoll);
+                focusPoll = null;
+            }
+        }
+
+        function blurIframeIfNeeded() {
+            if (document.activeElement === iframe) {
+                iframe.blur();
+                window.focus();
+            }
+        }
+
+        function closeHole() {
+            clearTimers();
+            activeZone = null;
+            guard.style.clipPath = 'none';
+            guard.style.webkitClipPath = 'none';
+            if (!topMenuOpen) {
+                blurIframeIfNeeded();
+            }
+        }
+
+        function dismissGuard() {
+            clearTimers();
+            activeZone = null;
+            topMenuOpen = false;
+            guard.hidden = true;
+            guard.style.pointerEvents = 'none';
+        }
+
+        function resetGuard() {
+            clearTimers();
+            activeZone = null;
+            topMenuOpen = false;
+            guard.hidden = false;
+            guard.style.pointerEvents = 'auto';
+            guard.style.clipPath = 'none';
+            guard.style.webkitClipPath = 'none';
+        }
+
+        function getZoneBounds(zone, width, height) {
+            if (zone === 'start') {
+                return {
+                    x1: Math.max(0, Math.round(width / 2 - 140)),
+                    y1: Math.max(0, Math.round(height / 2 - 28)),
+                    x2: Math.min(width, Math.round(width / 2 + 140)),
+                    y2: Math.min(height, Math.round(height / 2 + 28))
+                };
+            }
+
+            if (zone === 'top') {
+                if (topMenuOpen) {
+                    return {
+                        x1: Math.max(0, Math.round(width - 360)),
+                        y1: 12,
+                        x2: Math.max(0, Math.round(width - 12)),
+                        y2: Math.min(Math.round(height - 12), 480)
+                    };
+                }
+
+                return {
+                    x1: Math.max(0, Math.round(width - 280)),
+                    y1: 12,
+                    x2: Math.max(0, Math.round(width - 12)),
+                    y2: 64
+                };
+            }
+
+            if (zone === 'bottom') {
+                return {
+                    x1: Math.max(0, Math.round(width / 2 - 145)),
+                    y1: Math.max(0, Math.round(height - 94)),
+                    x2: Math.min(width, Math.round(width / 2 + 145)),
+                    y2: Math.max(0, Math.round(height - 34))
+                };
+            }
+
+            return null;
+        }
+
+        function hitTestZone(x, y, width, height) {
+            var order = ['start', 'top', 'bottom'];
+            var i;
+            var box;
+
+            for (i = 0; i < order.length; i++) {
+                box = getZoneBounds(order[i], width, height);
+                if (box && x >= box.x1 && x <= box.x2 && y >= box.y1 && y <= box.y2) {
+                    return order[i];
+                }
+            }
+
+            return null;
+        }
+
+        function applyHole(width, height, box) {
+            var w = Math.round(width);
+            var h = Math.round(height);
+            var polygon = 'polygon(evenodd, 0px 0px, ' + w + 'px 0px, ' + w + 'px ' + h + 'px, 0px ' + h + 'px, 0px 0px, ' +
+                box.x1 + 'px ' + box.y1 + 'px, ' + box.x2 + 'px ' + box.y1 + 'px, ' +
+                box.x2 + 'px ' + box.y2 + 'px, ' + box.x1 + 'px ' + box.y2 + 'px, ' +
+                box.x1 + 'px ' + box.y1 + 'px)';
+
+            guard.style.clipPath = polygon;
+            guard.style.webkitClipPath = polygon;
+        }
+
+        function checkIframeFocus() {
+            var rect;
+
+            if (guard.hidden || document.activeElement !== iframe) {
+                return;
+            }
+
+            if (activeZone === 'start') {
+                dismissGuard();
+                return;
+            }
+
+            if (activeZone === 'top' && !topMenuOpen) {
+                topMenuOpen = true;
+                rect = stage.getBoundingClientRect();
+                applyHole(rect.width, rect.height, getZoneBounds('top', rect.width, rect.height));
+            }
+        }
+
+        function openZone(zone, width, height) {
+            var box = getZoneBounds(zone, width, height);
+
+            if (!box) {
+                closeHole();
+                return;
+            }
+
+            if (zone === 'start') {
+                blurIframeIfNeeded();
+            }
+
+            activeZone = zone;
+            applyHole(width, height, box);
+
+            if (!focusPoll) {
+                focusPoll = setInterval(checkIframeFocus, 80);
+            }
+
+            if (idleTimer) {
+                clearTimeout(idleTimer);
+            }
+            if (!topMenuOpen) {
+                idleTimer = setTimeout(function() {
+                    if (!guard.hidden && document.activeElement !== iframe) {
+                        closeHole();
+                    }
+                }, 900);
+            }
+        }
+
+        function markWheel() {
+            if (guard.hidden) {
+                return;
+            }
+
+            lastPointerZoneAt = 0;
+            if (activeZone) {
+                closeHole();
+            }
+        }
+
+        function markScroll() {
+            if (guard.hidden) {
+                return;
+            }
+
+            if (activeZone && Date.now() - lastPointerZoneAt > 250) {
+                closeHole();
+            }
+        }
+
+        guard.addEventListener('pointermove', function(event) {
+            var rect;
+            var x;
+            var y;
+            var zone;
+
+            if (guard.hidden) {
+                return;
+            }
+
+            if (event.clientX === lastMoveX && event.clientY === lastMoveY) {
+                return;
+            }
+            lastMoveX = event.clientX;
+            lastMoveY = event.clientY;
+
+            rect = stage.getBoundingClientRect();
+            x = event.clientX - rect.left;
+            y = event.clientY - rect.top;
+            zone = hitTestZone(x, y, rect.width, rect.height);
+
+            if (!zone) {
+                topMenuOpen = false;
+                closeHole();
+                return;
+            }
+
+            lastPointerZoneAt = Date.now();
+            openZone(zone, rect.width, rect.height);
+        });
+
+        guard.addEventListener('pointerdown', function(event) {
+            var rect;
+            var x;
+            var y;
+            var zone;
+
+            if (guard.hidden) {
+                return;
+            }
+
+            rect = stage.getBoundingClientRect();
+            x = event.clientX - rect.left;
+            y = event.clientY - rect.top;
+            zone = hitTestZone(x, y, rect.width, rect.height);
+
+            if (!zone) {
+                topMenuOpen = false;
+                closeHole();
+                return;
+            }
+
+            lastPointerZoneAt = Date.now();
+            openZone(zone, rect.width, rect.height);
+        });
+
+        guard.addEventListener('pointerleave', function(event) {
+            var rect;
+            var x;
+            var y;
+
+            if (guard.hidden) {
+                return;
+            }
+
+            rect = stage.getBoundingClientRect();
+            x = event.clientX - rect.left;
+            y = event.clientY - rect.top;
+
+            if (x <= 0 || y <= 0 || x >= rect.width || y >= rect.height) {
+                topMenuOpen = false;
+                closeHole();
+            }
+        });
+
+        window.addEventListener('wheel', markWheel, { capture: true, passive: true });
+        window.addEventListener('scroll', markScroll, { passive: true });
+        window.addEventListener('blur', checkIframeFocus);
+        iframe.addEventListener('load', resetGuard);
+    }
+
+    function installSplatScrollGuards() {
+        var embeds = document.querySelectorAll('[class*="-splat-embed"]');
+        var i;
+
+        for (i = 0; i < embeds.length; i++) {
+            setupSplatScrollGuard(embeds[i]);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', installSplatScrollGuards);
+    } else {
+        installSplatScrollGuards();
+    }
+
     if (!map || !map.getContainer || !window.L) {
         return;
     }

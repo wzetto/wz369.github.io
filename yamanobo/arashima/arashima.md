@@ -1,5 +1,7 @@
 ---
 title: '荒島岳'
+layout: map_default
+js_url: /js/map_arashima.js
 ---
 
 2021.12.28
